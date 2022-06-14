@@ -7,7 +7,7 @@ namespace B409.Jade.Data {
     using Game;
 
     [System.Serializable]
-    public class ParameterReward {
+    public class ParameterValue {
         [SerializeField]
         [HorizontalGroup("group")]
         [HideLabel]

@@ -9,8 +9,8 @@ using UnityEngine;
 using Sirenix.OdinInspector;
 
 namespace B409.Jade.Data {
-    [CreateAssetMenu(fileName = "CookingData", menuName = "B409/Cooking Data")]
-    public class CookingData : RecipeData {
+    [CreateAssetMenu(fileName = "JewelleryData", menuName = "B409/Jewellery Data")]
+    public class JewelleryData : RecipeData {
         
     }
 }

@@ -9,10 +9,10 @@ using UnityEngine;
 using Sirenix.OdinInspector;
 
 namespace B409.Jade.Data {
-    [CreateAssetMenu(fileName = "CookingData", menuName = "B409/Jewerly Data")]
-    public class JewerlyData : ScriptableObject {
+    public abstract class RecipeData : ScriptableObject {
         [HorizontalGroup("group", .5f)]
         [BoxGroup("group/Recipe")]
+        [ListDrawerSettings(Expanded = true, AddCopiesLastElement = true)]
         [SerializeField]
         private List<MaterialData> materials;
         [HorizontalGroup("group", .5f)]
@@ -22,11 +22,12 @@ namespace B409.Jade.Data {
         private MaterialData result;
         [BoxGroup("Rewards")]
         [BoxGroup("Rewards/Parameter")]
+        [ListDrawerSettings(Expanded = true, AddCopiesLastElement = true)]
         [SerializeField]
-        private List<ParameterReward> parameterRewards;
+        private List<ParameterValue> parameterRewards;
 
         public List<MaterialData> Materials => materials;
         public MaterialData Result => result;
-        public List<ParameterReward> ParameterRewards => parameterRewards;
+        public List<ParameterValue> ParameterRewards => parameterRewards;
     }
 }

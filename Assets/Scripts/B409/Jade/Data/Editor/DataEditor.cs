@@ -17,13 +17,14 @@ namespace B409.Jade.Data.Editor {
     public class DataEditor : OdinMenuEditorWindow {
         private static string ItemDataFolderPath = "Assets/Prefabs/Items";
         private static string CookingDataFolderPath = "Assets/Prefabs/Cookings";
-        private static string CraftingDataFolderPath = "Assets/Prefabs/Crafting";
-        private static string JewerlyDataFolderPath = "Assets/Prefabs/Jewerly";
+        private static string CraftingDataFolderPath = "Assets/Prefabs/Craftings";
+        private static string JewelleryDataFolderPath = "Assets/Prefabs/Jewelleries";
+        private static string TableDataFolderPath = "Assets/Prefabs/Tables";
 
         private CreateNewItemData createNewItemData;
-        private CreateNewCookingData createNewCookingData;
-        private CreateNewCraftingData createNewCraftingData;
-        private CreateNewJewerlyData createNewJewerlyData;
+        private CreateNewRecipeData<CookingData> createNewCookingData;
+        private CreateNewRecipeData<CraftingData> createNewCraftingData;
+        private CreateNewRecipeData<JewelleryData> createNewJewelleryData;
 
         [MenuItem("B409/Game Data")]
         private static void OpenWindow() {
@@ -65,26 +66,29 @@ namespace B409.Jade.Data.Editor {
             var tree = new OdinMenuTree(true);
 
             createNewItemData = new CreateNewItemData();
-            tree.Add("Item/Create New", createNewItemData);
-            tree.AddAllAssetsAtPath("Item/Items", ItemDataFolderPath, typeof(ItemData));
+            tree.Add("Item", createNewItemData);
+            tree.AddAllAssetsAtPath("Item", ItemDataFolderPath, typeof(ItemData));
             tree.EnumerateTree().AddIcons<ItemData>(e => e.Icon);
 
-            createNewCookingData = new CreateNewCookingData();
-            tree.Add("Cooking/Create New", createNewCookingData);
-            tree.AddAllAssetsAtPath("Cooking/Cookings", CookingDataFolderPath, typeof(CookingData));
+            createNewCookingData = new CreateNewRecipeData<CookingData>();
+            tree.Add("Cooking", createNewCookingData);
+            tree.AddAllAssetsAtPath("Cooking", CookingDataFolderPath, typeof(CookingData));
             tree.EnumerateTree().AddIcons<CookingData>(e => e.Result.Item?.Icon);
 
-            createNewCraftingData = new CreateNewCraftingData();
-            tree.Add("Crafting/Create New", createNewCraftingData);
-            tree.AddAllAssetsAtPath("Crafting/Craftings", CraftingDataFolderPath, typeof(CraftingData));
+            createNewCraftingData = new CreateNewRecipeData<CraftingData>();
+            tree.Add("Crafting", createNewCraftingData);
+            tree.AddAllAssetsAtPath("Crafting", CraftingDataFolderPath, typeof(CraftingData));
             tree.EnumerateTree().AddIcons<CraftingData>(e => e.Result.Item?.Icon);
 
-            createNewJewerlyData = new CreateNewJewerlyData();
-            tree.Add("Jewerly/Create New", createNewJewerlyData);
-            tree.AddAllAssetsAtPath("Jewerly/Jewerlys", JewerlyDataFolderPath, typeof(JewerlyData));
-            tree.EnumerateTree().AddIcons<JewerlyData>(e => e.Result.Item?.Icon);
+            createNewJewelleryData = new CreateNewRecipeData<JewelleryData>();
+            tree.Add("Jewellery", createNewJewelleryData);
+            tree.AddAllAssetsAtPath("Jewellery", JewelleryDataFolderPath, typeof(JewelleryData));
+            tree.EnumerateTree().AddIcons<JewelleryData>(e => e.Result.Item?.Icon);
 
-            tree.EnumerateTree().Where(e => e.Value as ItemData).ForEach(AddDragHandles);
+            tree.EnumerateTree().Where(e => e.Value is ItemData).ForEach(AddDragHandles);
+            tree.EnumerateTree().Where(e => e.Value is RecipeData).ForEach(AddDragHandles);
+
+            tree.AddAllAssetsAtPath("Tables", TableDataFolderPath, typeof(ScriptableObject));
 
             return tree;
         }
@@ -113,56 +117,20 @@ namespace B409.Jade.Data.Editor {
         }
 
         [System.Serializable]
-        public class CreateNewCookingData {
+        public class CreateNewRecipeData<T> where T : RecipeData {
             [InlineEditor(Expanded = true, ObjectFieldMode = InlineEditorObjectFieldModes.Hidden)]
-            public CookingData cookingData;
+            public T data;
 
-            public CreateNewCookingData() {
-                cookingData = CreateInstance<CookingData>();
+            public CreateNewRecipeData() {
+                data = CreateInstance<T>();
             }
 
             [Button("Add New Item data", Style = ButtonStyle.Box, ButtonHeight = 50)]
             private void CreateNewData() {
-                AssetDatabase.CreateAsset(cookingData, Path.ChangeExtension(Path.Combine(CookingDataFolderPath, cookingData.Result.Item?.Name), "asset"));
+                AssetDatabase.CreateAsset(data, Path.ChangeExtension(Path.Combine(CraftingDataFolderPath, data.Result.Item?.Name), "asset"));
                 AssetDatabase.SaveAssets();
 
-                cookingData = CreateInstance<CookingData>();
-            }
-        }
-
-        [System.Serializable]
-        public class CreateNewCraftingData {
-            [InlineEditor(Expanded = true, ObjectFieldMode = InlineEditorObjectFieldModes.Hidden)]
-            public CraftingData craftingData;
-
-            public CreateNewCraftingData() {
-                craftingData = CreateInstance<CraftingData>();
-            }
-
-            [Button("Add New Item data", Style = ButtonStyle.Box, ButtonHeight = 50)]
-            private void CreateNewData() {
-                AssetDatabase.CreateAsset(craftingData, Path.ChangeExtension(Path.Combine(CraftingDataFolderPath, craftingData.Result.Item?.Name), "asset"));
-                AssetDatabase.SaveAssets();
-
-                craftingData = CreateInstance<CraftingData>();
-            }
-        }
-
-        [System.Serializable]
-        public class CreateNewJewerlyData {
-            [InlineEditor(Expanded = true, ObjectFieldMode = InlineEditorObjectFieldModes.Hidden)]
-            public JewerlyData jewerlyData;
-
-            public CreateNewJewerlyData() {
-                jewerlyData = CreateInstance<JewerlyData>();
-            }
-
-            [Button("Add New Item data", Style = ButtonStyle.Box, ButtonHeight = 50)]
-            private void CreateNewData() {
-                AssetDatabase.CreateAsset(jewerlyData, Path.ChangeExtension(Path.Combine(JewerlyDataFolderPath, jewerlyData.Result.Item?.Name), "asset"));
-                AssetDatabase.SaveAssets();
-
-                jewerlyData = CreateInstance<JewerlyData>();
+                data = CreateInstance<T>();
             }
         }
         #endregion
