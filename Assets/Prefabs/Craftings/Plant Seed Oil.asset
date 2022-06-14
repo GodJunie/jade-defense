@@ -10,11 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2325dec91b06a7d42b277411370284a3, type: 3}
-  m_Name: "\uC624\uBBC0\uB77C\uC774\uC2A4"
+  m_Name: Plant Seed Oil
   m_EditorClassIdentifier: 
   materials:
-  - item: {fileID: 11400000, guid: 2e12f2250b6f33944bf7f0282f2480d7, type: 2}
-    count: 2
+  - item: {fileID: 11400000, guid: 6475d979bdcdecd41844424dd46b9ce0, type: 2}
+    count: 3
   result:
-    item: {fileID: 11400000, guid: 3e744083ccb77604fb093ca3d4675f57, type: 2}
+    item: {fileID: 11400000, guid: b50855268140af34ea17af25299b95ac, type: 2}
     count: 1
+  parameterRewards:
+  - parameter: 0
+    value: 1
+  - parameter: 2
+    value: 1

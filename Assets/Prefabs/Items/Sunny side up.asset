@@ -10,9 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3adcb284bf242104d84f48db5cc2836c, type: 3}
-  m_Name: "\uC624\uBBC0\uB77C\uC774\uC2A4"
+  m_Name: Sunny side up
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: 9328ddc61d6f0154bb6c5384e5a46a92, type: 3}
-  id: 200100
-  name: "\uC624\uBBC0\uB77C\uC774\uC2A4"
-  description: "\uB9DB\uC788\uC5B4\uC838\uB77C \uBAA8\uC5D0\uBAA8\uC5D0\uD065!"
+  icon: {fileID: 21300000, guid: 3e855fa4046966543af3ae7abb36df45, type: 3}
+  name: Sunny side up
+  description: Sunny side up

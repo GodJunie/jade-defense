@@ -10,9 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3adcb284bf242104d84f48db5cc2836c, type: 3}
-  m_Name: "\uACC4\uB780"
+  m_Name: Shrimp
   m_EditorClassIdentifier: 
-  id: 12000
-  name: "\uACC4\uB780"
-  description: "\uC798 \uC775\uC5C8\uB2E4"
-  icon: {fileID: 21300000, guid: 3e855fa4046966543af3ae7abb36df45, type: 3}
+  icon: {fileID: 21300000, guid: 8cb1f391e8f52114f8d412674865a0ac, type: 3}
+  name: Shrimp
+  description: Shrimp
