@@ -137,12 +137,13 @@ namespace B409.Jade.Data.Editor {
             private string path;
 
             public CreateNewRecipeData(string path) {
+                this.path = path;
                 data = CreateInstance<T>();
             }
 
             [Button("Add New Item data", Style = ButtonStyle.Box, ButtonHeight = 50)]
             private void CreateNewData() {
-                AssetDatabase.CreateAsset(data, Path.ChangeExtension(Path.Combine(path, data.Result.Item?.Name), "asset"));
+                AssetDatabase.CreateAsset(data, Path.ChangeExtension(Path.Combine(path, data.Id.ToString()), "asset"));
                 AssetDatabase.SaveAssets();
 
                 data = CreateInstance<T>();
