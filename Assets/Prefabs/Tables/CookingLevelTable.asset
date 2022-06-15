@@ -12,3 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5b0064e9239bc6439a7164122a106eb, type: 3}
   m_Name: CookingLevelTable
   m_EditorClassIdentifier: 
+  datas:
+  - inquiredParameters: []
+    cookingDatas:
+    - {fileID: 11400000, guid: ef0869acafd01aa4db509bd2fce5ace4, type: 2}
+    - {fileID: 11400000, guid: ef0869acafd01aa4db509bd2fce5ace4, type: 2}
+    - {fileID: 11400000, guid: ef0869acafd01aa4db509bd2fce5ace4, type: 2}
+  - inquiredParameters:
+    - parameter: 0
+      value: 10
+    - parameter: 4
+      value: 10
+    cookingDatas:
+    - {fileID: 11400000, guid: ef0869acafd01aa4db509bd2fce5ace4, type: 2}
+    - {fileID: 11400000, guid: ef0869acafd01aa4db509bd2fce5ace4, type: 2}
+    - {fileID: 11400000, guid: ef0869acafd01aa4db509bd2fce5ace4, type: 2}
+    - {fileID: 11400000, guid: ef0869acafd01aa4db509bd2fce5ace4, type: 2}
+  - inquiredParameters:
+    - parameter: 0
+      value: 0
+    - parameter: 0
+      value: 0
+    cookingDatas:
+    - {fileID: 11400000, guid: ef0869acafd01aa4db509bd2fce5ace4, type: 2}

@@ -49,10 +49,24 @@ namespace B409.Jade.Data.Editor {
             {
                 GUILayout.FlexibleSpace();
 
-                if(SirenixEditorGUI.ToolbarButton("Delete Current")) {
+                if(SirenixEditorGUI.ToolbarButton("Save")) {
                     var asset = selected.SelectedValue;
                     if(asset is ItemData) {
-                        string path = AssetDatabase.GetAssetPath(asset as ItemData);
+                        string path = AssetDatabase.GetAssetPath(asset as ScriptableObject);
+                        AssetDatabase.RenameAsset(path, (asset as ItemData).Id.ToString());
+                        AssetDatabase.SaveAssets();
+                    }
+                    if(asset is RecipeData) {
+                        string path = AssetDatabase.GetAssetPath(asset as ScriptableObject);
+                        AssetDatabase.RenameAsset(path, (asset as RecipeData).Id.ToString());
+                        AssetDatabase.SaveAssets();
+                    }
+                }
+
+                if(SirenixEditorGUI.ToolbarButton("Delete Current")) {
+                    var asset = selected.SelectedValue;
+                    if(asset is ScriptableObject) {
+                        string path = AssetDatabase.GetAssetPath(asset as ScriptableObject);
                         AssetDatabase.DeleteAsset(path);
                         AssetDatabase.SaveAssets();
                     }
@@ -70,17 +84,17 @@ namespace B409.Jade.Data.Editor {
             tree.AddAllAssetsAtPath("Item", ItemDataFolderPath, typeof(ItemData));
             tree.EnumerateTree().AddIcons<ItemData>(e => e.Icon);
 
-            createNewCookingData = new CreateNewRecipeData<CookingData>();
+            createNewCookingData = new CreateNewRecipeData<CookingData>(CookingDataFolderPath);
             tree.Add("Cooking", createNewCookingData);
             tree.AddAllAssetsAtPath("Cooking", CookingDataFolderPath, typeof(CookingData));
             tree.EnumerateTree().AddIcons<CookingData>(e => e.Result.Item?.Icon);
 
-            createNewCraftingData = new CreateNewRecipeData<CraftingData>();
+            createNewCraftingData = new CreateNewRecipeData<CraftingData>(CraftingDataFolderPath);
             tree.Add("Crafting", createNewCraftingData);
             tree.AddAllAssetsAtPath("Crafting", CraftingDataFolderPath, typeof(CraftingData));
             tree.EnumerateTree().AddIcons<CraftingData>(e => e.Result.Item?.Icon);
 
-            createNewJewelleryData = new CreateNewRecipeData<JewelleryData>();
+            createNewJewelleryData = new CreateNewRecipeData<JewelleryData>(JewelleryDataFolderPath);
             tree.Add("Jewellery", createNewJewelleryData);
             tree.AddAllAssetsAtPath("Jewellery", JewelleryDataFolderPath, typeof(JewelleryData));
             tree.EnumerateTree().AddIcons<JewelleryData>(e => e.Result.Item?.Icon);
@@ -120,14 +134,15 @@ namespace B409.Jade.Data.Editor {
         public class CreateNewRecipeData<T> where T : RecipeData {
             [InlineEditor(Expanded = true, ObjectFieldMode = InlineEditorObjectFieldModes.Hidden)]
             public T data;
+            private string path;
 
-            public CreateNewRecipeData() {
+            public CreateNewRecipeData(string path) {
                 data = CreateInstance<T>();
             }
 
             [Button("Add New Item data", Style = ButtonStyle.Box, ButtonHeight = 50)]
             private void CreateNewData() {
-                AssetDatabase.CreateAsset(data, Path.ChangeExtension(Path.Combine(CraftingDataFolderPath, data.Result.Item?.Name), "asset"));
+                AssetDatabase.CreateAsset(data, Path.ChangeExtension(Path.Combine(path, data.Result.Item?.Name), "asset"));
                 AssetDatabase.SaveAssets();
 
                 data = CreateInstance<T>();

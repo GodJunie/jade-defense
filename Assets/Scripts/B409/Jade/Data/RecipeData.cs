@@ -10,6 +10,11 @@ using Sirenix.OdinInspector;
 
 namespace B409.Jade.Data {
     public abstract class RecipeData : ScriptableObject {
+        [BoxGroup("Id")]
+        [HideLabel]
+        [SerializeField]
+        private int id;
+
         [HorizontalGroup("group", .5f)]
         [BoxGroup("group/Recipe")]
         [ListDrawerSettings(Expanded = true, AddCopiesLastElement = true)]
@@ -26,6 +31,7 @@ namespace B409.Jade.Data {
         [SerializeField]
         private List<ParameterValue> parameterRewards;
 
+        public int Id => id;
         public List<MaterialData> Materials => materials;
         public MaterialData Result => result;
         public List<ParameterValue> ParameterRewards => parameterRewards;

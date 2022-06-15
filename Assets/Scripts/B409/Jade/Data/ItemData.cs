@@ -18,6 +18,12 @@ namespace B409.Jade.Data {
         private Sprite icon;
 
         [VerticalGroup("group/group")]
+        [BoxGroup("group/group/ID")]
+        [HideLabel]
+        [SerializeField]
+        private int id;
+
+        [VerticalGroup("group/group")]
         [BoxGroup("group/group/Name")]
         [HideLabel]
         [SerializeField]
@@ -29,7 +35,8 @@ namespace B409.Jade.Data {
         [HideLabel]
         [SerializeField]
         private string description;
-        
+
+        public int Id => id;
         public string Name => name;
         public string Descriptoin => description;
         public Sprite Icon => icon;
