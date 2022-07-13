@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Effects
   layers:
   - Default
   - TransparentFX
@@ -40,4 +41,31 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: InGameBackground
+    uniqueID: 1141323749
+    locked: 0
+  - name: InGameBackgroundVFX
+    uniqueID: 1302870677
+    locked: 0
+  - name: Character
+    uniqueID: 3942371797
+    locked: 0
+  - name: CharacterVFX
+    uniqueID: 107266023
+    locked: 0
+  - name: InGameForeground
+    uniqueID: 2384832601
+    locked: 0
+  - name: InGameForegroundVFX
+    uniqueID: 1818904329
+    locked: 0
+  - name: UI
+    uniqueID: 1601003393
+    locked: 0
+  - name: VFX
+    uniqueID: 2573873779
+    locked: 0
+  - name: UISystemLayer
+    uniqueID: 3852173943
     locked: 0

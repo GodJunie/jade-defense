@@ -15,11 +15,11 @@ using Sirenix.Utilities;
 
 namespace B409.Jade.Data.Editor {
     public class DataEditor : OdinMenuEditorWindow {
-        private static string ItemDataFolderPath = "Assets/Prefabs/Items";
-        private static string CookingDataFolderPath = "Assets/Prefabs/Cookings";
-        private static string CraftingDataFolderPath = "Assets/Prefabs/Craftings";
-        private static string JewelleryDataFolderPath = "Assets/Prefabs/Jewelleries";
-        private static string TableDataFolderPath = "Assets/Prefabs/Tables";
+        private static string ItemDataFolderPath = "Assets/Datas/Items";
+        private static string CookingDataFolderPath = "Assets/Datas/Cookings";
+        private static string CraftingDataFolderPath = "Assets/Datas/Craftings";
+        private static string JewelleryDataFolderPath = "Assets/Datas/Jewelleries";
+        private static string TableDataFolderPath = "Assets/Datas/Tables";
 
         private CreateNewItemData createNewItemData;
         private CreateNewRecipeData<CookingData> createNewCookingData;
@@ -103,6 +103,8 @@ namespace B409.Jade.Data.Editor {
             tree.EnumerateTree().Where(e => e.Value is RecipeData).ForEach(AddDragHandles);
 
             tree.AddAllAssetsAtPath("Tables", TableDataFolderPath, typeof(ScriptableObject));
+
+            tree.Config.DrawSearchToolbar = true;
 
             return tree;
         }
