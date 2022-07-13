@@ -12,4 +12,76 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3875a48372b697f4ca1de3902c55eb8f, type: 3}
   m_Name: FishingLevelTable
   m_EditorClassIdentifier: 
-  datas: []
+  datas:
+  - inquiredParameters:
+    - parameter: 1
+      value: 0
+    - parameter: 3
+      value: 0
+    - parameter: 4
+      value: 0
+    datas:
+    - item: {fileID: 11400000, guid: 43309e0d33e8a9545be2372cedf01a03, type: 2}
+      rate: 35
+    - item: {fileID: 11400000, guid: 25f6b5f76baab5549b43a849f1859318, type: 2}
+      rate: 35
+    - item: {fileID: 0}
+      rate: 25
+    - item: {fileID: 11400000, guid: a914fdd14479d664da1107774fac53b1, type: 2}
+      rate: 1
+    - item: {fileID: 11400000, guid: 399a39c2c2c2f97468829fccced19baf, type: 2}
+      rate: 1
+    - item: {fileID: 11400000, guid: 413dffb8e9b38b34a92a89061d803313, type: 2}
+      rate: 1
+    - item: {fileID: 11400000, guid: d21a517c5d701374eb06064f29e5820e, type: 2}
+      rate: 1
+    - item: {fileID: 11400000, guid: 78e18f32963f60c478c6ae54511c20af, type: 2}
+      rate: 1
+  - inquiredParameters:
+    - parameter: 1
+      value: 60
+    - parameter: 3
+      value: 60
+    - parameter: 4
+      value: 0
+    datas:
+    - item: {fileID: 11400000, guid: 43309e0d33e8a9545be2372cedf01a03, type: 2}
+      rate: 30
+    - item: {fileID: 11400000, guid: 25f6b5f76baab5549b43a849f1859318, type: 2}
+      rate: 30
+    - item: {fileID: 0}
+      rate: 20
+    - item: {fileID: 11400000, guid: d01f26e10b6314f489b446ab8fad8538, type: 2}
+      rate: 0
+    - item: {fileID: 11400000, guid: 5f683135bcc412a4c8dc7248337a9082, type: 2}
+      rate: 0
+    - item: {fileID: 11400000, guid: 96b48c2df6310f74b9b7dbefff975e2c, type: 2}
+      rate: 0
+    - item: {fileID: 11400000, guid: 8b45a4152cc6a584caab2b1ab8993040, type: 2}
+      rate: 0
+    - item: {fileID: 11400000, guid: ca2e979313aa1844489baeb7da42fbd5, type: 2}
+      rate: 0
+  - inquiredParameters:
+    - parameter: 1
+      value: 100
+    - parameter: 3
+      value: 100
+    - parameter: 4
+      value: 100
+    datas:
+    - item: {fileID: 11400000, guid: 43309e0d33e8a9545be2372cedf01a03, type: 2}
+      rate: 25
+    - item: {fileID: 11400000, guid: 25f6b5f76baab5549b43a849f1859318, type: 2}
+      rate: 25
+    - item: {fileID: 0}
+      rate: 25
+    - item: {fileID: 11400000, guid: 95eb528da95583a4bb83d50e249ba9de, type: 2}
+      rate: 5
+    - item: {fileID: 11400000, guid: 7ea384d607faed24e98ef48d0b3e9cb3, type: 2}
+      rate: 5
+    - item: {fileID: 11400000, guid: 567e8ea71961e7546ba9a4287711676b, type: 2}
+      rate: 5
+    - item: {fileID: 11400000, guid: 17f5ed75affcf924eabe78245051af22, type: 2}
+      rate: 5
+    - item: {fileID: 11400000, guid: 40c0429e67bdfda4e9509f9bb598836b, type: 2}
+      rate: 5

@@ -12,4 +12,66 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3875a48372b697f4ca1de3902c55eb8f, type: 3}
   m_Name: MiningLevelTable
   m_EditorClassIdentifier: 
-  datas: []
+  datas:
+  - inquiredParameters:
+    - parameter: 1
+      value: 0
+    - parameter: 3
+      value: 0
+    - parameter: 4
+      value: 0
+    datas:
+    - item: {fileID: 11400000, guid: 6cfc62c1f8f4cbe4aa6b0dce0ba211a5, type: 2}
+      rate: 30
+    - item: {fileID: 11400000, guid: 7d8ac0eccd5512e4caf725a54febe4a0, type: 2}
+      rate: 30
+    - item: {fileID: 11400000, guid: 2a8f5b526502ed84591e7a20a532b0c6, type: 2}
+      rate: 15
+    - item: {fileID: 11400000, guid: db204d57c7ae059459a53d484ec2715a, type: 2}
+      rate: 15
+    - item: {fileID: 11400000, guid: d21a517c5d701374eb06064f29e5820e, type: 2}
+      rate: 5
+    - item: {fileID: 11400000, guid: 411f6de0396095b4ab61bf2d1517e6e7, type: 2}
+      rate: 5
+  - inquiredParameters:
+    - parameter: 1
+      value: 60
+    - parameter: 3
+      value: 60
+    - parameter: 4
+      value: 60
+    datas:
+    - item: {fileID: 11400000, guid: 2a8f5b526502ed84591e7a20a532b0c6, type: 2}
+      rate: 20
+    - item: {fileID: 11400000, guid: db204d57c7ae059459a53d484ec2715a, type: 2}
+      rate: 20
+    - item: {fileID: 11400000, guid: 4d650708846712c439d76e00bdab76a6, type: 2}
+      rate: 10
+    - item: {fileID: 11400000, guid: 3b7f714761727d54cb44def06d47cbe1, type: 2}
+      rate: 10
+    - item: {fileID: 11400000, guid: a914fdd14479d664da1107774fac53b1, type: 2}
+      rate: 10
+    - item: {fileID: 11400000, guid: cc3dd6c5bbb67c34dab31070659567ab, type: 2}
+      rate: 10
+    - item: {fileID: 11400000, guid: 60f8ec9a060303f4fb8b5fae244ac2fa, type: 2}
+      rate: 10
+    - item: {fileID: 11400000, guid: 411f6de0396095b4ab61bf2d1517e6e7, type: 2}
+      rate: 10
+  - inquiredParameters:
+    - parameter: 1
+      value: 100
+    - parameter: 3
+      value: 100
+    - parameter: 4
+      value: 100
+    datas:
+    - item: {fileID: 11400000, guid: 8819069af7e162d408dc99326cf7db3c, type: 2}
+      rate: 20
+    - item: {fileID: 11400000, guid: a6d0e8549b775ed4282034afc3543642, type: 2}
+      rate: 20
+    - item: {fileID: 11400000, guid: ca2e979313aa1844489baeb7da42fbd5, type: 2}
+      rate: 20
+    - item: {fileID: 11400000, guid: 4698e7bc9a1df2b419c0c7a178891be6, type: 2}
+      rate: 20
+    - item: {fileID: 11400000, guid: af0c164a14f2c0c4392121afb06d230b, type: 2}
+      rate: 20

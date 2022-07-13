@@ -12,4 +12,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3875a48372b697f4ca1de3902c55eb8f, type: 3}
   m_Name: LivestockLevelTable
   m_EditorClassIdentifier: 
-  datas: []
+  datas:
+  - inquiredParameters:
+    - parameter: 2
+      value: 0
+    - parameter: 3
+      value: 0
+    - parameter: 4
+      value: 0
+    datas:
+    - item: {fileID: 11400000, guid: 4798147202ceb8e4fb0ffe48ca90b35f, type: 2}
+      rate: 60
+    - item: {fileID: 11400000, guid: 413dffb8e9b38b34a92a89061d803313, type: 2}
+      rate: 40
+  - inquiredParameters:
+    - parameter: 2
+      value: 60
+    - parameter: 3
+      value: 60
+    - parameter: 4
+      value: 60
+    datas:
+    - item: {fileID: 11400000, guid: 413dffb8e9b38b34a92a89061d803313, type: 2}
+      rate: 60
+    - item: {fileID: 11400000, guid: 839cdc6b477a4834cb515d129ebf87cc, type: 2}
+      rate: 40
+  - inquiredParameters:
+    - parameter: 2
+      value: 100
+    - parameter: 3
+      value: 100
+    - parameter: 4
+      value: 100
+    datas:
+    - item: {fileID: 11400000, guid: d01f26e10b6314f489b446ab8fad8538, type: 2}
+      rate: 60
+    - item: {fileID: 11400000, guid: 99560d3f98795c84e85aec7aaa877621, type: 2}
+      rate: 40

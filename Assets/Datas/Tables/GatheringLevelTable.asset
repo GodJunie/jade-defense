@@ -15,13 +15,49 @@ MonoBehaviour:
   datas:
   - inquiredParameters:
     - parameter: 0
-      value: 10
+      value: 0
     - parameter: 2
-      value: 10
+      value: 0
     - parameter: 3
-      value: 10
+      value: 0
     datas:
-    - item: {fileID: 11400000, guid: 10a5f22fa84bc76439071b22027e598b, type: 2}
-      rate: 10
-    - item: {fileID: 11400000, guid: 10a5f22fa84bc76439071b22027e598b, type: 2}
-      rate: 10
+    - item: {fileID: 11400000, guid: 0465222f67f9b7e4ba9cb95425060404, type: 2}
+      rate: 40
+    - item: {fileID: 11400000, guid: 7e6cc04742966de4b8882872197f316d, type: 2}
+      rate: 40
+    - item: {fileID: 11400000, guid: 6475d979bdcdecd41844424dd46b9ce0, type: 2}
+      rate: 8
+    - item: {fileID: 11400000, guid: af7ade278f2c4f84396866ef8c59f718, type: 2}
+      rate: 8
+    - item: {fileID: 11400000, guid: 833074a196207034d81e6e0d0fc18e71, type: 2}
+      rate: 2
+    - item: {fileID: 11400000, guid: 399a39c2c2c2f97468829fccced19baf, type: 2}
+      rate: 2
+  - inquiredParameters:
+    - parameter: 0
+      value: 60
+    - parameter: 2
+      value: 60
+    - parameter: 3
+      value: 60
+    datas:
+    - item: {fileID: 11400000, guid: 6475d979bdcdecd41844424dd46b9ce0, type: 2}
+      rate: 45
+    - item: {fileID: 11400000, guid: af7ade278f2c4f84396866ef8c59f718, type: 2}
+      rate: 45
+    - item: {fileID: 11400000, guid: 399a39c2c2c2f97468829fccced19baf, type: 2}
+      rate: 5
+    - item: {fileID: 11400000, guid: 833074a196207034d81e6e0d0fc18e71, type: 2}
+      rate: 5
+  - inquiredParameters:
+    - parameter: 0
+      value: 100
+    - parameter: 2
+      value: 100
+    - parameter: 3
+      value: 100
+    datas:
+    - item: {fileID: 11400000, guid: 399a39c2c2c2f97468829fccced19baf, type: 2}
+      rate: 50
+    - item: {fileID: 11400000, guid: 833074a196207034d81e6e0d0fc18e71, type: 2}
+      rate: 50
