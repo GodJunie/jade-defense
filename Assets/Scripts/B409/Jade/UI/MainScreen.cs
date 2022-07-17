@@ -17,13 +17,38 @@ namespace B409.Jade.UI {
         private Text textDDay;
         [SerializeField]
         private Image imageAPFill;
+
+
+        [SerializeField]
+        private Text textDft;
+        [SerializeField]
+        private Text textStr;
+        [SerializeField]
+        private Text textInt;
+        [SerializeField]
+        private Text textLuk;
+        [SerializeField]
+        private Text textEdr;
+        #endregion
+
+        #region Mono
+        private void Start() {
+            this.Init();
+        }
         #endregion
 
         #region UI
+
         private void Init() {
             var progress = GameManager.Instance.Progress;
 
             this.textDDay.text = string.Format("D-{0}", progress.DDay);
+
+            this.textDft.text = string.Format("DFT {0}", progress.Parameters[Parameter.Deft]);
+            this.textStr.text = string.Format("STR {0}", progress.Parameters[Parameter.Strength]);
+            this.textInt.text = string.Format("INT {0}", progress.Parameters[Parameter.Intelligence]);
+            this.textLuk.text = string.Format("LUK {0}", progress.Parameters[Parameter.Luck]);
+            this.textEdr.text = string.Format("EDR {0}", progress.Parameters[Parameter.Endurance]);
         }
         #endregion
     }

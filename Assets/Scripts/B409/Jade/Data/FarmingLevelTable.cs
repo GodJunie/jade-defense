@@ -10,7 +10,6 @@ using Sirenix.OdinInspector;
 
 namespace B409.Jade.Data {
     [CreateAssetMenu(fileName = "FarmingLevelTable", menuName = "B409/Farming Level Data")]
-    [InlineEditor]
     public class FarmingLevelTable : ScriptableObject {
         [SerializeField]
         private List<LevelData> datas;
@@ -18,6 +17,12 @@ namespace B409.Jade.Data {
 
         [Serializable]
         public class LevelData {
+            [FoldoutGroup("@Summary")]
+            [BoxGroup("@Summary/Name")]
+            [HideLabel]
+            [SerializeField]
+            private string name;
+
             [FoldoutGroup("@Summary")]
             [HorizontalGroup("@Summary/group", 300f)]
             [BoxGroup("@Summary/group/Inquired Parameters")]
@@ -31,7 +36,7 @@ namespace B409.Jade.Data {
             [SerializeField]
             private List<ItemRateData> datas = new List<ItemRateData>();
 
-
+            public string Name => name;
             public List<ParameterValue> InquiredParameters => inquiredParameters;
             public List<ItemRateData> Datas => datas;
 
@@ -55,9 +60,9 @@ namespace B409.Jade.Data {
 #if UNITY_EDITOR
             private string Summary {
                 get {
-                    string summary = "";
+                    string summary = name;
                     foreach(var parameterValue in inquiredParameters) {
-                        summary += string.Format("{0} {1}/", parameterValue.Parameter, parameterValue.Value);
+                        summary += string.Format("/{0} {1}/", parameterValue.Parameter, parameterValue.Value);
                     }
                     summary += string.Format("Datas {0}", datas.Count);
                     return summary;

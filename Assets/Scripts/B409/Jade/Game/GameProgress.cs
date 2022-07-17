@@ -13,7 +13,13 @@ namespace B409.Jade.Game {
 
         public GameProgress() {
             this.Items = new Dictionary<int, int>();
-            this.Parameters = new Dictionary<Parameter, float>();
+            this.Parameters = new Dictionary<Parameter, float>() {
+                { Parameter.Deft, 0 },
+                { Parameter.Strength, 0 },
+                { Parameter.Intelligence, 0 },
+                { Parameter.Luck, 0 },
+                { Parameter.Endurance, 0 },
+            };
         }
 
         public static GameProgress FromJson(string json) {
@@ -22,10 +28,17 @@ namespace B409.Jade.Game {
         }
 
         public void AddItem(int id, int count) {
+            Debug.Log(string.Format("Add Item, id: {0}, count: {1}", id, count));
             if(this.Items.ContainsKey(id)) {
                 this.Items[id] += count;
             } else {
-                this.Items[id] = count;
+                this.Items.Add(id, count);
+            }
+        }
+
+        public void AddItems(Dictionary<int, int> items) {
+            foreach(var item in items) {
+                this.AddItem(item.Key, item.Value);
             }
         }
 

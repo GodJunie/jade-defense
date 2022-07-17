@@ -12,11 +12,14 @@ namespace B409.Jade.Data {
         private List<JewelleryData> jewelleries;
         [SerializeField]
         private List<CraftingData> craftings;
-
+        [SerializeField]
+        private List<StageData> stages;
+             
 
         public List<ItemData> Items => items;
         public List<CookingData> Cookings => cookings;
         public List<JewelleryData> Jewelleries => jewelleries;
         public List<CraftingData> Craftings => craftings;
+        public List<StageData> Stages => stages;
     }
 }

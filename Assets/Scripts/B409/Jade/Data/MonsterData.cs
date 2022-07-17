@@ -11,18 +11,8 @@ namespace B409.Jade.Data {
     using Game;
 
     [CreateAssetMenu(fileName = "MonsterData", menuName = "B409/Monster Data")]
-    public class MonsterData : ScriptableObject {
-        [SerializeField]
-        private GameObject prefab;
-        [SerializeField]
-        private new string name;
-        [SerializeField]
-        private string description;
-        [SerializeField]
-        private float cooltime;
+    public class MonsterData : UnitData {
 
-        [InlineEditor]
-        [SerializeField]
-        private Status status;
+   
     }
 }

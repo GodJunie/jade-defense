@@ -5,9 +5,11 @@ using UnityEngine;
 namespace B409.Jade.Data {
     public class BattleData : ScriptableObject {
         [SerializeField]
-        private float distance;
+        private List<EnemyData> enemies;
+        [SerializeField]
+        private List<ItemData> rewards;
 
-
-        public float Distance => distance;
+        public List<EnemyData> Enemies;
+        public List<ItemData> Rewards;
     }
 }

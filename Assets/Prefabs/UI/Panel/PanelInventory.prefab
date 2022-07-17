@@ -708,7 +708,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -30}
-  m_SizeDelta: {x: -160, y: -140}
+  m_SizeDelta: {x: -150, y: -140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7754527578377016388
 GameObject:
@@ -800,6 +800,7 @@ GameObject:
   - component: {fileID: 7754527578605020257}
   - component: {fileID: 7754527578605020259}
   - component: {fileID: 7754527578605020256}
+  - component: {fileID: 7510504284046159248}
   m_Layer: 0
   m_Name: PanelInventory
   m_TagString: Untagged
@@ -845,7 +846,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: -1345788081
+  m_SortingLayerID: 1601003393
   m_SortingOrder: 32767
   m_TargetDisplay: 0
 --- !u!114 &7754527578605020256
@@ -865,6 +866,25 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 130871
+--- !u!114 &7510504284046159248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7754527578605020262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3dcdcccba8ef2949bc2761483ac1033, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slotPrefab: {fileID: 1336767263679700669, guid: 520fe67de8fecc24aa1915f687f38e2d, type: 3}
+  container: {fileID: 7754527578621394471}
+  scrollRect: {fileID: 7754527577472742562}
+  tooltipPivot: {fileID: 7754527577247594744}
+  tooltipBackground: {fileID: 7754527577306133335}
+  tooltipText: {fileID: 7754527577800686960}
+  tooltipPadding: {x: 100, y: 50}
 --- !u!1 &7754527578621394468
 GameObject:
   m_ObjectHideFlags: 0
@@ -919,7 +939,7 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 1
+  m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 165, y: 165}

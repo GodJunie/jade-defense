@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: MiningLevelTable
   m_EditorClassIdentifier: 
   datas:
-  - inquiredParameters:
+  - name: 
+    inquiredParameters:
     - parameter: 1
       value: 0
     - parameter: 3
@@ -33,7 +34,8 @@ MonoBehaviour:
       rate: 5
     - item: {fileID: 11400000, guid: 411f6de0396095b4ab61bf2d1517e6e7, type: 2}
       rate: 5
-  - inquiredParameters:
+  - name: "Lv.2 \uAC1C\uCA4C\uB294 \uC218\uC815 \uAD11\uC0B0"
+    inquiredParameters:
     - parameter: 1
       value: 60
     - parameter: 3
@@ -57,7 +59,8 @@ MonoBehaviour:
       rate: 10
     - item: {fileID: 11400000, guid: 411f6de0396095b4ab61bf2d1517e6e7, type: 2}
       rate: 10
-  - inquiredParameters:
+  - name: 
+    inquiredParameters:
     - parameter: 1
       value: 100
     - parameter: 3
