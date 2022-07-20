@@ -10,14 +10,14 @@ namespace B409.Jade.Battle {
 
     public class UnitController : MonoBehaviour {
         // 설정
-        [SerializeField]
-        private TargetFilter targetFilter;
-        [SerializeField]
-        private bool descending;
-        [SerializeField]
-        private int targetCount;
-        [SerializeField]
-        private bool targetEnemy;
+        //[SerializeField]
+        //private TargetFilterMode targetFilter;
+        //[SerializeField]
+        //private bool descending;
+        //[SerializeField]
+        //private int targetCount;
+        //[SerializeField]
+        //private bool targetEnemy;
 
         // 애니메이션 세팅
         [ValueDropdown("animations")]
@@ -37,17 +37,15 @@ namespace B409.Jade.Battle {
         private Detector detector;
         [SerializeField]
         private SkeletonAnimation anim;
+        [SerializeField]
+        private HpBar hpBar;
 
         public State State { get; private set; }
         public UnitData Data { get; private set; }
-        [ShowInInspector]
         public float Hp { get; private set; }
-        [ShowInInspector]
         public bool IsPlayer { get; private set; }
 
-        [ShowInInspector]
         private List<UnitController> targets = new List<UnitController>();
-        [ShowInInspector]
         private List<UnitController> attackTargets = new List<UnitController>();
 
         #region Data
@@ -59,6 +57,7 @@ namespace B409.Jade.Battle {
             this.detector.SetRange(this.hitbox.size.x * this.hitbox.transform.localScale.x + data.Status.Range);
 
             this.Hp = data.Status.Hp;
+            this.hpBar.Init(data, isPlayer);
             this.ChangeState(State.Move);
         }
 
@@ -72,7 +71,7 @@ namespace B409.Jade.Battle {
         #region Mono
         private void Awake() {
             detector.OnEnter = () => {
-                this.targets = detector.Targets.Where(e => this.targetEnemy == (e.IsPlayer ^ this.IsPlayer) && e.State != State.Die && e != this).ToList();
+                this.targets = detector.Targets.Where(e => this.Data.Status.TargetEnemy == (e.IsPlayer ^ this.IsPlayer) && e.State != State.Die && e != this).ToList();
                 
                 if(targets.Count > 0) {
                     if(this.State == State.Move)
@@ -189,25 +188,25 @@ namespace B409.Jade.Battle {
 
         #region Attack
         private void AttackEnter() {
-            switch(targetFilter) {
-            case TargetFilter.Hp:
+            switch(Data.Status.TargetFilterMode) {
+            case TargetFilterMode.Hp:
                 attackTargets = targets.OrderBy(e => e.Hp).ToList();
                 break;
-            case TargetFilter.MaxHp:
+            case TargetFilterMode.MaxHp:
                 attackTargets = targets.OrderBy(e => e.Data.Status.Hp).ToList();
                 break;
-            case TargetFilter.Distance:
+            case TargetFilterMode.Distance:
                 attackTargets = targets.OrderBy(e => Mathf.Abs(this.transform.position.x - e.transform.position.x)).ToList();
                 break;
-            case TargetFilter.Index:
+            case TargetFilterMode.Index:
                 attackTargets = targets.ToList();
                 break;
             default:
                 break;
             }
 
-            if(descending) attackTargets.Reverse();
-            if(targetCount > 0) attackTargets = attackTargets.GetRange(0, targetCount);
+            if(Data.Status.Descending) attackTargets.Reverse();
+            if(Data.Status.TargetCount > 0) attackTargets = attackTargets.GetRange(0, Data.Status.TargetCount);
 
             anim.AnimationState.SetAnimation(0, attackAnimation, false);
         }
@@ -238,10 +237,18 @@ namespace B409.Jade.Battle {
 
         #region Editor
         #if UNITY_EDITOR
-        private List<string> animations {
+        public string[] animations {
             get {
-                return this.anim.skeleton.Data.Animations.Select(e => e.Name).ToList();
+                return this.anim.skeleton.Data.Animations.Select(e => e.Name).ToArray();
             }
+        }
+
+        [Button]
+        public void InitObjects() {
+            this.hitbox = GetComponentInChildren<BoxCollider2D>();
+            this.detector = GetComponentInChildren<Detector>();
+            this.anim = GetComponentInChildren<SkeletonAnimation>();
+            this.hpBar = GetComponentInChildren<HpBar>();
         }
         #endif
         #endregion

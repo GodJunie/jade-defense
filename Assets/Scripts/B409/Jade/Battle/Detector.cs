@@ -12,7 +12,6 @@ namespace B409.Jade.Battle {
         public Action OnEnter;
         public Action OnExit;
 
-        [ShowInInspector]
         public List<UnitController> Targets { get; private set; }
         
         private void Awake() {
