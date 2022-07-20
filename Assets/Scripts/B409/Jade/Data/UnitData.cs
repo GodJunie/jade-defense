@@ -9,34 +9,57 @@ using Sirenix.OdinInspector;
 
 namespace B409.Jade.Data {
     using Game;
+    using Battle;
 
+    [CreateAssetMenu(fileName = "UnitData", menuName = "B409/Unit Data")]
     public class UnitData : ScriptableObject {
-        [BoxGroup("Id")]
+        [HorizontalGroup("group", 150f)]
+        [BoxGroup("group/Icon")]
+        [PreviewField(Alignment = ObjectFieldAlignment.Center, Height = 150f)]
         [HideLabel]
-        [SerializeField]
-        private int id;
-
-        [SerializeField]
-        private GameObject prefab;
-        [SerializeField]
-        private new string name;
-        [SerializeField]
-        private string description;
-        [SerializeField]
-        private float cooltime;
         [SerializeField]
         private Sprite icon;
 
-        [InlineEditor]
+        [VerticalGroup("group/group")]
+        [BoxGroup("group/group/ID")]
+        [HideLabel]
+        [SerializeField]
+        private int id;
+        [VerticalGroup("group/group")]
+        [BoxGroup("group/group/Name")]
+        [HideLabel]
+        [SerializeField]
+        private new string name;
+
+        [VerticalGroup("group/group")]
+        [BoxGroup("group/group/Description")]
+        [TextArea(5, 5)]
+        [HideLabel]
+        [SerializeField]
+        private string description;
+
+        [BoxGroup("Settings")]
+        [SerializeField]
+        private UnitController prefab;
+        
+        [BoxGroup("Settings")]
+        [SerializeField]
+        private float cooltime;
+      
+
+        [BoxGroup("Settings/Status")]
         [HideLabel]
         [SerializeField]
         private Status status;
 
         public int Id => id;
-        public GameObject Prefab => prefab;
         public string Name => name;
         public string Description => description;
-        public Status Status => status;
+     
         public Sprite Icon => icon;
+        public UnitController Prefab => prefab;
+
+        public float Cooltime => cooltime;
+        public Status Status => status;
     }
 }

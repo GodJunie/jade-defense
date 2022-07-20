@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace B409.Jade.Game {
+    [System.Serializable]
     public struct Status {
         [SerializeField]
         private float hp;

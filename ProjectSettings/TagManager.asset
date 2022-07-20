@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Effects
+  - Hit
+  - Detector
   layers:
   - Default
   - TransparentFX
@@ -36,8 +38,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - Hit
+  - Detector
   m_SortingLayers:
   - name: Default
     uniqueID: 0

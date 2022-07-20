@@ -153,9 +153,9 @@ namespace B409.Jade.Data.Editor {
                 itemData = CreateInstance<ItemData>();
             }
 
-            [Button("Add New Item data", Style = ButtonStyle.Box, ButtonHeight = 50)]
+            [Button("Add New Data", Style = ButtonStyle.Box, ButtonHeight = 50)]
             private void CreateNewData() {
-                AssetDatabase.CreateAsset(itemData, Path.ChangeExtension(Path.Combine(ItemDataFolderPath, itemData.Name), "asset"));
+                AssetDatabase.CreateAsset(itemData, Path.ChangeExtension(Path.Combine(ItemDataFolderPath, itemData.Id.ToString()), "asset"));
                 AssetDatabase.SaveAssets();
 
                 itemData = CreateInstance<ItemData>();
@@ -173,7 +173,7 @@ namespace B409.Jade.Data.Editor {
                 data = CreateInstance<T>();
             }
 
-            [Button("Add New Item data", Style = ButtonStyle.Box, ButtonHeight = 50)]
+            [Button("Add New Data", Style = ButtonStyle.Box, ButtonHeight = 50)]
             private void CreateNewData() {
                 AssetDatabase.CreateAsset(data, Path.ChangeExtension(Path.Combine(path, data.Id.ToString()), "asset"));
                 AssetDatabase.SaveAssets();
@@ -193,7 +193,7 @@ namespace B409.Jade.Data.Editor {
                 data = CreateInstance<T>();
             }
 
-            [Button("Add New Item data", Style = ButtonStyle.Box, ButtonHeight = 50)]
+            [Button("Add New Data", Style = ButtonStyle.Box, ButtonHeight = 50)]
             private void CreateNewData() {
                 AssetDatabase.CreateAsset(data, Path.ChangeExtension(Path.Combine(path, data.Id.ToString()), "asset"));
                 AssetDatabase.SaveAssets();
