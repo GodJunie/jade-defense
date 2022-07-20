@@ -10,25 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2797b82606673b847b063f1f780c8efa, type: 3}
-  m_Name: 201000
+  m_Name: 201003
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: d5d2dbff9ff4845f2873b3f3cd7ea290, type: 3}
-  id: 201000
-  name: TeratoSeed
-  description: Seed of Yggdrasill
+  icon: {fileID: 21300000, guid: 8c724234354b34aab87023373a25d651, type: 3}
+  id: 201003
+  name: TeratoFlower
+  description: Flower of Yggdrasill
   prefab: {fileID: 0}
   status:
-    cooltime: 0
-    hp: 50
-    moveSpeed: 0.3
-    range: 0.3
-    targetFilterMode: 3
-    descending: 0
+    cooltime: 3
+    hp: 100
+    moveSpeed: 0.2
+    range: 4
+    targetFilterMode: 2
+    descending: 1
     targetCount: 1
     targetEnemy: 1
     attackSpeed: 0
     attackMode: 0
-    atk: 5
+    atk: 15
     heal: 0
     interval: 0
     duration: 0
