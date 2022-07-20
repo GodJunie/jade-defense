@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ba8502080cef1545bee096c10b79d8f, type: 3}
   m_Name: SampleBattleData
   m_EditorClassIdentifier: 
+  id: 0
   enemies:
   - {fileID: 11400000, guid: ae3f56f531ef4294bb4d6812f7f7afa4, type: 2}
-  rewards: []
+  - {fileID: 11400000, guid: ae3f56f531ef4294bb4d6812f7f7afa4, type: 2}
+  rewards:
+  - {fileID: 11400000, guid: 850fca931e1dad0458e9eca700d63bc3, type: 2}

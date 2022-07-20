@@ -7,7 +7,10 @@ using UnityEngine;
 using Sirenix.OdinInspector;
 
 namespace B409.Jade.Data {
-    public class StageData : ScriptableObject {
+    [CreateAssetMenu(fileName = "StageData", menuName = "B409/Stage Data")]
+    public class StageData : ScriptableObject, IDataID {
+        [SerializeField]
+        private int id;
         // 현재 스테이지에서 등장하는 몬스터
         [SerializeField]
         private new string name;
@@ -22,21 +25,11 @@ namespace B409.Jade.Data {
         private List<BlockData> datas;
 
 
+        public int Id => id;
         public string Name => name;
         public string Description => description;
         public Sprite Background => background;
         public List<MonsterData> Monsters => monsters;
         public List<BlockData> Datas => datas;
-
-        [System.Serializable]
-        public class BlockData {
-            [SerializeField]
-            private int day;
-            [SerializeField]
-            private BattleData battle;
-
-            public int Day => day;
-            public BattleData Battle => battle;
-        }
     }
 }

@@ -12,7 +12,10 @@ namespace B409.Jade.Data {
 
     [CreateAssetMenu(fileName = "MonsterData", menuName = "B409/Monster Data")]
     public class MonsterData : UnitData {
-
-   
+        [BoxGroup("group2/Settings")]
+        [SerializeField]
+        private List<MaterialData> cost;
+        
+        public List<MaterialData> Cost => cost;
     }
 }

@@ -9,7 +9,7 @@ using UnityEngine;
 using Sirenix.OdinInspector;
 
 namespace B409.Jade.Data {
-    public abstract class RecipeData : ScriptableObject {
+    public abstract class RecipeData : ScriptableObject, IDataID {
         [BoxGroup("Id")]
         [HideLabel]
         [SerializeField]

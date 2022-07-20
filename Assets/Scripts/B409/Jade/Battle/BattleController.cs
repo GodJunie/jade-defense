@@ -52,7 +52,7 @@ namespace B409.Jade.Battle {
         }
 
         private async UniTask GenerateUnit(UnitData data, bool isPlayer) {
-            await UniTask.Delay(TimeSpan.FromSeconds(data.Cooltime));
+            await UniTask.Delay(TimeSpan.FromSeconds(data.Status.Cooltime));
             if(isPlayer) {
                 var unit = Instantiate(data.Prefab, monsterSpawnPoint.position, monsterSpawnPoint.rotation);
                 this.monsters.Add(unit);

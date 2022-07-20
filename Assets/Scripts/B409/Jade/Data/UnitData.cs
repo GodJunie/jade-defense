@@ -12,7 +12,7 @@ namespace B409.Jade.Data {
     using Battle;
 
     [CreateAssetMenu(fileName = "UnitData", menuName = "B409/Unit Data")]
-    public class UnitData : ScriptableObject {
+    public class UnitData : ScriptableObject, IDataID {
         [HorizontalGroup("group", 150f)]
         [BoxGroup("group/Icon")]
         [PreviewField(Alignment = ObjectFieldAlignment.Center, Height = 150f)]
@@ -38,16 +38,15 @@ namespace B409.Jade.Data {
         [SerializeField]
         private string description;
 
-        [BoxGroup("Settings")]
+        [HorizontalGroup("group2", .5f)]
+        [BoxGroup("group2/Settings")]
+        [BoxGroup("group2/Settings/Prefab")]
+        [HideLabel]
         [SerializeField]
         private UnitController prefab;
-        
-        [BoxGroup("Settings")]
-        [SerializeField]
-        private float cooltime;
-      
 
-        [BoxGroup("Settings/Status")]
+        [HorizontalGroup("group2", .5f)]
+        [BoxGroup("group2/Status")]
         [HideLabel]
         [SerializeField]
         private Status status;
@@ -59,7 +58,6 @@ namespace B409.Jade.Data {
         public Sprite Icon => icon;
         public UnitController Prefab => prefab;
 
-        public float Cooltime => cooltime;
         public Status Status => status;
     }
 }

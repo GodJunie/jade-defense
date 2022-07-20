@@ -9,7 +9,7 @@ using Sirenix.OdinInspector;
 
 namespace B409.Jade.Data {
     [CreateAssetMenu(fileName = "ItemData", menuName = "B409/Item Data")]
-    public class ItemData : ScriptableObject {
+    public class ItemData : ScriptableObject, IDataID {
         [HorizontalGroup("group", 150f)]
         [BoxGroup("group/Icon")]
         [PreviewField(Alignment = ObjectFieldAlignment.Center, Height = 150f)]

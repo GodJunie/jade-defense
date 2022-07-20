@@ -27,50 +27,66 @@ namespace B409.Jade.Data.Editor {
         private static string EnemyDataFolderPath = "Assets/Datas/Enemies";
         // Table
         private static string TableDataFolderPath = "Assets/Datas/Tables";
+        // Battle
+        private static string BattleDataFolderPath = "Assets/Datas/Battles";
+        // Stage
+        private static string StageDataFolderPath = "Assets/Datas/Stages";
 
-        private CreateNewItemData createNewItemData;
-        private CreateNewRecipeData<CookingData> createNewCookingData;
-        private CreateNewRecipeData<CraftingData> createNewCraftingData;
-        private CreateNewRecipeData<JewelleryData> createNewJewelleryData;
-        private CreateNewUnitData<MonsterData> createNewMonsterData;
-        private CreateNewUnitData<EnemyData> createNewEnemyData;
+        private CreateNewData<ItemData> createNewItemData;
+        private CreateNewData<CookingData> createNewCookingData;
+        private CreateNewData<CraftingData> createNewCraftingData;
+        private CreateNewData<JewelleryData> createNewJewelleryData;
+        private CreateNewData<MonsterData> createNewMonsterData;
+        private CreateNewData<EnemyData> createNewEnemyData;
+        private CreateNewData<BattleData> createNewBattleData;
+        private CreateNewData<StageData> createNewStageData;
 
         private void AddCreateMenu(OdinMenuTree tree) {
-            createNewItemData = new CreateNewItemData();
+            createNewItemData = new CreateNewData<ItemData>(ItemDataFolderPath);
             tree.Add("Item", createNewItemData);
             tree.AddAllAssetsAtPath("Item", ItemDataFolderPath, typeof(ItemData));
             tree.EnumerateTree().AddIcons<ItemData>(e => e.Icon);
 
-            createNewCookingData = new CreateNewRecipeData<CookingData>(CookingDataFolderPath);
+            createNewCookingData = new CreateNewData<CookingData>(CookingDataFolderPath);
             tree.Add("Cooking", createNewCookingData);
             tree.AddAllAssetsAtPath("Cooking", CookingDataFolderPath, typeof(CookingData));
             tree.EnumerateTree().AddIcons<CookingData>(e => e.Result.Item?.Icon);
 
-            createNewCraftingData = new CreateNewRecipeData<CraftingData>(CraftingDataFolderPath);
+            createNewCraftingData = new CreateNewData<CraftingData>(CraftingDataFolderPath);
             tree.Add("Crafting", createNewCraftingData);
             tree.AddAllAssetsAtPath("Crafting", CraftingDataFolderPath, typeof(CraftingData));
             tree.EnumerateTree().AddIcons<CraftingData>(e => e.Result.Item?.Icon);
 
-            createNewJewelleryData = new CreateNewRecipeData<JewelleryData>(JewelleryDataFolderPath);
+            createNewJewelleryData = new CreateNewData<JewelleryData>(JewelleryDataFolderPath);
             tree.Add("Jewellery", createNewJewelleryData);
             tree.AddAllAssetsAtPath("Jewellery", JewelleryDataFolderPath, typeof(JewelleryData));
             tree.EnumerateTree().AddIcons<JewelleryData>(e => e.Result.Item?.Icon);
 
-            createNewMonsterData = new CreateNewUnitData<MonsterData>(MonsterDataFolderPath);
+            createNewMonsterData = new CreateNewData<MonsterData>(MonsterDataFolderPath);
             tree.Add("Monster", createNewMonsterData);
             tree.AddAllAssetsAtPath("Monster", MonsterDataFolderPath, typeof(MonsterData));
             tree.EnumerateTree().AddIcons<MonsterData>(e => e.Icon);
 
-            createNewEnemyData = new CreateNewUnitData<EnemyData>(EnemyDataFolderPath);
+            createNewEnemyData = new CreateNewData<EnemyData>(EnemyDataFolderPath);
             tree.Add("Enemy", createNewEnemyData);
             tree.AddAllAssetsAtPath("Enemy", EnemyDataFolderPath, typeof(EnemyData));
             tree.EnumerateTree().AddIcons<EnemyData>(e => e.Icon);
 
+            createNewBattleData = new CreateNewData<BattleData>(BattleDataFolderPath);
+            tree.Add("Battles", createNewBattleData);
+            tree.AddAllAssetsAtPath("Battles", BattleDataFolderPath, typeof(BattleData));
+
+            createNewStageData = new CreateNewData<StageData>(StageDataFolderPath);
+            tree.Add("Stages", createNewStageData);
+            tree.AddAllAssetsAtPath("Stages", StageDataFolderPath, typeof(StageData));
+
+            tree.AddAllAssetsAtPath("Tables", TableDataFolderPath, typeof(ScriptableObject));
+
+
             tree.EnumerateTree().Where(e => e.Value is ItemData).ForEach(AddDragHandles);
             tree.EnumerateTree().Where(e => e.Value is RecipeData).ForEach(AddDragHandles);
             tree.EnumerateTree().Where(e => e.Value is UnitData).ForEach(AddDragHandles);
-
-            tree.AddAllAssetsAtPath("Tables", TableDataFolderPath, typeof(ScriptableObject));
+            tree.EnumerateTree().Where(e => e.Value is BattleData).ForEach(AddDragHandles);
         }
         #endregion
 
@@ -85,7 +101,28 @@ namespace B409.Jade.Data.Editor {
             base.OnDestroy();
 
             if(createNewItemData != null) {
-                DestroyImmediate(createNewItemData.itemData);
+                DestroyImmediate(createNewItemData.data);
+            }
+            if(createNewCookingData != null) {
+                DestroyImmediate(createNewCookingData.data);
+            }
+            if(createNewCraftingData != null) {
+                DestroyImmediate(createNewCraftingData.data);
+            }
+            if(createNewJewelleryData != null) {
+                DestroyImmediate(createNewJewelleryData.data);
+            }
+            if(createNewMonsterData != null) {
+                DestroyImmediate(createNewMonsterData.data);
+            }
+            if(createNewEnemyData != null) {
+                DestroyImmediate(createNewEnemyData.data);
+            }
+            if(createNewBattleData != null) { 
+                DestroyImmediate(createNewBattleData.data);
+            }
+            if(createNewStageData != null) {
+                DestroyImmediate(createNewStageData.data);
             }
         }
 
@@ -99,19 +136,9 @@ namespace B409.Jade.Data.Editor {
 
                 if(SirenixEditorGUI.ToolbarButton("Save")) {
                     var asset = selected.SelectedValue;
-                    if(asset is ItemData) {
+                    if(asset is IDataID) {
                         string path = AssetDatabase.GetAssetPath(asset as ScriptableObject);
-                        AssetDatabase.RenameAsset(path, (asset as ItemData).Id.ToString());
-                        AssetDatabase.SaveAssets();
-                    }
-                    if(asset is RecipeData) {
-                        string path = AssetDatabase.GetAssetPath(asset as ScriptableObject);
-                        AssetDatabase.RenameAsset(path, (asset as RecipeData).Id.ToString());
-                        AssetDatabase.SaveAssets();
-                    }
-                    if(asset is UnitData) {
-                        string path = AssetDatabase.GetAssetPath(asset as ScriptableObject);
-                        AssetDatabase.RenameAsset(path, (asset as UnitData).Id.ToString());
+                        AssetDatabase.RenameAsset(path, (asset as IDataID).Id.ToString());
                         AssetDatabase.SaveAssets();
                     }
                 }
@@ -145,56 +172,18 @@ namespace B409.Jade.Data.Editor {
 
         #region Create Menu
         [System.Serializable]
-        public class CreateNewItemData {
-            [InlineEditor(Expanded = true, ObjectFieldMode = InlineEditorObjectFieldModes.Hidden)]
-            public ItemData itemData;
-
-            public CreateNewItemData() {
-                itemData = CreateInstance<ItemData>();
-            }
-
-            [Button("Add New Data", Style = ButtonStyle.Box, ButtonHeight = 50)]
-            private void CreateNewData() {
-                AssetDatabase.CreateAsset(itemData, Path.ChangeExtension(Path.Combine(ItemDataFolderPath, itemData.Id.ToString()), "asset"));
-                AssetDatabase.SaveAssets();
-
-                itemData = CreateInstance<ItemData>();
-            }
-        }
-
-        [System.Serializable]
-        public class CreateNewRecipeData<T> where T : RecipeData {
+        public class CreateNewData<T> where T : ScriptableObject, IDataID {
             [InlineEditor(Expanded = true, ObjectFieldMode = InlineEditorObjectFieldModes.Hidden)]
             public T data;
             private string path;
 
-            public CreateNewRecipeData(string path) {
+            public CreateNewData(string path) {
                 this.path = path;
                 data = CreateInstance<T>();
             }
 
             [Button("Add New Data", Style = ButtonStyle.Box, ButtonHeight = 50)]
-            private void CreateNewData() {
-                AssetDatabase.CreateAsset(data, Path.ChangeExtension(Path.Combine(path, data.Id.ToString()), "asset"));
-                AssetDatabase.SaveAssets();
-
-                data = CreateInstance<T>();
-            }
-        }
-       
-        [System.Serializable]
-        public class CreateNewUnitData<T> where T : UnitData {
-            [InlineEditor(Expanded = true, ObjectFieldMode = InlineEditorObjectFieldModes.Hidden)]
-            public T data;
-            private string path;
-
-            public CreateNewUnitData(string path) {
-                this.path = path;
-                data = CreateInstance<T>();
-            }
-
-            [Button("Add New Data", Style = ButtonStyle.Box, ButtonHeight = 50)]
-            private void CreateNewData() {
+            private void CreateNew() {
                 AssetDatabase.CreateAsset(data, Path.ChangeExtension(Path.Combine(path, data.Id.ToString()), "asset"));
                 AssetDatabase.SaveAssets();
 

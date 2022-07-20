@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e6af881b5c61a14a881672a93b69d17, type: 3}
+  m_Name: 100001
+  m_EditorClassIdentifier: 
+  id: 100001
+  name: "\uCC98\uC74C \uC2A4\uD14C\uC774\uC9C0"
+  description: "\uCC98\uC74C \uC2A4\uD14C\uC774\uC9C0"
+  background: {fileID: 21300000, guid: ef909a11eccf6084b8ee1bf7a56a2aa2, type: 3}
+  monsters:
+  - {fileID: 11400000, guid: ae3f56f531ef4294bb4d6812f7f7afa4, type: 2}
+  - {fileID: 11400000, guid: ae3f56f531ef4294bb4d6812f7f7afa4, type: 2}
+  datas:
+  - day: 5
+    battle: {fileID: 11400000, guid: 16684c3df353e8148a05f0fd2a6c02e6, type: 2}
+  - day: 5
+    battle: {fileID: 11400000, guid: 16684c3df353e8148a05f0fd2a6c02e6, type: 2}
+  - day: 5
+    battle: {fileID: 11400000, guid: 16684c3df353e8148a05f0fd2a6c02e6, type: 2}
