@@ -92,7 +92,7 @@ namespace B409.Jade.Battle {
             get {
                 return 
                     this.attackMode == AttackMode.Attack || 
-                    this.attackMode == AttackMode.DotDamage ||
+                    this.attackMode == AttackMode.DamageOverTime ||
                     this.attackMode == AttackMode.Stun || 
                     this.attackMode == AttackMode.KnockBack || 
                     this.attackMode == AttackMode.Slow;
@@ -107,14 +107,14 @@ namespace B409.Jade.Battle {
 
         private bool ShowInterval {
             get {
-                return this.attackMode == AttackMode.DotDamage;
+                return this.attackMode == AttackMode.DamageOverTime;
             }
         }
 
         private bool ShowDuration {
             get {
                 return 
-                    this.attackMode == AttackMode.DotDamage || 
+                    this.attackMode == AttackMode.DamageOverTime || 
                     this.attackMode == AttackMode.Stun || 
                     this.attackMode == AttackMode.KnockBack || 
                     this.attackMode == AttackMode.Slow;

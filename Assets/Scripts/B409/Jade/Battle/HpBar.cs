@@ -33,6 +33,7 @@ namespace B409.Jade.Battle {
 
         public void SetHp(float hp) {
             this.hp = hp;
+            this.imageFill.fillAmount = this.hp / this.maxHp;
             this.textHp.text = string.Format("{0:0}/{1:0}", this.hp, this.maxHp);
         }
     }

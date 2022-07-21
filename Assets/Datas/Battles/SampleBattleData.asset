@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   enemies:
-  - {fileID: 11400000, guid: ae3f56f531ef4294bb4d6812f7f7afa4, type: 2}
-  - {fileID: 11400000, guid: ae3f56f531ef4294bb4d6812f7f7afa4, type: 2}
+  - {fileID: 11400000, guid: 491f1df46333f624aa1a277005fa32fb, type: 2}
+  - {fileID: 11400000, guid: e3a1de9e950c96842ae357f51f791e2c, type: 2}
+  - {fileID: 11400000, guid: 1cad6710dcf223e468247eb06cf52ce3, type: 2}
+  - {fileID: 11400000, guid: c0fba5c38f7c47f47950c0c22694dd42, type: 2}
   rewards:
   - {fileID: 11400000, guid: 850fca931e1dad0458e9eca700d63bc3, type: 2}

@@ -16,7 +16,7 @@ MonoBehaviour:
   id: 201000
   name: TeratoSeed
   description: Seed of Yggdrasill
-  prefab: {fileID: 0}
+  prefab: {fileID: 3799640342199853417, guid: c1ccfee283b9abd4ca184ac466e1f2af, type: 3}
   status:
     cooltime: 0
     hp: 50
@@ -34,4 +34,6 @@ MonoBehaviour:
     duration: 0
     distance: 0
     slowRate: 0
-  cost: []
+  cost:
+  - item: {fileID: 0}
+    count: 0

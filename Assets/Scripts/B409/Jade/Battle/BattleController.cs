@@ -1,15 +1,18 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Cysharp.Threading.Tasks;
+using Sirenix.OdinInspector;
 
 namespace B409.Jade.Battle {
     using Data;
-    using System;
 
     public class BattleController : MonoBehaviour {
         // 테스트를 위해서 Serialize 했고 실제 인게임에서는 Stage 데이터에서 Battle Data 받아오고, GameProgress 에서 MonsterDatas 받아오기
         [SerializeField]
+        [InlineEditor]
         private BattleData data;
         [SerializeField]
         private List<UnitData> monsterDatas;

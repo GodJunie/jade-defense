@@ -16,7 +16,7 @@ MonoBehaviour:
   id: 201002
   name: TeratoSprout
   description: Bud of Yggdrasill2
-  prefab: {fileID: 0}
+  prefab: {fileID: 7873105012748281004, guid: 9d63df81306463b40bbb51b36953eb46, type: 3}
   status:
     cooltime: 1
     hp: 55

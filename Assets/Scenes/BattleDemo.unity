@@ -889,13 +889,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 926026502}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.23, y: -1.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &961542780
 GameObject:
   m_ObjectHideFlags: 0
@@ -973,71 +973,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961542780}
   m_CullTransparentMesh: 1
---- !u!1001 &1070833433
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7911352195365505864, guid: c1ccfee283b9abd4ca184ac466e1f2af, type: 3}
-      propertyPath: m_Name
-      value: 201000
-      objectReference: {fileID: 0}
-    - target: {fileID: 7911352195365505870, guid: c1ccfee283b9abd4ca184ac466e1f2af, type: 3}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 7911352195365505870, guid: c1ccfee283b9abd4ca184ac466e1f2af, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7911352195365505870, guid: c1ccfee283b9abd4ca184ac466e1f2af, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.022
-      objectReference: {fileID: 0}
-    - target: {fileID: 7911352195365505870, guid: c1ccfee283b9abd4ca184ac466e1f2af, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7911352195365505870, guid: c1ccfee283b9abd4ca184ac466e1f2af, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7911352195365505870, guid: c1ccfee283b9abd4ca184ac466e1f2af, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7911352195365505870, guid: c1ccfee283b9abd4ca184ac466e1f2af, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7911352195365505870, guid: c1ccfee283b9abd4ca184ac466e1f2af, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7911352195365505870, guid: c1ccfee283b9abd4ca184ac466e1f2af, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7911352195365505870, guid: c1ccfee283b9abd4ca184ac466e1f2af, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7911352195365505870, guid: c1ccfee283b9abd4ca184ac466e1f2af, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7911352195390838736, guid: c1ccfee283b9abd4ca184ac466e1f2af, type: 3}
-      propertyPath: _animationName
-      value: Hit
-      objectReference: {fileID: 0}
-    - target: {fileID: 7911352195390838738, guid: c1ccfee283b9abd4ca184ac466e1f2af, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c1ccfee283b9abd4ca184ac466e1f2af, type: 3}
 --- !u!1 &1090751719
 GameObject:
   m_ObjectHideFlags: 0
@@ -1624,7 +1559,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: f5c347bac3f42f346bfee0ddfabbba8d, type: 2}
   monsterDatas:
-  - {fileID: 11400000, guid: ae3f56f531ef4294bb4d6812f7f7afa4, type: 2}
+  - {fileID: 11400000, guid: a605c21ceaae03140ae802af7a8f4cb3, type: 2}
+  - {fileID: 11400000, guid: c0fba5c38f7c47f47950c0c22694dd42, type: 2}
+  - {fileID: 11400000, guid: e40133b6b8960dd46a67a48c41659fcd, type: 2}
+  - {fileID: 11400000, guid: e3a1de9e950c96842ae357f51f791e2c, type: 2}
+  - {fileID: 11400000, guid: 389ecefaf3ab10048b67bfd12c5b9988, type: 2}
   monsterSpawnPoint: {fileID: 1098303347}
   enemySpawnPoint: {fileID: 926026503}
 --- !u!4 &1471091859

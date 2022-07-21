@@ -16,7 +16,7 @@ MonoBehaviour:
   id: 201006
   name: TeratoVine
   description: Vines of Yggdrasill
-  prefab: {fileID: 0}
+  prefab: {fileID: 7054783715633654857, guid: f9ef8fda3db2130428f99a2c8b040108, type: 3}
   status:
     cooltime: 7
     hp: 150

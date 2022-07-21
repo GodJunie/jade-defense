@@ -16,7 +16,7 @@ MonoBehaviour:
   id: 201007
   name: TeratoMushroom
   description: Mushroom of Yggdrasill
-  prefab: {fileID: 0}
+  prefab: {fileID: 2570187248312658741, guid: 93e94b5922f10414f9d157c6e53db41b, type: 3}
   status:
     cooltime: 10
     hp: 100

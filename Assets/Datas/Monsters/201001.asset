@@ -16,7 +16,7 @@ MonoBehaviour:
   id: 201001
   name: TeratoBud
   description: Bud of Yggdrasill
-  prefab: {fileID: 0}
+  prefab: {fileID: 2396844474389726675, guid: b631227a28a77774abb23ddd96cb4215, type: 3}
   status:
     cooltime: 1
     hp: 45

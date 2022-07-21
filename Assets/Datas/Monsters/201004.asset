@@ -16,7 +16,7 @@ MonoBehaviour:
   id: 201004
   name: TeratoFruit
   description: Fruit of Yggdrasill
-  prefab: {fileID: 0}
+  prefab: {fileID: 8132927189149865726, guid: 91a690bf0a2f0b34eaa7d0263bc7eaf0, type: 3}
   status:
     cooltime: 1.5
     hp: 70
