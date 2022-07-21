@@ -10,28 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2797b82606673b847b063f1f780c8efa, type: 3}
-  m_Name: 201003
+  m_Name: 203000
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: 8c724234354b34aab87023373a25d651, type: 3}
-  id: 201003
-  name: TeratoFlower
-  description: Flower of Yggdrasill
-  prefab: {fileID: 8773225380857765575, guid: 9120fd51eda9b7a4b9b5a0538675736d, type: 3}
+  icon: {fileID: 21300000, guid: 587dd5e1ea05248a285340fbf3972fac, type: 3}
+  id: 203000
+  name: Pig Henchman
+  description: Pig Henchman
+  prefab: {fileID: 3128442038926316438, guid: a0415ec2b01938643b13ac38f01bf4f8, type: 3}
   status:
-    cooltime: 3
-    hp: 100
-    moveSpeed: 0.5
-    range: 4
+    cooltime: 1
+    hp: 150
+    moveSpeed: 1
+    range: 0.3
     targetFilterMode: 2
-    descending: 1
+    descending: 0
     targetCount: 1
     targetEnemy: 1
-    attackSpeed: 2
-    attackMode: 5
+    attackSpeed: 1.5
+    attackMode: 0
     atk: 15
     heal: 0
     interval: 0
-    duration: 3
+    duration: 0
     distance: 0
-    slowRate: 0.316
+    slowRate: 0
   cost: []

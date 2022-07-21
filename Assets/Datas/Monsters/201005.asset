@@ -18,18 +18,18 @@ MonoBehaviour:
   description: Eggplant of Yggdrasill
   prefab: {fileID: 1863606715737535681, guid: b797e24eac32ab24ebc4d6cc31b3facf, type: 3}
   status:
-    cooltime: 5
+    cooltime: 1
     hp: 120
-    moveSpeed: 0.1
-    range: 4
+    moveSpeed: 0.2
+    range: 3
     targetFilterMode: 3
     descending: 0
     targetCount: 0
-    targetEnemy: 1
-    attackSpeed: 5
+    targetEnemy: 0
+    attackSpeed: 1
     attackMode: 2
     atk: 1
-    heal: 1
+    heal: 100
     interval: 0
     duration: 0
     distance: 0

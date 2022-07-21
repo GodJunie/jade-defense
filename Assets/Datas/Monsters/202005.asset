@@ -10,28 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2797b82606673b847b063f1f780c8efa, type: 3}
-  m_Name: 201003
+  m_Name: 202005
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: 8c724234354b34aab87023373a25d651, type: 3}
-  id: 201003
-  name: TeratoFlower
-  description: Flower of Yggdrasill
-  prefab: {fileID: 8773225380857765575, guid: 9120fd51eda9b7a4b9b5a0538675736d, type: 3}
+  icon: {fileID: 21300000, guid: e1c40c94c526a4cae91b4662d0938ba9, type: 3}
+  id: 202005
+  name: Fox Apprentice Wizard
+  description: Fox Apprentice Wizard
+  prefab: {fileID: 2003035266538773228, guid: 3b56a9bff923e884fbce0f497a0e4d73, type: 3}
   status:
-    cooltime: 3
+    cooltime: 1
     hp: 100
-    moveSpeed: 0.5
-    range: 4
+    moveSpeed: 1
+    range: 2
     targetFilterMode: 2
-    descending: 1
+    descending: 0
     targetCount: 1
-    targetEnemy: 1
-    attackSpeed: 2
-    attackMode: 5
-    atk: 15
-    heal: 0
+    targetEnemy: 0
+    attackSpeed: 1
+    attackMode: 2
+    atk: 0
+    heal: 30
     interval: 0
-    duration: 3
+    duration: 0
     distance: 0
-    slowRate: 0.316
+    slowRate: 0
   cost: []

@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Mushroom of Yggdrasill
   prefab: {fileID: 2570187248312658741, guid: 93e94b5922f10414f9d157c6e53db41b, type: 3}
   status:
-    cooltime: 10
+    cooltime: 1
     hp: 100
     moveSpeed: 0.3
     range: 4
@@ -26,12 +26,12 @@ MonoBehaviour:
     descending: 0
     targetCount: 0
     targetEnemy: 1
-    attackSpeed: 1
+    attackSpeed: 3
     attackMode: 1
-    atk: 2
+    atk: 10
     heal: 0
     interval: 1
-    duration: 5
+    duration: 3
     distance: 0
     slowRate: 0
   cost: []

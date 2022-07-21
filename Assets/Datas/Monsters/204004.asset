@@ -10,25 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2797b82606673b847b063f1f780c8efa, type: 3}
-  m_Name: 201008
+  m_Name: 204004
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: 1616cb2066e69432bb2099eda1a4794d, type: 3}
-  id: 201008
-  name: TeratoLeaf
-  description: Leaf Bundle of Yggdrasill
-  prefab: {fileID: 5107964302463474885, guid: 0a76ccc66cca5574aa311a831b101f49, type: 3}
+  icon: {fileID: 21300000, guid: 8113f42fb645d4e90a76e66080fd4b89, type: 3}
+  id: 204004
+  name: Spirit of Valley Water
+  description: Spirit of Valley Water
+  prefab: {fileID: 7449778412792988414, guid: 36840a6cd3932394c8956ba51601fcd8, type: 3}
   status:
-    cooltime: 3
-    hp: 200
-    moveSpeed: 0.7
-    range: 0.1
-    targetFilterMode: 2
+    cooltime: 1
+    hp: 70
+    moveSpeed: 1
+    range: 0.5
+    targetFilterMode: 3
     descending: 0
-    targetCount: 1
+    targetCount: 0
     targetEnemy: 1
-    attackSpeed: 1.5
+    attackSpeed: 1
     attackMode: 0
-    atk: 10
+    atk: 30
     heal: 0
     interval: 0
     duration: 0

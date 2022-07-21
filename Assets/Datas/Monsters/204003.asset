@@ -10,28 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2797b82606673b847b063f1f780c8efa, type: 3}
-  m_Name: 201003
+  m_Name: 204003
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: 8c724234354b34aab87023373a25d651, type: 3}
-  id: 201003
-  name: TeratoFlower
-  description: Flower of Yggdrasill
-  prefab: {fileID: 8773225380857765575, guid: 9120fd51eda9b7a4b9b5a0538675736d, type: 3}
+  icon: {fileID: 21300000, guid: 741b44fbc5b584f03b876fedc1d03c16, type: 3}
+  id: 204003
+  name: Spirit of Windblast
+  description: Spirit of Windblast
+  prefab: {fileID: 7227429877696875407, guid: d3deef8b57c2af14b85a7458b456deab, type: 3}
   status:
-    cooltime: 3
-    hp: 100
-    moveSpeed: 0.5
-    range: 4
-    targetFilterMode: 2
-    descending: 1
-    targetCount: 1
+    cooltime: 1
+    hp: 70
+    moveSpeed: 1
+    range: 0.5
+    targetFilterMode: 3
+    descending: 0
+    targetCount: 0
     targetEnemy: 1
-    attackSpeed: 2
-    attackMode: 5
-    atk: 15
+    attackSpeed: 1
+    attackMode: 0
+    atk: 20
     heal: 0
     interval: 0
-    duration: 3
+    duration: 0
     distance: 0
-    slowRate: 0.316
+    slowRate: 0
   cost: []
