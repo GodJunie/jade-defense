@@ -109,8 +109,8 @@ namespace B409.Jade.Battle {
             anim.AnimationState.Complete += (entry) => {
                 Debug.Log(entry.Animation.Name);
                 if(entry.Animation.Name == attackAnimation) {
-                    // 공격 끝
-                    CheckState();
+                    attackEnd = true;
+                    anim.AnimationState.SetAnimation(0, "Idle", true);
                 }
                 if(entry.Animation.Name == dieAnimation) {
                     // 인생 끝!
@@ -302,7 +302,13 @@ namespace B409.Jade.Battle {
         #endregion
 
         #region Attack
+        private float attackTimer;
+        private bool attackEnd;
+
         private void AttackEnter() {
+            attackTimer = this.Data.Status.AttackSpeed;
+            attackEnd = false;
+
             switch(Data.Status.TargetFilterMode) {
             case TargetFilterMode.Hp:
                 attackTargets = targets.OrderBy(e => e.Hp).ToList();
@@ -323,11 +329,19 @@ namespace B409.Jade.Battle {
             if(Data.Status.Descending) attackTargets.Reverse();
             if(Data.Status.TargetCount > 0) attackTargets = attackTargets.GetRange(0, Mathf.Min(attackTargets.Count, Data.Status.TargetCount));
 
-            anim.AnimationState.SetAnimation(0, attackAnimation, false);
+            float duration = anim.skeleton.Data.FindAnimation(attackAnimation).Duration;
+            float timeScale = Mathf.Max(1f, duration / this.Data.Status.AttackSpeed);
+
+            anim.AnimationState.SetAnimation(0, attackAnimation, false).TimeScale = timeScale;
         }
 
         private void Attack() {
-            
+            attackTimer -= Time.deltaTime;
+
+            if(attackTimer < 0f && attackEnd) {
+                // 공격 끝
+                CheckState();
+            }
         }
 
         private void AttackExit() {

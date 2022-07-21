@@ -26,7 +26,7 @@ MonoBehaviour:
     descending: 0
     targetCount: 0
     targetEnemy: 1
-    attackSpeed: 0
+    attackSpeed: 1
     attackMode: 1
     atk: 2
     heal: 0
