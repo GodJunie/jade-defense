@@ -87,14 +87,13 @@ namespace B409.Jade.Battle {
                             target.OnDamage(this.Data.Status.Atk);
                             break;
                         case AttackMode.DamageOverTime:
+                            target.OnDamageOverTime(this.Data.Status.Atk, this.Data.Status.Duration, this.Data.Status.Interval);
                             break;
                         case AttackMode.Heal:
                             target.OnHeal(this.Data.Status.Heal);
                             break;
                         case AttackMode.Stun:
                             target.OnStun(this.Data.Status.Atk, this.Data.Status.Duration);
-                            break;
-                        case AttackMode.KnockBack:
                             break;
                         case AttackMode.Slow:
                             target.OnSlow(this.Data.Status.Atk, this.Data.Status.Duration, this.Data.Status.SlowRate);
@@ -237,7 +236,7 @@ namespace B409.Jade.Battle {
             this.slows.Add(new Slow(duration, slowRate));
         }
 
-        public void OnDotDamage(float damage, float duration, float interval) {
+        public void OnDamageOverTime(float damage, float duration, float interval) {
             this.dots.Add(new DamageOverTime(damage, duration, interval));
         }
         #endregion
@@ -379,6 +378,7 @@ namespace B409.Jade.Battle {
         #region Die
         private void DieEnter() {
             anim.AnimationState.SetAnimation(0, dieAnimation, false);
+            this.hitbox.enabled = false;
             this.OnDead?.Invoke();
         }
 
