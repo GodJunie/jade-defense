@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3875a48372b697f4ca1de3902c55eb8f, type: 3}
   m_Name: GatheringLevelTable
   m_EditorClassIdentifier: 
+  name: Gathering
   datas:
-  - inquiredParameters:
+  - name: 
+    description: 
+    inquiredParameters:
     - parameter: 0
       value: 0
     - parameter: 2
@@ -33,7 +36,9 @@ MonoBehaviour:
       rate: 2
     - item: {fileID: 11400000, guid: 399a39c2c2c2f97468829fccced19baf, type: 2}
       rate: 2
-  - inquiredParameters:
+  - name: 
+    description: 
+    inquiredParameters:
     - parameter: 0
       value: 60
     - parameter: 2
@@ -49,7 +54,9 @@ MonoBehaviour:
       rate: 5
     - item: {fileID: 11400000, guid: 833074a196207034d81e6e0d0fc18e71, type: 2}
       rate: 5
-  - inquiredParameters:
+  - name: 
+    description: 
+    inquiredParameters:
     - parameter: 0
       value: 100
     - parameter: 2

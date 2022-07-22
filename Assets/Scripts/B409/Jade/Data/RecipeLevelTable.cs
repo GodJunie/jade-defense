@@ -12,7 +12,11 @@ namespace B409.Jade.Data {
     [InlineEditor]
     public abstract class RecipeLevelTable<Table, Data> : ScriptableObject where Table : RecipeLevelTable<Table, Data> where Data : RecipeData {
         [SerializeField]
+        private new string name;
+        [SerializeField]
         private List<LevelData> datas;
+
+        public string Name => name;
         public List<LevelData> Datas => datas;
 
         [Serializable]

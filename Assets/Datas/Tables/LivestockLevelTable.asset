@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3875a48372b697f4ca1de3902c55eb8f, type: 3}
   m_Name: LivestockLevelTable
   m_EditorClassIdentifier: 
+  name: Livestock
   datas:
   - name: Lv.1 Chicken Farm
+    description: 
     inquiredParameters:
     - parameter: 2
       value: 0
@@ -27,6 +29,7 @@ MonoBehaviour:
     - item: {fileID: 11400000, guid: 413dffb8e9b38b34a92a89061d803313, type: 2}
       rate: 40
   - name: Lv.2 Advanced Chicken Farm
+    description: 
     inquiredParameters:
     - parameter: 2
       value: 60
@@ -40,6 +43,7 @@ MonoBehaviour:
     - item: {fileID: 11400000, guid: 839cdc6b477a4834cb515d129ebf87cc, type: 2}
       rate: 40
   - name: Lv.3 Pig Farm
+    description: 
     inquiredParameters:
     - parameter: 2
       value: 100

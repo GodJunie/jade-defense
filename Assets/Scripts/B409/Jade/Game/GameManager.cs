@@ -20,7 +20,7 @@ namespace B409.Jade.Game {
         #endregion
 
         #region Farming
-        public void Farming(FarmingLevelTable.LevelData data) {
+        public void Farming(FarmingLevelData data) {
             int count = 5;
             var items = new Dictionary<int, int>();
 

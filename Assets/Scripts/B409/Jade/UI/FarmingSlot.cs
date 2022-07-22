@@ -18,12 +18,8 @@ namespace B409.Jade.UI {
         [SerializeField]
         private GameObject lockObject;
 
-        private FarmingLevelTable.LevelData data;
-
-        public void Init(FarmingLevelTable.LevelData data, Action onClick) {
+        public void Init(FarmingLevelData data, Action onClick) {
             GetComponent<Button>().onClick.AddListener(() => onClick?.Invoke());
-
-            this.data = data;
 
             this.textName.text = data.Name;
 
@@ -33,24 +29,8 @@ namespace B409.Jade.UI {
                 slot.Init(itemData.Item);
             }
 
-            CheckVailable();
-        }
-
-        private void OnEnable() {
-            if(this.data == null) return;
-
-            CheckVailable();
-        }
-
-        private void CheckVailable() {
-
-            bool vailable = true;
-            foreach(var parameterValue in this.data.InquiredParameters) {
-                if(GameManager.Instance.Progress.Parameters[parameterValue.Parameter] < parameterValue.Value)
-                    vailable = false;
-            }
-
-            this.lockObject.SetActive(!vailable);
+            lockObject.SetActive
+                (!GameManager.Instance.Progress.CheckParameterValidation(data.InquiredParameters));
         }
     }
 }

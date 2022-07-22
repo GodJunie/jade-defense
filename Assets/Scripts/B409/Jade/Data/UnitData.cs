@@ -42,7 +42,6 @@ namespace B409.Jade.Data {
         [BoxGroup("group2/Settings")]
         [BoxGroup("group2/Settings/Prefab")]
         [HideLabel]
-        [AssetSelector()]
         [SerializeField]
         private UnitController prefab;
 

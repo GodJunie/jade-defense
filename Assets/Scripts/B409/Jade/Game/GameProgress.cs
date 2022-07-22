@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace B409.Jade.Game {
+    using Data;
+
     public class GameProgress {
         public int DDay { get; private set; }
         public int Stage { get; private set; }
@@ -54,6 +56,22 @@ namespace B409.Jade.Game {
             this.Items[id] -= count;
             if(this.Items[id] == 0)
                 this.Items.Remove(id);
+        }
+
+        public bool CheckParameterValidation(List<ParameterValue> parameters) {
+            foreach(var p in parameters) {
+                if(Parameters[p.Parameter] < p.Value)
+                    return false;
+            }
+            return true;
+        }
+
+        public string GetInquiredParametersText(List<ParameterValue> parameters) {
+            string text = "";
+            foreach(var p in parameters) {
+                text += string.Format("<color={0}>{1} {2} </color>", p.Value > this.Parameters[p.Parameter] ? "red" : "white", p.Parameter.ToCompatString(), p.Value.ToString("N0"));
+            }
+            return text;
         }
     }
 }

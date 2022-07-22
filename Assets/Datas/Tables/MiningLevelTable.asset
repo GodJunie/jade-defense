@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3875a48372b697f4ca1de3902c55eb8f, type: 3}
   m_Name: MiningLevelTable
   m_EditorClassIdentifier: 
+  name: Mining
   datas:
   - name: 
+    description: 
     inquiredParameters:
     - parameter: 1
       value: 0
@@ -35,6 +37,7 @@ MonoBehaviour:
     - item: {fileID: 11400000, guid: 411f6de0396095b4ab61bf2d1517e6e7, type: 2}
       rate: 5
   - name: "Lv.2 \uAC1C\uCA4C\uB294 \uC218\uC815 \uAD11\uC0B0"
+    description: 
     inquiredParameters:
     - parameter: 1
       value: 60
@@ -60,6 +63,7 @@ MonoBehaviour:
     - item: {fileID: 11400000, guid: 411f6de0396095b4ab61bf2d1517e6e7, type: 2}
       rate: 10
   - name: 
+    description: 
     inquiredParameters:
     - parameter: 1
       value: 100

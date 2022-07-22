@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3875a48372b697f4ca1de3902c55eb8f, type: 3}
   m_Name: FishingLevelTable
   m_EditorClassIdentifier: 
+  name: Fishing
   datas:
-  - inquiredParameters:
+  - name: 
+    description: 
+    inquiredParameters:
     - parameter: 1
       value: 0
     - parameter: 3
@@ -37,7 +40,9 @@ MonoBehaviour:
       rate: 1
     - item: {fileID: 11400000, guid: 78e18f32963f60c478c6ae54511c20af, type: 2}
       rate: 1
-  - inquiredParameters:
+  - name: 
+    description: 
+    inquiredParameters:
     - parameter: 1
       value: 60
     - parameter: 3
@@ -61,7 +66,9 @@ MonoBehaviour:
       rate: 0
     - item: {fileID: 11400000, guid: ca2e979313aa1844489baeb7da42fbd5, type: 2}
       rate: 0
-  - inquiredParameters:
+  - name: 
+    description: 
+    inquiredParameters:
     - parameter: 1
       value: 100
     - parameter: 3
