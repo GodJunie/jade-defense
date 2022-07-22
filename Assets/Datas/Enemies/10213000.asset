@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 757c8c785baccab44940077569ff3999, type: 3}
-  m_Name: 10200000
+  m_Name: 10213000
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: 971da72e050cd4e4f99575d5949f2d0a, type: 3}
-  id: 10200000
-  name: Cat
-  description: Cat
-  prefab: {fileID: 8454641657687718124, guid: 725916abbdc84834a851d1e329d15b81, type: 3}
+  icon: {fileID: 21300000, guid: e652e9773bd7849879da643318142224, type: 3}
+  id: 10213000
+  name: Cat Mercenaries(Yellow)
+  description: Cat Mercenaries(Yellow)
+  prefab: {fileID: 7410875689431327301, guid: 08e6bfc584dc4da4ca802a47cf75b121, type: 3}
   status:
     cooltime: 1
-    hp: 50
+    hp: 55
     moveSpeed: 1
     range: 0.3
     targetFilterMode: 3
@@ -28,7 +28,7 @@ MonoBehaviour:
     targetEnemy: 1
     attackSpeed: 1
     attackMode: 0
-    atk: 5
+    atk: 7
     heal: 0
     interval: 0
     duration: 0

@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2797b82606673b847b063f1f780c8efa, type: 3}
+  m_Name: 206006
+  m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: 7c48f899ed210fa4590c88aba1169ea0, type: 3}
+  id: 206006
+  name: Outland Lizard General
+  description: Outland Lizard General
+  prefab: {fileID: 889298165496655224, guid: c6592e14e9ad88f48a3bca74d61ecdaf, type: 3}
+  status:
+    cooltime: 1
+    hp: 150
+    moveSpeed: 1
+    range: 0.7
+    targetFilterMode: 2
+    descending: 0
+    targetCount: 1
+    targetEnemy: 1
+    attackSpeed: 5
+    attackMode: 1
+    atk: 70
+    heal: 0
+    interval: 5
+    duration: 5
+    distance: 0
+    slowRate: 0
+  cost: []

@@ -10,27 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 757c8c785baccab44940077569ff3999, type: 3}
-  m_Name: 10200000
+  m_Name: 40100003
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: 971da72e050cd4e4f99575d5949f2d0a, type: 3}
-  id: 10200000
-  name: Cat
-  description: Cat
-  prefab: {fileID: 8454641657687718124, guid: 725916abbdc84834a851d1e329d15b81, type: 3}
+  icon: {fileID: 21300000, guid: a081b015eff664a2ea5cfcad5d48f3d5, type: 3}
+  id: 40100003
+  name: Fallen Valkyrie
+  description: Fallen Valkyrie
+  prefab: {fileID: 3007126185514919677, guid: cda406bfbfa5ebd4b89105639e50172c, type: 3}
   status:
     cooltime: 1
-    hp: 50
+    hp: 150
     moveSpeed: 1
-    range: 0.3
+    range: 1
     targetFilterMode: 3
     descending: 0
-    targetCount: 1
+    targetCount: 3
     targetEnemy: 1
-    attackSpeed: 1
-    attackMode: 0
-    atk: 5
+    attackSpeed: 3
+    attackMode: 1
+    atk: 45
     heal: 0
-    interval: 0
-    duration: 0
+    interval: 3
+    duration: 3
     distance: 0
     slowRate: 0

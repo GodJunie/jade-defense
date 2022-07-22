@@ -10,25 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 757c8c785baccab44940077569ff3999, type: 3}
-  m_Name: 10200000
+  m_Name: 40100005
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: 971da72e050cd4e4f99575d5949f2d0a, type: 3}
-  id: 10200000
-  name: Cat
-  description: Cat
-  prefab: {fileID: 8454641657687718124, guid: 725916abbdc84834a851d1e329d15b81, type: 3}
+  icon: {fileID: 21300000, guid: 9eaf1d7ebdcc34607aa6bc77775accad, type: 3}
+  id: 40100005
+  name: Spear of Asgard's
+  description: Spear of Asgard's
+  prefab: {fileID: 7065018643872093669, guid: 60c64bb7dc8469b4f8e9388ba40dc0eb, type: 3}
   status:
     cooltime: 1
-    hp: 50
+    hp: 120
     moveSpeed: 1
-    range: 0.3
+    range: 3
     targetFilterMode: 3
     descending: 0
-    targetCount: 1
+    targetCount: 0
     targetEnemy: 1
     attackSpeed: 1
     attackMode: 0
-    atk: 5
+    atk: 45
     heal: 0
     interval: 0
     duration: 0

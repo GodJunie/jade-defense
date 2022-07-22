@@ -10,25 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 757c8c785baccab44940077569ff3999, type: 3}
-  m_Name: 10200000
+  m_Name: 10242000
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: 971da72e050cd4e4f99575d5949f2d0a, type: 3}
-  id: 10200000
-  name: Cat
-  description: Cat
-  prefab: {fileID: 8454641657687718124, guid: 725916abbdc84834a851d1e329d15b81, type: 3}
+  icon: {fileID: 21300000, guid: 7177859aa451346919eff85eb5d7852e, type: 3}
+  id: 10242000
+  name: Cat Knights(Blue)
+  description: Cat Knights(Blue)
+  prefab: {fileID: 279643376687887858, guid: 6d8b67e27c85bad48bb920500b031b2e, type: 3}
   status:
     cooltime: 1
-    hp: 50
+    hp: 75
     moveSpeed: 1
-    range: 0.3
+    range: 0.5
     targetFilterMode: 3
     descending: 0
     targetCount: 1
     targetEnemy: 1
     attackSpeed: 1
     attackMode: 0
-    atk: 5
+    atk: 16
     heal: 0
     interval: 0
     duration: 0
