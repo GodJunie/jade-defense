@@ -29,6 +29,12 @@ namespace B409.Jade.Game {
             return progress;
         }
 
+        public int GetItemCount(int id) {
+            if(this.Items.ContainsKey(id))
+                return this.Items[id];
+            return 0;
+        }
+
         public void AddItem(int id, int count) {
             Debug.Log(string.Format("Add Item, id: {0}, count: {1}", id, count));
             if(this.Items.ContainsKey(id)) {

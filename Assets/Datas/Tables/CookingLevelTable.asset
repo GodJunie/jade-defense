@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5b0064e9239bc6439a7164122a106eb, type: 3}
   m_Name: CookingLevelTable
   m_EditorClassIdentifier: 
+  name: Cooking
   datas:
   - inquiredParameters:
     - parameter: 0

@@ -88,7 +88,7 @@ namespace B409.Jade.UI {
 
             foreach(var material in data.Materials) {
                 var slot = Instantiate(this.itemSlotPrefab, materialContainer);
-                slot.Init(material.Item, material.Count);
+                slot.Init(material.Item, GameManager.Instance.Progress.GetItemCount(material.Item.Id), material.Count);
             }
 
             this.textParameters.text = GameManager.Instance.Progress.GetInquiredParametersText(inquiredParameters);

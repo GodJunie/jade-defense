@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 911f3ce2985f7bf4aa1c93fe360fef4f, type: 3}
   m_Name: CraftingLevelTable
   m_EditorClassIdentifier: 
+  name: Crafting
   datas:
   - inquiredParameters:
     - parameter: 0
