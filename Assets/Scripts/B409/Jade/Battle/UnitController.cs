@@ -105,6 +105,12 @@ namespace B409.Jade.Battle {
                 }
             };
 
+            anim.AnimationState.End += (entry) => {
+                if(entry.Animation.Name == dieAnimation) {
+                    Destroy(gameObject);
+                }
+            };
+
             anim.AnimationState.Complete += (entry) => {
                 Debug.Log(entry.Animation.Name);
                 if(entry.Animation.Name == attackAnimation) {
