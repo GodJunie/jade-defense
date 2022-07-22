@@ -251,6 +251,9 @@ namespace B409.Jade.Battle {
         }
 
         private void ChangeState(State state) {
+            if(this.State == State.Die)
+                return;
+
             switch(state) {
             case State.Move:
                 MoveExit();
