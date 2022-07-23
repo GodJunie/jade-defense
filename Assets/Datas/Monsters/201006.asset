@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Vines of Yggdrasill
   prefab: {fileID: 7054783715633654857, guid: f9ef8fda3db2130428f99a2c8b040108, type: 3}
   status:
-    cooltime: 7
+    cooltime: 3
     hp: 150
     moveSpeed: 0.2
     range: 3
@@ -34,4 +34,10 @@ MonoBehaviour:
     duration: 0
     distance: 0
     slowRate: 0
-  cost: []
+  cost:
+  - item: {fileID: 11400000, guid: a914fdd14479d664da1107774fac53b1, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: 7e6cc04742966de4b8882872197f316d, type: 2}
+    count: 5
+  - item: {fileID: 11400000, guid: 9d94cdbace101a445b3c792251d0e0fe, type: 2}
+    count: 1
