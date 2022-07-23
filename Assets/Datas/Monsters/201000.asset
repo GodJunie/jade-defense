@@ -35,5 +35,5 @@ MonoBehaviour:
     distance: 0
     slowRate: 0
   cost:
-  - item: {fileID: 0}
-    count: 0
+  - item: {fileID: 11400000, guid: 4798147202ceb8e4fb0ffe48ca90b35f, type: 2}
+    count: 1

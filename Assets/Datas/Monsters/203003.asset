@@ -34,4 +34,8 @@ MonoBehaviour:
     duration: 0
     distance: 0
     slowRate: 0
-  cost: []
+  cost:
+  - item: {fileID: 11400000, guid: 2a8f5b526502ed84591e7a20a532b0c6, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: 43309e0d33e8a9545be2372cedf01a03, type: 2}
+    count: 1
