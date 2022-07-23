@@ -19,7 +19,7 @@ MonoBehaviour:
   prefab: {fileID: 2678403868592894604, guid: b216c2cf6733fcf46bf8a78f2eb9ac7a, type: 3}
   status:
     cooltime: 1
-    hp: 65
+    hp: 400
     moveSpeed: 1
     range: 0.4
     targetFilterMode: 3
@@ -28,7 +28,7 @@ MonoBehaviour:
     targetEnemy: 1
     attackSpeed: 1
     attackMode: 0
-    atk: 12
+    atk: 7
     heal: 0
     interval: 0
     duration: 0
