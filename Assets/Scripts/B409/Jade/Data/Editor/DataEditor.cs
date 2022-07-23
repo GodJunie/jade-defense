@@ -43,50 +43,53 @@ namespace B409.Jade.Data.Editor {
 
         private void AddCreateMenu(OdinMenuTree tree) {
             createNewItemData = new CreateNewData<ItemData>(ItemDataFolderPath);
-            tree.Add("Item", createNewItemData);
-            tree.AddAllAssetsAtPath("Item", ItemDataFolderPath, typeof(ItemData));
+            tree.Add("1. Item", createNewItemData);
+            tree.AddAllAssetsAtPath("1. Item", ItemDataFolderPath, typeof(ItemData));
             tree.EnumerateTree().AddIcons<ItemData>(e => e.Icon);
 
             createNewCookingData = new CreateNewData<CookingData>(CookingDataFolderPath);
-            tree.Add("Cooking", createNewCookingData);
-            tree.AddAllAssetsAtPath("Cooking", CookingDataFolderPath, typeof(CookingData));
+            tree.Add("2. Cooking", createNewCookingData);
+            tree.AddAllAssetsAtPath("2. Cooking", CookingDataFolderPath, typeof(CookingData));
             tree.EnumerateTree().AddIcons<CookingData>(e => e.Result.Item?.Icon);
 
             createNewCraftingData = new CreateNewData<CraftingData>(CraftingDataFolderPath);
-            tree.Add("Crafting", createNewCraftingData);
-            tree.AddAllAssetsAtPath("Crafting", CraftingDataFolderPath, typeof(CraftingData));
+            tree.Add("3. Crafting", createNewCraftingData);
+            tree.AddAllAssetsAtPath("3. Crafting", CraftingDataFolderPath, typeof(CraftingData));
             tree.EnumerateTree().AddIcons<CraftingData>(e => e.Result.Item?.Icon);
 
             createNewJewelleryData = new CreateNewData<JewelleryData>(JewelleryDataFolderPath);
-            tree.Add("Jewellery", createNewJewelleryData);
-            tree.AddAllAssetsAtPath("Jewellery", JewelleryDataFolderPath, typeof(JewelleryData));
+            tree.Add("4. Jewelry", createNewJewelleryData);
+            tree.AddAllAssetsAtPath("4. Jewelry", JewelleryDataFolderPath, typeof(JewelleryData));
             tree.EnumerateTree().AddIcons<JewelleryData>(e => e.Result.Item?.Icon);
 
             createNewMonsterData = new CreateNewData<MonsterData>(MonsterDataFolderPath);
-            tree.Add("Monster", createNewMonsterData);
-            tree.AddAllAssetsAtPath("Monster", MonsterDataFolderPath, typeof(MonsterData));
+            tree.Add("5. Monster", createNewMonsterData);
+            tree.AddAllAssetsAtPath("5. Monster", MonsterDataFolderPath, typeof(MonsterData));
             tree.EnumerateTree().AddIcons<MonsterData>(e => e.Icon);
 
             createNewEnemyData = new CreateNewData<EnemyData>(EnemyDataFolderPath);
-            tree.Add("Enemy", createNewEnemyData);
-            tree.AddAllAssetsAtPath("Enemy", EnemyDataFolderPath, typeof(EnemyData));
+            tree.Add("6. Enemy", createNewEnemyData);
+            tree.AddAllAssetsAtPath("6. Enemy", EnemyDataFolderPath, typeof(EnemyData));
             tree.EnumerateTree().AddIcons<EnemyData>(e => e.Icon);
 
             createNewBattleData = new CreateNewData<BattleData>(BattleDataFolderPath);
-            tree.Add("Battles", createNewBattleData);
-            tree.AddAllAssetsAtPath("Battles", BattleDataFolderPath, typeof(BattleData));
+            tree.Add("7. Battle", createNewBattleData);
+            tree.AddAllAssetsAtPath("7. Battle", BattleDataFolderPath, typeof(BattleData));
 
             createNewStageData = new CreateNewData<StageData>(StageDataFolderPath);
-            tree.Add("Stages", createNewStageData);
-            tree.AddAllAssetsAtPath("Stages", StageDataFolderPath, typeof(StageData));
+            tree.Add("8. Stage", createNewStageData);
+            tree.AddAllAssetsAtPath("8. Stage", StageDataFolderPath, typeof(StageData));
 
-            tree.AddAllAssetsAtPath("Tables", TableDataFolderPath, typeof(ScriptableObject));
+            tree.AddAllAssetsAtPath("9. Table", TableDataFolderPath, typeof(ScriptableObject));
 
 
             tree.EnumerateTree().Where(e => e.Value is ItemData).ForEach(AddDragHandles);
             tree.EnumerateTree().Where(e => e.Value is RecipeData).ForEach(AddDragHandles);
             tree.EnumerateTree().Where(e => e.Value is UnitData).ForEach(AddDragHandles);
             tree.EnumerateTree().Where(e => e.Value is BattleData).ForEach(AddDragHandles);
+
+
+            tree.SortMenuItemsByName();
         }
         #endregion
 
