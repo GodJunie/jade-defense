@@ -10,25 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 757c8c785baccab44940077569ff3999, type: 3}
-  m_Name: 10231001
+  m_Name: 10250000
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: c966827919ec548ee9659ba5991c9143, type: 3}
-  id: 10231001
-  name: Hermes Mobile Squadron(Red)
-  description: Hermes Mobile Squadron(Red)
-  prefab: {fileID: 3597083397362850326, guid: da1d221af64cffc4da05fd4fc43125d1, type: 3}
+  icon: {fileID: 21300000, guid: 94cabaa2c547b41dab112644afa4bba6, type: 3}
+  id: 10250000
+  name: Cat Commando
+  description: Cat Commando
+  prefab: {fileID: 5490369292569814160, guid: 110e81dbf64b6534fb783d833ecf2792, type: 3}
   status:
     cooltime: 1
-    hp: 20
+    hp: 85
     moveSpeed: 1
-    range: 0.4
+    range: 0.5
     targetFilterMode: 3
     descending: 0
     targetCount: 1
     targetEnemy: 1
-    attackSpeed: 0.7
+    attackSpeed: 1
     attackMode: 0
-    atk: 18
+    atk: 20
     heal: 0
     interval: 0
     duration: 0

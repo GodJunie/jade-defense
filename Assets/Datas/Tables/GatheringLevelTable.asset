@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Gathering
   datas:
-  - name: 
-    description: 
+  - name: Lv.1 Forest
+    description: "A forest where everyone can take a walk\r"
     inquiredParameters:
     - parameter: 0
       value: 0
@@ -36,8 +36,8 @@ MonoBehaviour:
       rate: 2
     - item: {fileID: 11400000, guid: 399a39c2c2c2f97468829fccced19baf, type: 2}
       rate: 2
-  - name: 
-    description: 
+  - name: Lv.2 Forest
+    description: "A deeper forest\r"
     inquiredParameters:
     - parameter: 0
       value: 60
@@ -54,8 +54,8 @@ MonoBehaviour:
       rate: 5
     - item: {fileID: 11400000, guid: 833074a196207034d81e6e0d0fc18e71, type: 2}
       rate: 5
-  - name: 
-    description: 
+  - name: Lv.3 Forest
+    description: If you're not careful, you might get lost in the woods.
     inquiredParameters:
     - parameter: 0
       value: 100

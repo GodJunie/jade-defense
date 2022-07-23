@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Fishing
   datas:
-  - name: 
-    description: 
+  - name: Lv.1 Fishing Spot
+    description: 't''s an ordinary fishing spot.
+
+      If you''re unlucky, you
+      can go back empty-handed.'
     inquiredParameters:
     - parameter: 1
       value: 0
@@ -40,8 +43,11 @@ MonoBehaviour:
       rate: 1
     - item: {fileID: 11400000, guid: 78e18f32963f60c478c6ae54511c20af, type: 2}
       rate: 1
-  - name: 
-    description: 
+  - name: Lv.2 Fishing Spot
+    description: 't''s an ordinary fishing spot.
+
+      If you''re unlucky, you
+      can go back empty-handed.'
     inquiredParameters:
     - parameter: 1
       value: 60
@@ -66,8 +72,11 @@ MonoBehaviour:
       rate: 0
     - item: {fileID: 11400000, guid: ca2e979313aa1844489baeb7da42fbd5, type: 2}
       rate: 0
-  - name: 
-    description: 
+  - name: Lv.3 Fishing Spot
+    description: 't''s an ordinary fishing spot.
+
+      If you''re unlucky, you
+      can go back empty-handed.'
     inquiredParameters:
     - parameter: 1
       value: 100

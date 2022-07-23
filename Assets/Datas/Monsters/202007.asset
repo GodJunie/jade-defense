@@ -27,11 +27,11 @@ MonoBehaviour:
     targetCount: 3
     targetEnemy: 1
     attackSpeed: 1
-    attackMode: 0
+    attackMode: 3
     atk: 100
     heal: 0
     interval: 0
-    duration: 0
+    duration: 2
     distance: 0
     slowRate: 0
   cost: []
