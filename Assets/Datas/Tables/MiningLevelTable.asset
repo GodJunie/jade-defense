@@ -18,11 +18,11 @@ MonoBehaviour:
     description: A plain open-air mine
     inquiredParameters:
     - parameter: 1
-      value: 0
+      value: 2
     - parameter: 3
-      value: 0
+      value: 1
     - parameter: 4
-      value: 0
+      value: 1
     datas:
     - item: {fileID: 11400000, guid: 6cfc62c1f8f4cbe4aa6b0dce0ba211a5, type: 2}
       rate: 30
@@ -40,11 +40,11 @@ MonoBehaviour:
     description: A small crystal mine
     inquiredParameters:
     - parameter: 1
-      value: 60
+      value: 4
     - parameter: 3
-      value: 60
+      value: 2
     - parameter: 4
-      value: 60
+      value: 2
     datas:
     - item: {fileID: 11400000, guid: 2a8f5b526502ed84591e7a20a532b0c6, type: 2}
       rate: 20
@@ -66,11 +66,51 @@ MonoBehaviour:
     description: A dangerous but magnificent mine
     inquiredParameters:
     - parameter: 1
-      value: 100
+      value: 3
     - parameter: 3
-      value: 100
+      value: 6
     - parameter: 4
-      value: 100
+      value: 6
+    datas:
+    - item: {fileID: 11400000, guid: 8819069af7e162d408dc99326cf7db3c, type: 2}
+      rate: 20
+    - item: {fileID: 11400000, guid: a6d0e8549b775ed4282034afc3543642, type: 2}
+      rate: 20
+    - item: {fileID: 11400000, guid: ca2e979313aa1844489baeb7da42fbd5, type: 2}
+      rate: 20
+    - item: {fileID: 11400000, guid: 4698e7bc9a1df2b419c0c7a178891be6, type: 2}
+      rate: 20
+    - item: {fileID: 11400000, guid: af0c164a14f2c0c4392121afb06d230b, type: 2}
+      rate: 20
+  - name: Lv.3 Mine
+    description: A dangerous but magnificent mine
+    inquiredParameters:
+    - parameter: 1
+      value: 4
+    - parameter: 3
+      value: 8
+    - parameter: 4
+      value: 8
+    datas:
+    - item: {fileID: 11400000, guid: 8819069af7e162d408dc99326cf7db3c, type: 2}
+      rate: 20
+    - item: {fileID: 11400000, guid: a6d0e8549b775ed4282034afc3543642, type: 2}
+      rate: 20
+    - item: {fileID: 11400000, guid: ca2e979313aa1844489baeb7da42fbd5, type: 2}
+      rate: 20
+    - item: {fileID: 11400000, guid: 4698e7bc9a1df2b419c0c7a178891be6, type: 2}
+      rate: 20
+    - item: {fileID: 11400000, guid: af0c164a14f2c0c4392121afb06d230b, type: 2}
+      rate: 20
+  - name: Lv.3 Mine
+    description: A dangerous but magnificent mine
+    inquiredParameters:
+    - parameter: 1
+      value: 5
+    - parameter: 3
+      value: 10
+    - parameter: 4
+      value: 10
     datas:
     - item: {fileID: 11400000, guid: 8819069af7e162d408dc99326cf7db3c, type: 2}
       rate: 20

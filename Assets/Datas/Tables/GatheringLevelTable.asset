@@ -18,11 +18,11 @@ MonoBehaviour:
     description: "A forest where everyone can take a walk\r"
     inquiredParameters:
     - parameter: 0
-      value: 0
+      value: 1
     - parameter: 2
-      value: 0
+      value: 2
     - parameter: 3
-      value: 0
+      value: 1
     datas:
     - item: {fileID: 11400000, guid: 0465222f67f9b7e4ba9cb95425060404, type: 2}
       rate: 40
@@ -40,11 +40,11 @@ MonoBehaviour:
     description: "A deeper forest\r"
     inquiredParameters:
     - parameter: 0
-      value: 60
+      value: 2
     - parameter: 2
-      value: 60
+      value: 4
     - parameter: 3
-      value: 60
+      value: 2
     datas:
     - item: {fileID: 11400000, guid: 6475d979bdcdecd41844424dd46b9ce0, type: 2}
       rate: 45
@@ -58,11 +58,39 @@ MonoBehaviour:
     description: If you're not careful, you might get lost in the woods.
     inquiredParameters:
     - parameter: 0
-      value: 100
+      value: 3
     - parameter: 2
-      value: 100
+      value: 6
     - parameter: 3
-      value: 100
+      value: 3
+    datas:
+    - item: {fileID: 11400000, guid: 399a39c2c2c2f97468829fccced19baf, type: 2}
+      rate: 50
+    - item: {fileID: 11400000, guid: 833074a196207034d81e6e0d0fc18e71, type: 2}
+      rate: 50
+  - name: Lv.3 Forest
+    description: If you're not careful, you might get lost in the woods.
+    inquiredParameters:
+    - parameter: 0
+      value: 4
+    - parameter: 2
+      value: 8
+    - parameter: 3
+      value: 4
+    datas:
+    - item: {fileID: 11400000, guid: 399a39c2c2c2f97468829fccced19baf, type: 2}
+      rate: 50
+    - item: {fileID: 11400000, guid: 833074a196207034d81e6e0d0fc18e71, type: 2}
+      rate: 50
+  - name: Lv.3 Forest
+    description: If you're not careful, you might get lost in the woods.
+    inquiredParameters:
+    - parameter: 0
+      value: 5
+    - parameter: 2
+      value: 10
+    - parameter: 3
+      value: 5
     datas:
     - item: {fileID: 11400000, guid: 399a39c2c2c2f97468829fccced19baf, type: 2}
       rate: 50

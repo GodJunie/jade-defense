@@ -16,11 +16,11 @@ MonoBehaviour:
   datas:
   - inquiredParameters:
     - parameter: 0
-      value: 0
+      value: 2
     - parameter: 4
-      value: 0
+      value: 1
     - parameter: 1
-      value: 0
+      value: 1
     datas:
     - {fileID: 11400000, guid: 1444acd205dc7c34d80d141bb04981d9, type: 2}
     - {fileID: 11400000, guid: 56bc07dc82a4ea544a0edd77490edd00, type: 2}
@@ -29,11 +29,11 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 3708bf0f9f6f55b4fbf8db66a2bbbce7, type: 2}
   - inquiredParameters:
     - parameter: 0
-      value: 60
+      value: 4
     - parameter: 4
-      value: 60
+      value: 2
     - parameter: 1
-      value: 60
+      value: 2
     datas:
     - {fileID: 11400000, guid: 9b50af89340758742a8162963fae02f6, type: 2}
     - {fileID: 11400000, guid: 2d732601adca17c4796c5be3cd03981f, type: 2}
@@ -42,11 +42,37 @@ MonoBehaviour:
     - {fileID: 11400000, guid: c2f499da0a580f041a702063fea7f6e5, type: 2}
   - inquiredParameters:
     - parameter: 0
-      value: 100
+      value: 6
     - parameter: 4
-      value: 100
+      value: 3
     - parameter: 1
-      value: 100
+      value: 3
+    datas:
+    - {fileID: 11400000, guid: 3b1f87153432b0c4a8cc1439b2a09e05, type: 2}
+    - {fileID: 11400000, guid: 675a1f3fab1061946ad23832d2202604, type: 2}
+    - {fileID: 11400000, guid: d8409d0f57ab86d4d84333b9c30da512, type: 2}
+    - {fileID: 11400000, guid: 4490b655bc682364a8c35bbcf3459892, type: 2}
+    - {fileID: 11400000, guid: 1d566a1356073fa41aecb6492a053a04, type: 2}
+  - inquiredParameters:
+    - parameter: 0
+      value: 8
+    - parameter: 4
+      value: 4
+    - parameter: 1
+      value: 4
+    datas:
+    - {fileID: 11400000, guid: 3b1f87153432b0c4a8cc1439b2a09e05, type: 2}
+    - {fileID: 11400000, guid: 675a1f3fab1061946ad23832d2202604, type: 2}
+    - {fileID: 11400000, guid: d8409d0f57ab86d4d84333b9c30da512, type: 2}
+    - {fileID: 11400000, guid: 4490b655bc682364a8c35bbcf3459892, type: 2}
+    - {fileID: 11400000, guid: 1d566a1356073fa41aecb6492a053a04, type: 2}
+  - inquiredParameters:
+    - parameter: 0
+      value: 10
+    - parameter: 4
+      value: 5
+    - parameter: 1
+      value: 5
     datas:
     - {fileID: 11400000, guid: 3b1f87153432b0c4a8cc1439b2a09e05, type: 2}
     - {fileID: 11400000, guid: 675a1f3fab1061946ad23832d2202604, type: 2}

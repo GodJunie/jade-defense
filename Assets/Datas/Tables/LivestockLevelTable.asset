@@ -18,11 +18,11 @@ MonoBehaviour:
     description: 
     inquiredParameters:
     - parameter: 2
-      value: 0
+      value: 1
     - parameter: 3
-      value: 0
+      value: 1
     - parameter: 4
-      value: 0
+      value: 2
     datas:
     - item: {fileID: 11400000, guid: 4798147202ceb8e4fb0ffe48ca90b35f, type: 2}
       rate: 60
@@ -32,11 +32,11 @@ MonoBehaviour:
     description: 
     inquiredParameters:
     - parameter: 2
-      value: 60
+      value: 2
     - parameter: 3
-      value: 60
+      value: 2
     - parameter: 4
-      value: 60
+      value: 4
     datas:
     - item: {fileID: 11400000, guid: 413dffb8e9b38b34a92a89061d803313, type: 2}
       rate: 60
@@ -46,11 +46,39 @@ MonoBehaviour:
     description: 
     inquiredParameters:
     - parameter: 2
-      value: 100
+      value: 3
     - parameter: 3
-      value: 100
+      value: 3
     - parameter: 4
-      value: 100
+      value: 6
+    datas:
+    - item: {fileID: 11400000, guid: d01f26e10b6314f489b446ab8fad8538, type: 2}
+      rate: 60
+    - item: {fileID: 11400000, guid: 99560d3f98795c84e85aec7aaa877621, type: 2}
+      rate: 40
+  - name: Lv.3 Pig Farm
+    description: 
+    inquiredParameters:
+    - parameter: 2
+      value: 4
+    - parameter: 3
+      value: 4
+    - parameter: 4
+      value: 8
+    datas:
+    - item: {fileID: 11400000, guid: d01f26e10b6314f489b446ab8fad8538, type: 2}
+      rate: 60
+    - item: {fileID: 11400000, guid: 99560d3f98795c84e85aec7aaa877621, type: 2}
+      rate: 40
+  - name: Lv.3 Pig Farm
+    description: 
+    inquiredParameters:
+    - parameter: 2
+      value: 5
+    - parameter: 3
+      value: 5
+    - parameter: 4
+      value: 10
     datas:
     - item: {fileID: 11400000, guid: d01f26e10b6314f489b446ab8fad8538, type: 2}
       rate: 60
