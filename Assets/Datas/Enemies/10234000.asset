@@ -12,23 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 757c8c785baccab44940077569ff3999, type: 3}
   m_Name: 10234000
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: 738747a13361a4eddbf75b0f6b241ebd, type: 3}
+  icon: {fileID: 21300000, guid: c5e8bb12ccb6f420bb4d5c73eb831226, type: 3}
   id: 10234000
-  name: Cat Knights
-  description: Cat Knights
+  name: Black Crow Army(Green)
+  description: Black Crow Army(Green)
   prefab: {fileID: 269059333388698959, guid: 8c1deebe71c49c9418af196bbc67335b, type: 3}
   status:
     cooltime: 1
-    hp: 75
-    moveSpeed: 1
-    range: 0.5
+    hp: 100
+    moveSpeed: 1.5
+    range: 0.2
     targetFilterMode: 3
     descending: 0
     targetCount: 1
     targetEnemy: 1
-    attackSpeed: 1
+    attackSpeed: 0.5
     attackMode: 0
-    atk: 16
+    atk: 12
     heal: 0
     interval: 0
     duration: 0

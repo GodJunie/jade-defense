@@ -18,8 +18,8 @@ MonoBehaviour:
   description: Fox Wizard
   prefab: {fileID: 6699564115591661113, guid: 0c05f931580cb454c8c3ff22f7a4341f, type: 3}
   status:
-    cooltime: 1
-    hp: 100
+    cooltime: 4
+    hp: 250
     moveSpeed: 1
     range: 4
     targetFilterMode: 2
@@ -34,4 +34,10 @@ MonoBehaviour:
     duration: 0
     distance: 0
     slowRate: 0
-  cost: []
+  cost:
+  - item: {fileID: 11400000, guid: 4698e7bc9a1df2b419c0c7a178891be6, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: dee6bd5528c069346b3ad70bbb3c2434, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: 4d3faea022c796f4fb8a5685081f4264, type: 2}
+    count: 1

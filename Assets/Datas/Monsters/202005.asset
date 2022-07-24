@@ -18,15 +18,15 @@ MonoBehaviour:
   description: Fox Apprentice Wizard
   prefab: {fileID: 2003035266538773228, guid: 3b56a9bff923e884fbce0f497a0e4d73, type: 3}
   status:
-    cooltime: 1
-    hp: 100
+    cooltime: 2
+    hp: 200
     moveSpeed: 1
     range: 2
     targetFilterMode: 2
     descending: 0
     targetCount: 1
     targetEnemy: 0
-    attackSpeed: 1
+    attackSpeed: 4
     attackMode: 2
     atk: 0
     heal: 30
@@ -34,4 +34,10 @@ MonoBehaviour:
     duration: 0
     distance: 0
     slowRate: 0
-  cost: []
+  cost:
+  - item: {fileID: 11400000, guid: cc3dd6c5bbb67c34dab31070659567ab, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: 0cab179eb99b45b4d85e859b4b88fbf8, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: 850fca931e1dad0458e9eca700d63bc3, type: 2}
+    count: 1

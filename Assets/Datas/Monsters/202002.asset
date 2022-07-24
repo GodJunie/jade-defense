@@ -16,22 +16,26 @@ MonoBehaviour:
   id: 202002
   name: Fox Bandit
   description: Fox Bandit
-  prefab: {fileID: 7873105012748281004, guid: 9d63df81306463b40bbb51b36953eb46, type: 3}
+  prefab: {fileID: 7586491907923939134, guid: 2709535f71afb5e4c91f1cfd0b5dc968, type: 3}
   status:
     cooltime: 1
-    hp: 100
+    hp: 300
     moveSpeed: 1
-    range: 1
+    range: 0.3
     targetFilterMode: 3
     descending: 0
     targetCount: 1
     targetEnemy: 1
     attackSpeed: 1
     attackMode: 0
-    atk: 15
+    atk: 20
     heal: 0
     interval: 0
     duration: 0
     distance: 0
     slowRate: 0
-  cost: []
+  cost:
+  - item: {fileID: 11400000, guid: 41c9d1852d7a7d3448a09aa07eab9e9a, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: 839cdc6b477a4834cb515d129ebf87cc, type: 2}
+    count: 1

@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ba8502080cef1545bee096c10b79d8f, type: 3}
+  m_Name: 102200
+  m_EditorClassIdentifier: 
+  id: 102200
+  enemies:
+  - {fileID: 11400000, guid: a9930aae7a9aeeb479241856a5043f52, type: 2}
+  - {fileID: 11400000, guid: a9930aae7a9aeeb479241856a5043f52, type: 2}
+  - {fileID: 11400000, guid: a9930aae7a9aeeb479241856a5043f52, type: 2}
+  - {fileID: 11400000, guid: deb5ad50cc707c34ea9eb0016dd7add4, type: 2}
+  - {fileID: 11400000, guid: deb5ad50cc707c34ea9eb0016dd7add4, type: 2}
+  - {fileID: 11400000, guid: deb5ad50cc707c34ea9eb0016dd7add4, type: 2}
+  - {fileID: 11400000, guid: fdf456d321d45cb49827beadd76ec9e1, type: 2}
+  - {fileID: 11400000, guid: fdf456d321d45cb49827beadd76ec9e1, type: 2}
+  - {fileID: 11400000, guid: fdf456d321d45cb49827beadd76ec9e1, type: 2}
+  - {fileID: 11400000, guid: fdf456d321d45cb49827beadd76ec9e1, type: 2}
+  - {fileID: 11400000, guid: fdf456d321d45cb49827beadd76ec9e1, type: 2}
+  - {fileID: 11400000, guid: fdf456d321d45cb49827beadd76ec9e1, type: 2}
+  - {fileID: 11400000, guid: fdf456d321d45cb49827beadd76ec9e1, type: 2}
+  - {fileID: 11400000, guid: fdf456d321d45cb49827beadd76ec9e1, type: 2}
+  - {fileID: 11400000, guid: fdf456d321d45cb49827beadd76ec9e1, type: 2}
+  - {fileID: 11400000, guid: fdf456d321d45cb49827beadd76ec9e1, type: 2}
+  rewards:
+  - {fileID: 11400000, guid: dee6bd5528c069346b3ad70bbb3c2434, type: 2}
+  - {fileID: 11400000, guid: dee6bd5528c069346b3ad70bbb3c2434, type: 2}
+  - {fileID: 11400000, guid: dee6bd5528c069346b3ad70bbb3c2434, type: 2}
+  - {fileID: 11400000, guid: 0cab179eb99b45b4d85e859b4b88fbf8, type: 2}
+  - {fileID: 11400000, guid: 144e3015abcb36844b2d8f50bee8dd1c, type: 2}
+  - {fileID: 11400000, guid: 144e3015abcb36844b2d8f50bee8dd1c, type: 2}

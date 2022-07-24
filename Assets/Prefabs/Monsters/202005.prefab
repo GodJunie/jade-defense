@@ -655,8 +655,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultDirection: 0
-  moveAnimation: Attack
-  attackAnimation: Run
+  moveAnimation: Run
+  attackAnimation: Attack
   dieAnimation: Die
   hitbox: {fileID: 2512795489104243516}
   detector: {fileID: 2764978597057570438}

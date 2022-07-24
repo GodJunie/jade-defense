@@ -19,19 +19,25 @@ MonoBehaviour:
   prefab: {fileID: 3057974119078451742, guid: 836e7369c706be64a8d9e058bfffb49c, type: 3}
   status:
     cooltime: 5
-    hp: 400
-    moveSpeed: 0.3
+    hp: 1700
+    moveSpeed: 0
     range: 2
     targetFilterMode: 3
     descending: 0
-    targetCount: 3
+    targetCount: 1
     targetEnemy: 1
-    attackSpeed: 1
+    attackSpeed: 2
     attackMode: 0
-    atk: 100
+    atk: 200
     heal: 0
     interval: 0
-    duration: 0
+    duration: 3
     distance: 0
     slowRate: 0
-  cost: []
+  cost:
+  - item: {fileID: 11400000, guid: a6d0e8549b775ed4282034afc3543642, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: 0cab179eb99b45b4d85e859b4b88fbf8, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: 4343383087fbdc546bdedfd570175388, type: 2}
+    count: 1
