@@ -18,6 +18,17 @@ namespace B409.Jade.UI {
         private Text textName;
         [SerializeField]
         private Text textScript;
+        [SerializeField]
+        private Image imageBackground;
+        [SerializeField]
+        private Transform backgroundHolder;
+        [SerializeField]
+        private Transform leftCharacterHolder;
+        [SerializeField]
+        private Transform rightCharacterHolder;
+
+        private DialogueCharacter leftCharacter;
+        private DialogueCharacter rightCharacter;
 
         private System.Threading.CancellationTokenSource click;
 
@@ -35,7 +46,6 @@ namespace B409.Jade.UI {
         public async void Open() {
             foreach(var sequence in data.Datas) {
                 await PlaySequence(sequence);
-                await GetWaitClick(1);
             }
         }
 
@@ -49,23 +59,79 @@ namespace B409.Jade.UI {
         }
 
         private async UniTask PlaySequence(DialogueData.DialogueSequenceData sequence) {
-            var left = sequence.LeftCharacter;
-            var right = sequence.RightCharacter;
-            var script = sequence.Script;
+            switch(sequence.SequenceSort) {
+            case DialogueData.SequenceSort.Script:
+                var left = sequence.LeftCharacter;
+                var right = sequence.RightCharacter;
+                var script = sequence.ScriptInfo;
 
-            if(script.Name != "") {
-                this.textName.text = script.Name;
-            }
+                if(left.Mode == DialogueData.CharacterMode.Appear) {
+                    for(int i = 0; i < leftCharacterHolder.childCount; i++) {
+                        Destroy(leftCharacterHolder.GetChild(i).gameObject);
+                    }
 
-            if(script.Script != "") {
-                await PlayScript(script.Script, script.Speed, script.Skippable);
+                    this.leftCharacter = Instantiate(left.Target, leftCharacterHolder.position, leftCharacterHolder.rotation, leftCharacterHolder);
+
+                    leftCharacter.Appear(true);
+                } else if(left.Mode == DialogueData.CharacterMode.Disappear) {
+                    for(int i = 0; i < leftCharacterHolder.childCount; i++) {
+                        Destroy(leftCharacterHolder.GetChild(i).gameObject);
+                    }
+                }
+
+                if(right.Mode == DialogueData.CharacterMode.Appear) {
+                    for(int i = 0; i < rightCharacterHolder.childCount; i++) {
+                        Destroy(rightCharacterHolder.GetChild(i).gameObject);
+                    }
+
+                    this.rightCharacter = Instantiate(right.Target, rightCharacterHolder.position, rightCharacterHolder.rotation, rightCharacterHolder);
+                    rightCharacter.Appear(false);
+                } else if(right.Mode == DialogueData.CharacterMode.Disappear) {
+                    for(int i = 0; i < rightCharacterHolder.childCount; i++) {
+                        Destroy(rightCharacterHolder.GetChild(i).gameObject);
+                    }
+                }
+
+                if(script.Name != "") {
+                    this.textName.text = script.Name;
+                }
+
+                if(script.Script != "") {
+                    leftCharacter?.SetFocus(script.ScriptFocus == DialogueData.ScriptFocus.Left);
+                    rightCharacter?.SetFocus(script.ScriptFocus == DialogueData.ScriptFocus.Right);
+                    
+                    await PlayScript(script.Script, script.Speed, script.Skippable);
+                    await GetWaitClick(1);
+                }
+                return;
+            case DialogueData.SequenceSort.Background:
+                switch(sequence.BackgroundMode) {
+                case DialogueData.BackgroundMode.InGameBackground:
+                    for(int i = 0; i < backgroundHolder.childCount; i++) {
+                        Destroy(backgroundHolder.GetChild(i).gameObject);
+                    }
+                    Instantiate(sequence.BackgroundObject, Vector3.zero, Quaternion.identity, backgroundHolder);
+
+                    this.imageBackground.gameObject.SetActive(false);
+                    break;
+                case DialogueData.BackgroundMode.Sprite:
+                    this.imageBackground.sprite = sequence.BackgroundSprite;
+                    this.imageBackground.gameObject.SetActive(true);
+                    break;
+                default:
+                    break;
+                }
+                return;
+            case DialogueData.SequenceSort.Effect:
+
+                return;
+            default:
+                return;
             }
+            
         }
 
         private async UniTask PlayScript(string script, float speed, bool skippable) {
-            if(speed == 0)
-                speed = 10;
-
             this.textScript.text = "";
             var task = this.textScript.DOText(script, speed).SetSpeedBased(true).ToUniTask();
 
