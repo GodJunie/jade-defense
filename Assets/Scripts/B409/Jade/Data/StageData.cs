@@ -40,15 +40,15 @@ namespace B409.Jade.Data {
         [SerializeField]
         private string description;
        
-        [BoxGroup("Stage Info")]
+        [BoxGroup("Sequence")]
         [SerializeField]
-        private List<BlockData> datas;
+        private List<StageSequenceData> datas;
 
 
         public int Id => id;
         public string Name => name;
         public string Description => description;
         public Sprite Background => background;
-        public List<BlockData> Datas => datas;
+        public List<StageSequenceData> Datas => datas;
     }
 }

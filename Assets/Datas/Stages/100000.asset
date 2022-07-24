@@ -18,10 +18,5 @@ MonoBehaviour:
   name: "\uD29C\uD1A0\uB9AC\uC5BC \uC2A4\uD14C\uC774\uC9C0"
   description: "\uD29C\uD1A0\uB9AC\uC5BC \uC2A4\uD14C\uC774\uC9C0"
   datas:
-  - day: 5
-    monsters:
-    - {fileID: 11400000, guid: 1cad6710dcf223e468247eb06cf52ce3, type: 2}
-    - {fileID: 11400000, guid: 491f1df46333f624aa1a277005fa32fb, type: 2}
-    - {fileID: 11400000, guid: a605c21ceaae03140ae802af7a8f4cb3, type: 2}
-    - {fileID: 11400000, guid: e40133b6b8960dd46a67a48c41659fcd, type: 2}
-    battle: {fileID: 11400000, guid: 16684c3df353e8148a05f0fd2a6c02e6, type: 2}
+  - {fileID: 11400000, guid: cfa2a348fdff8434d895e946bc45598b, type: 2}
+  - {fileID: 11400000, guid: 0751b43b0ef86794da4666a544ac0e0b, type: 2}

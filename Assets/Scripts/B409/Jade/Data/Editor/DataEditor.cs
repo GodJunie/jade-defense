@@ -25,12 +25,17 @@ namespace B409.Jade.Data.Editor {
         // Unit
         private static string MonsterDataFolderPath = "Assets/Datas/Monsters";
         private static string EnemyDataFolderPath = "Assets/Datas/Enemies";
-        // Table
-        private static string TableDataFolderPath = "Assets/Datas/Tables";
-        // Battle
-        private static string BattleDataFolderPath = "Assets/Datas/Battles";
         // Stage
         private static string StageDataFolderPath = "Assets/Datas/Stages";
+        // Stage Sequence
+        private static string DailyRoutineDataFolderPath = "Assets/Datas/DailyRoutines";
+        private static string DialogueDataFolderPath = "Assets/Datas/Dialogues";
+        // Battle
+        private static string BattleDataFolderPath = "Assets/Datas/Battles";
+
+        // Table
+        private static string TableDataFolderPath = "Assets/Datas/Tables";
+
 
         private CreateNewData<ItemData> createNewItemData;
         private CreateNewData<CookingData> createNewCookingData;
@@ -40,6 +45,8 @@ namespace B409.Jade.Data.Editor {
         private CreateNewData<EnemyData> createNewEnemyData;
         private CreateNewData<BattleData> createNewBattleData;
         private CreateNewData<StageData> createNewStageData;
+        private CreateNewData<DialogueData> createNewDialogueData;
+        private CreateNewData<DailyRoutineData> createNewDailyRoutineData;
 
         private void AddCreateMenu(OdinMenuTree tree) {
             createNewItemData = new CreateNewData<ItemData>(ItemDataFolderPath);
@@ -76,17 +83,26 @@ namespace B409.Jade.Data.Editor {
             tree.Add("7. Battle", createNewBattleData);
             tree.AddAllAssetsAtPath("7. Battle", BattleDataFolderPath, typeof(BattleData));
 
-            createNewStageData = new CreateNewData<StageData>(StageDataFolderPath);
-            tree.Add("8. Stage", createNewStageData);
-            tree.AddAllAssetsAtPath("8. Stage", StageDataFolderPath, typeof(StageData));
+            createNewDailyRoutineData = new CreateNewData<DailyRoutineData>(DailyRoutineDataFolderPath);
+            tree.Add("8. DailyRoutine", createNewDailyRoutineData);
+            tree.AddAllAssetsAtPath("8. DailyRoutine", DailyRoutineDataFolderPath, typeof(DailyRoutineData));
 
-            tree.AddAllAssetsAtPath("9. Table", TableDataFolderPath, typeof(ScriptableObject));
+            createNewDialogueData = new CreateNewData<DialogueData>(DialogueDataFolderPath);
+            tree.Add("9. Dialogue", createNewDialogueData);
+            tree.AddAllAssetsAtPath("9. Dialogue", DialogueDataFolderPath, typeof(DialogueData));
+
+            createNewStageData = new CreateNewData<StageData>(StageDataFolderPath);
+            tree.Add("10. Stage", createNewStageData);
+            tree.AddAllAssetsAtPath("10. Stage", StageDataFolderPath, typeof(StageData));
+
+            tree.AddAllAssetsAtPath("11. Table", TableDataFolderPath, typeof(ScriptableObject));
 
 
             tree.EnumerateTree().Where(e => e.Value is ItemData).ForEach(AddDragHandles);
             tree.EnumerateTree().Where(e => e.Value is RecipeData).ForEach(AddDragHandles);
             tree.EnumerateTree().Where(e => e.Value is UnitData).ForEach(AddDragHandles);
             tree.EnumerateTree().Where(e => e.Value is BattleData).ForEach(AddDragHandles);
+            tree.EnumerateTree().Where(e => e.Value is StageSequenceData).ForEach(AddDragHandles);
 
 
             tree.SortMenuItemsByName();

@@ -4,8 +4,8 @@ using UnityEngine;
 using Sirenix.OdinInspector;
 
 namespace B409.Jade.Data {
-    [System.Serializable]
-    public class BlockData {
+    [CreateAssetMenu(fileName = "DailyRoutineData", menuName = "B409/Daily Routine Data")]
+    public class DailyRoutineData : StageSequenceData {
         [FoldoutGroup("@Summary")]
         [HorizontalGroup("@Summary/group", .5f)]
         [VerticalGroup("@Summary/group/group")]
@@ -31,7 +31,7 @@ namespace B409.Jade.Data {
 #if UNITY_EDITOR
         private string Summary {
             get {
-                return string.Format("Day: {0}, Monsters: {1}, Battle Id: {2}", this.day, this.monsters?.Count, this.battle.name);
+                return string.Format("Day: {0}, Monsters: {1}, Battle Id: {2}", this.day, this.monsters?.Count, this.battle?.name);
             }
         }
 #endif
