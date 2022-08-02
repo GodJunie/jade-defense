@@ -30,10 +30,22 @@ namespace B409.Jade.Data {
         [FoldoutGroup("@Summary")]
         [BoxGroup("@Summary/Data")]
         [HorizontalGroup("@Summary/Data/group", 300f)]
-        [BoxGroup("@Summary/Data/group/Inquired Parameters")]
+        [VerticalGroup("@Summary/Data/group/group")]
+        [BoxGroup("@Summary/Data/group/group/Inquired Parameters")]
         [ListDrawerSettings(Expanded = true, AddCopiesLastElement = true)]
         [SerializeField]
         private List<ParameterValue> inquiredParameters = new List<ParameterValue>();
+
+        [BoxGroup("@Summary/Data/group/group/Reward Parameters")]
+        [ListDrawerSettings(Expanded = true, AddCopiesLastElement = true)]
+        [SerializeField]
+        private List<ParameterValue> rewardParameters = new List<ParameterValue>();
+
+        [BoxGroup("@Summary/Data/group/group/AP")]
+        [HideLabel]
+        [SerializeField]
+        private float ap;
+
 
         [HorizontalGroup("@Summary/Data/group")]
         [BoxGroup("@Summary/Data/group/Datas")]
@@ -44,6 +56,8 @@ namespace B409.Jade.Data {
         public string Name => name;
         public string Description => description;
         public List<ParameterValue> InquiredParameters => inquiredParameters;
+        public List<ParameterValue> RewardParameters => rewardParameters;
+        public float AP => ap;
         public List<ItemRateData> Datas => datas;
 
         [Serializable]

@@ -235,7 +235,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3c488d2875bd89545affc7f32e89e879, type: 2}
   - {fileID: 11400000, guid: ddd3ea87b7ab2324993544d898b25cd8, type: 2}
   - {fileID: 11400000, guid: 9fe6a1efb7043344e845755599dc0194, type: 2}
-  jewelries:
+  jewelleries:
   - {fileID: 11400000, guid: 1444acd205dc7c34d80d141bb04981d9, type: 2}
   - {fileID: 11400000, guid: 9b50af89340758742a8162963fae02f6, type: 2}
   - {fileID: 11400000, guid: 3b1f87153432b0c4a8cc1439b2a09e05, type: 2}
@@ -369,3 +369,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c8279350dcecce040930c9d91c4ac7e3, type: 2}
   - {fileID: 11400000, guid: b40d8a7c8aa836d4797fa8d59da1c00d, type: 2}
   - {fileID: 11400000, guid: 72db5c086af618d4ab77f2490910463c, type: 2}
+  stages:
+  - {fileID: 11400000, guid: 51c6cd1f989cd4147a2e15cb67481da0, type: 2}
+  - {fileID: 11400000, guid: f562919d324cd4848a2801902656f663, type: 2}
+  - {fileID: 11400000, guid: 44840d89acc28b24e86ce3e44f101115, type: 2}
+  - {fileID: 11400000, guid: 0c204a1a62134a4479a8207e2bea6144, type: 2}
+  - {fileID: 11400000, guid: 9419d115dfdfdef47a6feb34606d053f, type: 2}
+  - {fileID: 11400000, guid: ce382915901f7c542bda064ddfc35eb9, type: 2}
+  - {fileID: 11400000, guid: 9f57ace04592e7a4a844f368b5adfdda, type: 2}

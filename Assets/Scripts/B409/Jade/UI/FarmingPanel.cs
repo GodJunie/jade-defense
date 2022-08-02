@@ -18,6 +18,9 @@ namespace B409.Jade.UI {
         [BoxGroup("General")]
         [SerializeField]
         private Transform farmContainer;
+        [BoxGroup("General")]
+        [SerializeField]
+        private MainScreen mainScreen;
 
         [BoxGroup("Info Panel")]
         [SerializeField]
@@ -84,6 +87,7 @@ namespace B409.Jade.UI {
 
         public void OnEnterFarm() {
             GameManager.Instance.Farming(data);
+            mainScreen.Init();
             this.infoPanel.SetActive(false);
             this.gameObject.SetActive(false);
         }

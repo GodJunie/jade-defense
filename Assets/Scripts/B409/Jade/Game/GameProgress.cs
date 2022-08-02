@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+// Json
+using Newtonsoft.Json;
 
 namespace B409.Jade.Game {
     using Data;
@@ -9,9 +11,26 @@ namespace B409.Jade.Game {
     public class GameProgress {
         public int DDay { get; private set; }
         public int Stage { get; private set; }
+        public int StageSequence { get; private set; }
         public float AP { get; private set; }
         public Dictionary<int, int> Items { get; private set; }
         public Dictionary<Parameter, float> Parameters { get; private set; }
+
+        public float MaxAP {
+            get {
+                return Mathf.Lerp(100f, 200f, Parameters[Parameter.Endurance] / 120f);
+            }
+        }
+
+        [JsonConstructor]
+        public GameProgress(int dDay, int stage, int stageSequence, float ap, Dictionary<int, int> items, Dictionary<Parameter, float> parameters) {
+            this.DDay = dDay;
+            this.Stage = stage;
+            this.StageSequence = stageSequence;
+            this.AP = ap;
+            this.Items = items;
+            this.Parameters = parameters;
+        }
 
         public GameProgress() {
             this.Items = new Dictionary<int, int>();
@@ -25,8 +44,42 @@ namespace B409.Jade.Game {
         }
 
         public static GameProgress FromJson(string json) {
-            var progress = new GameProgress();
-            return progress;
+            return JsonConvert.DeserializeObject<GameProgress>(json);
+        }
+
+        public string ToJson() {
+            return JsonConvert.SerializeObject(this);
+        }
+
+        public void DailyRoutineStart(DailyRoutineData data) {
+            this.DDay = data.Day;
+        }
+
+        public void TurnStart() {
+            this.AP = MaxAP;
+        }
+
+        public void TurnEnd() {
+            this.DDay--;
+        }
+
+        public void NextStage() {
+            this.Stage++;
+            this.StageSequence = 0;
+        }
+
+        public void NextStageSequence() {
+            this.StageSequence++;
+        }
+
+        public void ConsumeAP(float ap) {
+            this.AP -= ap;
+        }
+
+        public void GetParameters(List<ParameterValue> parameters) {
+            foreach(var param in parameters) {
+                this.Parameters[param.Parameter] += param.Value;
+            }
         }
 
         public int GetItemCount(int id) {
