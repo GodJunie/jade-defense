@@ -23,6 +23,12 @@ MonoBehaviour:
       value: 25
     - parameter: 4
       value: 25
+    rewardParameters:
+    - parameter: 0
+      value: 0
+    - parameter: 0
+      value: 0
+    ap: 0
     datas:
     - {fileID: 11400000, guid: 032638d6818c28f44a135b2021194ca9, type: 2}
     - {fileID: 11400000, guid: 633f3efb125e7124abdafb28fdf42b75, type: 2}
@@ -37,11 +43,11 @@ MonoBehaviour:
       value: 50
     - parameter: 4
       value: 50
+    rewardParameters: []
+    ap: 0
     datas:
-    - {fileID: 11400000, guid: 032638d6818c28f44a135b2021194ca9, type: 2}
-    - {fileID: 11400000, guid: 633f3efb125e7124abdafb28fdf42b75, type: 2}
-    - {fileID: 11400000, guid: f5e5f3e41ad34a1499ca8b0917135544, type: 2}
-    - {fileID: 11400000, guid: 588fcc87bddff7344897dec040e1bbe6, type: 2}
+    - {fileID: 11400000, guid: b2755939eacab7a4c93cdb60f177a926, type: 2}
+    - {fileID: 11400000, guid: 636c5d244125f714caf4fbbda167bd85, type: 2}
   - inquiredParameters:
     - parameter: 0
       value: 75
@@ -51,6 +57,8 @@ MonoBehaviour:
       value: 75
     - parameter: 4
       value: 75
+    rewardParameters: []
+    ap: 0
     datas:
     - {fileID: 11400000, guid: 032638d6818c28f44a135b2021194ca9, type: 2}
     - {fileID: 11400000, guid: 633f3efb125e7124abdafb28fdf42b75, type: 2}
@@ -65,6 +73,8 @@ MonoBehaviour:
       value: 120
     - parameter: 4
       value: 120
+    rewardParameters: []
+    ap: 0
     datas:
     - {fileID: 11400000, guid: 032638d6818c28f44a135b2021194ca9, type: 2}
     - {fileID: 11400000, guid: 633f3efb125e7124abdafb28fdf42b75, type: 2}
@@ -79,6 +89,8 @@ MonoBehaviour:
       value: 5
     - parameter: 4
       value: 5
+    rewardParameters: []
+    ap: 0
     datas:
     - {fileID: 11400000, guid: 032638d6818c28f44a135b2021194ca9, type: 2}
     - {fileID: 11400000, guid: 633f3efb125e7124abdafb28fdf42b75, type: 2}

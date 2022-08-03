@@ -11681,6 +11681,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 94749224}
     m_Modifications:
+    - target: {fileID: 405832266849828898, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 405832266849828898, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 405832266849828898, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 405832266849828898, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 405832266979777904, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 405832267079047526, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 405832267079047526, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 405832267079047526, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 405832267079047526, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466473384246093832, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466473385712833404, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2466473385728936250, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -11769,10 +11813,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: PanelFarming
       objectReference: {fileID: 0}
+    - target: {fileID: 2466473385728936253, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2466473385728936254, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
       propertyPath: mainScreen
       value: 
       objectReference: {fileID: 1107708337}
+    - target: {fileID: 2981606674993133296, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 72dcfe1acfcde406b8b7dc8b42635600, type: 2}
+    - target: {fileID: 2981606674993133296, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 542415631191372739, guid: 72dcfe1acfcde406b8b7dc8b42635600, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
 --- !u!1001 &625684975313695790
@@ -11832,7 +11888,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1382406197748594332, guid: 0c33cd2705c79e34e83d3a8185c9685e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3507919212788293615, guid: 0c33cd2705c79e34e83d3a8185c9685e, type: 3}
       propertyPath: items.Array.size
@@ -12005,7 +12061,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8574676932031490703, guid: dac715fe1b31c1d41ba13cafedb4f317, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dac715fe1b31c1d41ba13cafedb4f317, type: 3}
@@ -13548,6 +13604,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5660966226806845386, guid: ffb414a3caf2cbc4cb908716c2ce9695, type: 3}
+      propertyPath: mainScreen
+      value: 
+      objectReference: {fileID: 1107708337}
     - target: {fileID: 5660966226806845390, guid: ffb414a3caf2cbc4cb908716c2ce9695, type: 3}
       propertyPath: m_Name
       value: PanelRecipe

@@ -3,34 +3,36 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Sirenix.OdinInspector;
+using TMPro;
 
 namespace B409.Jade.UI {
     using Game;
     using Data;
 
     public class FarmingPanel : MonoBehaviour {
+        [BoxGroup("Connect")]
+        [SerializeField]
+        private MainScreen mainScreen;
+
         [BoxGroup("General")]
         [SerializeField]
-        private Text textName;
+        private TMP_Text textName;
         [BoxGroup("General")]
         [SerializeField]
         private FarmingSlot farmSlotPrefab;
         [BoxGroup("General")]
         [SerializeField]
         private Transform farmContainer;
-        [BoxGroup("General")]
-        [SerializeField]
-        private MainScreen mainScreen;
 
         [BoxGroup("Info Panel")]
         [SerializeField]
         private GameObject infoPanel;
         [BoxGroup("Info Panel")]
         [SerializeField]
-        private Text textFarmName;
+        private TMP_Text textFarmName;
         [BoxGroup("Info Panel")]
         [SerializeField]
-        private Text textFarmDescription;
+        private TMP_Text textFarmDescription;
         [BoxGroup("Info Panel")]
         [SerializeField]
         private Transform itemContainer;
@@ -39,7 +41,7 @@ namespace B409.Jade.UI {
         private ItemSlot itemSlotPrefab;
         [BoxGroup("Info Panel")]
         [SerializeField]
-        private Text textInquiredParameters;
+        private TMP_Text textInquiredParameters;
         [BoxGroup("Info Panel")]
         [SerializeField]
         private Button buttonEnter;

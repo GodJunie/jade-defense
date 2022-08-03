@@ -10,7 +10,11 @@ using Sirenix.OdinInspector;
 
 namespace B409.Jade.Data {
     [CreateAssetMenu(fileName = "JewelleryLevelData", menuName = "B409/Jewellery Level Data")]
-    public class JewelleryLevelTable : RecipeLevelTable<JewelleryLevelTable, JewelleryData> {
+    public class JewelleryLevelTable : RecipeLevelTable<JewelleryLevelTable, JewelleryLevelData, JewelleryData> {
+
+    }
+
+    public class JewelleryLevelData : RecipeLevelData<JewelleryLevelData, JewelleryData> {
 
     }
 }

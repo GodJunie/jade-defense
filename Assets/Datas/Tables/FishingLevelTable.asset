@@ -14,18 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Fishing
   datas:
-  - name: Lv.1 Fishing Spot
-    description: 't''s an ordinary fishing spot.
-
-      If you''re unlucky, you can
-      go back empty-handed.'
-    inquiredParameters:
+  - inquiredParameters:
     - parameter: 1
       value: 25
     - parameter: 3
       value: 25
     - parameter: 4
       value: 25
+    rewardParameters:
+    - parameter: 0
+      value: 0
+    ap: 0
+    name: Lv.1 Fishing Spot
+    description: 't''s an ordinary fishing spot.
+
+      If you''re unlucky, you can
+      go back empty-handed.'
     datas:
     - item: {fileID: 11400000, guid: 43309e0d33e8a9545be2372cedf01a03, type: 2}
       rate: 35
@@ -43,18 +47,20 @@ MonoBehaviour:
       rate: 1
     - item: {fileID: 11400000, guid: 78e18f32963f60c478c6ae54511c20af, type: 2}
       rate: 1
-  - name: Lv.2 Fishing Spot
-    description: 't''s an ordinary fishing spot.
-
-      If you''re unlucky, you can
-      go back empty-handed.'
-    inquiredParameters:
+  - inquiredParameters:
     - parameter: 1
       value: 50
     - parameter: 3
       value: 50
     - parameter: 4
       value: 50
+    rewardParameters: []
+    ap: 0
+    name: Lv.2 Fishing Spot
+    description: 't''s an ordinary fishing spot.
+
+      If you''re unlucky, you can
+      go back empty-handed.'
     datas:
     - item: {fileID: 11400000, guid: 43309e0d33e8a9545be2372cedf01a03, type: 2}
       rate: 30
@@ -72,18 +78,20 @@ MonoBehaviour:
       rate: 0
     - item: {fileID: 11400000, guid: ca2e979313aa1844489baeb7da42fbd5, type: 2}
       rate: 0
-  - name: Lv.3 Fishing Spot
-    description: 't''s an ordinary fishing spot.
-
-      If you''re unlucky, you can
-      go back empty-handed.'
-    inquiredParameters:
+  - inquiredParameters:
     - parameter: 1
       value: 75
     - parameter: 3
       value: 75
     - parameter: 4
       value: 75
+    rewardParameters: []
+    ap: 0
+    name: Lv.3 Fishing Spot
+    description: 't''s an ordinary fishing spot.
+
+      If you''re unlucky, you can
+      go back empty-handed.'
     datas:
     - item: {fileID: 11400000, guid: 43309e0d33e8a9545be2372cedf01a03, type: 2}
       rate: 25
@@ -101,18 +109,20 @@ MonoBehaviour:
       rate: 5
     - item: {fileID: 11400000, guid: 40c0429e67bdfda4e9509f9bb598836b, type: 2}
       rate: 5
-  - name: Lv.3 Fishing Spot
-    description: 't''s an ordinary fishing spot.
-
-      If you''re unlucky, you can
-      go back empty-handed.'
-    inquiredParameters:
+  - inquiredParameters:
     - parameter: 1
       value: 100
     - parameter: 3
       value: 100
     - parameter: 4
       value: 100
+    rewardParameters: []
+    ap: 0
+    name: Lv.3 Fishing Spot
+    description: 't''s an ordinary fishing spot.
+
+      If you''re unlucky, you can
+      go back empty-handed.'
     datas:
     - item: {fileID: 11400000, guid: 43309e0d33e8a9545be2372cedf01a03, type: 2}
       rate: 25
@@ -130,18 +140,20 @@ MonoBehaviour:
       rate: 5
     - item: {fileID: 11400000, guid: 40c0429e67bdfda4e9509f9bb598836b, type: 2}
       rate: 5
-  - name: Lv.3 Fishing Spot
-    description: 't''s an ordinary fishing spot.
-
-      If you''re unlucky, you can
-      go back empty-handed.'
-    inquiredParameters:
+  - inquiredParameters:
     - parameter: 1
       value: 120
     - parameter: 3
       value: 120
     - parameter: 4
       value: 120
+    rewardParameters: []
+    ap: 0
+    name: Lv.3 Fishing Spot
+    description: 't''s an ordinary fishing spot.
+
+      If you''re unlucky, you can
+      go back empty-handed.'
     datas:
     - item: {fileID: 11400000, guid: 43309e0d33e8a9545be2372cedf01a03, type: 2}
       rate: 25

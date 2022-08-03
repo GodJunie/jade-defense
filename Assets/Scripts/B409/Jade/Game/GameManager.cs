@@ -133,10 +133,25 @@ namespace B409.Jade.Game {
             }
 
             Progress.AddItems(items);
-            Progress.ConsumeAP(data.AP);
-            Progress.GetParameters(data.RewardParameters);
+            CheckAction(data);
 
             Debug.Log(Progress.ToJson());
+        }
+
+        public void Making(ActionLevelData levelData, RecipeData data) {
+            // Use Item
+            foreach(var mat in data.Materials) {
+                Progress.UseItem(mat.Item.Id, mat.Count);
+            }
+            // Get Item
+            Progress.AddItem(data.Result.Item.Id, data.Result.Count);
+
+            CheckAction(levelData);
+        }
+
+        private void CheckAction(ActionLevelData data) {
+            Progress.ConsumeAP(data.AP);
+            Progress.GetParameters(data.RewardParameters);
         }
         #endregion
 

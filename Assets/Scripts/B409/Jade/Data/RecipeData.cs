@@ -25,15 +25,9 @@ namespace B409.Jade.Data {
         [HideLabel]
         [SerializeField]
         private MaterialData result;
-        [BoxGroup("Rewards")]
-        [BoxGroup("Rewards/Parameter")]
-        [ListDrawerSettings(Expanded = true, AddCopiesLastElement = true)]
-        [SerializeField]
-        private List<ParameterValue> parameterRewards;
-
+       
         public int Id => id;
         public List<MaterialData> Materials => materials;
         public MaterialData Result => result;
-        public List<ParameterValue> ParameterRewards => parameterRewards;
     }
 }

@@ -6,21 +6,30 @@ namespace B409.Jade.Game {
     public enum Parameter : int { Deft, Strength, Intelligence, Luck, Endurance };
 
     public static class ParameterExtensions {
-        public static string ToCompatString(this Parameter parameter) {
+        public static string ToCompatString(this Parameter parameter, bool lowerScale = true) {
+            string str = "";
             switch(parameter) {
             case Parameter.Deft:
-                return "DFT";
+                str = "DFT";
+                break;
             case Parameter.Strength:
-                return "STR";
+                str = "STR";
+                break;
             case Parameter.Intelligence:
-                return "INT";
+                str = "INT";
+                break;
             case Parameter.Luck:
-                return "LUK";
+                str = "LUK";
+                break;
             case Parameter.Endurance:
-                return "EDR";
+                str = "EDR";
+                break;
             default:
-                return "";
+                break;
             }
+            if(lowerScale)
+                str = str.ToLower();
+            return str;
         }
     }
 }

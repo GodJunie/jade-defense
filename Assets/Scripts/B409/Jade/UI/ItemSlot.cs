@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 namespace B409.Jade.UI {
     using Data;
@@ -9,7 +10,7 @@ namespace B409.Jade.UI {
 
     public class ItemSlot : MonoBehaviour {
         [SerializeField]
-        private Text textCount;
+        private TMP_Text textCount;
         [SerializeField]
         private Image imageIcon;
 

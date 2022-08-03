@@ -10,54 +10,30 @@ using Sirenix.OdinInspector;
 
 namespace B409.Jade.Data {
     [Serializable]
-    public class FarmingLevelData {
+    public class FarmingLevelData : ActionLevelData {
         [FoldoutGroup("@Summary")]
-        [BoxGroup("@Summary/Info")]
-        [HorizontalGroup("@Summary/Info/group", 300f)]
-        [BoxGroup("@Summary/Info/group/Name")]
+        [BoxGroup("@Summary/Farming Info")]
+        [HorizontalGroup("@Summary/Farming Info/group", 300f)]
+        [BoxGroup("@Summary/Farming Info/group/Name")]
         [HideLabel]
         [SerializeField]
         private string name;
 
-        [FoldoutGroup("@Summary")]
-        [HorizontalGroup("@Summary/Info/group")]
-        [BoxGroup("@Summary/Info/group/Description")]
+        [HorizontalGroup("@Summary/Farming Info/group")]
+        [BoxGroup("@Summary/Farming Info/group/Description")]
         [TextArea(0, 3)]
         [HideLabel]
         [SerializeField]
         private string description;
 
         [FoldoutGroup("@Summary")]
-        [BoxGroup("@Summary/Data")]
-        [HorizontalGroup("@Summary/Data/group", 300f)]
-        [VerticalGroup("@Summary/Data/group/group")]
-        [BoxGroup("@Summary/Data/group/group/Inquired Parameters")]
-        [ListDrawerSettings(Expanded = true, AddCopiesLastElement = true)]
-        [SerializeField]
-        private List<ParameterValue> inquiredParameters = new List<ParameterValue>();
-
-        [BoxGroup("@Summary/Data/group/group/Reward Parameters")]
-        [ListDrawerSettings(Expanded = true, AddCopiesLastElement = true)]
-        [SerializeField]
-        private List<ParameterValue> rewardParameters = new List<ParameterValue>();
-
-        [BoxGroup("@Summary/Data/group/group/AP")]
-        [HideLabel]
-        [SerializeField]
-        private float ap;
-
-
-        [HorizontalGroup("@Summary/Data/group")]
-        [BoxGroup("@Summary/Data/group/Datas")]
+        [BoxGroup("@Summary/Items")]
         [ListDrawerSettings(Expanded = true, AddCopiesLastElement = true)]
         [SerializeField]
         private List<ItemRateData> datas = new List<ItemRateData>();
 
         public string Name => name;
         public string Description => description;
-        public List<ParameterValue> InquiredParameters => inquiredParameters;
-        public List<ParameterValue> RewardParameters => rewardParameters;
-        public float AP => ap;
         public List<ItemRateData> Datas => datas;
 
         [Serializable]
@@ -78,12 +54,9 @@ namespace B409.Jade.Data {
         }
 
 #if UNITY_EDITOR
-        private string Summary {
+        protected override string Summary {
             get {
-                string summary = name;
-                foreach(var parameterValue in inquiredParameters) {
-                    summary += string.Format("/{0} {1}/", parameterValue.Parameter, parameterValue.Value);
-                }
+                string summary = base.Summary;
                 summary += string.Format("Datas {0}", datas.Count);
                 return summary;
             }

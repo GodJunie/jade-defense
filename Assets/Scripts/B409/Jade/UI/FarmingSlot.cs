@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 namespace B409.Jade.UI {
     using Game;
@@ -14,7 +15,7 @@ namespace B409.Jade.UI {
         [SerializeField]
         private Transform slotContainer;
         [SerializeField]
-        private Text textName;
+        private TMP_Text textName;
         [SerializeField]
         private GameObject lockObject;
 
