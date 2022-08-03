@@ -139,14 +139,23 @@ namespace B409.Jade.Game {
         }
 
         public void Making(ActionLevelData levelData, RecipeData data) {
+            if(!Progress.CheckItemsEnough(data.Materials))
+                return;
+
             // Use Item
-            foreach(var mat in data.Materials) {
-                Progress.UseItem(mat.Item.Id, mat.Count);
-            }
+            Progress.UseItems(data.Materials);
             // Get Item
             Progress.AddItem(data.Result.Item.Id, data.Result.Count);
 
             CheckAction(levelData);
+        }
+
+        public void BuyMonster(MonsterData data) {
+            if(!Progress.CheckItemsEnough(data.Cost))
+                return;
+
+            Progress.UseItems(data.Cost);
+            Progress.AddMonster(data.Id, 1);
         }
 
         private void CheckAction(ActionLevelData data) {

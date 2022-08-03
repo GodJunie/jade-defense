@@ -86,7 +86,10 @@ namespace B409.Jade.UI {
 
         private void ShowInfo(RecipeData data) {
             this.data = data;
-            bool validation = GameManager.Instance.Progress.CheckParameterValidation(this.levelData.InquiredParameters);
+
+            var progress = GameManager.Instance.Progress;
+
+            bool validation = progress.CheckParameterValidation(this.levelData.InquiredParameters) && progress.CheckItemsEnough(data.Materials);
 
             this.textResult.text = data.Result.Item.Name;
             this.resultItemSlot.Init(data.Result.Item, data.Result.Count);

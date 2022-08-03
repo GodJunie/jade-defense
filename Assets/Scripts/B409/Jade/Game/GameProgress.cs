@@ -14,6 +14,7 @@ namespace B409.Jade.Game {
         public int StageSequence { get; private set; }
         public float AP { get; private set; }
         public Dictionary<int, int> Items { get; private set; }
+        public Dictionary<int, int> Monsters { get; private set; }
         public Dictionary<Parameter, float> Parameters { get; private set; }
 
         public float MaxAP {
@@ -23,17 +24,19 @@ namespace B409.Jade.Game {
         }
 
         [JsonConstructor]
-        public GameProgress(int dDay, int stage, int stageSequence, float ap, Dictionary<int, int> items, Dictionary<Parameter, float> parameters) {
+        public GameProgress(int dDay, int stage, int stageSequence, float ap, Dictionary<int, int> items, Dictionary<int, int> monsters, Dictionary<Parameter, float> parameters) {
             this.DDay = dDay;
             this.Stage = stage;
             this.StageSequence = stageSequence;
             this.AP = ap;
             this.Items = items;
+            this.Monsters = monsters;
             this.Parameters = parameters;
         }
 
         public GameProgress() {
             this.Items = new Dictionary<int, int>();
+            this.Monsters = new Dictionary<int, int>();
             this.Parameters = new Dictionary<Parameter, float>() {
                 { Parameter.Deft, 0 },
                 { Parameter.Strength, 0 },
@@ -115,6 +118,61 @@ namespace B409.Jade.Game {
             this.Items[id] -= count;
             if(this.Items[id] == 0)
                 this.Items.Remove(id);
+        }
+
+        public void UseItems(Dictionary<int, int> items) {
+            foreach(var item in items) {
+                this.UseItem(item.Key, item.Value);
+            }
+        }
+
+        public void UseItems(List<MaterialData> materials) {
+            foreach(var mat in materials) {
+                this.UseItem(mat.Item.Id, mat.Count);
+            }
+        }
+
+        public bool CheckItemEnough(int id, int count) {
+            return GetItemCount(id) >= count;
+        }
+
+        public bool CheckItemsEnough(Dictionary<int, int> items) {
+            foreach(var pair in items) {
+                if(!CheckItemEnough(pair.Key, pair.Value))
+                    return false;
+            }
+            return true;
+        }
+
+        public bool CheckItemsEnough(List<MaterialData> materials) {
+            foreach(var mat in materials) {
+                if(!CheckItemEnough(mat.Item.Id, mat.Count))
+                    return false;
+            }
+            return true;
+        }
+
+        public void AddMonster(int id, int count) {
+            Debug.Log(string.Format("Add Monster, id: {0}, count: {1}", id, count));
+            if(this.Monsters.ContainsKey(id)) {
+                this.Monsters[id] += count;
+            } else {
+                this.Monsters.Add(id, count);
+            }
+        }
+
+        public void UseMonster(int id, int count) {
+            if(!this.Monsters.ContainsKey(id)) {
+                throw new Exception(string.Format("Monster doesn't exist, id : {0}", id));
+            }
+
+            if(this.Monsters[id] < count) {
+                throw new Exception(string.Format("Not enough monster, id : {0}, count : {1}, remain : {2}", id, count, this.Monsters[id]));
+            }
+
+            this.Monsters[id] -= count;
+            if(this.Monsters[id] == 0)
+                this.Monsters.Remove(id);
         }
 
         public bool CheckParameterValidation(List<ParameterValue> parameters) {

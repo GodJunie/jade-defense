@@ -12,5 +12,13 @@ namespace B409 {
                 Mathf.Lerp(origin.a, color.a, t)
             );
         }
+        private static byte ToByte(float f) {
+            f = Mathf.Clamp01(f);
+            return (byte)(f * 255);
+
+        }
+        public static string GetHexString(this Color color, bool includeSharp = true) {
+            return string.Format("{0}{1:X2}{2:X2}{3:X2}", includeSharp ? "#" : "", ToByte(color.r), ToByte(color.g), ToByte(color.b));
+        }
     }
 }
