@@ -16,158 +16,138 @@ MonoBehaviour:
   datas:
   - inquiredParameters:
     - parameter: 1
+      value: 0
+    - parameter: 3
+      value: 0
+    - parameter: 4
+      value: 0
+    rewardParameters:
+    - parameter: 1
+      value: 1
+    - parameter: 3
+      value: 2
+    - parameter: 4
+      value: 1
+    ap: 30
+    name: A small fishing Spot
+    description: 't''s an ordinary fishing spot.
+
+      It''s full of shrimp.'
+    datas:
+    - item: {fileID: 11400000, guid: 43309e0d33e8a9545be2372cedf01a03, type: 2}
+      rate: 30
+    - item: {fileID: 11400000, guid: 25f6b5f76baab5549b43a849f1859318, type: 2}
+      rate: 60
+    - item: {fileID: 0}
+      rate: 10
+  - inquiredParameters:
+    - parameter: 1
       value: 25
     - parameter: 3
       value: 25
     - parameter: 4
       value: 25
     rewardParameters:
-    - parameter: 0
-      value: 0
-    ap: 0
-    name: Lv.1 Fishing Spot
+    - parameter: 1
+      value: 1
+    - parameter: 3
+      value: 2
+    - parameter: 4
+      value: 1
+    ap: 30
+    name: A small fishing Spot
     description: 't''s an ordinary fishing spot.
 
-      If you''re unlucky, you can
-      go back empty-handed.'
+      It''s full of tuna'
     datas:
     - item: {fileID: 11400000, guid: 43309e0d33e8a9545be2372cedf01a03, type: 2}
-      rate: 35
+      rate: 60
     - item: {fileID: 11400000, guid: 25f6b5f76baab5549b43a849f1859318, type: 2}
-      rate: 35
+      rate: 30
     - item: {fileID: 0}
-      rate: 25
-    - item: {fileID: 11400000, guid: a914fdd14479d664da1107774fac53b1, type: 2}
-      rate: 1
+      rate: 10
+  - inquiredParameters:
+    - parameter: 1
+      value: 50
+    - parameter: 3
+      value: 50
+    - parameter: 4
+      value: 50
+    rewardParameters:
+    - parameter: 1
+      value: 1
+    - parameter: 3
+      value: 2
+    - parameter: 4
+      value: 1
+    ap: 30
+    name: A shrimp fishing ground
+    description: '"Be careful, no matter how many shrimps there are, you might not
+      catch a single one!" said a fisherman.'
+    datas:
+    - item: {fileID: 11400000, guid: 25f6b5f76baab5549b43a849f1859318, type: 2}
+      rate: 70
+    - item: {fileID: 0}
+      rate: 30
+  - inquiredParameters:
+    - parameter: 1
+      value: 75
+    - parameter: 3
+      value: 75
+    - parameter: 4
+      value: 75
+    rewardParameters:
+    - parameter: 1
+      value: 1
+    - parameter: 3
+      value: 2
+    - parameter: 4
+      value: 1
+    ap: 30
+    name: A tuna fishing ground
+    description: "The fisherman smiles, saying, \"These tuna are the biggest sellers
+      in Asgard!\"\r"
+    datas:
+    - item: {fileID: 11400000, guid: 43309e0d33e8a9545be2372cedf01a03, type: 2}
+      rate: 70
+    - item: {fileID: 0}
+      rate: 30
+  - inquiredParameters:
+    - parameter: 1
+      value: 100
+    - parameter: 3
+      value: 100
+    - parameter: 4
+      value: 100
+    rewardParameters:
+    - parameter: 1
+      value: 1
+    - parameter: 3
+      value: 2
+    - parameter: 4
+      value: 1
+    ap: 30
+    name: A pearl shell farm
+    description: '"Until you open your clam''s mouth, no one knows what''s in it."
+      said the old man. "I''ve seen a clam with a big meat in it."'
+    datas:
+    - item: {fileID: 11400000, guid: bfd0f655e0497c643b224e27d90ced7d, type: 2}
+      rate: 10
+    - item: {fileID: 11400000, guid: 0b3c0773a9ac18547abd60c75ba0bd4f, type: 2}
+      rate: 10
+    - item: {fileID: 11400000, guid: 7ea384d607faed24e98ef48d0b3e9cb3, type: 2}
+      rate: 10
+    - item: {fileID: 11400000, guid: f25570339eb9d7e468cc56b40cd537d0, type: 2}
+      rate: 10
+    - item: {fileID: 11400000, guid: 530ff8c0a165cb84db1016901a246704, type: 2}
+      rate: 10
+    - item: {fileID: 11400000, guid: 25f6b5f76baab5549b43a849f1859318, type: 2}
+      rate: 10
     - item: {fileID: 11400000, guid: 399a39c2c2c2f97468829fccced19baf, type: 2}
-      rate: 1
-    - item: {fileID: 11400000, guid: 413dffb8e9b38b34a92a89061d803313, type: 2}
-      rate: 1
-    - item: {fileID: 11400000, guid: d21a517c5d701374eb06064f29e5820e, type: 2}
-      rate: 1
-    - item: {fileID: 11400000, guid: 78e18f32963f60c478c6ae54511c20af, type: 2}
-      rate: 1
-  - inquiredParameters:
-    - parameter: 1
-      value: 50
-    - parameter: 3
-      value: 50
-    - parameter: 4
-      value: 50
-    rewardParameters: []
-    ap: 0
-    name: Lv.2 Fishing Spot
-    description: 't''s an ordinary fishing spot.
-
-      If you''re unlucky, you can
-      go back empty-handed.'
-    datas:
-    - item: {fileID: 11400000, guid: 43309e0d33e8a9545be2372cedf01a03, type: 2}
-      rate: 30
-    - item: {fileID: 11400000, guid: 25f6b5f76baab5549b43a849f1859318, type: 2}
-      rate: 30
-    - item: {fileID: 0}
-      rate: 20
-    - item: {fileID: 11400000, guid: d01f26e10b6314f489b446ab8fad8538, type: 2}
-      rate: 0
-    - item: {fileID: 11400000, guid: 5f683135bcc412a4c8dc7248337a9082, type: 2}
-      rate: 0
-    - item: {fileID: 11400000, guid: 96b48c2df6310f74b9b7dbefff975e2c, type: 2}
-      rate: 0
-    - item: {fileID: 11400000, guid: 8b45a4152cc6a584caab2b1ab8993040, type: 2}
-      rate: 0
-    - item: {fileID: 11400000, guid: ca2e979313aa1844489baeb7da42fbd5, type: 2}
-      rate: 0
-  - inquiredParameters:
-    - parameter: 1
-      value: 75
-    - parameter: 3
-      value: 75
-    - parameter: 4
-      value: 75
-    rewardParameters: []
-    ap: 0
-    name: Lv.3 Fishing Spot
-    description: 't''s an ordinary fishing spot.
-
-      If you''re unlucky, you can
-      go back empty-handed.'
-    datas:
-    - item: {fileID: 11400000, guid: 43309e0d33e8a9545be2372cedf01a03, type: 2}
-      rate: 25
-    - item: {fileID: 11400000, guid: 25f6b5f76baab5549b43a849f1859318, type: 2}
-      rate: 25
-    - item: {fileID: 0}
-      rate: 25
-    - item: {fileID: 11400000, guid: 95eb528da95583a4bb83d50e249ba9de, type: 2}
-      rate: 5
-    - item: {fileID: 11400000, guid: 7ea384d607faed24e98ef48d0b3e9cb3, type: 2}
-      rate: 5
-    - item: {fileID: 11400000, guid: 567e8ea71961e7546ba9a4287711676b, type: 2}
-      rate: 5
-    - item: {fileID: 11400000, guid: 17f5ed75affcf924eabe78245051af22, type: 2}
-      rate: 5
-    - item: {fileID: 11400000, guid: 40c0429e67bdfda4e9509f9bb598836b, type: 2}
-      rate: 5
-  - inquiredParameters:
-    - parameter: 1
-      value: 100
-    - parameter: 3
-      value: 100
-    - parameter: 4
-      value: 100
-    rewardParameters: []
-    ap: 0
-    name: Lv.3 Fishing Spot
-    description: 't''s an ordinary fishing spot.
-
-      If you''re unlucky, you can
-      go back empty-handed.'
-    datas:
-    - item: {fileID: 11400000, guid: 43309e0d33e8a9545be2372cedf01a03, type: 2}
-      rate: 25
-    - item: {fileID: 11400000, guid: 25f6b5f76baab5549b43a849f1859318, type: 2}
-      rate: 25
-    - item: {fileID: 0}
-      rate: 25
-    - item: {fileID: 11400000, guid: 95eb528da95583a4bb83d50e249ba9de, type: 2}
-      rate: 5
-    - item: {fileID: 11400000, guid: 7ea384d607faed24e98ef48d0b3e9cb3, type: 2}
-      rate: 5
-    - item: {fileID: 11400000, guid: 567e8ea71961e7546ba9a4287711676b, type: 2}
-      rate: 5
-    - item: {fileID: 11400000, guid: 17f5ed75affcf924eabe78245051af22, type: 2}
-      rate: 5
-    - item: {fileID: 11400000, guid: 40c0429e67bdfda4e9509f9bb598836b, type: 2}
-      rate: 5
-  - inquiredParameters:
-    - parameter: 1
-      value: 120
-    - parameter: 3
-      value: 120
-    - parameter: 4
-      value: 120
-    rewardParameters: []
-    ap: 0
-    name: Lv.3 Fishing Spot
-    description: 't''s an ordinary fishing spot.
-
-      If you''re unlucky, you can
-      go back empty-handed.'
-    datas:
-    - item: {fileID: 11400000, guid: 43309e0d33e8a9545be2372cedf01a03, type: 2}
-      rate: 25
-    - item: {fileID: 11400000, guid: 25f6b5f76baab5549b43a849f1859318, type: 2}
-      rate: 25
-    - item: {fileID: 0}
-      rate: 25
-    - item: {fileID: 11400000, guid: 95eb528da95583a4bb83d50e249ba9de, type: 2}
-      rate: 5
-    - item: {fileID: 11400000, guid: 7ea384d607faed24e98ef48d0b3e9cb3, type: 2}
-      rate: 5
-    - item: {fileID: 11400000, guid: 567e8ea71961e7546ba9a4287711676b, type: 2}
-      rate: 5
-    - item: {fileID: 11400000, guid: 17f5ed75affcf924eabe78245051af22, type: 2}
-      rate: 5
-    - item: {fileID: 11400000, guid: 40c0429e67bdfda4e9509f9bb598836b, type: 2}
-      rate: 5
+      rate: 10
+    - item: {fileID: 11400000, guid: dee6bd5528c069346b3ad70bbb3c2434, type: 2}
+      rate: 10
+    - item: {fileID: 11400000, guid: 0cab179eb99b45b4d85e859b4b88fbf8, type: 2}
+      rate: 10
+    - item: {fileID: 11400000, guid: 99560d3f98795c84e85aec7aaa877621, type: 2}
+      rate: 10

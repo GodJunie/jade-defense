@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: c7beb6f9c04d3f14ea4d612c66396ee9, type: 3}
   id: 206002
-  name: Outland Lizard Bendit
-  description: Outland Lizard Bendit
+  name: Outland Lizard Bandit
+  description: Outland Lizard Bandit
   prefab: {fileID: 7242303026033368925, guid: b64c9ab04450209428a33c43ac27e2f3, type: 3}
   status:
     cooltime: 1

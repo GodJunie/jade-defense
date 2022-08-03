@@ -14,9 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Livestock
   datas:
-  - name: Lv.1 Chicken Farm
-    description: 
-    inquiredParameters:
+  - inquiredParameters:
     - parameter: 2
       value: 0
     - parameter: 3
@@ -25,78 +23,106 @@ MonoBehaviour:
       value: 0
     rewardParameters:
     - parameter: 2
-      value: 10
+      value: 1
     - parameter: 3
-      value: 10
+      value: 1
     - parameter: 4
-      value: 10
+      value: 2
     ap: 30
+    name: Chicken Farm
+    description: "Which came first, the chicken or the egg?\r"
     datas:
     - item: {fileID: 11400000, guid: 4798147202ceb8e4fb0ffe48ca90b35f, type: 2}
-      rate: 60
+      rate: 50
     - item: {fileID: 11400000, guid: 413dffb8e9b38b34a92a89061d803313, type: 2}
+      rate: 50
+  - inquiredParameters:
+    - parameter: 2
+      value: 25
+    - parameter: 3
+      value: 25
+    - parameter: 4
+      value: 25
+    rewardParameters:
+    - parameter: 2
+      value: 1
+    - parameter: 3
+      value: 1
+    - parameter: 4
+      value: 2
+    ap: 30
+    name: Small cattle pens
+    description: '"Now that I''ve been robbed of livestock by the wolves, I think
+      it''s more helpful to sell wolf claws," the farmer said irritably.'
+    datas:
+    - item: {fileID: 11400000, guid: 41c9d1852d7a7d3448a09aa07eab9e9a, type: 2}
       rate: 40
-  - name: Lv.2 Advanced Chicken Farm
-    description: 
-    inquiredParameters:
+    - item: {fileID: 11400000, guid: 839cdc6b477a4834cb515d129ebf87cc, type: 2}
+      rate: 60
+  - inquiredParameters:
     - parameter: 2
       value: 50
     - parameter: 3
       value: 50
     - parameter: 4
       value: 50
-    rewardParameters: []
-    ap: 0
+    rewardParameters:
+    - parameter: 2
+      value: 1
+    - parameter: 3
+      value: 1
+    - parameter: 4
+      value: 2
+    ap: 30
+    name: Cattle pens
+    description: '"Strangely, baby dragons keep stealing livestock. Well, the occasional
+      toenails can be sold at a pretty high price, but..." the farmer said despondent.'
     datas:
-    - item: {fileID: 11400000, guid: 413dffb8e9b38b34a92a89061d803313, type: 2}
+    - item: {fileID: 11400000, guid: 144e3015abcb36844b2d8f50bee8dd1c, type: 2}
+      rate: 40
+    - item: {fileID: 11400000, guid: d01f26e10b6314f489b446ab8fad8538, type: 2}
       rate: 60
+  - inquiredParameters:
+    - parameter: 2
+      value: 50
+    - parameter: 3
+      value: 50
+    - parameter: 4
+      value: 50
+    rewardParameters:
+    - parameter: 2
+      value: 1
+    - parameter: 3
+      value: 1
+    - parameter: 4
+      value: 2
+    ap: 30
+    name: A well protected cattle shed
+    description: '"Finally, no one can steal the livestock! But I feel like my side
+      income is gone," the farmer said with a big smile.'
+    datas:
     - item: {fileID: 11400000, guid: 839cdc6b477a4834cb515d129ebf87cc, type: 2}
       rate: 40
-  - name: Lv.3 Pig Farm
-    description: 
-    inquiredParameters:
-    - parameter: 2
-      value: 75
-    - parameter: 3
-      value: 75
-    - parameter: 4
-      value: 75
-    rewardParameters: []
-    ap: 0
-    datas:
     - item: {fileID: 11400000, guid: d01f26e10b6314f489b446ab8fad8538, type: 2}
       rate: 60
-    - item: {fileID: 11400000, guid: 99560d3f98795c84e85aec7aaa877621, type: 2}
-      rate: 40
-  - name: Lv.3 Pig Farm
-    description: 
-    inquiredParameters:
+  - inquiredParameters:
     - parameter: 2
-      value: 100
+      value: 50
     - parameter: 3
-      value: 100
+      value: 50
     - parameter: 4
-      value: 100
-    rewardParameters: []
-    ap: 0
-    datas:
-    - item: {fileID: 11400000, guid: d01f26e10b6314f489b446ab8fad8538, type: 2}
-      rate: 60
-    - item: {fileID: 11400000, guid: 99560d3f98795c84e85aec7aaa877621, type: 2}
-      rate: 40
-  - name: Lv.3 Pig Farm
-    description: 
-    inquiredParameters:
+      value: 50
+    rewardParameters:
     - parameter: 2
-      value: 120
+      value: 1
     - parameter: 3
-      value: 120
+      value: 1
     - parameter: 4
-      value: 120
-    rewardParameters: []
-    ap: 0
+      value: 2
+    ap: 30
+    name: A large cattle shed
+    description: '"The money that sold wolf claws and dragon claws made perfect livestock
+      cages!" The farmer rejoiced.'
     datas:
-    - item: {fileID: 11400000, guid: d01f26e10b6314f489b446ab8fad8538, type: 2}
-      rate: 60
     - item: {fileID: 11400000, guid: 99560d3f98795c84e85aec7aaa877621, type: 2}
-      rate: 40
+      rate: 100

@@ -16,6 +16,36 @@ MonoBehaviour:
   datas:
   - inquiredParameters:
     - parameter: 0
+      value: 0
+    - parameter: 2
+      value: 0
+    - parameter: 3
+      value: 0
+    rewardParameters:
+    - parameter: 0
+      value: 1
+    - parameter: 2
+      value: 2
+    - parameter: 3
+      value: 1
+    ap: 30
+    name: Forest
+    description: "A forest where everyone can take a walk\r"
+    datas:
+    - item: {fileID: 11400000, guid: 0465222f67f9b7e4ba9cb95425060404, type: 2}
+      rate: 70
+    - item: {fileID: 11400000, guid: 7e6cc04742966de4b8882872197f316d, type: 2}
+      rate: 10
+    - item: {fileID: 11400000, guid: 6475d979bdcdecd41844424dd46b9ce0, type: 2}
+      rate: 5
+    - item: {fileID: 11400000, guid: af7ade278f2c4f84396866ef8c59f718, type: 2}
+      rate: 5
+    - item: {fileID: 11400000, guid: 833074a196207034d81e6e0d0fc18e71, type: 2}
+      rate: 5
+    - item: {fileID: 11400000, guid: 399a39c2c2c2f97468829fccced19baf, type: 2}
+      rate: 5
+  - inquiredParameters:
+    - parameter: 0
       value: 25
     - parameter: 2
       value: 25
@@ -23,88 +53,115 @@ MonoBehaviour:
       value: 25
     rewardParameters:
     - parameter: 0
-      value: 0
-    ap: 0
-    name: Lv.1 Forest
-    description: "A forest where everyone can take a walk\r"
+      value: 1
+    - parameter: 2
+      value: 2
+    - parameter: 3
+      value: 1
+    ap: 30
+    name: A tea leaf forest
+    description: A forest full of fragrant tea leaves.
     datas:
     - item: {fileID: 11400000, guid: 0465222f67f9b7e4ba9cb95425060404, type: 2}
-      rate: 40
+      rate: 10
     - item: {fileID: 11400000, guid: 7e6cc04742966de4b8882872197f316d, type: 2}
+      rate: 70
+    - item: {fileID: 11400000, guid: 6475d979bdcdecd41844424dd46b9ce0, type: 2}
+      rate: 5
+    - item: {fileID: 11400000, guid: af7ade278f2c4f84396866ef8c59f718, type: 2}
+      rate: 5
+    - item: {fileID: 11400000, guid: 833074a196207034d81e6e0d0fc18e71, type: 2}
+      rate: 5
+    - item: {fileID: 11400000, guid: 399a39c2c2c2f97468829fccced19baf, type: 2}
+      rate: 5
+  - inquiredParameters:
+    - parameter: 0
+      value: 50
+    - parameter: 2
+      value: 50
+    - parameter: 3
+      value: 50
+    rewardParameters:
+    - parameter: 0
+      value: 1
+    - parameter: 2
+      value: 2
+    - parameter: 3
+      value: 1
+    ap: 30
+    name: A sunny forest
+    description: Many oilseeds are known to be available in sunny forests.
+    datas:
+    - item: {fileID: 11400000, guid: 0465222f67f9b7e4ba9cb95425060404, type: 2}
+      rate: 10
+    - item: {fileID: 11400000, guid: 7e6cc04742966de4b8882872197f316d, type: 2}
+      rate: 5
+    - item: {fileID: 11400000, guid: 6475d979bdcdecd41844424dd46b9ce0, type: 2}
+      rate: 70
+    - item: {fileID: 11400000, guid: af7ade278f2c4f84396866ef8c59f718, type: 2}
+      rate: 5
+    - item: {fileID: 11400000, guid: 833074a196207034d81e6e0d0fc18e71, type: 2}
+      rate: 5
+    - item: {fileID: 11400000, guid: 399a39c2c2c2f97468829fccced19baf, type: 2}
+      rate: 5
+  - inquiredParameters:
+    - parameter: 0
+      value: 75
+    - parameter: 2
+      value: 75
+    - parameter: 3
+      value: 75
+    rewardParameters:
+    - parameter: 0
+      value: 1
+    - parameter: 2
+      value: 2
+    - parameter: 3
+      value: 1
+    ap: 30
+    name: An abandoned field
+    description: Rice and almonds continue to grow in the place where a farmer left
+      them.
+    datas:
+    - item: {fileID: 11400000, guid: 0465222f67f9b7e4ba9cb95425060404, type: 2}
+      rate: 5
+    - item: {fileID: 11400000, guid: 7e6cc04742966de4b8882872197f316d, type: 2}
+      rate: 5
+    - item: {fileID: 11400000, guid: 6475d979bdcdecd41844424dd46b9ce0, type: 2}
+      rate: 5
+    - item: {fileID: 11400000, guid: af7ade278f2c4f84396866ef8c59f718, type: 2}
+      rate: 5
+    - item: {fileID: 11400000, guid: 833074a196207034d81e6e0d0fc18e71, type: 2}
       rate: 40
-    - item: {fileID: 11400000, guid: 6475d979bdcdecd41844424dd46b9ce0, type: 2}
-      rate: 8
-    - item: {fileID: 11400000, guid: af7ade278f2c4f84396866ef8c59f718, type: 2}
-      rate: 8
-    - item: {fileID: 11400000, guid: 833074a196207034d81e6e0d0fc18e71, type: 2}
-      rate: 2
     - item: {fileID: 11400000, guid: 399a39c2c2c2f97468829fccced19baf, type: 2}
-      rate: 2
+      rate: 40
   - inquiredParameters:
     - parameter: 0
-      value: 50
+      value: 100
     - parameter: 2
-      value: 50
+      value: 100
     - parameter: 3
-      value: 50
-    rewardParameters: []
-    ap: 0
-    name: Lv.2 Forest
-    description: "A deeper forest\r"
+      value: 100
+    rewardParameters:
+    - parameter: 0
+      value: 1
+    - parameter: 2
+      value: 2
+    - parameter: 3
+      value: 1
+    ap: 30
+    name: A rock salt forest
+    description: It's a forest full of rock salt.
     datas:
+    - item: {fileID: 11400000, guid: 0465222f67f9b7e4ba9cb95425060404, type: 2}
+      rate: 5
+    - item: {fileID: 11400000, guid: 7e6cc04742966de4b8882872197f316d, type: 2}
+      rate: 10
     - item: {fileID: 11400000, guid: 6475d979bdcdecd41844424dd46b9ce0, type: 2}
-      rate: 45
+      rate: 5
     - item: {fileID: 11400000, guid: af7ade278f2c4f84396866ef8c59f718, type: 2}
-      rate: 45
-    - item: {fileID: 11400000, guid: 399a39c2c2c2f97468829fccced19baf, type: 2}
       rate: 5
     - item: {fileID: 11400000, guid: 833074a196207034d81e6e0d0fc18e71, type: 2}
       rate: 5
-  - inquiredParameters:
-    - parameter: 0
-      value: 75
-    - parameter: 2
-      value: 75
-    - parameter: 3
-      value: 75
-    rewardParameters: []
-    ap: 0
-    name: Lv.3 Forest
-    description: If you're not careful, you might get lost in the woods.
-    datas:
     - item: {fileID: 11400000, guid: 399a39c2c2c2f97468829fccced19baf, type: 2}
-      rate: 50
-    - item: {fileID: 11400000, guid: 833074a196207034d81e6e0d0fc18e71, type: 2}
-      rate: 50
-  - inquiredParameters:
-    - parameter: 0
-      value: 100
-    - parameter: 2
-      value: 100
-    - parameter: 3
-      value: 100
-    rewardParameters: []
-    ap: 0
-    name: Lv.3 Forest
-    description: If you're not careful, you might get lost in the woods.
-    datas:
-    - item: {fileID: 11400000, guid: 399a39c2c2c2f97468829fccced19baf, type: 2}
-      rate: 50
-    - item: {fileID: 11400000, guid: 833074a196207034d81e6e0d0fc18e71, type: 2}
-      rate: 50
-  - inquiredParameters:
-    - parameter: 0
-      value: 120
-    - parameter: 2
-      value: 120
-    - parameter: 3
-      value: 120
-    rewardParameters: []
-    ap: 0
-    name: Lv.3 Forest
-    description: If you're not careful, you might get lost in the woods.
-    datas:
-    - item: {fileID: 11400000, guid: 399a39c2c2c2f97468829fccced19baf, type: 2}
-      rate: 50
-    - item: {fileID: 11400000, guid: 833074a196207034d81e6e0d0fc18e71, type: 2}
-      rate: 50
+      rate: 70

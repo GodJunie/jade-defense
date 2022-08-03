@@ -16,11 +16,19 @@ MonoBehaviour:
   datas:
   - inquiredParameters:
     - parameter: 0
-      value: 25
+      value: 0
     - parameter: 4
-      value: 25
+      value: 0
     - parameter: 1
-      value: 25
+      value: 0
+    rewardParameters:
+    - parameter: 0
+      value: 2
+    - parameter: 1
+      value: 1
+    - parameter: 4
+      value: 1
+    ap: 30
     datas:
     - {fileID: 11400000, guid: 1444acd205dc7c34d80d141bb04981d9, type: 2}
     - {fileID: 11400000, guid: 56bc07dc82a4ea544a0edd77490edd00, type: 2}
@@ -29,11 +37,19 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 3708bf0f9f6f55b4fbf8db66a2bbbce7, type: 2}
   - inquiredParameters:
     - parameter: 0
-      value: 50
+      value: 25
     - parameter: 4
-      value: 50
+      value: 25
     - parameter: 1
-      value: 50
+      value: 25
+    rewardParameters:
+    - parameter: 0
+      value: 2
+    - parameter: 1
+      value: 1
+    - parameter: 4
+      value: 1
+    ap: 30
     datas:
     - {fileID: 11400000, guid: 9b50af89340758742a8162963fae02f6, type: 2}
     - {fileID: 11400000, guid: 2d732601adca17c4796c5be3cd03981f, type: 2}
@@ -42,37 +58,19 @@ MonoBehaviour:
     - {fileID: 11400000, guid: c2f499da0a580f041a702063fea7f6e5, type: 2}
   - inquiredParameters:
     - parameter: 0
-      value: 75
+      value: 50
     - parameter: 4
-      value: 75
+      value: 50
     - parameter: 1
-      value: 75
-    datas:
-    - {fileID: 11400000, guid: 3b1f87153432b0c4a8cc1439b2a09e05, type: 2}
-    - {fileID: 11400000, guid: 675a1f3fab1061946ad23832d2202604, type: 2}
-    - {fileID: 11400000, guid: d8409d0f57ab86d4d84333b9c30da512, type: 2}
-    - {fileID: 11400000, guid: 4490b655bc682364a8c35bbcf3459892, type: 2}
-    - {fileID: 11400000, guid: 1d566a1356073fa41aecb6492a053a04, type: 2}
-  - inquiredParameters:
+      value: 50
+    rewardParameters:
     - parameter: 0
-      value: 100
-    - parameter: 4
-      value: 100
+      value: 2
     - parameter: 1
-      value: 100
-    datas:
-    - {fileID: 11400000, guid: 3b1f87153432b0c4a8cc1439b2a09e05, type: 2}
-    - {fileID: 11400000, guid: 675a1f3fab1061946ad23832d2202604, type: 2}
-    - {fileID: 11400000, guid: d8409d0f57ab86d4d84333b9c30da512, type: 2}
-    - {fileID: 11400000, guid: 4490b655bc682364a8c35bbcf3459892, type: 2}
-    - {fileID: 11400000, guid: 1d566a1356073fa41aecb6492a053a04, type: 2}
-  - inquiredParameters:
-    - parameter: 0
-      value: 120
+      value: 1
     - parameter: 4
-      value: 120
-    - parameter: 1
-      value: 120
+      value: 1
+    ap: 30
     datas:
     - {fileID: 11400000, guid: 3b1f87153432b0c4a8cc1439b2a09e05, type: 2}
     - {fileID: 11400000, guid: 675a1f3fab1061946ad23832d2202604, type: 2}

@@ -14,103 +14,138 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Mining
   datas:
-  - name: Lv.1 Mine
-    description: A plain open-air mine
-    inquiredParameters:
+  - inquiredParameters:
+    - parameter: 1
+      value: 0
+    - parameter: 3
+      value: 0
+    - parameter: 4
+      value: 0
+    rewardParameters:
+    - parameter: 1
+      value: 2
+    - parameter: 3
+      value: 1
+    - parameter: 4
+      value: 1
+    ap: 30
+    name: A small gem mine
+    description: A mine that can dig up mysterious little gems.
+    datas:
+    - item: {fileID: 11400000, guid: 69624cb59e1ef1343bf8c2f5fd87af4b, type: 2}
+      rate: 20
+    - item: {fileID: 11400000, guid: 39b9b10ba05f09941bce5370e2cf707c, type: 2}
+      rate: 20
+    - item: {fileID: 11400000, guid: 06b602e78a1fc3149a66f057c8a0238d, type: 2}
+      rate: 20
+    - item: {fileID: 11400000, guid: daf234e15aa11ee49a1aaaeeccea9a6a, type: 2}
+      rate: 20
+    - item: {fileID: 11400000, guid: 4e56db5c6bb00a246be6564d3c38967d, type: 2}
+      rate: 20
+  - inquiredParameters:
     - parameter: 1
       value: 25
     - parameter: 3
       value: 25
     - parameter: 4
       value: 25
+    rewardParameters:
+    - parameter: 1
+      value: 2
+    - parameter: 3
+      value: 1
+    - parameter: 4
+      value: 1
+    ap: 30
+    name: An iron mine
+    description: A mine with traces of someone digging iron.
     datas:
+    - item: {fileID: 11400000, guid: 69624cb59e1ef1343bf8c2f5fd87af4b, type: 2}
+      rate: 5
+    - item: {fileID: 11400000, guid: 39b9b10ba05f09941bce5370e2cf707c, type: 2}
+      rate: 5
+    - item: {fileID: 11400000, guid: 06b602e78a1fc3149a66f057c8a0238d, type: 2}
+      rate: 5
+    - item: {fileID: 11400000, guid: daf234e15aa11ee49a1aaaeeccea9a6a, type: 2}
+      rate: 5
+    - item: {fileID: 11400000, guid: 4e56db5c6bb00a246be6564d3c38967d, type: 2}
+      rate: 5
     - item: {fileID: 11400000, guid: 6cfc62c1f8f4cbe4aa6b0dce0ba211a5, type: 2}
-      rate: 30
-    - item: {fileID: 11400000, guid: 7d8ac0eccd5512e4caf725a54febe4a0, type: 2}
-      rate: 30
+      rate: 65
     - item: {fileID: 11400000, guid: 2a8f5b526502ed84591e7a20a532b0c6, type: 2}
-      rate: 15
-    - item: {fileID: 11400000, guid: db204d57c7ae059459a53d484ec2715a, type: 2}
-      rate: 15
-    - item: {fileID: 11400000, guid: d21a517c5d701374eb06064f29e5820e, type: 2}
-      rate: 5
-    - item: {fileID: 11400000, guid: 411f6de0396095b4ab61bf2d1517e6e7, type: 2}
-      rate: 5
-  - name: Lv.2 Mine
-    description: A small crystal mine
-    inquiredParameters:
+      rate: 10
+  - inquiredParameters:
     - parameter: 1
       value: 50
     - parameter: 3
       value: 50
     - parameter: 4
       value: 50
+    rewardParameters:
+    - parameter: 1
+      value: 2
+    - parameter: 3
+      value: 1
+    - parameter: 4
+      value: 1
+    ap: 30
+    name: A silver mine
+    description: There are traces of someone secretly digging for silver.
     datas:
-    - item: {fileID: 11400000, guid: 2a8f5b526502ed84591e7a20a532b0c6, type: 2}
-      rate: 20
-    - item: {fileID: 11400000, guid: db204d57c7ae059459a53d484ec2715a, type: 2}
-      rate: 20
     - item: {fileID: 11400000, guid: 4d650708846712c439d76e00bdab76a6, type: 2}
-      rate: 10
+      rate: 5
     - item: {fileID: 11400000, guid: 3b7f714761727d54cb44def06d47cbe1, type: 2}
-      rate: 10
+      rate: 5
     - item: {fileID: 11400000, guid: a914fdd14479d664da1107774fac53b1, type: 2}
-      rate: 10
+      rate: 5
     - item: {fileID: 11400000, guid: cc3dd6c5bbb67c34dab31070659567ab, type: 2}
-      rate: 10
+      rate: 5
     - item: {fileID: 11400000, guid: 60f8ec9a060303f4fb8b5fae244ac2fa, type: 2}
+      rate: 5
+    - item: {fileID: 11400000, guid: 7d8ac0eccd5512e4caf725a54febe4a0, type: 2}
+      rate: 65
+    - item: {fileID: 11400000, guid: db204d57c7ae059459a53d484ec2715a, type: 2}
       rate: 10
-    - item: {fileID: 11400000, guid: 411f6de0396095b4ab61bf2d1517e6e7, type: 2}
-      rate: 10
-  - name: Lv.3 Mine
-    description: A dangerous but magnificent mine
-    inquiredParameters:
+  - inquiredParameters:
     - parameter: 1
       value: 75
     - parameter: 3
       value: 75
     - parameter: 4
       value: 75
+    rewardParameters:
+    - parameter: 1
+      value: 2
+    - parameter: 3
+      value: 1
+    - parameter: 4
+      value: 1
+    ap: 30
+    name: A deep mine
+    description: It's a mine full of iron and silver. Looks like somenone made a
+      weapon here.
     datas:
-    - item: {fileID: 11400000, guid: 8819069af7e162d408dc99326cf7db3c, type: 2}
-      rate: 20
-    - item: {fileID: 11400000, guid: a6d0e8549b775ed4282034afc3543642, type: 2}
-      rate: 20
-    - item: {fileID: 11400000, guid: ca2e979313aa1844489baeb7da42fbd5, type: 2}
-      rate: 20
-    - item: {fileID: 11400000, guid: 4698e7bc9a1df2b419c0c7a178891be6, type: 2}
-      rate: 20
-    - item: {fileID: 11400000, guid: af0c164a14f2c0c4392121afb06d230b, type: 2}
-      rate: 20
-  - name: Lv.3 Mine
-    description: A dangerous but magnificent mine
-    inquiredParameters:
+    - item: {fileID: 11400000, guid: db204d57c7ae059459a53d484ec2715a, type: 2}
+      rate: 50
+    - item: {fileID: 11400000, guid: 2a8f5b526502ed84591e7a20a532b0c6, type: 2}
+      rate: 50
+  - inquiredParameters:
     - parameter: 1
       value: 100
     - parameter: 3
       value: 100
     - parameter: 4
       value: 100
-    datas:
-    - item: {fileID: 11400000, guid: 8819069af7e162d408dc99326cf7db3c, type: 2}
-      rate: 20
-    - item: {fileID: 11400000, guid: a6d0e8549b775ed4282034afc3543642, type: 2}
-      rate: 20
-    - item: {fileID: 11400000, guid: ca2e979313aa1844489baeb7da42fbd5, type: 2}
-      rate: 20
-    - item: {fileID: 11400000, guid: 4698e7bc9a1df2b419c0c7a178891be6, type: 2}
-      rate: 20
-    - item: {fileID: 11400000, guid: af0c164a14f2c0c4392121afb06d230b, type: 2}
-      rate: 20
-  - name: Lv.3 Mine
-    description: A dangerous but magnificent mine
-    inquiredParameters:
+    rewardParameters:
     - parameter: 1
-      value: 120
+      value: 2
     - parameter: 3
-      value: 120
+      value: 1
     - parameter: 4
-      value: 120
+      value: 1
+    ap: 30
+    name: A spectacular gem mine
+    description: A mine full of gems of great size. It's a mysterious landscape.
     datas:
     - item: {fileID: 11400000, guid: 8819069af7e162d408dc99326cf7db3c, type: 2}
       rate: 20
