@@ -7,17 +7,19 @@ using UnityEngine.UI;
 using Sirenix.OdinInspector;
 using DG.Tweening;
 using Cysharp.Threading.Tasks;
+using TMPro;
 
 namespace B409.Jade.UI {
     using Data;
+    using Game;
 
     public class DialoguePanel : MonoBehaviour {
         [SerializeField]
         private DialogueData data;
         [SerializeField]
-        private Text textName;
+        private TMP_Text textName;
         [SerializeField]
-        private Text textScript;
+        private TMP_Text textScript;
         [SerializeField]
         private Image imageBackground;
         [SerializeField]
@@ -26,6 +28,8 @@ namespace B409.Jade.UI {
         private Transform leftCharacterHolder;
         [SerializeField]
         private Transform rightCharacterHolder;
+        [SerializeField]
+        private Image imageFade;
 
         private DialogueCharacter leftCharacter;
         private DialogueCharacter rightCharacter;
@@ -34,6 +38,9 @@ namespace B409.Jade.UI {
 
         private void Start() {
             Open();
+            imageFade.gameObject.SetActive(true);
+            imageFade.color = Color.white;
+            imageFade.DOFade(0f, 1f);
         }
 
         private void Update() {
@@ -47,6 +54,7 @@ namespace B409.Jade.UI {
             foreach(var sequence in data.Datas) {
                 await PlaySequence(sequence);
             }
+            DialogueEnd();
         }
 
         private async UniTask GetWaitClick(float delay) {
@@ -147,6 +155,11 @@ namespace B409.Jade.UI {
             } else {
                 await task;
             }
+        }
+
+        private async void DialogueEnd() {
+            await imageFade.DOFade(1f, .5f);
+            GameManager.Instance.StageSequenceEnd();
         }
     }
 }

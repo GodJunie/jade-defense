@@ -18,5 +18,5 @@ MonoBehaviour:
   name: "\uD29C\uD1A0\uB9AC\uC5BC \uC2A4\uD14C\uC774\uC9C0"
   description: "\uD29C\uD1A0\uB9AC\uC5BC \uC2A4\uD14C\uC774\uC9C0"
   datas:
-  - {fileID: 11400000, guid: cfa2a348fdff8434d895e946bc45598b, type: 2}
   - {fileID: 11400000, guid: 0751b43b0ef86794da4666a544ac0e0b, type: 2}
+  - {fileID: 11400000, guid: cfa2a348fdff8434d895e946bc45598b, type: 2}
