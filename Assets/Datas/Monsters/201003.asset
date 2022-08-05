@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Flower of Yggdrasill
   prefab: {fileID: 8773225380857765575, guid: 9120fd51eda9b7a4b9b5a0538675736d, type: 3}
   status:
-    cooltime: 3
+    cooltime: 6
     hp: 150
     moveSpeed: 0.5
     range: 4

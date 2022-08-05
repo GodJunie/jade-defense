@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Seed of Yggdrasill
   prefab: {fileID: 3799640342199853417, guid: c1ccfee283b9abd4ca184ac466e1f2af, type: 3}
   status:
-    cooltime: 0.1
+    cooltime: 3
     hp: 250
     moveSpeed: 1
     range: 0.3

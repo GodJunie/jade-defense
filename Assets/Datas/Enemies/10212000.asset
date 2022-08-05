@@ -18,17 +18,17 @@ MonoBehaviour:
   description: Cat Mercenaries(Blue)
   prefab: {fileID: 1364576117012434969, guid: ffb666d6be8487a49909405c23ce1961, type: 3}
   status:
-    cooltime: 0.5
-    hp: 15
+    cooltime: 4
+    hp: 150
     moveSpeed: 1
-    range: 0.3
+    range: 2
     targetFilterMode: 3
     descending: 0
     targetCount: 1
     targetEnemy: 1
-    attackSpeed: 1
+    attackSpeed: 0.5
     attackMode: 0
-    atk: 7
+    atk: 4
     heal: 0
     interval: 0
     duration: 0

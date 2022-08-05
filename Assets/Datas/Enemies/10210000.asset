@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Cat Mercenaries
   prefab: {fileID: 166854606402032047, guid: e39a85b256dbb3440a0467b1285cbc9c, type: 3}
   status:
-    cooltime: 1
+    cooltime: 3
     hp: 150
     moveSpeed: 1
     range: 0.3
