@@ -121,10 +121,14 @@ namespace B409.Jade.Game {
                 foreach(var rateData in data.Datas) {
                     if(rand < rateData.Rate) {
                         var item = rateData.Item;
-                        if(items.ContainsKey(item.Id))
-                            items[item.Id] += 1;
-                        else
-                            items.Add(item.Id, 1);
+
+                        if(item != null) {
+                            if(items.ContainsKey(item.Id))
+                                items[item.Id] += 1;
+                            else
+                                items.Add(item.Id, 1);
+                        }
+                       
                         break;
                     }
 

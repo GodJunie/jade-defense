@@ -15,6 +15,8 @@ namespace B409.Jade.UI {
 
     public class DialoguePanel : MonoBehaviour {
         [SerializeField]
+        private bool isTest = false;
+        [SerializeField]
         private DialogueData data;
         [SerializeField]
         private TMP_Text textName;
@@ -37,10 +39,19 @@ namespace B409.Jade.UI {
         private System.Threading.CancellationTokenSource click;
 
         private void Start() {
-            Open();
+            // fade
             imageFade.gameObject.SetActive(true);
             imageFade.color = Color.white;
             imageFade.DOFade(0f, 1f);
+
+            // test
+            if(isTest) {
+
+            } else {
+
+            }
+
+            Open();
         }
 
         private void Update() {
