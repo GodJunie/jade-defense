@@ -153,7 +153,7 @@ RectTransform:
   - {fileID: 691370531}
   - {fileID: 882416028}
   m_Father: {fileID: 2042963387}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -863,11 +863,11 @@ RectTransform:
   m_Father: {fileID: 749328239}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 210, y: 400}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -550, y: -81.399994}
   m_SizeDelta: {x: 400, y: 117.20001}
-  m_Pivot: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &882416027
 GameObject:
   m_ObjectHideFlags: 0
@@ -920,7 +920,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1064391284
 RectTransform:
   m_ObjectHideFlags: 0
@@ -933,7 +933,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2042963387}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -953,7 +953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.47058824}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.6392157}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1289,8 +1289,8 @@ RectTransform:
   m_Children:
   - {fileID: 290042208}
   - {fileID: 635487863}
-  - {fileID: 1064391284}
   - {fileID: 90002887}
+  - {fileID: 1064391284}
   - {fileID: 749328239}
   - {fileID: 741999513}
   m_Father: {fileID: 0}
@@ -1314,7 +1314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTest: 0
-  data: {fileID: 11400000, guid: f3947cd162890cc4d92854b047efb31c, type: 2}
+  data: {fileID: 11400000, guid: 0751b43b0ef86794da4666a544ac0e0b, type: 2}
   textName: {fileID: 428643077}
   textScript: {fileID: 114584673}
   imageBackground: {fileID: 635487864}

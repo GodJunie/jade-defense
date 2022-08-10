@@ -6,26 +6,40 @@ using Sirenix.OdinInspector;
 
 namespace B409.Jade.Battle {
     public class Background : MonoBehaviour {
-        [SerializeField] private float parallaxSpeed = 0.0f;
+        [SerializeField]
+        private float parallaxSpeed = 0.0f;
+        [SerializeField]
+        private float parallaxSize = 0.0f;
 
-        private float _parallaxSize = 0.0f;
-        private Transform _cameraTransform;
-        private Transform[] _images;
-        private float _lastCameraX;
-        private int _leftIndex;
-        private int _rightIndex;
+        private Transform cameraTransform;
+        private Transform[] images;
+        private float lastCameraX;
+        private int leftIndex;
+        private int rightIndex;
         private const string DefaultSpritePath = "UI/Textures/Common/8x8_rect_transparent";
 
+        private float cameraWidth;
+        private int count;
+        private Vector3 offset;
+
         private void Awake() {
-            _cameraTransform = Camera.main.transform;
-            var initPosition = transform.localPosition;
-            var cameraPosition = _cameraTransform.localPosition;
-            initPosition.x += cameraPosition.x;
+            var cam = Camera.main;
+
+            cameraTransform = cam.transform;
+
+            offset = transform.localPosition;
             transform.localPosition = Vector3.zero;
+
+            cameraWidth = cam.orthographicSize * 2 * cam.aspect;
+            if(parallaxSize == 0f) {
+                parallaxSize = cameraWidth;
+            }
+            count = Mathf.CeilToInt(cameraWidth / parallaxSize) + 1;
+
             // create objects
             InstantiateChildren();
 
-            InitParallax(initPosition);
+            InitParallax();
         }
 
         private void InstantiateChildren() {
@@ -47,8 +61,8 @@ namespace B409.Jade.Battle {
             }
             // disable origin sprite renderer
             spriteRenderer.enabled = false;
-            // create two gameObject
-            for(int i = 0; i < 2; ++i) {
+
+            for(int i = 0; i < count; ++i) {
                 var go = new GameObject($"background_{i}");
                 var sr = go.AddComponent<SpriteRenderer>();
                 go.transform.SetParent(transform);
@@ -76,93 +90,78 @@ namespace B409.Jade.Battle {
             }
         }
 
-        private void InitParallax(Vector3 initPosition) {
-            var mainCamera = Camera.main;
-            var cameraHeight = 2 * mainCamera.orthographicSize;
-            var cameraWidth = cameraHeight * mainCamera.aspect;
-            _images = new Transform[transform.childCount];
+        private void InitParallax() {
+            images = new Transform[transform.childCount];
             for(var i = 0; i < transform.childCount; ++i) {
-                _images[i] = transform.GetChild(i);
-                if(i == 0) {
-                    var sr = _images[i].GetComponent<SpriteRenderer>();
-                    if(sr != null) {
-                        var minWidth = cameraWidth + 2f;
-
-                        if(sr.drawMode == SpriteDrawMode.Tiled) {
-                            _parallaxSize = Mathf.Max(sr.size.x, minWidth);
-                                //sr.size.x > minWidth ? sr.size.x : minWidth;
-
-                        } else {
-                            var sprite = sr.sprite;
-
-                            if(!(sprite is null)) {
-                                var width = sprite.rect.width / sprite.pixelsPerUnit;
-                                _parallaxSize = Mathf.Max(width, minWidth);
-                                    //width > minWidth ? width : minWidth;
-                            }
-                        }
-
-                        Debug.Log(string.Format("name: {0}, minWidth: {1}, parallaxSize: {2}", this.name, minWidth, _parallaxSize));
-                    }
-                }
-                _images[i].localPosition = new Vector3(_parallaxSize * i + initPosition.x, initPosition.y, initPosition.z);
+                images[i] = transform.GetChild(i);
+                images[i].localPosition = Vector3.right * parallaxSize * i + offset;
             }
 
-            _lastCameraX = _cameraTransform.position.x;
-            _leftIndex = 0;
-            _rightIndex = _images.Length - 1;
+            lastCameraX = cameraTransform.position.x;
+            leftIndex = 0;
+            rightIndex = images.Length - 1;
         }
 
         private void LateUpdate() {
-            var camPosX = _cameraTransform.position.x;
+            var camPosX = cameraTransform.position.x;
 
             if(!Mathf.Approximately(parallaxSpeed, 0.0f)) {
-                var deltaX = camPosX - _lastCameraX;
+                var deltaX = camPosX - lastCameraX;
                 transform.position += Vector3.right * (deltaX * parallaxSpeed * 3f);
-                _lastCameraX = camPosX;
+                lastCameraX = camPosX;
             }
 
-            if(_images.Length <= 1) {
+            if(images.Length <= 1) {
                 return;
             }
 
-            if(camPosX < _images[_leftIndex].transform.position.x) {
-                MoveLeft();
-            }
-
-            if(camPosX > _images[_rightIndex].transform.position.x) {
+            var left = images[leftIndex];
+            if(camPosX - cameraWidth / 2 > (left.position - offset).x + parallaxSize / 2) {
                 MoveRight();
+            }
+            var right = images[rightIndex];
+            if(camPosX + cameraWidth / 2 < (right.position - offset).x - parallaxSize / 2) {
+                MoveLeft();
             }
         }
 
         private void MoveLeft() {
-            var position = _images[_leftIndex].position;
-            position.x -= _parallaxSize;
-            _images[_rightIndex].position = position;
+            var position = images[leftIndex].position;
+            position.x -= parallaxSize;
+            images[rightIndex].position = position;
 
-            _leftIndex = _rightIndex;
-            _rightIndex--;
-            if(_rightIndex < 0) {
-                _rightIndex = _images.Length - 1;
+            leftIndex = rightIndex;
+            rightIndex--;
+            if(rightIndex < 0) {
+                rightIndex = images.Length - 1;
             }
         }
 
         private void MoveRight() {
-            var position = _images[_rightIndex].position;
-            position.x += _parallaxSize;
-            _images[_leftIndex].position = position;
+            var position = images[rightIndex].position;
+            position.x += parallaxSize;
+            images[leftIndex].position = position;
 
-            _rightIndex = _leftIndex;
-            _leftIndex++;
-            if(_leftIndex == _images.Length) {
-                _leftIndex = 0;
+            rightIndex = leftIndex;
+            leftIndex++;
+            if(leftIndex == images.Length) {
+                leftIndex = 0;
             }
         }
 
         [Button]
-        private void Test() {
-            var rend = GetComponent<SpriteRenderer>();
-            Debug.Log(string.Format("rect: {0}, ppu: {1}, bounds: {2}", rend.sprite.rect, rend.sprite.pixelsPerUnit, rend.sprite.bounds));
+        private void SetParallaxSize() {
+            var sr = GetComponent<SpriteRenderer>();
+            if(sr == null) return;
+
+            if(sr.drawMode == SpriteDrawMode.Tiled) {
+                parallaxSize = sr.size.x;
+            } else {
+                var sprite = sr.sprite;
+                if(sprite == null) return;
+                var width = sprite.rect.width / sprite.pixelsPerUnit;
+                parallaxSize = width;
+            }
         }
     }
 }

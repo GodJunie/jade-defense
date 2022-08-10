@@ -49,6 +49,7 @@ namespace B409.Jade.Data {
         public string Name => name;
         public string Description => description;
         public Sprite Background => background;
+        public GameObject InGameBackground => inGameBackground;
         public List<StageSequenceData> Datas => datas;
     }
 }

@@ -27,7 +27,7 @@ MonoBehaviour:
       mode: 0
       target: {fileID: 0}
     backgroundMode: 0
-    backgroundObject: {fileID: 1461120247514626, guid: ce7758c2172386340a019e353cb41dea, type: 3}
+    backgroundObject: {fileID: 1461120247514626, guid: 8633b97c6fb1741319432743ee8c49fd, type: 3}
     backgroundSprite: {fileID: 21300000, guid: ef909a11eccf6084b8ee1bf7a56a2aa2, type: 3}
     sequenceSort: 1
   - leftCharacter:

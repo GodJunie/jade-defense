@@ -189,8 +189,6 @@ namespace B409.Jade.Battle {
         private int monsterCount;
         private int enemyCount;
 
-        private 
-        
 
         // Start is called before the first frame update
         void Start() {
@@ -204,6 +202,9 @@ namespace B409.Jade.Battle {
                 var progress = GameManager.Instance.Progress;
                 var stage = DataManager.Instance.Stages[progress.Stage];
                 var stageSequence = stage.Datas[progress.StageSequence];
+
+                Instantiate(stage.InGameBackground);
+
                 if(!(stageSequence is DailyRoutineData)) {
                     return;
                 }
@@ -562,7 +563,7 @@ namespace B409.Jade.Battle {
             cameraTransform = cam.transform;
             var camPos = cameraTransform.position;
             cameraBoundX = mapSize - cam.orthographicSize * cam.aspect;
-            cameraTransform.position = new Vector3(-cameraBoundX, camPos.y, camPos.z);
+            //cameraTransform.position = new Vector3(-cameraBoundX, camPos.y, camPos.z);
 
             var cameraWidth = cam.orthographicSize * cam.aspect * 2;
             frameSizeX = minimapFrameRect.sizeDelta.x;
