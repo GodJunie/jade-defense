@@ -16,6 +16,9 @@ namespace B409.Jade.Battle {
         private Direction defaultDirection;
         [ValueDropdown("animations")]
         [SerializeField]
+        private string idleAnimation = "Idle";
+        [ValueDropdown("animations")]
+        [SerializeField]
         private string moveAnimation;
         [ValueDropdown("animations")]
         [SerializeField]
@@ -51,6 +54,17 @@ namespace B409.Jade.Battle {
         private List<UnitController> targets = new List<UnitController>();
         private List<UnitController> attackTargets = new List<UnitController>();
 
+        private float mapSize;
+        private bool inMap {
+            get {
+                if(this.IsPlayer) {
+                    return this.transform.position.x > -mapSize && this.transform.position.x < mapSize - Data.Status.Range;
+                } else {
+                    return this.transform.position.x < mapSize && this.transform.position.x > -mapSize + Data.Status.Range;
+                }
+            }
+        }
+        private bool canAttack => this.State == State.Idle || this.State == State.Move;
 
         #region Mono
         private void Awake() {
@@ -58,7 +72,7 @@ namespace B409.Jade.Battle {
                 this.targets = detector.Targets.Where(e => e != null && this.Data.Status.TargetEnemy == (e.IsPlayer ^ this.IsPlayer) && e.State != State.Die && e != this).ToList();
 
                 if(targets.Count > 0) {
-                    if(this.State == State.Move)
+                    if(this.canAttack)
                         ChangeState(State.Attack);
                 }
             };
@@ -67,13 +81,13 @@ namespace B409.Jade.Battle {
                 this.targets = detector.Targets.Where(e => e != null && this.Data.Status.TargetEnemy == (e.IsPlayer ^ this.IsPlayer) && e.State != State.Die && e != this).ToList();
 
                 if(targets.Count > 0) {
-                    if(this.State == State.Move)
+                    if(this.canAttack)
                         ChangeState(State.Attack);
                 }
             };
 
             anim.AnimationState.Start += (entry) => {
-
+                
             };
 
             anim.AnimationState.Event += (entry, e) => {
@@ -115,7 +129,7 @@ namespace B409.Jade.Battle {
                 Debug.Log(entry.Animation.Name);
                 if(entry.Animation.Name == attackAnimation) {
                     attackEnd = true;
-                    anim.AnimationState.SetAnimation(0, "Idle", true);
+                    anim.AnimationState.SetAnimation(0, idleAnimation, true);
                 }
                 if(entry.Animation.Name == dieAnimation) {
                     // ÀÎ»ý ³¡!
@@ -132,6 +146,9 @@ namespace B409.Jade.Battle {
         // Update is called once per frame
         void Update() {
             switch(State) {
+            case State.Idle:
+                Idle();
+                break;
             case State.Move:
                 Move();
                 break;
@@ -174,11 +191,12 @@ namespace B409.Jade.Battle {
         }
         #endregion
 
-
         #region Data
-        public void Init(UnitData data, bool isPlayer) {
+        public void Init(UnitData data, bool isPlayer, float mapSize) {
             this.Data = data;
             this.IsPlayer = isPlayer;
+            this.mapSize = mapSize;
+            this.detector.gameObject.SetActive(false);
 
             this.detector.transform.localPosition = new Vector3(this.hitbox.offset.x * this.hitbox.transform.localScale.x, 0, 0f);
             this.detector.SetRange(this.hitbox.size.x * this.hitbox.transform.localScale.x + data.Status.Range);
@@ -245,6 +263,12 @@ namespace B409.Jade.Battle {
         public void OnDamageOverTime(float damage, float duration, float interval) {
             this.dots.Add(new DamageOverTime(damage, duration, interval));
         }
+
+        public void OnStop() {
+            if(this.State != State.Die) {
+                ChangeState(State.Idle);
+            }
+        }
         #endregion
 
         #region State
@@ -252,7 +276,11 @@ namespace B409.Jade.Battle {
             if(this.targets.Count > 0) {
                 ChangeState(State.Attack);
             } else {
-                ChangeState(State.Move);
+                if(this.inMap) {
+                    ChangeState(State.Move);
+                } else {
+                    ChangeState(State.Idle);
+                }
             }
         }
 
@@ -261,6 +289,9 @@ namespace B409.Jade.Battle {
                 return;
 
             switch(state) {
+            case State.Idle:
+                IdleExit();
+                break;
             case State.Move:
                 MoveExit();
                 break;
@@ -277,6 +308,9 @@ namespace B409.Jade.Battle {
             this.State = state;
 
             switch(state) {
+            case State.Idle:
+                IdleEnter();
+                break;
             case State.Move:
                 MoveEnter();
                 break;
@@ -291,6 +325,20 @@ namespace B409.Jade.Battle {
             }
         }
 
+        #region Idle
+        private void IdleEnter() {
+            anim.AnimationState.SetAnimation(0, idleAnimation, true);
+        }
+
+        private void Idle() {
+
+        }
+
+        private void IdleExit() {
+
+        }
+        #endregion
+
         #region Move
         private void MoveEnter() {
             anim.AnimationState.SetAnimation(0, moveAnimation, true);
@@ -301,6 +349,16 @@ namespace B409.Jade.Battle {
                 this.transform.position += new Vector3(1f, 0f, 0f) * Time.deltaTime * this.moveSpeed;
             } else {
                 this.transform.position += new Vector3(-1f, 0f, 0f) * Time.deltaTime * this.moveSpeed;
+            }
+
+            if(this.detector.gameObject.activeInHierarchy) {
+                if(!this.inMap) {
+                    ChangeState(State.Idle);
+                }
+            } else {
+                if(this.inMap) {
+                    this.detector.gameObject.SetActive(true);
+                }
             }
         }
 
@@ -402,7 +460,7 @@ namespace B409.Jade.Battle {
         #endregion
 
         #region Editor
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         public string[] animations {
             get {
                 return this.anim.skeleton.Data.Animations.Select(e => e.Name).ToArray();

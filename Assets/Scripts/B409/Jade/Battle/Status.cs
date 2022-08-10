@@ -134,4 +134,59 @@ namespace B409.Jade.Battle {
         }
 #endif
     }
+
+    public static class StatusExtensions {
+        public static string GetAttackDescriptionString(this Status status) {
+            string d = "";
+
+            if(status.AttackMode == AttackMode.Heal) {
+                d = string.Format("Heal <sprite name=Hp> <color={0}>{1} HP</color> ", GameConsts.HpColor.GetHexString(), status.Heal);
+            } else {
+                d = string.Format("Inflicts <sprite name=Atk> <color={0}>{1} dmg</color> ", GameConsts.DamageColor.GetHexString(), status.Atk);
+            }
+
+            if(status.TargetCount == 0) {
+                d += string.Format("to the <sprite index=7> <color={1}>all {0}</color> within range ", status.TargetEnemy ? "opponents" : "allies", GameConsts.TargetColor.GetHexString());
+            } else {
+                string t = string.Format("<sprite index=7> <color={2}>{0} {1}</color>", status.TargetCount, status.TargetEnemy ? "opponents" : "allies", GameConsts.TargetColor.GetHexString());
+                switch(status.TargetFilterMode) {
+                case TargetFilterMode.Hp:
+                    d += string.Format("to {0} with {1} current HP first ", t, status.Descending ? "high" : "low");
+                    break;
+                case TargetFilterMode.MaxHp:
+                    d += string.Format("to {0} with {1} maximum HP first ", t, status.Descending ? "high" : "low");
+                    break;
+                case TargetFilterMode.Distance:
+                    d += string.Format("to the {1} {0} ", t, status.Descending ? "farthest" : "nearest");
+                    break;
+                case TargetFilterMode.Index:
+                    d += string.Format("to {0} ", t);
+                    break;
+                default:
+                    break;
+                }
+            }
+
+            switch(status.AttackMode) {
+            case AttackMode.Attack:
+                break;
+            case AttackMode.DamageOverTime:
+                d += string.Format("over {0:0.#} secs", status.Duration);
+                break;
+            case AttackMode.Heal:
+                break;
+            case AttackMode.Stun:
+                d += string.Format("and stuns for {0:0.#} secs", status.Duration);
+                break;
+            case AttackMode.Slow:
+                d += string.Format("and slow down <sprite name=Slow> <color={2}>{0:P1}</color> speed for <color={3}>{1:0.#} secs</color>", status.SlowRate, status.Duration, GameConsts.SlowColor.GetHexString(), GameConsts.DurationColor.GetHexString());
+                break;
+            default:
+                break;
+            }
+
+            d += ".";
+            return d;
+        }
+    }
 }

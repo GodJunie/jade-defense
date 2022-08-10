@@ -221,6 +221,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 60f8ec9a060303f4fb8b5fae244ac2fa, type: 2}
   - {fileID: 11400000, guid: af0c164a14f2c0c4392121afb06d230b, type: 2}
   - {fileID: 11400000, guid: 530ff8c0a165cb84db1016901a246704, type: 2}
+  - {fileID: 11400000, guid: d589c2021da9fa54fa47f26611edba9c, type: 2}
+  - {fileID: 11400000, guid: ccc71a76c1fd38a4b9369afb23050518, type: 2}
+  - {fileID: 11400000, guid: 102fea58570ff794a9f9070009716ab2, type: 2}
   cookings:
   - {fileID: 11400000, guid: b2755939eacab7a4c93cdb60f177a926, type: 2}
   - {fileID: 11400000, guid: 032638d6818c28f44a135b2021194ca9, type: 2}
@@ -369,6 +372,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c8279350dcecce040930c9d91c4ac7e3, type: 2}
   - {fileID: 11400000, guid: b40d8a7c8aa836d4797fa8d59da1c00d, type: 2}
   - {fileID: 11400000, guid: 72db5c086af618d4ab77f2490910463c, type: 2}
+  - {fileID: 11400000, guid: 2736043221b7ccd46bb425482b19be43, type: 2}
+  - {fileID: 11400000, guid: 3cd1663aad1b5ff4488bfa806926ad9f, type: 2}
   monsters:
   - {fileID: 11400000, guid: 1cad6710dcf223e468247eb06cf52ce3, type: 2}
   - {fileID: 11400000, guid: 491f1df46333f624aa1a277005fa32fb, type: 2}

@@ -44,6 +44,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainScene: Scenes/Main
-  battleScene: Scenes/Battle
+  battleScene: Scenes/BattleDemo
   dialogueScene: Scenes/Dialogue
   endingScene: Scenes/Ending

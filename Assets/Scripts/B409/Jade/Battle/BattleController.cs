@@ -7,10 +7,12 @@ using UnityEngine.EventSystems;
 using Cysharp.Threading.Tasks;
 using Sirenix.OdinInspector;
 using TMPro;
+using DG.Tweening;
 
 namespace B409.Jade.Battle {
     using Data;
     using Game;
+    using UI;
 
     public class BattleController : MonoBehaviour {
         // 테스트를 위해서 Serialize 했고 실제 인게임에서는 Stage 데이터에서 Battle Data 받아오고, GameProgress 에서 MonsterDatas 받아오기
@@ -23,7 +25,75 @@ namespace B409.Jade.Battle {
         private BattleData data;
         [TitleGroup("Test")]
         [SerializeField]
-        private List<UnitData> monsterDatas;
+        private List<UnitData> monsterDatas = new List<UnitData>();
+
+        [TitleGroup("General")]
+        [SerializeField]
+        private Image imageFade;
+
+
+        [TitleGroup("Party")]
+        [SerializeField]
+        private GameObject panelSetParty;
+        [TitleGroup("Party")]
+        [FoldoutGroup("Party/Owned")]
+        [SerializeField]
+        private MonsterOwnedSlot monsterSlotPrefab;
+        [FoldoutGroup("Party/Owned")]
+        [SerializeField]
+        private Transform monsterSlotContainer;
+        [FoldoutGroup("Party/Owned")]
+        [SerializeField]
+        private ScrollRect monsterScrollRect;
+        [FoldoutGroup("Party/Info")]
+        [SerializeField]
+        private GameObject panelSelectedMonster;
+        [FoldoutGroup("Party/Info")]
+        [SerializeField]
+        private Image imageSelectedMonster;
+        [FoldoutGroup("Party/Info")]
+        [SerializeField]
+        private TMP_Text textSelectedMonsterName;
+        [FoldoutGroup("Party/Info")]
+        [SerializeField]
+        private TMP_Text textSelectedMonsterCooltime;
+        [FoldoutGroup("Party/Info")]
+        [SerializeField]
+        private TMP_Text textSelectedMonsterRange;
+        [FoldoutGroup("Party/Info")]
+        [SerializeField]
+        private TMP_Text textSelectedMonsterHp;
+        [FoldoutGroup("Party/Info")]
+        [SerializeField]
+        private TMP_Text textSelectedMonsterSpeed;
+        [FoldoutGroup("Party/Info")]
+        [SerializeField]
+        private TMP_Text textSelectedMonsterDescription;
+        [FoldoutGroup("Party/Info")]
+        [SerializeField]
+        private GameObject buttonMonsterIn;
+        [FoldoutGroup("Party/Info")]
+        [SerializeField]
+        private GameObject buttonMonsterOut;
+        [FoldoutGroup("Party/Party")]
+        [SerializeField]
+        private List<Image> imagesPartyMonster;
+        [FoldoutGroup("Party/Party")]
+        [SerializeField]
+        private List<GameObject> statusesPartyMonster;
+        [FoldoutGroup("Party/Party")]
+        [SerializeField]
+        private List<TMP_Text> textsPartyCooltime;
+        [FoldoutGroup("Party/Party")]
+        [SerializeField]
+        private List<TMP_Text> textsPartyRange;
+        [FoldoutGroup("Party/Party")]
+        [SerializeField]
+        private List<TMP_Text> textsPartyHp;
+        [FoldoutGroup("Party/Party")]
+        [SerializeField]
+        private List<TMP_Text> textsPartySpeed;
+
 
         [TitleGroup("Map")]
         [SerializeField]
@@ -71,6 +141,9 @@ namespace B409.Jade.Battle {
         [BoxGroup("UI/group/Monster")]
         [SerializeField]
         private TMP_Text textCooltimeMonster;
+        [BoxGroup("UI/group/Monster")]
+        [SerializeField]
+        private TMP_Text textMonsterCount;
 
         [HorizontalGroup("UI/group", .5f)]
         [BoxGroup("UI/group/Enemy")]
@@ -88,36 +161,46 @@ namespace B409.Jade.Battle {
         [BoxGroup("UI/group/Enemy")]
         [SerializeField]
         private TMP_Text textCooltimeEnemy;
+        [BoxGroup("UI/group/Enemy")]
+        [SerializeField]
+        private TMP_Text textEnemyCount;
 
 
         private Transform cameraTransform;
         private float cameraBoundX;
         private float minimapRatio;
 
-        private bool isPlaying;
+        private bool isPlaying = false;
 
         private List<UnitController> monsters = new List<UnitController>();
         private List<UnitController> enemies = new List<UnitController>();
 
 
-        private List<UnitData> enemyDatas;
+        private List<UnitData> enemyDatas = new List<UnitData>();
 
         float monsterTimer = 0f;
         float enemyTimer = 0f;
-
         private int monsterGenIndex = 0;
         private int enemyGenIndex = 0;
 
         private UnitData waitMonster => monsterGenIndex < monsterDatas.Count ? monsterDatas[monsterGenIndex] : null;
         private UnitData waitEnemy => enemyGenIndex < enemyDatas.Count ? enemyDatas[enemyGenIndex] : null;
 
+        private int monsterCount;
+        private int enemyCount;
+
+        private 
+        
 
         // Start is called before the first frame update
         void Start() {
-            // if test
-            if(isTest) {
+            imageFade.gameObject.SetActive(true);
+            imageFade.color = Color.white;
+            imageFade.DOFade(0f, 1f);
 
-            } else {
+            InitCamera();
+
+            if(!isTest) {
                 var progress = GameManager.Instance.Progress;
                 var stage = DataManager.Instance.Stages[progress.Stage];
                 var stageSequence = stage.Datas[progress.StageSequence];
@@ -128,34 +211,208 @@ namespace B409.Jade.Battle {
             }
 
             this.enemyDatas = data.Enemies;
-
-
-            SetMonsterWait();
-            SetEnemyWait();
-
-            InitCamera();
-
-            GameStart();
+            
+            if(isTest) {
+                GameStart();
+            } else {
+                SetMakePartyUI();
+            }
         }
 
         // Update is called once per frame
         void Update() {
-            CameraScroll();
+            if(isPlaying) {
+                CameraScroll();
 
-            if(monsterGenIndex < monsterDatas.Count) {
-                GenerateMonsters();
-            }
+                if(monsterGenIndex < monsterDatas.Count) {
+                    GenerateMonsters();
+                }
 
-            if(enemyGenIndex < enemyDatas.Count) {
-                GenerateEnemies();
+                if(enemyGenIndex < enemyDatas.Count) {
+                    GenerateEnemies();
+                }
             }
         }
+
+        #region Party
+        private MonsterData selectedMonsterData;
+        private int selectedMonsterIndex;
+        private Dictionary<int, MonsterOwnedSlot> monsterSlotPool = new Dictionary<int, MonsterOwnedSlot>();
+
+        private void SetMakePartyUI() {
+            panelSetParty.SetActive(true);
+            panelSelectedMonster.SetActive(false);
+            this.monsterDatas.Clear();
+
+            var progress = GameManager.Instance.Progress;
+
+            foreach(var monster in progress.Monsters) {
+                var slot = Instantiate(monsterSlotPrefab, monsterSlotContainer);
+                int id = monster.Key;
+                int count = monster.Value;
+                var data = DataManager.Instance.Monsters.Find(e => e.Id == id);
+                slot.Init(data, count, monsterScrollRect, () => {
+                    ShowMonsterInfo(data, true);
+                });
+                this.monsterSlotPool.Add(id, slot);
+            }
+
+            SetInPartyMonsterUI();
+        }
+
+        private void ShowMonsterInfo(MonsterData data, bool monsterIn) {
+            this.selectedMonsterData = data;
+
+            panelSelectedMonster.SetActive(true);
+
+            imageSelectedMonster.sprite = data.Icon;
+            textSelectedMonsterName.text = data.Name;
+            // status
+            textSelectedMonsterCooltime.text = data.Status.Cooltime.ToString("0.#");
+            textSelectedMonsterRange.text = data.Status.Range.ToString("0.#");
+            textSelectedMonsterHp.text = data.Status.Hp.ToString("0");
+            textSelectedMonsterSpeed.text = data.Status.MoveSpeed.ToString("0.#");
+            textSelectedMonsterDescription.text = data.Status.GetAttackDescriptionString();
+
+            buttonMonsterIn.SetActive(monsterIn);
+            buttonMonsterOut.SetActive(!monsterIn);
+        }
+
+        public void MonsterInParty(bool monsterIn) {
+            if(monsterIn) {
+                if(this.monsterDatas.Count == 5)
+                    return;
+
+                int id = selectedMonsterData.Id;
+
+                this.monsterDatas.Add(selectedMonsterData);
+
+                var progress = GameManager.Instance.Progress;
+                progress.UseMonster(id, 1);
+
+                if(progress.Monsters.ContainsKey(id)) {
+                    this.monsterSlotPool[id].Init(selectedMonsterData.Icon, progress.Monsters[id]);
+                } else {
+                    this.monsterSlotPool[id].gameObject.SetActive(false);
+                }
+            } else {
+                if(selectedMonsterIndex < this.monsterDatas.Count) {
+                    var monsterData = this.monsterDatas[selectedMonsterIndex];
+
+                    this.monsterDatas.RemoveAt(selectedMonsterIndex);
+
+                    var progress = GameManager.Instance.Progress;
+                    progress.AddMonster(monsterData.Id, 1);
+
+                    var slot = monsterSlotPool[monsterData.Id];
+                    slot.gameObject.SetActive(true);
+                    slot.Init(monsterData.Icon, progress.Monsters[monsterData.Id]);
+                }
+            }
+
+            panelSelectedMonster.SetActive(false);
+            selectedMonsterData = null;
+
+            SetInPartyMonsterUI();
+        }
+
+        private void SetInPartyMonsterUI() {
+            for(int i = 0; i < 5; i++) {
+                var image = imagesPartyMonster[i];
+                var status = statusesPartyMonster[i];
+                var cooltime = textsPartyCooltime[i];
+                var range = textsPartyRange[i];
+                var hp = textsPartyHp[i];
+                var speed = textsPartySpeed[i];
+
+                if(i < monsterDatas.Count) {
+                    var data = monsterDatas[i];
+                    image.gameObject.SetActive(true);
+                    image.sprite = data.Icon;
+                    status.SetActive(true);
+                    cooltime.text = data.Status.Cooltime.ToString("0.#");
+                    range.text = data.Status.Range.ToString("0.#");
+                    hp.text = data.Status.Hp.ToString("0");
+                    speed.text = data.Status.MoveSpeed.ToString("0.#");
+                } else {
+                    image.gameObject.SetActive(false);
+                    status.SetActive(false);
+                }
+            }
+        }
+
+        public void SelectMonsterInParty(int index) {
+            if(index < this.monsterDatas.Count) {
+                this.selectedMonsterIndex = index;
+
+                ShowMonsterInfo(this.monsterDatas[index] as MonsterData, false);
+            }
+        }
+
+        public void MoveUp(int index) {
+            if(index > 0 && index < this.monsterDatas.Count) {
+                if(this.selectedMonsterData != null) {
+                    if(index == this.selectedMonsterIndex)
+                        this.selectedMonsterIndex = index - 1;
+                    else if(this.selectedMonsterIndex == index - 1)
+                        this.selectedMonsterIndex = index;
+                }
+
+                var prev = this.monsterDatas[index - 1];
+                var data = this.monsterDatas[index];
+                this.monsterDatas[index - 1] = data;
+                this.monsterDatas[index] = prev;
+
+
+                SetInPartyMonsterUI();
+            }
+        }
+
+        public void MoveDown(int index) {
+            if(index < this.monsterDatas.Count - 1) {
+                if(this.selectedMonsterData != null) {
+                    if(index == this.selectedMonsterIndex)
+                        this.selectedMonsterIndex = index + 1;
+                    else if(this.selectedMonsterIndex == index + 1)
+                        this.selectedMonsterIndex = index;
+                }
+
+                var data = this.monsterDatas[index];
+                var next = this.monsterDatas[index + 1];
+                this.monsterDatas[index] = next;
+                this.monsterDatas[index + 1] = data;
+
+                SetInPartyMonsterUI();
+            }
+        }
+        #endregion
 
 
         #region Game
         public void GameStart() {
+            panelSetParty.SetActive(false);
+
+            SetMonsterWait();
+            SetEnemyWait();
+
+            isPlaying = true;
+
+            this.monsterCount = this.monsterDatas.Count;
+            this.enemyCount = this.enemyDatas.Count;
+
+            SetMonsterCountUI();
+            SetEnemyCountUI();
+
             GenerateMonsters();
             GenerateEnemies();
+        }
+
+        private void SetMonsterCountUI() {
+            this.textMonsterCount.text = this.monsterCount.ToString();
+        }
+
+        private void SetEnemyCountUI() {
+            this.textEnemyCount.text = this.enemyCount.ToString();
         }
 
         private void GenerateMonsters() {
@@ -247,7 +504,23 @@ namespace B409.Jade.Battle {
             pos += new Vector3(0f, 1f, 1f) * UnityEngine.Random.Range(-0.3f, 0.3f);
 
             var unit = Instantiate(data.Prefab, pos, Quaternion.identity);
-            unit.Init(data, isPlayer);
+            unit.Init(data, isPlayer, this.mapSize);
+
+            unit.OnDead += () => {
+                if(isPlayer) {
+                    this.monsterCount--;
+                    SetMonsterCountUI();
+                    if(this.monsterCount == 0) {
+                        StageFailed();
+                    }
+                } else {
+                    this.enemyCount--;
+                    SetEnemyCountUI();
+                    if(this.enemyCount == 0) {
+                        StageClear();
+                    }
+                }
+            };
 
             if(isPlayer) {
                 this.monsters.Add(unit);
@@ -260,12 +533,20 @@ namespace B409.Jade.Battle {
             pin.Init(unit, this.minimapRatio, isPlayer);
         }
 
-        #endregion
-
-        #region Game UI
-        private void SetMonsterUI() {
-
+        private void StageClear() {
+            Debug.Log("Clear!");
+            foreach(var monster in this.monsters) {
+                monster.OnStop();
+            }
         }
+
+        private void StageFailed() {
+            Debug.Log("Failed!");
+            foreach(var enemy in this.enemies) {
+                enemy.OnStop();
+            }
+        }
+
         #endregion
 
         #region Screen and Minimap
