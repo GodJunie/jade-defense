@@ -536,8 +536,10 @@ namespace B409.Jade.Battle {
         private void StageClear() {
             Debug.Log("Clear!");
             foreach(var monster in this.monsters) {
+                GameManager.Instance.Progress.AddMonster(monster.Data.Id, 1);
                 monster.OnStop();
             }
+            GameManager.Instance.StageSequenceEnd();
         }
 
         private void StageFailed() {

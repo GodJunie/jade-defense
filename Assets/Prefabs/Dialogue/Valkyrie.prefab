@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1162844354417900823}
   - component: {fileID: 2025944677643304210}
   m_Layer: 5
-  m_Name: 40100000
+  m_Name: Valkyrie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49,11 +49,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6c5ad553cadedc45bb1c9a4c3db6e0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 1055565227319715232}
+  skeletons:
+  - {fileID: 1055565227319715232}
   isLeft: 1
   disabledColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   highlightedColor: {r: 1, g: 1, b: 1, a: 1}
   appearAimation: Idle
+  idleAimation: Idle
 --- !u!1 &5128167438227618282
 GameObject:
   m_ObjectHideFlags: 0

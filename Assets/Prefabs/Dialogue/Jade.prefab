@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 4221124644725617184}
   - component: {fileID: 6118293056195659511}
   m_Layer: 5
-  m_Name: 300000
+  m_Name: Jade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4221124644725617184
 RectTransform:
   m_ObjectHideFlags: 0
@@ -49,11 +49,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6c5ad553cadedc45bb1c9a4c3db6e0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 8077443139964882717}
+  skeletons:
+  - {fileID: 8077443139964882717}
   isLeft: 0
   disabledColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   highlightedColor: {r: 1, g: 1, b: 1, a: 1}
   appearAimation: Appear
+  idleAimation: Idle
 --- !u!1 &5106024852735901975
 GameObject:
   m_ObjectHideFlags: 0

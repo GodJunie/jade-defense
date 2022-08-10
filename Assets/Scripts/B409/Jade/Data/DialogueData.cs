@@ -6,7 +6,7 @@ using Sirenix.OdinInspector;
 namespace B409.Jade.Data {
     using UI;
     public class DialogueData : StageSequenceData {
-        [ListDrawerSettings(AddCopiesLastElement = false, DraggableItems = true, Expanded = true, NumberOfItemsPerPage = 100)]
+        [ListDrawerSettings(AddCopiesLastElement = false, DraggableItems = true, Expanded = true, NumberOfItemsPerPage = 20)]
         [SerializeField]
         private List<DialogueSequenceData> datas;
 
@@ -234,5 +234,13 @@ namespace B409.Jade.Data {
         public enum SequenceSort : int { Script, Background, Effect };
         public enum CharacterMode : int { None, Appear, Disappear };
         #endregion
+
+
+
+
+        [Button]
+        private void Add() {
+            datas.Add(new DialogueSequenceData());
+        }
     }
 }
