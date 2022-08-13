@@ -18,8 +18,8 @@ MonoBehaviour:
   description: Black Crow Army
   prefab: {fileID: 2402818001000036219, guid: b4a4b53af3ce5424bba53dd16b9f8a8c, type: 3}
   status:
-    cooltime: 1
-    hp: 200
+    cooltime: 3
+    hp: 250
     moveSpeed: 1
     range: 0.4
     targetFilterMode: 3
@@ -28,7 +28,7 @@ MonoBehaviour:
     targetEnemy: 1
     attackSpeed: 1
     attackMode: 0
-    atk: 12
+    atk: 19
     heal: 0
     interval: 0
     duration: 0

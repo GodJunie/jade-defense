@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Valkyrie
   prefab: {fileID: 6438697709683887757, guid: 30045b2b94c97744b8bf58c1660ea91f, type: 3}
   status:
-    cooltime: 1
+    cooltime: 3
     hp: 300
     moveSpeed: 1.8
     range: 0.5
@@ -26,7 +26,7 @@ MonoBehaviour:
     descending: 0
     targetCount: 1
     targetEnemy: 1
-    attackSpeed: 0.4
+    attackSpeed: 0.7
     attackMode: 0
     atk: 25
     heal: 0

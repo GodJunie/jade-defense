@@ -26,9 +26,9 @@ MonoBehaviour:
     descending: 0
     targetCount: 1
     targetEnemy: 1
-    attackSpeed: 1
+    attackSpeed: 3
     attackMode: 3
-    atk: 40
+    atk: 50
     heal: 0
     interval: 0
     duration: 1.2
@@ -36,8 +36,8 @@ MonoBehaviour:
     slowRate: 0
   cost:
   - item: {fileID: 11400000, guid: 4d650708846712c439d76e00bdab76a6, type: 2}
-    count: 1
+    count: 4
   - item: {fileID: 11400000, guid: eece1363856079a45888ffdd587789b1, type: 2}
-    count: 1
+    count: 3
   - item: {fileID: 11400000, guid: d6a8a12ca56771241bde3e9d1371f553, type: 2}
     count: 1

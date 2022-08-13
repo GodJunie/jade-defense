@@ -18,8 +18,8 @@ MonoBehaviour:
   description: Cat of Asgard's
   prefab: {fileID: 2750501817663866072, guid: 7c17db50ffa9c354db90235d427f3934, type: 3}
   status:
-    cooltime: 1
-    hp: 400
+    cooltime: 5
+    hp: 250
     moveSpeed: 1
     range: 0.6
     targetFilterMode: 2
@@ -28,7 +28,7 @@ MonoBehaviour:
     targetEnemy: 1
     attackSpeed: 2
     attackMode: 0
-    atk: 50
+    atk: 40
     heal: 0
     interval: 0
     duration: 1

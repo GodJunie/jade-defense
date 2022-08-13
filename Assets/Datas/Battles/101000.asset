@@ -14,10 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 101000
   enemies:
-  - {fileID: 11400000, guid: d41e035a571d27e4f8da6b51b1c3c54c, type: 2}
-  - {fileID: 11400000, guid: d41e035a571d27e4f8da6b51b1c3c54c, type: 2}
-  - {fileID: 11400000, guid: d41e035a571d27e4f8da6b51b1c3c54c, type: 2}
-  - {fileID: 11400000, guid: d41e035a571d27e4f8da6b51b1c3c54c, type: 2}
-  - {fileID: 11400000, guid: d41e035a571d27e4f8da6b51b1c3c54c, type: 2}
+  - {fileID: 11400000, guid: c32da3a657706c745891d177e2c39373, type: 2}
+  - {fileID: 11400000, guid: c32da3a657706c745891d177e2c39373, type: 2}
+  - {fileID: 11400000, guid: c32da3a657706c745891d177e2c39373, type: 2}
+  - {fileID: 11400000, guid: 76a26212356604847b069b0418c6b577, type: 2}
+  - {fileID: 11400000, guid: 76a26212356604847b069b0418c6b577, type: 2}
+  - {fileID: 11400000, guid: 76a26212356604847b069b0418c6b577, type: 2}
   rewards:
+  - {fileID: 11400000, guid: 4798147202ceb8e4fb0ffe48ca90b35f, type: 2}
+  - {fileID: 11400000, guid: 4798147202ceb8e4fb0ffe48ca90b35f, type: 2}
   - {fileID: 11400000, guid: 4798147202ceb8e4fb0ffe48ca90b35f, type: 2}
