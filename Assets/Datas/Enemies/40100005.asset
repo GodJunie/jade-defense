@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Spear of Asgard's
   prefab: {fileID: 7065018643872093669, guid: 60c64bb7dc8469b4f8e9388ba40dc0eb, type: 3}
   status:
-    cooltime: 1
+    cooltime: 4
     hp: 250
     moveSpeed: 1
     range: 3

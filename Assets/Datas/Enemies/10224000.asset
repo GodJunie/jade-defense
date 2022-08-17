@@ -18,17 +18,17 @@ MonoBehaviour:
   description: Cat Militia(Green)
   prefab: {fileID: 5370646135053671255, guid: f4c4d7e979f8b2b4d97b9b7f10eac94b, type: 3}
   status:
-    cooltime: 1
-    hp: 75
+    cooltime: 7
+    hp: 105
     moveSpeed: 1.5
-    range: 0.15
+    range: 3
     targetFilterMode: 3
     descending: 0
     targetCount: 1
     targetEnemy: 1
-    attackSpeed: 0.5
+    attackSpeed: 2
     attackMode: 0
-    atk: 7
+    atk: 25
     heal: 0
     interval: 0
     duration: 0

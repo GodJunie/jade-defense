@@ -19,7 +19,7 @@ MonoBehaviour:
   prefab: {fileID: 2610822099127862184, guid: 436343a4f42afcb42bd6d29796b691b2, type: 3}
   status:
     cooltime: 1
-    hp: 70
+    hp: 170
     moveSpeed: 1
     range: 1
     targetFilterMode: 0

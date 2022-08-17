@@ -21,12 +21,12 @@ MonoBehaviour:
     cooltime: 6
     hp: 150
     moveSpeed: 0.2
-    range: 1.5
+    range: 1
     targetFilterMode: 3
     descending: 0
     targetCount: 0
     targetEnemy: 0
-    attackSpeed: 1
+    attackSpeed: 0.7
     attackMode: 2
     atk: 1
     heal: 5
@@ -36,8 +36,8 @@ MonoBehaviour:
     slowRate: 0
   cost:
   - item: {fileID: 11400000, guid: 60f8ec9a060303f4fb8b5fae244ac2fa, type: 2}
-    count: 1
+    count: 4
   - item: {fileID: 11400000, guid: 75629c7a660287c42859f2a90cf401ea, type: 2}
-    count: 1
+    count: 4
   - item: {fileID: 11400000, guid: 2e12f2250b6f33944bf7f0282f2480d7, type: 2}
-    count: 1
+    count: 2
