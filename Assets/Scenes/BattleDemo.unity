@@ -14038,14 +14038,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63fb1096f23c3504999e2ae43e19f5c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isTest: 1
+  isTest: 0
   data: {fileID: 11400000, guid: f5c347bac3f42f346bfee0ddfabbba8d, type: 2}
-  monsterDatas:
-  - {fileID: 11400000, guid: a605c21ceaae03140ae802af7a8f4cb3, type: 2}
-  - {fileID: 11400000, guid: c0fba5c38f7c47f47950c0c22694dd42, type: 2}
-  - {fileID: 11400000, guid: e40133b6b8960dd46a67a48c41659fcd, type: 2}
-  - {fileID: 11400000, guid: e3a1de9e950c96842ae357f51f791e2c, type: 2}
-  - {fileID: 11400000, guid: 389ecefaf3ab10048b67bfd12c5b9988, type: 2}
+  monsterDatas: []
   imageFade: {fileID: 287893054}
   panelSetParty: {fileID: 1108261595}
   monsterSlotPrefab: {fileID: 6245099931412964532, guid: f7a667a8676564648a5c490b14bb84b6, type: 3}

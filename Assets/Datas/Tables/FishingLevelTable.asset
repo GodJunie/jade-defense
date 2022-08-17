@@ -151,3 +151,5 @@ MonoBehaviour:
       rate: 10
     - item: {fileID: 11400000, guid: 99560d3f98795c84e85aec7aaa877621, type: 2}
       rate: 10
+    - item: {fileID: 0}
+      rate: 10

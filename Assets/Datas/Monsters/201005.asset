@@ -35,11 +35,9 @@ MonoBehaviour:
     distance: 0
     slowRate: 0
   cost:
-  - item: {fileID: 11400000, guid: 60f8ec9a060303f4fb8b5fae244ac2fa, type: 2}
-    count: 4
-  - item: {fileID: 11400000, guid: 75629c7a660287c42859f2a90cf401ea, type: 2}
-    count: 4
-  - item: {fileID: 11400000, guid: 2e12f2250b6f33944bf7f0282f2480d7, type: 2}
+  - item: {fileID: 11400000, guid: 4e56db5c6bb00a246be6564d3c38967d, type: 2}
     count: 2
+  - item: {fileID: 11400000, guid: 75629c7a660287c42859f2a90cf401ea, type: 2}
+    count: 1
   buyPrice: 150
   sellPrice: 15
