@@ -20,15 +20,13 @@ namespace B409.Jade.UI {
         [SerializeField]
         private TMP_Text textDDay;
         [SerializeField]
-        private Image imageAPFill;
-
+        private TMP_Text textCurrentAP;
+        [SerializeField]
+        private TMP_Text textMaxAP;
 
         [SerializeField]
         private TMP_Text textParameters;
         
-        [SerializeField]
-        private Image imageBackground;
-
         [SerializeField]
         private Image imageFade;
         #endregion
@@ -58,9 +56,8 @@ namespace B409.Jade.UI {
         #region UI
         public void Init() {
             var progress = GameManager.Instance.Progress;
+            var stageSequence = GameManager.Instance.CurrentStageSequence;
 
-            var stage = DataManager.Instance.Stages[progress.Stage];
-            var stageSequence = stage.Datas[progress.StageSequence];
             if(!(stageSequence is DailyRoutineData)) {
                 Debug.LogError(string.Format("Stage Sequence is not DailyRoutineData!"));
             }
@@ -75,7 +72,8 @@ namespace B409.Jade.UI {
 
             this.textParameters.text = string.Format("{0:0}\n{1:0}\n{2:0}\n{3:0}\n{4:0}", strength, deft, endurance, intelligence, luck);
 
-            this.imageAPFill.fillAmount = progress.AP / progress.MaxAP;
+            this.textCurrentAP.text = progress.AP.ToString("0");
+            this.textMaxAP.text = progress.MaxAP.ToString("0");
         }
         #endregion
     }

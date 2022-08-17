@@ -14,7 +14,9 @@ namespace B409.Jade.UI {
         [SerializeField]
         private Image imageIcon;
 
-        public void Init(Sprite sprite, int count = 0, int maxCount = 0) {
+        public int Id { get; private set; }
+
+        private void Init(Sprite sprite, int count = 0, int maxCount = 0) {
             this.imageIcon.sprite = sprite;
 
             if(maxCount > 0) {
@@ -30,6 +32,7 @@ namespace B409.Jade.UI {
         }
 
         public void Init(ItemData data, int count = 0, int maxCount = 0) {
+            this.Id = data.Id;
             this.Init(data.Icon, count, maxCount);
         }
 

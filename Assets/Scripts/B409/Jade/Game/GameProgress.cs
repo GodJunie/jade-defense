@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 // Json
 using Newtonsoft.Json;
@@ -16,6 +17,18 @@ namespace B409.Jade.Game {
         public Dictionary<int, int> Items { get; private set; }
         public Dictionary<int, int> Monsters { get; private set; }
         public Dictionary<Parameter, float> Parameters { get; private set; }
+        public Dictionary<int, int> Trades { get; private set; }
+        public int RefreshCount { get; private set; }
+
+        public int Gold {
+            get {
+                if(Items.ContainsKey(GameConsts.GOLD_ID)) {
+                    return Items[GameConsts.GOLD_ID];
+                } else {
+                    return 0;
+                }
+            }
+        }
 
         public float MaxAP {
             get {
@@ -24,7 +37,7 @@ namespace B409.Jade.Game {
         }
 
         [JsonConstructor]
-        public GameProgress(int dDay, int stage, int stageSequence, float ap, Dictionary<int, int> items, Dictionary<int, int> monsters, Dictionary<Parameter, float> parameters) {
+        public GameProgress(int dDay, int stage, int stageSequence, float ap, Dictionary<int, int> items, Dictionary<int, int> monsters, Dictionary<Parameter, float> parameters, Dictionary<int, int> trades, int refreshCount) {
             this.DDay = dDay;
             this.Stage = stage;
             this.StageSequence = stageSequence;
@@ -32,6 +45,8 @@ namespace B409.Jade.Game {
             this.Items = items;
             this.Monsters = monsters;
             this.Parameters = parameters;
+            this.Trades = trades;
+            this.RefreshCount = refreshCount;
         }
 
         public GameProgress() {
@@ -44,6 +59,7 @@ namespace B409.Jade.Game {
                 { Parameter.Luck, 0 },
                 { Parameter.Endurance, 0 },
             };
+            this.Trades = new Dictionary<int, int>();
         }
 
         public static GameProgress FromJson(string json) {
@@ -56,6 +72,45 @@ namespace B409.Jade.Game {
 
         public void DailyRoutineStart(DailyRoutineData data) {
             this.DDay = data.Day;
+            this.RefreshCount = 1;
+            InitTrades(data);
+        }
+
+        public void RefreshTrades(DailyRoutineData data) {
+            this.RefreshCount--;
+            InitTrades(data);
+        }
+
+        public void Trade(int id) {
+            if(this.Trades.ContainsKey(id)) {
+                Trades[id]--;
+            } else {
+                throw new Exception(string.Format("there is no id in trades, id: {0}", id));
+            }
+        }
+
+        private void InitTrades(DailyRoutineData data) {
+            this.Trades.Clear();
+            float sum = data.Trades.Sum(e => e.Rate);
+            for(int i = 0; i < data.SalesCount; i++) {
+                float rand = UnityEngine.Random.Range(0f, sum);
+                foreach(var trade in data.Trades) {
+                    if(rand < trade.Rate) {
+                        if(trade.Sale != null && trade.Sale is ISale) {
+                            int id = (trade.Sale as IDataID).Id;
+
+                            if(this.Trades.ContainsKey(id)) {
+                                this.Trades[id]++;
+                            } else {
+                                this.Trades.Add(id, 1);
+                            }
+                        }
+                        break;
+                    } else {
+                        rand -= trade.Rate;
+                    }
+                }
+            }
         }
 
         public void TurnStart() {

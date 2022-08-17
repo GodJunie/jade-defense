@@ -18,10 +18,14 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1cad6710dcf223e468247eb06cf52ce3, type: 2}
   - {fileID: 11400000, guid: a605c21ceaae03140ae802af7a8f4cb3, type: 2}
   - {fileID: 11400000, guid: b048a21286f5c104898b2a372606e69c, type: 2}
-  salesCount: 5
+  salesCount: 10
   trades:
   - sale: {fileID: 11400000, guid: 850fca931e1dad0458e9eca700d63bc3, type: 2}
     rate: 10
-  - sale: {fileID: 11400000, guid: 839cdc6b477a4834cb515d129ebf87cc, type: 2}
-    rate: 80
+  - sale: {fileID: 11400000, guid: b50855268140af34ea17af25299b95ac, type: 2}
+    rate: 20
+  - sale: {fileID: 11400000, guid: 1cad6710dcf223e468247eb06cf52ce3, type: 2}
+    rate: 5
+  - sale: {fileID: 0}
+    rate: 5
   battle: {fileID: 11400000, guid: f5c347bac3f42f346bfee0ddfabbba8d, type: 2}
