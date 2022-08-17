@@ -60,6 +60,18 @@ namespace B409.Jade.Game {
         #endregion
 
         #region Game
+        public StageData CurrentStage {
+            get {
+                return DataManager.Instance.Stages[Progress.Stage];
+            }
+        }
+
+        public StageSequenceData CurrentStageSequence {
+            get {
+                return CurrentStage.Datas[Progress.StageSequence];
+            }
+        }
+
         public void TurnStart() {
             Progress.TurnStart();
         }
