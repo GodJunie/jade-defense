@@ -8,6 +8,7 @@ using TMPro;
 
 namespace B409.Jade.UI {
     using Data;
+    using Game;
 
     public class TradeBuySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IScrollHandler {
         [SerializeField]
@@ -85,7 +86,9 @@ namespace B409.Jade.UI {
 
             this.Price = sale.BuyPrice;
 
-            this.textPrice.text = sale.BuyPrice.ToString("N0");
+            float discountRate = GameConsts.GetTradeDiscountRate(GameManager.Instance.Progress.Parameters[Parameter.Intelligence]);
+
+            this.textPrice.text = string.Format("{0:n0} <size=40><color=red>{1:0}</color></size>", Mathf.FloorToInt(sale.BuyPrice * (1 - discountRate)), discountRate * 100);
             this.textAmount.text = string.Format("{0} Left", count);
            
             if(count > 0) {

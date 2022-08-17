@@ -387,28 +387,20 @@ namespace B409.Jade.UI {
         public void Confirm() {
             var progress = GameManager.Instance.Progress;
 
-            var id = (this.data as IDataID).Id;
-            var sale = this.data as ISale;
-
             if(this.buy) {
                 if(data is ItemData) {
-                    progress.AddItem(id, 1);
+                    progress.BuyItem(data as ItemData);
                 } else if(data is MonsterData) {
-                    progress.AddMonster(id, 1);
+                    progress.BuyMonster(data as MonsterData);
                 }
-                    
-                progress.UseItem(GameConsts.GOLD_ID, sale.BuyPrice);
-                progress.Trade(id);
 
                 OpenBuyPanel();
             } else {
                 if(data is ItemData) {
-                    progress.UseItem(id, 1);
+                    progress.SellItem(data as ItemData);
                 } else if(data is MonsterData) {
-                    progress.UseMonster(id, 1);
+                    progress.SellMonster(data as MonsterData);
                 }
-
-                progress.AddItem(GameConsts.GOLD_ID, sale.SellPrice);
 
                 OpenSellPanel();
             }

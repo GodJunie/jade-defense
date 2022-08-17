@@ -121,7 +121,8 @@ namespace B409.Jade.Game {
 
         #region Farming
         public void Farming(FarmingLevelData data) {
-            int count = 5;
+            int count = GameConsts.GetFarmingCount(Progress.Parameters[Parameter.Luck]);
+
             var items = new Dictionary<int, int>();
 
             for(int i = 0; i < count; i++) {
@@ -150,18 +151,18 @@ namespace B409.Jade.Game {
 
             Progress.AddItems(items);
             CheckAction(data);
-
-            Debug.Log(Progress.ToJson());
         }
 
         public void Making(ActionLevelData levelData, RecipeData data) {
             if(!Progress.CheckItemsEnough(data.Materials))
                 return;
 
+            bool bonus = UnityEngine.Random.Range(0f, 100f) < GameConsts.GetCraftingBonusRate(Progress.Parameters[Parameter.Deft]) * 100f;
+
             // Use Item
             Progress.UseItems(data.Materials);
             // Get Item
-            Progress.AddItem(data.Result.Item.Id, data.Result.Count);
+            Progress.AddItem(data.Result.Item.Id, data.Result.Count + (bonus ? 1 : 0));
 
             CheckAction(levelData);
         }

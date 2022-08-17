@@ -16,4 +16,44 @@ public static class GameConsts {
 
 
     public const int GOLD_ID = 400000;
+
+
+    #region Parameter
+    public const float ParameterMaxValue = 120f;
+
+    public const float MaxApMin = 100f;
+    public const float MaxApMax = 200f;
+
+    public const float ApDiscountRateMin = 0f;
+    public const float ApDiscountRateMax = 0.3f;
+
+    public const float TradeDiscountRateMin = 0f;
+    public const float TradeDiscountRateMax = 0.3f;
+
+    public const int FarmingCountMin = 3;
+    public const int FarmingCountMax = 8;
+
+    public const float CraftingBonusRateMin = 0f;
+    public const float CraftingBonusRateMax = 0.3f;
+
+    public static float GetMaxAp(float value) {
+        return Mathf.Lerp(MaxApMin, MaxApMax, value / ParameterMaxValue);
+    }
+    
+    public static float GetApDiscountRate(float value) {
+        return Mathf.Lerp(ApDiscountRateMin, ApDiscountRateMax, value / ParameterMaxValue);
+    }
+
+    public static float GetTradeDiscountRate(float value) {
+        return Mathf.Lerp(TradeDiscountRateMin, TradeDiscountRateMax, value / ParameterMaxValue);
+    }
+
+    public static int GetFarmingCount(float value) {
+        return Mathf.FloorToInt(Mathf.Lerp(FarmingCountMin, FarmingCountMax, value / ParameterMaxValue));
+    }
+
+    public static float GetCraftingBonusRate(float value) {
+        return Mathf.Lerp(CraftingBonusRateMin, CraftingBonusRateMax, value / ParameterMaxValue);
+    }
+    #endregion
 }
