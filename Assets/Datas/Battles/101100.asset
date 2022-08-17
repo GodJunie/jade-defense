@@ -21,8 +21,13 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 350d7d0f69843694fa96097267a25a2d, type: 2}
   - {fileID: 11400000, guid: d41e035a571d27e4f8da6b51b1c3c54c, type: 2}
   rewards:
-  - {fileID: 11400000, guid: 4798147202ceb8e4fb0ffe48ca90b35f, type: 2}
+  - {fileID: 11400000, guid: 839cdc6b477a4834cb515d129ebf87cc, type: 2}
+  - {fileID: 11400000, guid: 839cdc6b477a4834cb515d129ebf87cc, type: 2}
+  - {fileID: 11400000, guid: 839cdc6b477a4834cb515d129ebf87cc, type: 2}
+  - {fileID: 11400000, guid: 833074a196207034d81e6e0d0fc18e71, type: 2}
+  - {fileID: 11400000, guid: 833074a196207034d81e6e0d0fc18e71, type: 2}
+  - {fileID: 11400000, guid: 833074a196207034d81e6e0d0fc18e71, type: 2}
+  - {fileID: 11400000, guid: cfebe6db4d440ec4f95200221f7c1041, type: 2}
   - {fileID: 11400000, guid: 413dffb8e9b38b34a92a89061d803313, type: 2}
-  - {fileID: 11400000, guid: 0465222f67f9b7e4ba9cb95425060404, type: 2}
-  - {fileID: 11400000, guid: 6475d979bdcdecd41844424dd46b9ce0, type: 2}
-  - {fileID: 11400000, guid: 7e6cc04742966de4b8882872197f316d, type: 2}
+  - {fileID: 11400000, guid: 413dffb8e9b38b34a92a89061d803313, type: 2}
+  - {fileID: 11400000, guid: 413dffb8e9b38b34a92a89061d803313, type: 2}

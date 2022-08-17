@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 100001
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 094ff22abe64d43a8998b7d351faf42b, type: 3}
+  buyPrice: 100
+  sellPrice: 10
   id: 100001
   name: Meat Bowl
   description: Combination of fresh meat and rice.

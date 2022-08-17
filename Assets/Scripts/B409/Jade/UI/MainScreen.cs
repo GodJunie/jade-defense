@@ -24,17 +24,8 @@ namespace B409.Jade.UI {
 
 
         [SerializeField]
-        private TMP_Text textDft;
-        [SerializeField]
-        private TMP_Text textStr;
-        [SerializeField]
-        private TMP_Text textInt;
-        [SerializeField]
-        private TMP_Text textLuk;
-        [SerializeField]
-        private TMP_Text textEdr;
-
-
+        private TMP_Text textParameters;
+        
         [SerializeField]
         private Image imageBackground;
 
@@ -76,11 +67,13 @@ namespace B409.Jade.UI {
 
             this.textDDay.text = string.Format("D - {0}", progress.DDay);
 
-            this.textDft.text = string.Format("dft {0}", progress.Parameters[Parameter.Deft]);
-            this.textStr.text = string.Format("str {0}", progress.Parameters[Parameter.Strength]);
-            this.textInt.text = string.Format("int {0}", progress.Parameters[Parameter.Intelligence]);
-            this.textLuk.text = string.Format("luk {0}", progress.Parameters[Parameter.Luck]);
-            this.textEdr.text = string.Format("edr {0}", progress.Parameters[Parameter.Endurance]);
+            float strength = progress.Parameters[Parameter.Strength];
+            float deft = progress.Parameters[Parameter.Deft];
+            float endurance = progress.Parameters[Parameter.Endurance];
+            float intelligence = progress.Parameters[Parameter.Intelligence];
+            float luck = progress.Parameters[Parameter.Luck];
+
+            this.textParameters.text = string.Format("{0:0}\n{1:0}\n{2:0}\n{3:0}\n{4:0}", strength, deft, endurance, intelligence, luck);
 
             this.imageAPFill.fillAmount = progress.AP / progress.MaxAP;
         }
