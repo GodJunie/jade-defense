@@ -352,6 +352,8 @@ namespace B409.Jade.UI {
                 buttonConfirm.image.color = GameConsts.ButtonRed;
                 textPrice.text = sale.SellPrice.ToString("N0");
                 textPrice.color = Color.white;
+
+                buttonConfirm.interactable = true;
             }
         }
 
