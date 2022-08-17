@@ -97,17 +97,41 @@ namespace B409.Jade.UI {
         [SerializeField]
         private GameObject sellPanel;
 
+        [BoxGroup("Sell")]
+        [FoldoutGroup("Sell/Grid")]
+        [SerializeField]
+        private ScrollRect sellGridScrollRect;
+        [FoldoutGroup("Sell/Grid")]
+        [SerializeField]
+        private Transform sellGridSlotContainer;
+        [FoldoutGroup("Sell/Grid")]
+        [SerializeField]
+        private TradeSellGridSlot sellGridSlotPrefab;
+
+        [BoxGroup("Sell")]
+        [FoldoutGroup("Sell/List")]
+        [SerializeField]
+        private ScrollRect sellListScrollRect;
+        [FoldoutGroup("Sell/List")]
+        [SerializeField]
+        private Transform sellListSlotContainer;
+        [FoldoutGroup("Sell/List")]
+        [SerializeField]
+        private TradeSellListSlot sellListSlotPrefab;
+
 
         private bool sellViewIsGrid;
         private bool sellViewItems;
         private bool sellViewMonsters;
 
         private List<TradeBuySlot> buySlotPool = new List<TradeBuySlot>();
+        private List<TradeSellGridSlot> sellGridSlotPool = new List<TradeSellGridSlot>();
+        private List<TradeSellListSlot> sellListSlotPool = new List<TradeSellListSlot>();
 
         private ScriptableObject data;
         private bool buy;
 
-
+        #region Buy
         public void OpenBuyPanel() {
             this.gameObject.SetActive(true);
             this.infoPanel.SetActive(false);
@@ -180,6 +204,15 @@ namespace B409.Jade.UI {
             }
         }
 
+        public void RefreshBuyList() {
+            var progress = GameManager.Instance.Progress;
+            progress.RefreshTrades(GameManager.Instance.CurrentStageSequence as DailyRoutineData);
+
+            OpenBuyPanel();
+        }
+        #endregion
+
+        #region Sell
         public void OpenSellPanel() {
             this.gameObject.SetActive(true);
             this.infoPanel.SetActive(false);
@@ -192,9 +225,103 @@ namespace B409.Jade.UI {
 
             var progress = GameManager.Instance.Progress;
 
+            foreach(var slot in sellGridSlotPool) {
+                slot.gameObject.SetActive(false);
+            }
+            foreach(var slot in sellListSlotPool) {
+                slot.gameObject.SetActive(false);
+            }
+
+            Debug.Log(progress.Trades.Count);
+
+            foreach(var pair in progress.Items) {
+                int id = pair.Key;
+                int count = pair.Value;
+
+                var gridSlot = GetSellGridSlot();
+                var listSlot = GetSellListSlot();
+
+                var item = DataManager.Instance.Items.Find(e => e.Id == id);
+
+                gridSlot.Init(item, count, sellGridScrollRect, () => {
+                    ShowInfo(item, false);
+                });
+                listSlot.Init(item, count, sellListScrollRect, () => {
+                    ShowInfo(item, false);
+                });
+            }
+
+            foreach(var pair in progress.Monsters) {
+                int id = pair.Key;
+                int count = pair.Value;
+
+                var gridSlot = GetSellGridSlot();
+                var listSlot = GetSellListSlot();
+
+                var monster = DataManager.Instance.Monsters.Find(e => e.Id == id);
+
+                gridSlot.Init(monster, count, sellGridScrollRect, () => {
+                    ShowInfo(monster, false);
+                });
+                listSlot.Init(monster, count, sellListScrollRect, () => {
+                    ShowInfo(monster, false);
+                });
+            }
+
             this.textGold.text = progress.Gold.ToString("N0");
+
+            OrderSellSlots();
         }
 
+        private TradeSellGridSlot GetSellGridSlot() {
+            var slot = sellGridSlotPool.Where(e => !e.gameObject.activeInHierarchy).FirstOrDefault();
+
+            if(slot == default(TradeSellGridSlot)) {
+                slot = Instantiate(sellGridSlotPrefab, sellGridSlotContainer);
+                sellGridSlotPool.Add(slot);
+            }
+
+            slot.gameObject.SetActive(true);
+            return slot;
+        }
+
+        private TradeSellListSlot GetSellListSlot() {
+            var slot = sellListSlotPool.Where(e => !e.gameObject.activeInHierarchy).FirstOrDefault();
+
+            if(slot == default(TradeSellListSlot)) {
+                slot = Instantiate(sellListSlotPrefab, sellListSlotContainer);
+                sellListSlotPool.Add(slot);
+            }
+
+            slot.gameObject.SetActive(true);
+            return slot;
+        }
+
+        public void SetSellView(bool isGrid) {
+            this.sellViewIsGrid = isGrid;
+
+            sellGridScrollRect.gameObject.SetActive(isGrid);
+            sellListScrollRect.gameObject.SetActive(!isGrid);
+        }
+
+        private void OrderSellSlots() {
+            var progress = GameManager.Instance.Progress;
+
+            var gridSlots = sellGridSlotPool.Where(e => e.gameObject.activeInHierarchy).OrderByDescending(e => e.IsItem).ThenBy(e => e.Id).ToList();
+
+            for(int i = 0; i < gridSlots.Count; i++) {
+                gridSlots[i].transform.SetSiblingIndex(i);
+            }
+
+            var listSlots = sellListSlotPool.Where(e => e.gameObject.activeInHierarchy).OrderByDescending(e => e.IsItem).ThenBy(e => e.Id).ToList();
+
+            for(int i = 0; i < listSlots.Count; i++) {
+                listSlots[i].transform.SetSiblingIndex(i);
+            }
+        }
+        #endregion
+
+        #region Info
         private void ShowInfo(ScriptableObject data, bool buy) {
             this.data = data;
             this.buy = buy;
@@ -255,13 +382,6 @@ namespace B409.Jade.UI {
             this.textMonsterDescription.text = data.Status.GetAttackDescriptionString();
         }
 
-        public void RefreshBuyList() {
-            var progress = GameManager.Instance.Progress;
-            progress.RefreshTrades(GameManager.Instance.CurrentStageSequence as DailyRoutineData);
-
-            OpenBuyPanel();
-        }
-
         public void Confirm() {
             var progress = GameManager.Instance.Progress;
 
@@ -291,5 +411,6 @@ namespace B409.Jade.UI {
                 OpenSellPanel();
             }
         }
+        #endregion
     }
 }

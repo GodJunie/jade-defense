@@ -8,8 +8,7 @@ using TMPro;
 
 namespace B409.Jade.UI {
     using Data;
-
-    public class TradeSellListSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IScrollHandler {
+    public class TradeSellGridSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IScrollHandler {
         [SerializeField]
         private GameObject itemSlot;
         [SerializeField]
@@ -18,10 +17,6 @@ namespace B409.Jade.UI {
         private Image imageItem;
         [SerializeField]
         private Image imageMonster;
-        [SerializeField]
-        private TMP_Text textName;
-        [SerializeField]
-        private TMP_Text textPrice;
         [SerializeField]
         private TMP_Text textAmount;
 
@@ -61,7 +56,6 @@ namespace B409.Jade.UI {
                 this.monsterSlot.SetActive(false);
 
                 this.imageItem.sprite = item.Icon;
-                this.textName.text = item.Name;
 
                 this.Id = item.Id;
             } else if(data is MonsterData) {
@@ -73,17 +67,13 @@ namespace B409.Jade.UI {
                 this.itemSlot.SetActive(false);
 
                 this.imageMonster.sprite = monster.Icon;
-                this.textName.text = monster.Name;
 
                 this.Id = monster.Id;
             } else {
                 throw new Exception(string.Format("data is not item or monster"));
             }
 
-            var sale = data as ISale;
-
-            this.textPrice.text = sale.BuyPrice.ToString("N0");
-            this.textAmount.text = string.Format("x {0}", count);
+            this.textAmount.text = count.ToString();
 
             this.scrollRect = scrollRect;
 
