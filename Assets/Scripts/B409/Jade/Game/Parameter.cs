@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace B409.Jade.Game {
-    public enum Parameter : int { Deft, Strength, Intelligence, Luck, Endurance };
+    public enum Parameter : int { Strength = 0, Deft, Endurance, Intelligence, Luck };
 
     public static class ParameterExtensions {
         public static string ToCompatString(this Parameter parameter, bool lowerScale = true) {
