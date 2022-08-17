@@ -60,6 +60,7 @@ namespace B409.Jade.UI {
                 slot.Init(data, () => OpenInfoPanel(data));
             }
 
+            this.infoPanel.SetActive(false);
             this.gameObject.SetActive(true);
         }
 

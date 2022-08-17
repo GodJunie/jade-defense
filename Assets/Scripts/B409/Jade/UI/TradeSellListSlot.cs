@@ -31,10 +31,6 @@ namespace B409.Jade.UI {
         public int Id { get; private set; }
         public bool IsItem { get; private set; }
 
-        private void Awake() {
-            button = GetComponent<Button>();
-        }
-
         public void OnBeginDrag(PointerEventData e) {
             scrollRect.OnBeginDrag(e);
         }
@@ -52,6 +48,8 @@ namespace B409.Jade.UI {
         }
 
         public void Init(ScriptableObject data, int count, ScrollRect scrollRect, Action onClick) {
+            var button = GetComponent<Button>();
+
             if(data is ItemData) {
                 var item = data as ItemData;
 
