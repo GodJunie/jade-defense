@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 100107
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: d0659eda4fbbb49468fdb72f0941e712, type: 3}
+  buyPrice: 10
+  sellPrice: 1
   id: 100107
   name: Herb
   description: Herb

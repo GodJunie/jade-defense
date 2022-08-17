@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 200003
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 076b4c1553a6d7f4ba69e1677fc53054, type: 3}
+  buyPrice: 50
+  sellPrice: 5
   id: 200003
   name: Iron Blade
   description: Iron Blade

@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 100101
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 63b3b67665877fc48a124ca46005ebf7, type: 3}
+  buyPrice: 10
+  sellPrice: 1
   id: 100101
   name: Meat C
   description: Meat C

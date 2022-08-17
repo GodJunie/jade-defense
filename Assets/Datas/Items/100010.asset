@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 100010
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 4ee8535e49b548048be7199270b77a91, type: 3}
+  buyPrice: 75
+  sellPrice: 7
   id: 100010
   name: Shrimp Pizza
   description: Shrimp Pizza

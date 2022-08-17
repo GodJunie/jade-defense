@@ -37,3 +37,5 @@ MonoBehaviour:
   cost:
   - item: {fileID: 11400000, guid: 3b7f714761727d54cb44def06d47cbe1, type: 2}
     count: 3
+  buyPrice: 75
+  sellPrice: 7

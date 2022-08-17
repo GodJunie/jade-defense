@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 200007
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 5b5e447f567fcd043bf63c24766a7472, type: 3}
+  buyPrice: 50
+  sellPrice: 5
   id: 200007
   name: Wolf Claw
   description: Wolf Claw

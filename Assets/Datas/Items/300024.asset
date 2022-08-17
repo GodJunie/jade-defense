@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 300024
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 74921d1cc2c51654ead7add89d86c2a0, type: 3}
+  buyPrice: 100
+  sellPrice: 10
   id: 300024
   name: Perfect Red Gem
   description: Perfect Red Gem

@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 200022
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 338ebbf7b32f83644b4141f4f87e2819, type: 3}
+  buyPrice: 75
+  sellPrice: 7
   id: 200022
   name: Magic Stone
   description: Magic Stone

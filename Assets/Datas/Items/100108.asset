@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 100108
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: f789485cd45f9d84685848632a073b38, type: 3}
+  buyPrice: 10
+  sellPrice: 1
   id: 100108
   name: Oil Seed
   description: Oil Seed

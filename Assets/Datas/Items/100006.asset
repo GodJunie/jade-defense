@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 100006
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: fe87dcf3164337743b441c0be76761b8, type: 3}
+  buyPrice: 50
+  sellPrice: 5
   id: 100006
   name: Almond Can
   description: Almond Can

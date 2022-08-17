@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 200002
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: cd5de2c5a40e5204e86b5729ffa87dd9, type: 3}
+  buyPrice: 50
+  sellPrice: 5
   id: 200002
   name: Iron Ingot
   description: Iron Ingot

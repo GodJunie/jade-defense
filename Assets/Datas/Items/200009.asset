@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 200009
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 952ed29afe3a3429fbb955cc6eb719db, type: 3}
+  buyPrice: 50
+  sellPrice: 5
   id: 200009
   name: Dragon Claw
   description: Dragon Claw

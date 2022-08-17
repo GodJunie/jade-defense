@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 300033
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 89487c556154f4994acef114271a986b, type: 3}
+  buyPrice: 75
+  sellPrice: 7
   id: 300033
   name: Flawless Blue Gem
   description: Flawless Blue Gem

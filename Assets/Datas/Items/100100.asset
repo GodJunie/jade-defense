@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 100100
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 46f559ccd36cd7d47870a9c2b53421de, type: 3}
+  buyPrice: 50
+  sellPrice: 5
   id: 100100
   name: ketchup
   description: ketchup

@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 200010
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: a99f1301f19d8a74d859fb68d70edebd, type: 3}
+  buyPrice: 75
+  sellPrice: 7
   id: 200010
   name: Elder Dragon Claw
   description: Elder Dragon Claw

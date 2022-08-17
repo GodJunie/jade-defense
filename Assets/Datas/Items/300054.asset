@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 300054
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: e0cc9edace1e1da45a8cacd471a75f02, type: 3}
+  buyPrice: 100
+  sellPrice: 10
   id: 300054
   name: Perfect Green Gem
   description: Perfect Green Gem

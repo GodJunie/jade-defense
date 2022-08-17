@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 300044
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: a5dc89767af70e7439c0e707d4bd4f42, type: 3}
+  buyPrice: 100
+  sellPrice: 10
   id: 300044
   name: Perfect Yellow Gem
   description: Perfect Yellow Gem

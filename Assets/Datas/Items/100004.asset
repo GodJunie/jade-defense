@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 100004
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 3eea87d2d52e3634da085b8541d9e384, type: 3}
+  buyPrice: 10
+  sellPrice: 1
   id: 100004
   name: Green Tea
   description: Green Tea

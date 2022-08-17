@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 300053
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 0489d3782845b425e9eb64390abfd966, type: 3}
+  buyPrice: 75
+  sellPrice: 7
   id: 300053
   name: Flawless Green Gem
   description: Flawless Green Gem

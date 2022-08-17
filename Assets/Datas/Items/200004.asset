@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 200004
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 11d9872dc5736e042ac1a9664aa16a57, type: 3}
+  buyPrice: 50
+  sellPrice: 5
   id: 200004
   name: Silver Ore
   description: Silver Ore
