@@ -10,4 +10,5 @@ public static class GameConsts {
     public static Color DurationColor = new Color32(255, 217, 73, 255);
     public static Color TargetColor = new Color32(255, 163, 32, 255);
 
+    public const int GOLD_ID = 400000;
 }

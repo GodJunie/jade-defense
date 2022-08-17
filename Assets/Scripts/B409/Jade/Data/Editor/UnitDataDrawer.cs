@@ -21,7 +21,7 @@ namespace B409.Jade.Data {
 
             if(unit) {
                 texture = GUIHelper.GetAssetThumbnail(unit.Icon, typeof(UnitData), true);
-                GUI.Label(rect.AddXMin(50).AlignMiddle(16), EditorGUI.showMixedValue ? "-" : string.Format("cooltime: {0}, name: {1}", unit.Status.Cooltime, unit.Name));
+                GUI.Label(rect.AddXMin(50).AlignMiddle(16), EditorGUI.showMixedValue ? "-" : string.Format("{0}", unit.Name));
             }
 
             this.ValueEntry.WeakSmartValue = SirenixEditorFields.UnityPreviewObjectField(rect.AlignLeft(45), unit, texture, this.ValueEntry.BaseValueType);
