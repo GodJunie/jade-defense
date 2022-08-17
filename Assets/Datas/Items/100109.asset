@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 100109
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 8cb1f391e8f52114f8d412674865a0ac, type: 3}
+  buyPrice: 50
+  sellPrice: 5
   id: 100109
   name: Shrimp
   description: Shrimp

@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 200102
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 2292e3309ab3aa74ebafe448eaa8dca4, type: 3}
+  buyPrice: 0
+  sellPrice: 0
   id: 200102
   name: Long Sword
   description: Long Sword

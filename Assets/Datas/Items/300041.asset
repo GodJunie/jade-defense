@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 300041
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 921bd93d8fd0b4213b5d9c0acaa3b0d9, type: 3}
+  buyPrice: 10
+  sellPrice: 1
   id: 300041
   name: Flawed Yellow Gem
   description: Flawed Yellow Gem

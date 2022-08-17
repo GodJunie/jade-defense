@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 200013
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 153bb47ad6557164d9c424bea0394edb, type: 3}
+  buyPrice: 75
+  sellPrice: 7
   id: 200013
   name: Steel Chain
   description: Steel Chain

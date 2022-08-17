@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 100106
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 0d1044901f89b1f488990d40f7114865, type: 3}
+  buyPrice: 10
+  sellPrice: 1
   id: 100106
   name: Rice
   description: Rice

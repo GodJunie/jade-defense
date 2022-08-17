@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 100114
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 2cff9218c3e833b40b747287cf415e59, type: 3}
+  buyPrice: 10
+  sellPrice: 1
   id: 100114
   name: Almond
   description: Almond

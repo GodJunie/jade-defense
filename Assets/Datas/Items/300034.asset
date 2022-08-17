@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 300034
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 5422fb654bb892b4cb826cd3742a6215, type: 3}
+  buyPrice: 100
+  sellPrice: 10
   id: 300034
   name: Perfect Blue Gem
   description: Perfect Blue Gem

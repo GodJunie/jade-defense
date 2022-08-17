@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 100113
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: d6afe5d9eec527c4086ffcf94dbb25a6, type: 3}
+  buyPrice: 10
+  sellPrice: 1
   id: 100113
   name: Tea Leaf
   description: Tea Leaf

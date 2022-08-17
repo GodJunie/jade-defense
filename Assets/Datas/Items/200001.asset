@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 200001
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 7feb6b004e164d1418d7f1bfa7c94bcd, type: 3}
+  buyPrice: 10
+  sellPrice: 1
   id: 200001
   name: Iron Ore
   description: Iron Ore

@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 200101
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 790af468412f541ea99039099c2c103f, type: 3}
+  buyPrice: 10
+  sellPrice: 1
   id: 200101
   name: Wooden Club
   description: Wooden Club

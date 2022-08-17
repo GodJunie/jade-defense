@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 300052
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 483f8b283c5d1b94d9f1849c4d66b442, type: 3}
+  buyPrice: 50
+  sellPrice: 5
   id: 300052
   name: Normal Green Gem
   description: Normal Green Gem

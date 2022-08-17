@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 100105
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: e0ac301f75a74e34f9f05222cb15e1e5, type: 3}
+  buyPrice: 50
+  sellPrice: 5
   id: 100105
   name: Tuna
   description: Tuna

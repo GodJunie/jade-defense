@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 300031
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: b6646517818f64b398b4e38b165b9e59, type: 3}
+  buyPrice: 10
+  sellPrice: 1
   id: 300031
   name: Flawed Blue Gem
   description: Flawed Blue Gem

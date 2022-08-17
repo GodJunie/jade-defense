@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 100110
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 93f99f7ee8c485b4cae64db14a4c2764, type: 3}
+  buyPrice: 10
+  sellPrice: 1
   id: 100110
   name: Egg
   description: Egg

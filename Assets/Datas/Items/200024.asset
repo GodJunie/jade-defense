@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 200024
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: d3141ebef32b1411a9e024fa13b25f04, type: 3}
+  buyPrice: 50
+  sellPrice: 5
   id: 200024
   name: Silk
   description: Silk

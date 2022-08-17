@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 100007
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: afb74c8ee6fd99a4fb2b7986cff6d155, type: 3}
+  buyPrice: 75
+  sellPrice: 7
   id: 100007
   name: Shrimp Salad
   description: Shrimp Salad

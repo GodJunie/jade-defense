@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 100111
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: f94886d721a02604e978bbebda0333ae, type: 3}
+  buyPrice: 50
+  sellPrice: 5
   id: 100111
   name: Soybean Sauce
   description: Soybean Sauce
