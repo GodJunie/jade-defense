@@ -41,5 +41,5 @@ MonoBehaviour:
     count: 3
   - item: {fileID: 11400000, guid: cfebe6db4d440ec4f95200221f7c1041, type: 2}
     count: 1
-  buyPrice: 125
-  sellPrice: 12
+  buyPrice: 150
+  sellPrice: 15
