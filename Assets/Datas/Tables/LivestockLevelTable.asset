@@ -36,6 +36,8 @@ MonoBehaviour:
       rate: 50
     - item: {fileID: 11400000, guid: 413dffb8e9b38b34a92a89061d803313, type: 2}
       rate: 50
+    - item: {fileID: 0}
+      rate: 10
   - inquiredParameters:
     - parameter: 2
       value: 25
@@ -58,7 +60,9 @@ MonoBehaviour:
     - item: {fileID: 11400000, guid: 41c9d1852d7a7d3448a09aa07eab9e9a, type: 2}
       rate: 40
     - item: {fileID: 11400000, guid: 839cdc6b477a4834cb515d129ebf87cc, type: 2}
-      rate: 60
+      rate: 50
+    - item: {fileID: 0}
+      rate: 10
   - inquiredParameters:
     - parameter: 2
       value: 50
@@ -81,7 +85,9 @@ MonoBehaviour:
     - item: {fileID: 11400000, guid: 144e3015abcb36844b2d8f50bee8dd1c, type: 2}
       rate: 40
     - item: {fileID: 11400000, guid: d01f26e10b6314f489b446ab8fad8538, type: 2}
-      rate: 60
+      rate: 50
+    - item: {fileID: 0}
+      rate: 10
   - inquiredParameters:
     - parameter: 2
       value: 50
@@ -104,7 +110,9 @@ MonoBehaviour:
     - item: {fileID: 11400000, guid: 839cdc6b477a4834cb515d129ebf87cc, type: 2}
       rate: 40
     - item: {fileID: 11400000, guid: d01f26e10b6314f489b446ab8fad8538, type: 2}
-      rate: 60
+      rate: 50
+    - item: {fileID: 0}
+      rate: 10
   - inquiredParameters:
     - parameter: 2
       value: 50
@@ -125,4 +133,6 @@ MonoBehaviour:
       cages!" The farmer rejoiced.'
     datas:
     - item: {fileID: 11400000, guid: 99560d3f98795c84e85aec7aaa877621, type: 2}
-      rate: 100
+      rate: 90
+    - item: {fileID: 0}
+      rate: 10

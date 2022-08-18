@@ -15,16 +15,16 @@ MonoBehaviour:
   name: Mining
   datas:
   - inquiredParameters:
-    - parameter: 1
+    - parameter: 0
       value: 0
-    - parameter: 3
+    - parameter: 2
       value: 0
     - parameter: 4
       value: 0
     rewardParameters:
-    - parameter: 1
+    - parameter: 0
       value: 2
-    - parameter: 3
+    - parameter: 2
       value: 1
     - parameter: 4
       value: 1
@@ -42,17 +42,19 @@ MonoBehaviour:
       rate: 20
     - item: {fileID: 11400000, guid: 4e56db5c6bb00a246be6564d3c38967d, type: 2}
       rate: 20
+    - item: {fileID: 0}
+      rate: 20
   - inquiredParameters:
-    - parameter: 1
+    - parameter: 0
       value: 25
-    - parameter: 3
+    - parameter: 2
       value: 25
     - parameter: 4
       value: 25
     rewardParameters:
-    - parameter: 1
+    - parameter: 0
       value: 2
-    - parameter: 3
+    - parameter: 2
       value: 1
     - parameter: 4
       value: 1
@@ -77,14 +79,14 @@ MonoBehaviour:
   - inquiredParameters:
     - parameter: 1
       value: 50
-    - parameter: 3
+    - parameter: 2
       value: 50
     - parameter: 4
       value: 50
     rewardParameters:
-    - parameter: 1
+    - parameter: 0
       value: 2
-    - parameter: 3
+    - parameter: 2
       value: 1
     - parameter: 4
       value: 1
@@ -107,16 +109,16 @@ MonoBehaviour:
     - item: {fileID: 11400000, guid: db204d57c7ae059459a53d484ec2715a, type: 2}
       rate: 10
   - inquiredParameters:
-    - parameter: 1
+    - parameter: 0
       value: 75
-    - parameter: 3
+    - parameter: 2
       value: 75
     - parameter: 4
       value: 75
     rewardParameters:
-    - parameter: 1
+    - parameter: 0
       value: 2
-    - parameter: 3
+    - parameter: 2
       value: 1
     - parameter: 4
       value: 1
@@ -130,16 +132,16 @@ MonoBehaviour:
     - item: {fileID: 11400000, guid: 2a8f5b526502ed84591e7a20a532b0c6, type: 2}
       rate: 50
   - inquiredParameters:
-    - parameter: 1
+    - parameter: 0
       value: 100
-    - parameter: 3
+    - parameter: 2
       value: 100
     - parameter: 4
       value: 100
     rewardParameters:
-    - parameter: 1
+    - parameter: 0
       value: 2
-    - parameter: 3
+    - parameter: 2
       value: 1
     - parameter: 4
       value: 1

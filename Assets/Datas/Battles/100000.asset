@@ -18,8 +18,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d41e035a571d27e4f8da6b51b1c3c54c, type: 2}
   - {fileID: 11400000, guid: d41e035a571d27e4f8da6b51b1c3c54c, type: 2}
   - {fileID: 11400000, guid: 350d7d0f69843694fa96097267a25a2d, type: 2}
-  - {fileID: 11400000, guid: 350d7d0f69843694fa96097267a25a2d, type: 2}
-  - {fileID: 11400000, guid: 350d7d0f69843694fa96097267a25a2d, type: 2}
   rewards:
   - {fileID: 11400000, guid: 4798147202ceb8e4fb0ffe48ca90b35f, type: 2}
   - {fileID: 11400000, guid: 4798147202ceb8e4fb0ffe48ca90b35f, type: 2}
