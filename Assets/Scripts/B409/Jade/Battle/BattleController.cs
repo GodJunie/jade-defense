@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
@@ -540,6 +541,7 @@ namespace B409.Jade.Battle {
                 GameManager.Instance.Progress.AddMonster(monster.Data.Id, 1);
                 monster.OnStop();
             }
+            GameManager.Instance.Progress.AddItems(this.data.Rewards.ToDictionary(e => e.Item.Id, e => e.Count));
             GameManager.Instance.StageSequenceEnd();
         }
 
