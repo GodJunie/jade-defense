@@ -28,6 +28,8 @@ namespace B409.Jade.UI {
 
         private List<Graphic> graphics;
 
+        private bool focus;
+
         private void Awake() {
             graphics = GetComponentsInChildren<Graphic>().ToList();
         }
@@ -45,22 +47,59 @@ namespace B409.Jade.UI {
                 skeleton.AnimationState.SetAnimation(0, appearAimation, false);
                 skeleton.AnimationState.AddAnimation(0, idleAimation, true, 0f);
             }
+
+            this.focus = false;
         }
 
-        public void SetFocus(bool focus, float duration = 0.5f) {
-            foreach(var graphic in graphics) {
-                FadeColor(graphic, focus, duration);
-            }
-        }
+        public async UniTask SetFocus(bool focus, float duration = 0.5f) {
+            if(this.focus == focus) return;
 
-        private async void FadeColor(Graphic graphic, bool focus, float duration) {
-            Color originColor = graphic.color;
+            this.focus = focus;
+
+            Color originColor = focus ? disabledColor : highlightedColor;
             Color color = focus ? highlightedColor : disabledColor;
 
+            var tasks = new List<UniTask>();
+
+            foreach(var graphic in graphics) {
+                tasks.Add(FadeColor(graphic, originColor, color, duration));
+            }
+
+            await UniTask.WhenAll(tasks);
+        }
+
+        private async UniTask FadeColor(Graphic graphic, Color originColor, Color color, float duration) {
+            graphic.color = originColor;
             for(float i = 0; i < duration; i += Time.fixedDeltaTime) {
                 await UniTask.WaitForFixedUpdate();
                 graphic.color = originColor.Lerp(color, i / duration);
             }
+            graphic.color = color;
+        }
+
+        public async UniTask FadeOut(float duration = 0.5f) {
+            Color color = Color.black;
+            color.a = 0f;
+
+            var tasks = new List<UniTask>();
+
+            foreach(var graphic in graphics) {
+                tasks.Add(FadeColor(graphic, graphic.color, color, duration));
+            }
+
+            await UniTask.WhenAll(tasks);
+        }
+
+        public async UniTask FadeIn(float duration = 0.5f) {
+            Color color = this.focus ? highlightedColor : disabledColor;
+
+            var tasks = new List<UniTask>();
+
+            foreach(var graphic in graphics) {
+                tasks.Add(FadeColor(graphic, graphic.color, color, duration));
+            }
+
+            await UniTask.WhenAll(tasks);
         }
 
 #if UNITY_EDITOR

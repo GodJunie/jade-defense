@@ -6,6 +6,8 @@ using Sirenix.OdinInspector;
 namespace B409.Jade.Data {
     [InlineEditor]
     public class StageSequenceData : ScriptableObject, IDataID {
+        [BoxGroup("ID")]
+        [HideLabel]
         [SerializeField]
         private int id;
 

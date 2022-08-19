@@ -6,7 +6,110 @@ using Sirenix.OdinInspector;
 namespace B409.Jade.Data {
     using UI;
     public class DialogueData : StageSequenceData {
-        [ListDrawerSettings(AddCopiesLastElement = false, DraggableItems = true, Expanded = true, NumberOfItemsPerPage = 20)]
+#if UNITY_EDITOR
+        [BoxGroup("Add")]
+        [HorizontalGroup("Add/group")]
+        [HideLabel]
+        [MinValue(0)]
+        [MaxValue("count")]
+        [ShowInInspector]
+        private int index;
+
+        [HorizontalGroup("Add/group")]
+        [HideLabel]
+        [ShowInInspector]
+        private int count {
+            get {
+                return this.datas.Count;
+            }
+        }
+
+        [HorizontalGroup("Add/group")]
+        [Button]
+        private void Add() {
+            var data = new DialogueSequenceData();
+            this.datas.Insert(index, data);
+        }
+
+        private string DataErrorMsg {
+            get {
+                string msg = "";
+                int left = -1;
+                int right = -1;
+                bool obj = false;
+
+                for(int i = 0; i < datas.Count; i++) {
+                    var data = datas[i];
+                    switch(data.SequenceSort) {
+                    case SequenceSort.Script:
+                        switch(data.LeftCharacter.Mode) {
+                        case CharacterMode.Appear:
+                            if(left > 0) {
+                                return string.Format("Index: {0}, (Left) There is loaded target already. (Loaded target on index : {1})", i, left);
+                            }
+                            if(data.LeftCharacter == null) {
+                                return string.Format("Index: {0}, (Left) Set target to appear", i);
+                            }
+                            left = i;
+                            break;
+                        case CharacterMode.Disappear:
+                            if(left > 0) {
+                                left = -1;
+                            } else {
+                                return string.Format("Index: {0}, (Left) There is no target to disappear", i);
+                            }
+                            break;
+                        }
+                        switch(data.RightCharacter.Mode) {
+                        case CharacterMode.Appear:
+                            if(right > 0) {
+                                return string.Format("Index: {0}, (Right) There is loaded target already. (Loaded target on index : {1})", i, right);
+                            }
+                            if(data.RightCharacter == null) {
+                                return string.Format("Index: {0}, (Right) Set target to appear", i);
+                            }
+                            right = i;
+                            break;
+                        case CharacterMode.Disappear:
+                            if(right > 0) {
+                                right = -1;
+                            } else {
+                                return string.Format("Index: {0}, (Right) There is no target to disappear", i);
+                            }
+                            break;
+                        }
+
+                        if(data.ScriptInfo.ScriptFocus == ScriptFocus.Left && left < 0) {
+                            return string.Format("Index: {0}, (Left) No target to focus", i);
+                        }
+                        if(data.ScriptInfo.ScriptFocus == ScriptFocus.Right && right < 0) {
+                            return string.Format("Index: {0}, (Right) No target to focus", i);
+                        }
+                        break;
+                    case SequenceSort.Object:
+                        if(data.EventObject != null) {
+                            obj = true;
+                        }
+                        if(!string.IsNullOrEmpty(data.EventId) && !obj) {
+                            return string.Format("Index: {0}, No object to play event", i);
+                        }
+                        break;
+                    }
+                }
+
+                return msg;
+            }
+        }
+
+        private bool DataIsError {
+            get {
+                return !string.IsNullOrEmpty(DataErrorMsg);
+            }
+        }
+#endif
+
+        [ListDrawerSettings(AddCopiesLastElement = false, DraggableItems = true, Expanded = true, NumberOfItemsPerPage = 20, ShowIndexLabels = true, ListElementLabelName = "Summary")]
+        [InfoBox("$DataErrorMsg", InfoMessageType.Error, "DataIsError")]
         [SerializeField]
         private List<DialogueSequenceData> datas;
 
@@ -14,68 +117,63 @@ namespace B409.Jade.Data {
 
         [System.Serializable]
         public class DialogueSequenceData {
-            [FoldoutGroup("@Summary")]
-            [HorizontalGroup("@Summary/group")]
-            [ShowIfGroup("@Summary/group/ShowScript")]
-            [HorizontalGroup("@Summary/group/ShowScript/group", 150f, MaxWidth = 150f)]
+            [BoxGroup("box", false)]
+            [HorizontalGroup("box/group", 100f)]
+            [BoxGroup("box/group/Sort")]
+            [HideLabel]
+            [SerializeField]
+            private SequenceSort sequenceSort = SequenceSort.Script;
+
+            [HorizontalGroup("box/group")]
+            [ShowIfGroup("box/group/ShowScript")]
+            [BoxGroup("box/group/ShowScript/Script")]
+            [HorizontalGroup("box/group/ShowScript/Script/group", 150f, MaxWidth = 150f)]
             [HideLabel]
             [GUIColor("LeftColor")]
             [SerializeField]
             private CharacterInfo leftCharacter;
 
-            [HorizontalGroup("@Summary/group/ShowScript/group")]
+            [HorizontalGroup("box/group/ShowScript/Script/group")]
             [HideLabel]
             [SerializeField]
             [GUIColor("ScriptColor")]
             private ScriptInfo scriptInfo;
 
-            [HorizontalGroup("@Summary/group/ShowScript/group", 150f, MaxWidth = 150f)]
+            [HorizontalGroup("box/group/ShowScript/Script/group", 150f, MaxWidth = 150f)]
             [HideLabel]
             [GUIColor("RightColor")]
             [SerializeField]
             private CharacterInfo rightCharacter;
 
-
-            [HorizontalGroup("@Summary/group")]
-            [ShowIfGroup("@Summary/group/ShowBackground")]
-            [HorizontalGroup("@Summary/group/ShowBackground/group", .1f, MaxWidth = 200f)]
-            [BoxGroup("@Summary/group/ShowBackground/group/Mode")]
+            [HorizontalGroup("box/group")]
+            [ShowIfGroup("box/group/ShowObject")]
+            [BoxGroup("box/group/ShowObject/Objects")]
+            [HorizontalGroup("box/group/ShowObject/Objects/group", 100f)]
+            [BoxGroup("box/group/ShowObject/Objects/group/Target")]
+            [PreviewField(Alignment = ObjectFieldAlignment.Center, Height = 80f)]
             [HideLabel]
             [SerializeField]
-            private BackgroundMode backgroundMode;
+            private DialogueEvent eventObject;
 
-
-            [HorizontalGroup("@Summary/group/ShowBackground/group", .1f, MaxWidth = 200f)]
-            [PreviewField(Alignment = ObjectFieldAlignment.Center, Height = 100f)]
-            [BoxGroup("@Summary/group/ShowBackground/group/Target")]
-            [ShowIf("InGameBackground")]
+            [HorizontalGroup("box/group/ShowObject/Objects/group")]
+            [BoxGroup("box/group/ShowObject/Objects/group/Id")]
             [HideLabel]
             [SerializeField]
-            private GameObject backgroundObject;
-
-            [HorizontalGroup("@Summary/group/ShowBackground/group", .1f, MaxWidth = 200f)]
-            [PreviewField(Alignment = ObjectFieldAlignment.Center, Height = 100f)]
-            [BoxGroup("@Summary/group/ShowBackground/group/Target")]
-            [HideIf("InGameBackground")]
-            [HideLabel]
-            [SerializeField]
-            private Sprite backgroundSprite;
-
-
-            [HorizontalGroup("@Summary/group", MaxWidth = 100f)]
-            [BoxGroup("@Summary/group/Sort")]
-            [HideLabel]
-            [SerializeField]
-            private SequenceSort sequenceSort = SequenceSort.Script;
-
+            private string eventId;
 
             public CharacterInfo LeftCharacter => leftCharacter;
             public ScriptInfo ScriptInfo => scriptInfo;
             public CharacterInfo RightCharacter => rightCharacter;
             public SequenceSort SequenceSort => sequenceSort;
-            public BackgroundMode BackgroundMode => backgroundMode;
-            public GameObject BackgroundObject => backgroundObject;
-            public Sprite BackgroundSprite => backgroundSprite;
+            public DialogueEvent EventObject => eventObject;
+            public string EventId => eventId;
+      
+
+            public DialogueSequenceData() {
+                this.leftCharacter = new CharacterInfo();
+                this.rightCharacter = new CharacterInfo();
+                this.scriptInfo = new ScriptInfo();
+            }
 
 #if UNITY_EDITOR
             private Color ScriptColor {
@@ -111,15 +209,9 @@ namespace B409.Jade.Data {
                 }
             }
 
-            private bool ShowBackground {
+            private bool ShowObject {
                 get {
-                    return sequenceSort == SequenceSort.Background;
-                }
-            }
-
-            private bool InGameBackground {
-                get {
-                    return this.backgroundMode == BackgroundMode.InGameBackground;
+                    return sequenceSort == SequenceSort.Object;
                 }
             }
 
@@ -132,16 +224,15 @@ namespace B409.Jade.Data {
                         string right = rightCharacter.Mode == CharacterMode.None ? "-" : rightCharacter.Mode == CharacterMode.Appear ? string.Format("Appear {0}", rightCharacter.Target ? rightCharacter.Target.name : "-") : "Disappear";
 
                         return string.Format("{0} / {1} : {2} / {3}", left, scriptInfo.Name, scriptInfo.Script, right);
-
-                    case SequenceSort.Background:
-                        if(this.backgroundMode == BackgroundMode.InGameBackground) {
-                            return string.Format("InGameBackground: {0}", this.backgroundObject ? this.backgroundObject.name : "-");
-                        }
-                        if(this.backgroundMode == BackgroundMode.Sprite) {
-                            return string.Format("TextureBackground: {0}", this.backgroundSprite ? this.backgroundSprite.name : "-");
-                        }
-                        return "";
                     case SequenceSort.Effect:
+                        return "";
+                    case SequenceSort.Object:
+                        if(this.eventObject != null) {
+                            return string.Format("Load Event Object : {0}", eventObject.name);
+                        }
+                        if(!string.IsNullOrEmpty(this.eventId)) {
+                            return string.Format("Play Event Id: {0}", eventId);
+                        }
                         return "";
                     default:
                         return "";
@@ -230,17 +321,9 @@ namespace B409.Jade.Data {
         }
 
         public enum ScriptFocus : int { Left, Right, None };
-        public enum BackgroundMode : int { InGameBackground, Sprite };
-        public enum SequenceSort : int { Script, Background, Effect };
+        public enum SequenceSort : int { Script, Effect, Control, Object };
         public enum CharacterMode : int { None, Appear, Disappear };
         #endregion
 
-
-
-
-        [Button]
-        private void Add() {
-            datas.Add(new DialogueSequenceData());
-        }
     }
 }

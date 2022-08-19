@@ -14,11 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 100000
   datas:
-  - leftCharacter:
+  - sequenceSort: 3
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
-      scriptFocus: 2
+      scriptFocus: 0
       name: 
       script: 
       speed: 20
@@ -26,11 +27,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 1461120247514626, guid: 8633b97c6fb1741319432743ee8c49fd, type: 3}
-    backgroundSprite: {fileID: 21300000, guid: ef909a11eccf6084b8ee1bf7a56a2aa2, type: 3}
-    sequenceSort: 1
-  - leftCharacter:
+    eventObject: {fileID: 3235318025869141745, guid: d33cf04e36b224f4d84e4818bf24765b, type: 3}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -42,15 +42,14 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
-      mode: 1
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
       target: {fileID: 6118293056195659511, guid: 5a5e49bbaef00974897a66d5dfd36f2e, type: 3}
     scriptInfo:
-      scriptFocus: 0
+      scriptFocus: 2
       name: Jade
       script: "Um\u2026 What am I doing here?\r"
       speed: 20
@@ -58,15 +57,14 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
-      scriptFocus: 0
+      scriptFocus: 2
       name: Jade
       script: "I can move my\u2026 arms. legs are good too."
       speed: 20
@@ -74,15 +72,14 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
-      scriptFocus: 0
+      scriptFocus: 2
       name: Jade
       script: "My name is Jade. I used to \u2018work\u2019 at Asgard\u2026 and at
         the high cliff of Asgard\u2026"
@@ -91,29 +88,27 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 3
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
       scriptFocus: 0
-      name: Jade
-      script: "Ahhhhhhhhhhhhh I\u2019m falling, falling\u2019!"
-      speed: 10
-      skippable: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
-      mode: 0
-      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: OpenEye
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 1
+      target: {fileID: 6118293056195659511, guid: 5a5e49bbaef00974897a66d5dfd36f2e, type: 3}
     scriptInfo:
       scriptFocus: 1
       name: ???
@@ -123,11 +118,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 1
       target: {fileID: 2025944677643304210, guid: 20e7660994961d2499df1f27d66a4811, type: 3}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -140,11 +134,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -156,11 +149,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -173,11 +165,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -190,11 +181,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -206,11 +196,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -222,11 +211,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -238,11 +226,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -255,11 +242,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -271,11 +257,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -288,11 +273,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -304,11 +288,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -320,11 +303,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -336,11 +318,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -352,11 +333,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -369,11 +349,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -385,11 +364,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -401,11 +379,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -417,11 +394,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -434,11 +410,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -450,11 +425,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -467,11 +441,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -483,11 +456,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -500,11 +472,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -516,11 +487,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -532,11 +502,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -548,11 +517,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -564,11 +532,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -580,11 +547,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -597,11 +563,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -613,11 +578,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -629,27 +593,40 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 3
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: GiveStone
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
       scriptFocus: 1
-      name: 
+      name: Valkyrie
       script: "This is \u2018Stone of Communication\u2019."
       speed: 20
       skippable: 1
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -661,11 +638,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -677,11 +653,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -694,11 +669,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -710,11 +684,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -726,11 +699,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -742,11 +714,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -758,11 +729,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -775,11 +745,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -791,11 +760,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -807,11 +775,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -824,11 +791,10 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
-  - leftCharacter:
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
@@ -840,7 +806,5 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    backgroundMode: 0
-    backgroundObject: {fileID: 0}
-    backgroundSprite: {fileID: 0}
-    sequenceSort: 0
+    eventObject: {fileID: 0}
+    eventId: 
