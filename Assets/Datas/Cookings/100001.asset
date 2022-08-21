@@ -18,11 +18,8 @@ MonoBehaviour:
     count: 1
   - item: {fileID: 11400000, guid: 833074a196207034d81e6e0d0fc18e71, type: 2}
     count: 1
+  - item: {fileID: 11400000, guid: 399a39c2c2c2f97468829fccced19baf, type: 2}
+    count: 1
   result:
     item: {fileID: 11400000, guid: 850fca931e1dad0458e9eca700d63bc3, type: 2}
     count: 1
-  parameterRewards:
-  - parameter: 0
-    value: 1
-  - parameter: 2
-    value: 1

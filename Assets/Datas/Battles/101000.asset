@@ -21,12 +21,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 76a26212356604847b069b0418c6b577, type: 2}
   - {fileID: 11400000, guid: 76a26212356604847b069b0418c6b577, type: 2}
   rewards:
-  - {fileID: 11400000, guid: 4798147202ceb8e4fb0ffe48ca90b35f, type: 2}
-  - {fileID: 11400000, guid: 4798147202ceb8e4fb0ffe48ca90b35f, type: 2}
-  - {fileID: 11400000, guid: 4798147202ceb8e4fb0ffe48ca90b35f, type: 2}
-  - {fileID: 11400000, guid: 2e12f2250b6f33944bf7f0282f2480d7, type: 2}
-  - {fileID: 11400000, guid: 2e12f2250b6f33944bf7f0282f2480d7, type: 2}
-  - {fileID: 11400000, guid: 2e12f2250b6f33944bf7f0282f2480d7, type: 2}
-  - {fileID: 11400000, guid: 75629c7a660287c42859f2a90cf401ea, type: 2}
-  - {fileID: 11400000, guid: 75629c7a660287c42859f2a90cf401ea, type: 2}
-  - {fileID: 11400000, guid: 75629c7a660287c42859f2a90cf401ea, type: 2}
+  - item: {fileID: 11400000, guid: d589c2021da9fa54fa47f26611edba9c, type: 2}
+    count: 100
+  - item: {fileID: 11400000, guid: 60f8ec9a060303f4fb8b5fae244ac2fa, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: 6475d979bdcdecd41844424dd46b9ce0, type: 2}
+    count: 3
+  - item: {fileID: 11400000, guid: 0465222f67f9b7e4ba9cb95425060404, type: 2}
+    count: 3
