@@ -39,12 +39,13 @@ namespace B409.Jade.Game {
             } else {
                 this.Progress = GameProgress.FromJson(json);
             }
+            Debug.Log(json);
             LoadData();
         }
         #endregion
 
         #region Load
-        public async void NewGame() {
+        public void NewGame() {
             Progress = new GameProgress();
             StageSequenceStart();
             Save();
@@ -88,8 +89,8 @@ namespace B409.Jade.Game {
                 Progress.NextStage();
             }
 
-            Save();
             StageSequenceStart();
+            Save();
             LoadScene();
         }
 
@@ -177,6 +178,8 @@ namespace B409.Jade.Game {
             var stageSequencePath = CurrentStage.Datas[Progress.StageSequence];
 
             CurrentStageSequence = DataManager.Instance.LoadStageSequenceData(stageSequencePath);
+
+            Debug.Log(stageSequencePath);
         }
 
         private async UniTask LoadDataAsync() {

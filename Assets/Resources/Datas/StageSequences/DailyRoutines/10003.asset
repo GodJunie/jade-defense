@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 10003
   m_EditorClassIdentifier: 
   id: 10003
+  scripts: []
   day: 5
   monsters:
   - {fileID: 11400000, guid: 1cad6710dcf223e468247eb06cf52ce3, type: 2}
@@ -158,4 +159,4 @@ MonoBehaviour:
     rate: 3
   - sale: {fileID: 11400000, guid: b90b0db9794ed6449a09e13ae52f10d3, type: 2}
     rate: 2
-  battle: {fileID: 11400000, guid: f56ebbbc96850c44b8540befd73de584, type: 2}
+  battle: {fileID: 11400000, guid: 61694d9dc10e1a54fb9776421a7919da, type: 2}

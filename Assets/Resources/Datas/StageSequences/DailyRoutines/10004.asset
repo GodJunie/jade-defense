@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1aba2187eed0b94b8e90991290df523, type: 3}
-  m_Name: 10001
+  m_Name: 10004
   m_EditorClassIdentifier: 
-  id: 10001
+  id: 10004
   scripts: []
   day: 5
   monsters:
@@ -22,10 +22,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e40133b6b8960dd46a67a48c41659fcd, type: 2}
   - {fileID: 11400000, guid: b048a21286f5c104898b2a372606e69c, type: 2}
   - {fileID: 11400000, guid: c0fba5c38f7c47f47950c0c22694dd42, type: 2}
-  - {fileID: 11400000, guid: 389ecefaf3ab10048b67bfd12c5b9988, type: 2}
   - {fileID: 11400000, guid: e3a1de9e950c96842ae357f51f791e2c, type: 2}
   - {fileID: 11400000, guid: 745b47de337ba0a47b078958757b891a, type: 2}
-  salesCount: 10
+  - {fileID: 11400000, guid: 389ecefaf3ab10048b67bfd12c5b9988, type: 2}
+  salesCount: 0
   trades:
   - sale: {fileID: 11400000, guid: 1cad6710dcf223e468247eb06cf52ce3, type: 2}
     rate: 0.6
@@ -159,4 +159,4 @@ MonoBehaviour:
     rate: 3
   - sale: {fileID: 11400000, guid: b90b0db9794ed6449a09e13ae52f10d3, type: 2}
     rate: 2
-  battle: {fileID: 11400000, guid: f5c347bac3f42f346bfee0ddfabbba8d, type: 2}
+  battle: {fileID: 11400000, guid: f56ebbbc96850c44b8540befd73de584, type: 2}

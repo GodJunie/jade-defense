@@ -10,6 +10,10 @@ namespace B409.Jade.Data {
     public class DailyRoutineData : StageSequenceData {
         [HorizontalGroup("group", .5f)]
         [VerticalGroup("group/group")]
+        [SerializeField]
+        private List<string> scripts;
+
+        [VerticalGroup("group/group")]
         [BoxGroup("group/group/Day")]
         [HideLabel]
         [SerializeField]
@@ -58,6 +62,7 @@ namespace B409.Jade.Data {
 #endif
 
         public int Day => day;
+        public List<string> Scripts => scripts;
         public BattleData Battle => battle;
         public int SalesCount => salesCount;
         public List<TradeInfo> Trades => trades;

@@ -9,6 +9,7 @@ using Sirenix.OdinInspector;
 using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using TMPro;
+using Spine.Unity;
 
 
 namespace B409.Jade.UI {
@@ -26,9 +27,22 @@ namespace B409.Jade.UI {
 
         [SerializeField]
         private TMP_Text textParameters;
+
+        [SerializeField]
+        private TMP_Text textScript;
+        [SerializeField]
+        private float textSpeed = 20f;
         
         [SerializeField]
         private Image imageFade;
+        [SerializeField]
+        private SkeletonGraphic jadeAnim;
+        [SerializeField]
+        private string jadeIdle;
+        [SerializeField]
+        private string jadeInteract;
+
+        public DailyRoutineData data;
         #endregion
 
         #region Mono
@@ -36,9 +50,29 @@ namespace B409.Jade.UI {
             imageFade.gameObject.SetActive(true);
             imageFade.color = Color.white;
             imageFade.DOFade(0f, 1f);
+
             GameManager.Instance.TurnStart();
+
+            var data = GameManager.Instance.CurrentStageSequence;
+
+            if(!(data is DailyRoutineData)) {
+                Debug.LogError(string.Format("Stage Sequence is not DailyRoutineData!"));
+            }
+
+            this.data = data as DailyRoutineData;
+
+            this.jadeAnim.AnimationState.Complete += (entry) => {
+                if(entry.Animation.Name == jadeInteract) {
+                    jadeAnim.AnimationState.SetAnimation(0, jadeIdle, true);
+                }
+            };
+
+              
+            this.Log("");
+            this.Hint();
             this.Init();
         }
+
         #endregion
 
         #region Action
@@ -53,15 +87,25 @@ namespace B409.Jade.UI {
         }
         #endregion
 
+        public void Hint() {
+            jadeAnim.AnimationState.SetAnimation(0, jadeInteract, false);
+
+            if(this.data.Scripts.Count > 0) {
+                var hint = this.data.Scripts[UnityEngine.Random.Range(0, data.Scripts.Count)];
+                this.Log(hint);
+            }
+        }
+
+        public void Log(string text) {
+            this.textScript.DOKill();
+            this.textScript.text = "";
+            this.textScript.DOText(text, textSpeed).SetSpeedBased();
+        }
+
         #region UI
         public void Init() {
             var progress = GameManager.Instance.Progress;
-            var stageSequence = GameManager.Instance.CurrentStageSequence;
-
-            if(!(stageSequence is DailyRoutineData)) {
-                Debug.LogError(string.Format("Stage Sequence is not DailyRoutineData!"));
-            }
-
+           
             this.textDDay.text = string.Format("D - {0}", progress.DDay);
 
             float strength = progress.Parameters[Parameter.Strength];
