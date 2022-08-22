@@ -24,13 +24,13 @@ MonoBehaviour:
     range: 0.6
     targetFilterMode: 3
     descending: 0
-    targetCount: 1
+    targetCount: 2
     targetEnemy: 1
-    attackSpeed: 0.8
+    attackSpeed: 2
     attackMode: 3
     atk: 90
     heal: 0
     interval: 0
-    duration: 2
+    duration: 5
     distance: 0
     slowRate: 0

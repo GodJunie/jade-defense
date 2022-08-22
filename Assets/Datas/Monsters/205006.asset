@@ -21,7 +21,7 @@ MonoBehaviour:
     cooltime: 1
     hp: 160
     moveSpeed: 1
-    range: 4
+    range: 3
     targetFilterMode: 2
     descending: 1
     targetCount: 1
@@ -37,3 +37,5 @@ MonoBehaviour:
   cost:
   - item: {fileID: 11400000, guid: ccc71a76c1fd38a4b9369afb23050518, type: 2}
     count: 4
+  buyPrice: 0
+  sellPrice: 0

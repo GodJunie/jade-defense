@@ -15,11 +15,21 @@ MonoBehaviour:
   id: 103100
   background: {fileID: 1639210852879390, guid: d9059fafc845f42299a081e32bcb29c9, type: 3}
   enemies:
-  - {fileID: 11400000, guid: 02afd536a9d2d4b4d8cd6d95fea59d7c, type: 2}
-  - {fileID: 11400000, guid: 02afd536a9d2d4b4d8cd6d95fea59d7c, type: 2}
+  - {fileID: 11400000, guid: d3ab904af043fdf4ba98cfba28462138, type: 2}
+  - {fileID: 11400000, guid: d3ab904af043fdf4ba98cfba28462138, type: 2}
   - {fileID: 11400000, guid: 02afd536a9d2d4b4d8cd6d95fea59d7c, type: 2}
   - {fileID: 11400000, guid: 02afd536a9d2d4b4d8cd6d95fea59d7c, type: 2}
   - {fileID: 11400000, guid: 02afd536a9d2d4b4d8cd6d95fea59d7c, type: 2}
   rewards:
   - item: {fileID: 11400000, guid: d589c2021da9fa54fa47f26611edba9c, type: 2}
     count: 100
+  - item: {fileID: 11400000, guid: 8819069af7e162d408dc99326cf7db3c, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: a6d0e8549b775ed4282034afc3543642, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: ca2e979313aa1844489baeb7da42fbd5, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: 4698e7bc9a1df2b419c0c7a178891be6, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: af0c164a14f2c0c4392121afb06d230b, type: 2}
+    count: 1

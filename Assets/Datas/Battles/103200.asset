@@ -15,11 +15,12 @@ MonoBehaviour:
   id: 103200
   background: {fileID: 1894307411133024, guid: f1797457851c64fc195924c6f53cdc6a, type: 3}
   enemies:
+  - {fileID: 11400000, guid: d3ab904af043fdf4ba98cfba28462138, type: 2}
+  - {fileID: 11400000, guid: b36a9b18a41a71d4b9a717199b384727, type: 2}
+  - {fileID: 11400000, guid: 10b128b396c62dd48b75a311dd39e92c, type: 2}
   - {fileID: 11400000, guid: 02afd536a9d2d4b4d8cd6d95fea59d7c, type: 2}
-  - {fileID: 11400000, guid: 02afd536a9d2d4b4d8cd6d95fea59d7c, type: 2}
-  - {fileID: 11400000, guid: 02afd536a9d2d4b4d8cd6d95fea59d7c, type: 2}
-  - {fileID: 11400000, guid: 02afd536a9d2d4b4d8cd6d95fea59d7c, type: 2}
-  - {fileID: 11400000, guid: 02afd536a9d2d4b4d8cd6d95fea59d7c, type: 2}
+  - {fileID: 11400000, guid: 24fb8245d6ee47b48801267b59935ced, type: 2}
+  - {fileID: 11400000, guid: 24fb8245d6ee47b48801267b59935ced, type: 2}
   rewards:
   - item: {fileID: 11400000, guid: d589c2021da9fa54fa47f26611edba9c, type: 2}
     count: 100
