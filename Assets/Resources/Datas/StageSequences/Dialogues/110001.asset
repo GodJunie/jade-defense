@@ -1,0 +1,834 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2627f94fa25ca224ea51af9d22f883eb, type: 3}
+  m_Name: 110001
+  m_EditorClassIdentifier: 
+  id: 110001
+  datas:
+  - sequenceSort: 3
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 6953060479577409321, guid: d9031198c896f1547bd8eeea1b046db5, type: 3}
+    eventId: 
+    rewards: []
+  - sequenceSort: 3
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: ShowEgg
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 1
+      target: {fileID: 6118293056195659511, guid: 5a5e49bbaef00974897a66d5dfd36f2e, type: 3}
+    scriptInfo:
+      scriptFocus: 0
+      name: Jade
+      script: Wow, It's an egg!
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: Fresh raw eggs, taste like heaven, good for health.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: However, holding an egg in my hand, reminds me of the past.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: "Yes. I have sad memories about eggs...\u2026"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 2
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 3
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: GoPast
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: Jade
+      script: "This is the story of when I was an ordinary thief, before I became
+        a \u2018grand master thief that steals blah blah\u2019."
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: At that time, I could not afford basic food, clothing and shelter for
+        myself.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: So I sneaked into a farm and tried to steal chicken and eat it.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: However, I realized after going into the coop and swinging my arms
+        and legs for a long time trying to catch the chicken.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: It must have been because I had already been starving for two days.
+        The chicken was stronger than me.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: The moment I gave up the chicken and reached out to pick up some eggs,
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 3
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: Hey
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: Jade
+      script: I found a man(maybe the owner of the chicken) running from a distance,
+        screaming out loud.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: His scary face was literally like a devil.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: I picked up an egg and, after a long chase, managed to escape from
+        the chicken owner.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: Perhaps, the energy used to escape from the chicken owner was much
+        greater than the energy gained from eating one egg.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: "But the thief who starved for two days can\u2019t make a rational
+        decision."
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: "If I didn\u2019t lose my mind, I would have fought the chicken owner 
+        to steal more food, or would have quickly thrown my body to apologize and
+        begged for a slice of bread.\r"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: I was so hungry and out of my mind.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: And so, I made a mistake again because of that extreme hunger.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: "I never thought about baking or boiling the egg.\r"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: I was thinking about eating it raw. I couldn't wait even a second.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: The moment I finally bent over to break the egg,
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: Was it because of the excitement of my brain that drove me crazy?
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: 'Was it because of the hunger that took all of my strength? '
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: The egg fell out of my hand and fell to the grass.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 3
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: EggFellOut
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: Jade
+      script: I can't really remember what happened after that.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: I was probably trying to run down the hill chasing a rolling egg.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: But because of long hunger and a chase, I had no strength left in the
+        legs as well as the hands.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: I wanted to show the perfect trick with my flashy 3600-degree spin
+        roll... and it didn't work, and I just fell down, scattering grass all over
+        the place.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 1
+      target: {fileID: 6118293056195659511, guid: 5a5e49bbaef00974897a66d5dfd36f2e, type: 3}
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: Egg, how about egg?
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 2
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: The only thing that mattered to me was the egg.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: "I got up and looked around. Eggs, where are the eggs?\r"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: And despite descending down a long slope, the egg was just fine, unharmed.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 1
+      target: {fileID: 6118293056195659511, guid: 5a5e49bbaef00974897a66d5dfd36f2e, type: 3}
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: Ha, At last!
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 2
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 3
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: Light
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: Jade
+      script: Suddenly, the light as bright as the sun flashed in front of my eyes.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: I raised my arm to block the light, but it disappeared literally at
+        the speed of light.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: I turned my eyes to where the light had flashed, and saw a building
+        that looked like a basement entrance made of stone.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: At the entrance to the basement, there was a stone stairway down below.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: The end of the stairs was quite deep and dark, so I had no idea what
+        the inside looked like.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: I felt like looking into a bottomless abyss.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: At that time, I finally realized that I had rolled over to an unusual
+        place.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: Ah, about the fate of the egg that I got through the hardships...
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: ' it was dropped on the ground and shattered into pieces, When the
+        light flashed.'
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
