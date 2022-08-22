@@ -15,4 +15,6 @@ MonoBehaviour:
   id: 105300
   enemies:
   - {fileID: 11400000, guid: 1a078e1932be97e4f84d7e7a44eaac85, type: 2}
-  rewards: []
+  rewards:
+  - item: {fileID: 11400000, guid: d589c2021da9fa54fa47f26611edba9c, type: 2}
+    count: 100

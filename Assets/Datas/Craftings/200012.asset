@@ -15,14 +15,7 @@ MonoBehaviour:
   id: 200012
   materials:
   - item: {fileID: 11400000, guid: 2a8f5b526502ed84591e7a20a532b0c6, type: 2}
-    count: 2
+    count: 3
   result:
     item: {fileID: 11400000, guid: eece1363856079a45888ffdd587789b1, type: 2}
     count: 1
-  parameterRewards:
-  - parameter: 0
-    value: 1
-  - parameter: 1
-    value: 1
-  - parameter: 2
-    value: 1

@@ -36,6 +36,8 @@ MonoBehaviour:
     slowRate: 0
   cost:
   - item: {fileID: 11400000, guid: db204d57c7ae059459a53d484ec2715a, type: 2}
-    count: 3
+    count: 1
+  - item: {fileID: 11400000, guid: 833074a196207034d81e6e0d0fc18e71, type: 2}
+    count: 1
   buyPrice: 100
   sellPrice: 10

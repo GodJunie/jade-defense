@@ -106,7 +106,7 @@ MonoBehaviour:
     description: It's a mine full of iron and silver. Looks like somenone made a
       weapon here.
     datas:
-    - item: {fileID: 11400000, guid: db204d57c7ae059459a53d484ec2715a, type: 2}
+    - item: {fileID: 11400000, guid: 7d8ac0eccd5512e4caf725a54febe4a0, type: 2}
       rate: 90
     - item: {fileID: 0}
       rate: 10

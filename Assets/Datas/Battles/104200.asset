@@ -20,4 +20,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f1deecc0b58e052478c8eb8c9ff97db7, type: 2}
   - {fileID: 11400000, guid: f1deecc0b58e052478c8eb8c9ff97db7, type: 2}
   - {fileID: 11400000, guid: f1deecc0b58e052478c8eb8c9ff97db7, type: 2}
-  rewards: []
+  rewards:
+  - item: {fileID: 11400000, guid: d589c2021da9fa54fa47f26611edba9c, type: 2}
+    count: 100

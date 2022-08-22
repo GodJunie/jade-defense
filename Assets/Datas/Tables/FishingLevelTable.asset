@@ -34,10 +34,10 @@ MonoBehaviour:
 
       It''s full of shrimp.'
     datas:
-    - item: {fileID: 11400000, guid: 43309e0d33e8a9545be2372cedf01a03, type: 2}
-      rate: 30
     - item: {fileID: 11400000, guid: 25f6b5f76baab5549b43a849f1859318, type: 2}
       rate: 60
+    - item: {fileID: 11400000, guid: 43309e0d33e8a9545be2372cedf01a03, type: 2}
+      rate: 30
     - item: {fileID: 0}
       rate: 10
   - inquiredParameters:
