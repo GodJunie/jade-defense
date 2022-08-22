@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 100000
   background: {fileID: 21300000, guid: ef909a11eccf6084b8ee1bf7a56a2aa2, type: 3}
-  inGameBackground: {fileID: 1461120247514626, guid: 8633b97c6fb1741319432743ee8c49fd, type: 3}
+  inGameBackground: {fileID: 1461120247514626, guid: ce7758c2172386340a019e353cb41dea, type: 3}
   name: "\uD29C\uD1A0\uB9AC\uC5BC \uC2A4\uD14C\uC774\uC9C0"
   description: "\uD29C\uD1A0\uB9AC\uC5BC \uC2A4\uD14C\uC774\uC9C0"
   datas:
-  - {fileID: 11400000, guid: cfa2a348fdff8434d895e946bc45598b, type: 2}
+  - Dialogues/100000
+  - Dialogues/100001
+  - DailyRoutines/10000
+  - Dialogues/100002

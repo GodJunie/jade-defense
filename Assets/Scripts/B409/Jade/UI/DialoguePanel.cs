@@ -61,7 +61,7 @@ namespace B409.Jade.UI {
             if(isTest) {
 
             } else {
-
+                this.data = GameManager.Instance.CurrentStageSequence as DialogueData;
             }
 
             Open();

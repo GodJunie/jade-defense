@@ -90,8 +90,8 @@ namespace B409.Jade.UI {
             this.panelOwnedMonster.SetActive(false);
 
             var progress = GameManager.Instance.Progress;
-            var stage = DataManager.Instance.Stages[progress.Stage];
-            var stageSequence = stage.Datas[progress.StageSequence];
+            var stageSequence = GameManager.Instance.CurrentStageSequence;
+
             if(!(stageSequence is DailyRoutineData)) {
                 return;
             }

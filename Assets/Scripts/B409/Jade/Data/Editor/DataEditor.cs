@@ -26,10 +26,10 @@ namespace B409.Jade.Data.Editor {
         private static string MonsterDataFolderPath = "Assets/Datas/Monsters";
         private static string EnemyDataFolderPath = "Assets/Datas/Enemies";
         // Stage
-        private static string StageDataFolderPath = "Assets/Datas/Stages";
+        private static string StageDataFolderPath = "Assets/Resources/Datas/Stages";
         // Stage Sequence
-        private static string DailyRoutineDataFolderPath = "Assets/Datas/DailyRoutines";
-        private static string DialogueDataFolderPath = "Assets/Datas/Dialogues";
+        private static string DailyRoutineDataFolderPath = "Assets/Resources/Datas/StageSequences/DailyRoutines";
+        private static string DialogueDataFolderPath = "Assets/Resources/Datas/StageSequences/Dialogues";
         // Battle
         private static string BattleDataFolderPath = "Assets/Datas/Battles";
 

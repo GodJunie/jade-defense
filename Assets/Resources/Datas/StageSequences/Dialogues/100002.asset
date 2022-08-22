@@ -1,0 +1,377 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2627f94fa25ca224ea51af9d22f883eb, type: 3}
+  m_Name: 100002
+  m_EditorClassIdentifier: 
+  id: 100002
+  datas:
+  - sequenceSort: 3
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 4722237805618354906, guid: 4420e236900c99a4683398fbba03d1f5, type: 3}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 1
+      target: {fileID: 6118293056195659511, guid: 5a5e49bbaef00974897a66d5dfd36f2e, type: 3}
+    scriptInfo:
+      scriptFocus: 0
+      name: Jade
+      script: Hoo, hoo, heh......
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 1
+      target: {fileID: 3328306218506788300, guid: 35d34e101090e0841987577c42cdb56e, type: 3}
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: Is it done?
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 1
+      name: Teratomas
+      script: Jade! Jade... Jade? Jade!!
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 0
+      name: Jade
+      script: My boys, well done!
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 1
+      name: Teratomas
+      script: Jade! Jade! Jade!
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 0
+      name: Jade
+      script: Alright, alright!
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: The stone from Valkyrie was the thing.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: "I didn\u2019t expect that this thing would actually make me able to
+        communicate with monsters."
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: Can any Valkyries handle this kind of treasure?
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: Asgard seems like a really fancy place.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: This is the thing that I can utilize in many ways.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: But the valkyrie just gave that to the wanderer without reason. why?
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: "That\u2019s not my business!"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: "It\u2019s a business of gods from Asgard!"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: Well they are enjoying a pretty nice life already.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: "There\u2019re tons of monsters in the nine worlds."
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: Of course way more powerful and scary monsters than Teratomas.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: But, what happens if I can communicate with them too?
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: "I\u2019m sure they will not cause disturbance without reason to me."
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: Plus, If I can control and guide monsters whatever I want?
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: It must be a good business.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: "Let\u2019s go, Teratomas! follow almighty Jade\u2019s glorious path!"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+  - sequenceSort: 3
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: WalkOut

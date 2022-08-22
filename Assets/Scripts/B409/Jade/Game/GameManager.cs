@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Sirenix.OdinInspector;
+using Cysharp.Threading.Tasks;
 
 namespace B409.Jade.Game {
     using Data;
@@ -38,11 +39,12 @@ namespace B409.Jade.Game {
             } else {
                 this.Progress = GameProgress.FromJson(json);
             }
+            LoadData();
         }
         #endregion
 
         #region Load
-        public void NewGame() {
+        public async void NewGame() {
             Progress = new GameProgress();
             StageSequenceStart();
             Save();
@@ -60,27 +62,16 @@ namespace B409.Jade.Game {
         #endregion
 
         #region Game
-        public StageData CurrentStage {
-            get {
-                return DataManager.Instance.Stages[Progress.Stage];
-            }
-        }
+        public StageData CurrentStage { get; private set; }
 
-        public StageSequenceData CurrentStageSequence {
-            get {
-                return CurrentStage.Datas[Progress.StageSequence];
-            }
-        }
+        public StageSequenceData CurrentStageSequence { get; private set; }
 
         public void TurnStart() {
             Progress.TurnStart();
         }
 
         public void TurnEnd() {
-            var stage = DataManager.Instance.Stages[Progress.Stage];
-            var stageSequence = stage.Datas[Progress.StageSequence];
-
-            if(!(stageSequence is DailyRoutineData))
+            if(!(CurrentStageSequence is DailyRoutineData))
                 return;
 
             Progress.TurnEnd();
@@ -90,17 +81,15 @@ namespace B409.Jade.Game {
         }
 
         public void StageSequenceEnd() {
-            var stage = DataManager.Instance.Stages[Progress.Stage];
-
             Progress.NextStageSequence();
 
-            if(Progress.StageSequence == stage.Datas.Count) {
+            if(Progress.StageSequence == CurrentStage.Datas.Count) {
                 // Stage Clear!
                 Progress.NextStage();
             }
 
-            StageSequenceStart();
             Save();
+            StageSequenceStart();
             LoadScene();
         }
 
@@ -109,13 +98,11 @@ namespace B409.Jade.Game {
                 return;
             }
 
-            var stage = DataManager.Instance.Stages[Progress.Stage];
-            var data = stage.Datas[Progress.StageSequence];
+            LoadData();
 
-            if(!(data is DailyRoutineData))
-                return;
-
-            Progress.DailyRoutineStart(data as DailyRoutineData);
+            if(CurrentStageSequence is DailyRoutineData) {
+                Progress.DailyRoutineStart(CurrentStageSequence as DailyRoutineData);
+            }
         }
         #endregion
 
@@ -182,23 +169,40 @@ namespace B409.Jade.Game {
         #endregion
 
         #region SceneManagement
+        private void LoadData() {
+            var stageId = DataManager.Instance.Stages[Progress.Stage];
+
+            CurrentStage = DataManager.Instance.LoadStageData(stageId);
+
+            var stageSequencePath = CurrentStage.Datas[Progress.StageSequence];
+
+            CurrentStageSequence = DataManager.Instance.LoadStageSequenceData(stageSequencePath);
+        }
+
+        private async UniTask LoadDataAsync() {
+            var stageId = DataManager.Instance.Stages[Progress.Stage];
+
+            CurrentStage = await DataManager.Instance.LoadStageDataAsync(stageId);
+
+            var stageSequenceId = CurrentStage.Datas[Progress.StageSequence];
+
+            CurrentStageSequence = await DataManager.Instance.LoadStageSequenceDataAsync(stageSequenceId);
+        }
+
         private void LoadScene() {
             if(Progress.Stage == DataManager.Instance.Stages.Count) {
                 LoadEndingScene();
                 return;
             }
 
-            var stage = DataManager.Instance.Stages[Progress.Stage];
-            var stageSequence = stage.Datas[Progress.StageSequence];
-
-            if(stageSequence is DailyRoutineData) {
+            if(CurrentStageSequence is DailyRoutineData) {
                 // daily routine
                 if(Progress.DDay > 0) {
                     LoadMainScene();
                 } else {
                     LoadBattleScene();
                 }
-            } else if(stageSequence is DialogueData) {
+            } else if(CurrentStageSequence is DialogueData) {
                 // dialogue
                 LoadDialogueScene();
             } else {

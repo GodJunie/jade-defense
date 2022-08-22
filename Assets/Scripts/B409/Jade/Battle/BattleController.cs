@@ -201,8 +201,8 @@ namespace B409.Jade.Battle {
 
             if(!isTest) {
                 var progress = GameManager.Instance.Progress;
-                var stage = DataManager.Instance.Stages[progress.Stage];
-                var stageSequence = stage.Datas[progress.StageSequence];
+                var stage = GameManager.Instance.CurrentStage;
+                var stageSequence = GameManager.Instance.CurrentStageSequence;
 
                 Instantiate(stage.InGameBackground);
 

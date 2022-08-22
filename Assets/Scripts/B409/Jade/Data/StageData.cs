@@ -42,7 +42,7 @@ namespace B409.Jade.Data {
        
         [BoxGroup("Sequence")]
         [SerializeField]
-        private List<StageSequenceData> datas;
+        private List<string> datas;
 
 
         public int Id => id;
@@ -50,6 +50,6 @@ namespace B409.Jade.Data {
         public string Description => description;
         public Sprite Background => background;
         public GameObject InGameBackground => inGameBackground;
-        public List<StageSequenceData> Datas => datas;
+        public List<string> Datas => datas;
     }
 }
