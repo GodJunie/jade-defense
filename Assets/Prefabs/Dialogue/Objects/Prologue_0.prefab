@@ -568,7 +568,7 @@ Transform:
   m_LocalPosition: {x: -2.04, y: -0.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 8370811841591204956}
+  - {fileID: 8418112936833648636}
   m_Father: {fileID: 7404484002836396837}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -974,7 +974,7 @@ MonoBehaviour:
             m_StringArgument: OpenEye
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 3471987321842352390}
+        - m_Target: {fileID: 3519217911323990694}
           m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
           m_MethodName: Play
           m_Mode: 5
@@ -1889,13 +1889,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a16e1c301dc81fa4abb530638af51ae7, type: 3}
---- !u!4 &8370811841591204956 stripped
+--- !u!4 &8418112936833648636 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 249363370983993768, guid: a16e1c301dc81fa4abb530638af51ae7, type: 3}
+  m_CorrespondingSourceObject: {fileID: 256096821334829576, guid: a16e1c301dc81fa4abb530638af51ae7, type: 3}
   m_PrefabInstance: {fileID: 8601580270477635060}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &3471987321842352390 stripped
+--- !u!95 &3519217911323990694 stripped
 Animator:
-  m_CorrespondingSourceObject: {fileID: 5147625078078385394, guid: a16e1c301dc81fa4abb530638af51ae7, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5154428759054186322, guid: a16e1c301dc81fa4abb530638af51ae7, type: 3}
   m_PrefabInstance: {fileID: 8601580270477635060}
   m_PrefabAsset: {fileID: 0}
