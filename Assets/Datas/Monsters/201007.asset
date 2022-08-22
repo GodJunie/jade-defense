@@ -39,5 +39,11 @@ MonoBehaviour:
     count: 1
   - item: {fileID: 11400000, guid: 2e12f2250b6f33944bf7f0282f2480d7, type: 2}
     count: 1
+  - item: {fileID: 11400000, guid: 0465222f67f9b7e4ba9cb95425060404, type: 2}
+    count: 4
+  - item: {fileID: 11400000, guid: b50855268140af34ea17af25299b95ac, type: 2}
+    count: 2
+  - item: {fileID: 11400000, guid: 75629c7a660287c42859f2a90cf401ea, type: 2}
+    count: 2
   buyPrice: 200
   sellPrice: 20

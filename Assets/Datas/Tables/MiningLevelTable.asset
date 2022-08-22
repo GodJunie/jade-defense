@@ -32,18 +32,12 @@ MonoBehaviour:
     name: A small gem mine
     description: A mine that can dig up mysterious little gems.
     datas:
-    - item: {fileID: 11400000, guid: 69624cb59e1ef1343bf8c2f5fd87af4b, type: 2}
-      rate: 20
-    - item: {fileID: 11400000, guid: 39b9b10ba05f09941bce5370e2cf707c, type: 2}
-      rate: 20
     - item: {fileID: 11400000, guid: 06b602e78a1fc3149a66f057c8a0238d, type: 2}
-      rate: 20
-    - item: {fileID: 11400000, guid: daf234e15aa11ee49a1aaaeeccea9a6a, type: 2}
-      rate: 20
+      rate: 45
     - item: {fileID: 11400000, guid: 4e56db5c6bb00a246be6564d3c38967d, type: 2}
-      rate: 20
+      rate: 45
     - item: {fileID: 0}
-      rate: 20
+      rate: 10
   - inquiredParameters:
     - parameter: 0
       value: 25
@@ -60,21 +54,13 @@ MonoBehaviour:
       value: 1
     ap: 30
     name: An iron mine
-    description: A mine with traces of someone digging iron.
+    description: A mine that can dig up mysterious little gems.
     datas:
-    - item: {fileID: 11400000, guid: 69624cb59e1ef1343bf8c2f5fd87af4b, type: 2}
-      rate: 5
     - item: {fileID: 11400000, guid: 39b9b10ba05f09941bce5370e2cf707c, type: 2}
-      rate: 5
-    - item: {fileID: 11400000, guid: 06b602e78a1fc3149a66f057c8a0238d, type: 2}
-      rate: 5
+      rate: 45
     - item: {fileID: 11400000, guid: daf234e15aa11ee49a1aaaeeccea9a6a, type: 2}
-      rate: 5
-    - item: {fileID: 11400000, guid: 4e56db5c6bb00a246be6564d3c38967d, type: 2}
-      rate: 5
-    - item: {fileID: 11400000, guid: 6cfc62c1f8f4cbe4aa6b0dce0ba211a5, type: 2}
-      rate: 65
-    - item: {fileID: 11400000, guid: 2a8f5b526502ed84591e7a20a532b0c6, type: 2}
+      rate: 45
+    - item: {fileID: 0}
       rate: 10
   - inquiredParameters:
     - parameter: 1
@@ -92,21 +78,14 @@ MonoBehaviour:
       value: 1
     ap: 30
     name: A silver mine
-    description: There are traces of someone secretly digging for silver.
+    description: A mine that can dig up mysterious little gems. It appears to be
+      able to dig iron.
     datas:
-    - item: {fileID: 11400000, guid: 4d650708846712c439d76e00bdab76a6, type: 2}
-      rate: 5
-    - item: {fileID: 11400000, guid: 3b7f714761727d54cb44def06d47cbe1, type: 2}
-      rate: 5
-    - item: {fileID: 11400000, guid: a914fdd14479d664da1107774fac53b1, type: 2}
-      rate: 5
-    - item: {fileID: 11400000, guid: cc3dd6c5bbb67c34dab31070659567ab, type: 2}
-      rate: 5
-    - item: {fileID: 11400000, guid: 60f8ec9a060303f4fb8b5fae244ac2fa, type: 2}
-      rate: 5
-    - item: {fileID: 11400000, guid: 7d8ac0eccd5512e4caf725a54febe4a0, type: 2}
-      rate: 65
-    - item: {fileID: 11400000, guid: db204d57c7ae059459a53d484ec2715a, type: 2}
+    - item: {fileID: 11400000, guid: 69624cb59e1ef1343bf8c2f5fd87af4b, type: 2}
+      rate: 45
+    - item: {fileID: 11400000, guid: 6cfc62c1f8f4cbe4aa6b0dce0ba211a5, type: 2}
+      rate: 45
+    - item: {fileID: 0}
       rate: 10
   - inquiredParameters:
     - parameter: 0
@@ -128,9 +107,9 @@ MonoBehaviour:
       weapon here.
     datas:
     - item: {fileID: 11400000, guid: db204d57c7ae059459a53d484ec2715a, type: 2}
-      rate: 50
-    - item: {fileID: 11400000, guid: 2a8f5b526502ed84591e7a20a532b0c6, type: 2}
-      rate: 50
+      rate: 90
+    - item: {fileID: 0}
+      rate: 10
   - inquiredParameters:
     - parameter: 0
       value: 100

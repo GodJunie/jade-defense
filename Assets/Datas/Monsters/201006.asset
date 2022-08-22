@@ -37,7 +37,9 @@ MonoBehaviour:
   cost:
   - item: {fileID: 11400000, guid: a914fdd14479d664da1107774fac53b1, type: 2}
     count: 1
-  - item: {fileID: 11400000, guid: 833074a196207034d81e6e0d0fc18e71, type: 2}
+  - item: {fileID: 11400000, guid: 2e12f2250b6f33944bf7f0282f2480d7, type: 2}
     count: 1
+  - item: {fileID: 11400000, guid: 0465222f67f9b7e4ba9cb95425060404, type: 2}
+    count: 4
   buyPrice: 150
   sellPrice: 15

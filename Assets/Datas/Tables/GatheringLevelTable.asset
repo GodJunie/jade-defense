@@ -29,21 +29,15 @@ MonoBehaviour:
     - parameter: 3
       value: 1
     ap: 30
-    name: Forest
-    description: "A forest where everyone can take a walk\r"
+    name: A tea leaf forest
+    description: A forest full of fragrant tea leaves.
     datas:
-    - item: {fileID: 11400000, guid: 0465222f67f9b7e4ba9cb95425060404, type: 2}
-      rate: 50
     - item: {fileID: 11400000, guid: 7e6cc04742966de4b8882872197f316d, type: 2}
-      rate: 20
+      rate: 70
+    - item: {fileID: 11400000, guid: 0465222f67f9b7e4ba9cb95425060404, type: 2}
+      rate: 10
     - item: {fileID: 11400000, guid: 6475d979bdcdecd41844424dd46b9ce0, type: 2}
-      rate: 20
-    - item: {fileID: 11400000, guid: af7ade278f2c4f84396866ef8c59f718, type: 2}
-      rate: 5
-    - item: {fileID: 11400000, guid: 833074a196207034d81e6e0d0fc18e71, type: 2}
-      rate: 5
-    - item: {fileID: 11400000, guid: 399a39c2c2c2f97468829fccced19baf, type: 2}
-      rate: 5
+      rate: 10
     - item: {fileID: 0}
       rate: 10
   - inquiredParameters:
@@ -61,21 +55,15 @@ MonoBehaviour:
     - parameter: 3
       value: 1
     ap: 30
-    name: A tea leaf forest
-    description: A forest full of fragrant tea leaves.
+    name: Herb forest
+    description: It's a forest full of herbs.
     datas:
     - item: {fileID: 11400000, guid: 0465222f67f9b7e4ba9cb95425060404, type: 2}
-      rate: 20
+      rate: 70
     - item: {fileID: 11400000, guid: 7e6cc04742966de4b8882872197f316d, type: 2}
-      rate: 50
+      rate: 10
     - item: {fileID: 11400000, guid: 6475d979bdcdecd41844424dd46b9ce0, type: 2}
-      rate: 20
-    - item: {fileID: 11400000, guid: af7ade278f2c4f84396866ef8c59f718, type: 2}
-      rate: 5
-    - item: {fileID: 11400000, guid: 833074a196207034d81e6e0d0fc18e71, type: 2}
-      rate: 5
-    - item: {fileID: 11400000, guid: 399a39c2c2c2f97468829fccced19baf, type: 2}
-      rate: 5
+      rate: 10
     - item: {fileID: 0}
       rate: 10
   - inquiredParameters:
@@ -96,18 +84,12 @@ MonoBehaviour:
     name: A sunny forest
     description: Many oilseeds are known to be available in sunny forests.
     datas:
-    - item: {fileID: 11400000, guid: 0465222f67f9b7e4ba9cb95425060404, type: 2}
-      rate: 20
-    - item: {fileID: 11400000, guid: 7e6cc04742966de4b8882872197f316d, type: 2}
-      rate: 5
     - item: {fileID: 11400000, guid: 6475d979bdcdecd41844424dd46b9ce0, type: 2}
-      rate: 50
-    - item: {fileID: 11400000, guid: af7ade278f2c4f84396866ef8c59f718, type: 2}
-      rate: 5
-    - item: {fileID: 11400000, guid: 833074a196207034d81e6e0d0fc18e71, type: 2}
-      rate: 5
-    - item: {fileID: 11400000, guid: 399a39c2c2c2f97468829fccced19baf, type: 2}
-      rate: 5
+      rate: 70
+    - item: {fileID: 11400000, guid: 0465222f67f9b7e4ba9cb95425060404, type: 2}
+      rate: 10
+    - item: {fileID: 11400000, guid: 7e6cc04742966de4b8882872197f316d, type: 2}
+      rate: 10
     - item: {fileID: 0}
       rate: 10
   - inquiredParameters:
@@ -125,24 +107,13 @@ MonoBehaviour:
     - parameter: 3
       value: 1
     ap: 30
-    name: An abandoned field
-    description: Rice and almonds continue to grow in the place where a farmer left
-      them.
+    name: An abandoned rice field
+    description: Rice continues to grow in the rice fields abandoned by the farmer.
     datas:
-    - item: {fileID: 11400000, guid: 0465222f67f9b7e4ba9cb95425060404, type: 2}
-      rate: 5
-    - item: {fileID: 11400000, guid: 7e6cc04742966de4b8882872197f316d, type: 2}
-      rate: 5
-    - item: {fileID: 11400000, guid: 6475d979bdcdecd41844424dd46b9ce0, type: 2}
-      rate: 5
-    - item: {fileID: 11400000, guid: af7ade278f2c4f84396866ef8c59f718, type: 2}
-      rate: 5
     - item: {fileID: 11400000, guid: 833074a196207034d81e6e0d0fc18e71, type: 2}
-      rate: 40
-    - item: {fileID: 11400000, guid: 399a39c2c2c2f97468829fccced19baf, type: 2}
-      rate: 40
+      rate: 70
     - item: {fileID: 0}
-      rate: 10
+      rate: 30
   - inquiredParameters:
     - parameter: 0
       value: 100
@@ -161,17 +132,7 @@ MonoBehaviour:
     name: A rock salt forest
     description: It's a forest full of rock salt.
     datas:
-    - item: {fileID: 11400000, guid: 0465222f67f9b7e4ba9cb95425060404, type: 2}
-      rate: 5
-    - item: {fileID: 11400000, guid: 7e6cc04742966de4b8882872197f316d, type: 2}
-      rate: 20
-    - item: {fileID: 11400000, guid: 6475d979bdcdecd41844424dd46b9ce0, type: 2}
-      rate: 5
-    - item: {fileID: 11400000, guid: af7ade278f2c4f84396866ef8c59f718, type: 2}
-      rate: 5
-    - item: {fileID: 11400000, guid: 833074a196207034d81e6e0d0fc18e71, type: 2}
-      rate: 5
     - item: {fileID: 11400000, guid: 399a39c2c2c2f97468829fccced19baf, type: 2}
-      rate: 50
+      rate: 70
     - item: {fileID: 0}
-      rate: 10
+      rate: 30

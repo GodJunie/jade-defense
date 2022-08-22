@@ -20,11 +20,8 @@ MonoBehaviour:
     count: 1
   - item: {fileID: 11400000, guid: 10a5f22fa84bc76439071b22027e598b, type: 2}
     count: 1
+  - item: {fileID: 11400000, guid: 399a39c2c2c2f97468829fccced19baf, type: 2}
+    count: 1
   result:
     item: {fileID: 11400000, guid: 4d3faea022c796f4fb8a5685081f4264, type: 2}
     count: 1
-  parameterRewards:
-  - parameter: 0
-    value: 1
-  - parameter: 2
-    value: 1

@@ -33,12 +33,12 @@ MonoBehaviour:
     interval: 0
     duration: 5
     distance: 0
-    slowRate: 0.316
+    slowRate: 0.594
   cost:
   - item: {fileID: 11400000, guid: 06b602e78a1fc3149a66f057c8a0238d, type: 2}
     count: 1
-  - item: {fileID: 11400000, guid: 0465222f67f9b7e4ba9cb95425060404, type: 2}
-    count: 4
+  - item: {fileID: 11400000, guid: 75629c7a660287c42859f2a90cf401ea, type: 2}
+    count: 1
   - item: {fileID: 11400000, guid: 413dffb8e9b38b34a92a89061d803313, type: 2}
     count: 4
   buyPrice: 150
