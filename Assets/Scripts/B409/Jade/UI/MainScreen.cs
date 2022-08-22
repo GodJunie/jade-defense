@@ -67,9 +67,6 @@ namespace B409.Jade.UI {
                 }
             };
 
-              
-            this.Log("");
-            this.Hint();
             this.Init();
         }
 
@@ -118,6 +115,13 @@ namespace B409.Jade.UI {
 
             this.textCurrentAP.text = progress.AP.ToString("0");
             this.textMaxAP.text = progress.MaxAP.ToString("0");
+
+            var log = progress.GetLogs();
+            if(string.IsNullOrEmpty(log)) {
+                Hint();
+            } else {
+                this.Log(log);
+            }
         }
         #endregion
     }
