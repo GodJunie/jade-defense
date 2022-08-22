@@ -102,6 +102,13 @@ namespace B409.Jade.UI {
             await UniTask.WhenAll(tasks);
         }
 
+        public void PlayAnimation(string animation) {
+            foreach(var skeleton in skeletons) {
+                skeleton.AnimationState.SetAnimation(0, animation, false);
+                skeleton.AnimationState.AddAnimation(0, idleAimation, true, 0f);
+            }
+        }
+
 #if UNITY_EDITOR
         public string[] animations {
             get {

@@ -162,6 +162,12 @@ namespace B409.Jade.UI {
                         Destroy(leftCharacter.gameObject);
                         leftCharacter = null;
                     }));
+                } else if(left.Mode == DialogueData.CharacterMode.Animation) {
+                    if(leftCharacter == null) {
+                        throw new Exception("No left character exists to play animation");
+                    }
+
+                    leftCharacter.PlayAnimation(left.Animation);
                 }
 
                 if(right.Mode == DialogueData.CharacterMode.Appear) {
@@ -182,6 +188,12 @@ namespace B409.Jade.UI {
                         Destroy(rightCharacter.gameObject);
                         rightCharacter = null;
                     }));
+                } else if(right.Mode == DialogueData.CharacterMode.Animation) {
+                    if(rightCharacter == null) {
+                        throw new Exception("No right character exists to play animation");
+                    }
+
+                    rightCharacter.PlayAnimation(right.Animation);
                 }
 
                 if(tasks.Count > 0)

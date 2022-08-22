@@ -232,9 +232,27 @@ namespace B409.Jade.Data {
                 get {
                     switch(this.sequenceSort) {
                     case SequenceSort.Script:
-                        string left = leftCharacter.Mode == CharacterMode.None ? "-" : leftCharacter.Mode == CharacterMode.Appear ? string.Format("Appear {0}", leftCharacter.Target ? leftCharacter.Target.name : "-") : "Disappear";
+                        string left = "-";
+                        if(leftCharacter.Mode == CharacterMode.Appear) {
+                            left = string.Format("Appear {0}", leftCharacter.Target ? leftCharacter.Target.name : "-");
+                        }
+                        if(leftCharacter.Mode == CharacterMode.Disappear) {
+                            left = "Disappear";
+                        }
+                        if(leftCharacter.Mode == CharacterMode.Animation) {
+                            left = string.Format("Animation {0}", leftCharacter.Animation);
+                        }
 
-                        string right = rightCharacter.Mode == CharacterMode.None ? "-" : rightCharacter.Mode == CharacterMode.Appear ? string.Format("Appear {0}", rightCharacter.Target ? rightCharacter.Target.name : "-") : "Disappear";
+                        string right = "-";
+                        if(rightCharacter.Mode == CharacterMode.Appear) {
+                            right = string.Format("Appear {0}", rightCharacter.Target ? rightCharacter.Target.name : "-");
+                        }
+                        if(rightCharacter.Mode == CharacterMode.Disappear) {
+                            right = "Disappear";
+                        }
+                        if(rightCharacter.Mode == CharacterMode.Animation) {
+                            right = string.Format("Animation {0}", rightCharacter.Animation);
+                        }
 
                         return string.Format("{0} / {1} : {2} / {3}", left, scriptInfo.Name, scriptInfo.Script, right);
                     case SequenceSort.Effect:
@@ -268,6 +286,7 @@ namespace B409.Jade.Data {
             [HideLabel]
             [SerializeField]
             private CharacterMode mode;
+
             [ShowIf("@this.mode==CharacterMode.Appear")]
             [BoxGroup("Target")]
             [HideLabel]
@@ -276,8 +295,15 @@ namespace B409.Jade.Data {
             [SerializeField]
             private DialogueCharacter target;
 
+            [ShowIf("@this.mode==CharacterMode.Animation")]
+            [BoxGroup("Animation")]
+            [HideLabel]
+            [SerializeField]
+            private string animation;
+
             public CharacterMode Mode => mode;
             public DialogueCharacter Target => target;
+            public string Animation => animation;
         }
 
         [System.Serializable]
@@ -358,7 +384,7 @@ namespace B409.Jade.Data {
 
         public enum ScriptFocus : int { Left, Right, None };
         public enum SequenceSort : int { Script, Effect, Control, Object, Reward };
-        public enum CharacterMode : int { None, Appear, Disappear };
+        public enum CharacterMode : int { None, Appear, Disappear, Animation };
         #endregion
 
     }
