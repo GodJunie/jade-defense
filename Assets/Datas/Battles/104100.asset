@@ -13,7 +13,14 @@ MonoBehaviour:
   m_Name: 104100
   m_EditorClassIdentifier: 
   id: 104100
-  enemies: []
+  background: {fileID: 0}
+  enemies:
+  - {fileID: 11400000, guid: d72c4feb8b7e41245a51a5955472ec1b, type: 2}
+  - {fileID: 11400000, guid: d72c4feb8b7e41245a51a5955472ec1b, type: 2}
+  - {fileID: 11400000, guid: d72c4feb8b7e41245a51a5955472ec1b, type: 2}
+  - {fileID: 11400000, guid: d72c4feb8b7e41245a51a5955472ec1b, type: 2}
+  - {fileID: 11400000, guid: f1deecc0b58e052478c8eb8c9ff97db7, type: 2}
+  - {fileID: 11400000, guid: f1deecc0b58e052478c8eb8c9ff97db7, type: 2}
   rewards:
   - item: {fileID: 11400000, guid: d589c2021da9fa54fa47f26611edba9c, type: 2}
     count: 100

@@ -20,7 +20,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b36a9b18a41a71d4b9a717199b384727, type: 2}
   - {fileID: 11400000, guid: 10b128b396c62dd48b75a311dd39e92c, type: 2}
   - {fileID: 11400000, guid: 10b128b396c62dd48b75a311dd39e92c, type: 2}
-  - {fileID: 11400000, guid: 10b128b396c62dd48b75a311dd39e92c, type: 2}
   rewards:
   - item: {fileID: 11400000, guid: d589c2021da9fa54fa47f26611edba9c, type: 2}
     count: 100
+  - item: {fileID: 11400000, guid: 4d650708846712c439d76e00bdab76a6, type: 2}
+    count: 2
+  - item: {fileID: 11400000, guid: 3b7f714761727d54cb44def06d47cbe1, type: 2}
+    count: 2
+  - item: {fileID: 11400000, guid: cc3dd6c5bbb67c34dab31070659567ab, type: 2}
+    count: 2
+  - item: {fileID: 11400000, guid: a914fdd14479d664da1107774fac53b1, type: 2}
+    count: 2
+  - item: {fileID: 11400000, guid: 60f8ec9a060303f4fb8b5fae244ac2fa, type: 2}
+    count: 2

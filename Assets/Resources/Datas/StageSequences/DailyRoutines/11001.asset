@@ -25,7 +25,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e3a1de9e950c96842ae357f51f791e2c, type: 2}
   - {fileID: 11400000, guid: 745b47de337ba0a47b078958757b891a, type: 2}
   - {fileID: 11400000, guid: 389ecefaf3ab10048b67bfd12c5b9988, type: 2}
-  salesCount: 0
+  salesCount: 10
   trades:
   - sale: {fileID: 11400000, guid: 1cad6710dcf223e468247eb06cf52ce3, type: 2}
     rate: 0.6
