@@ -14,11 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 100000
   enemies:
-  - {fileID: 11400000, guid: d41e035a571d27e4f8da6b51b1c3c54c, type: 2}
-  - {fileID: 11400000, guid: d41e035a571d27e4f8da6b51b1c3c54c, type: 2}
-  - {fileID: 11400000, guid: d41e035a571d27e4f8da6b51b1c3c54c, type: 2}
-  - {fileID: 11400000, guid: 350d7d0f69843694fa96097267a25a2d, type: 2}
-  - {fileID: 11400000, guid: 350d7d0f69843694fa96097267a25a2d, type: 2}
+  - {fileID: 11400000, guid: 713179d43f51b234480c5b0001e6aef0, type: 2}
+  - {fileID: 11400000, guid: 713179d43f51b234480c5b0001e6aef0, type: 2}
   rewards:
   - item: {fileID: 11400000, guid: d589c2021da9fa54fa47f26611edba9c, type: 2}
     count: 100

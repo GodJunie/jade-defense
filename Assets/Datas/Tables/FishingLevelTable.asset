@@ -18,9 +18,9 @@ MonoBehaviour:
     - parameter: 1
       value: 0
     - parameter: 3
-      value: 0
+      value: 3
     - parameter: 4
-      value: 0
+      value: 6
     rewardParameters:
     - parameter: 1
       value: 1

@@ -14,19 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 101100
   enemies:
-  - {fileID: 11400000, guid: d104538bfcd007d48be7deb434e75b3a, type: 2}
-  - {fileID: 11400000, guid: d104538bfcd007d48be7deb434e75b3a, type: 2}
-  - {fileID: 11400000, guid: 350d7d0f69843694fa96097267a25a2d, type: 2}
-  - {fileID: 11400000, guid: d41e035a571d27e4f8da6b51b1c3c54c, type: 2}
-  - {fileID: 11400000, guid: 350d7d0f69843694fa96097267a25a2d, type: 2}
-  - {fileID: 11400000, guid: d41e035a571d27e4f8da6b51b1c3c54c, type: 2}
+  - {fileID: 11400000, guid: c32da3a657706c745891d177e2c39373, type: 2}
+  - {fileID: 11400000, guid: c32da3a657706c745891d177e2c39373, type: 2}
+  - {fileID: 11400000, guid: c32da3a657706c745891d177e2c39373, type: 2}
+  - {fileID: 11400000, guid: 76a26212356604847b069b0418c6b577, type: 2}
+  - {fileID: 11400000, guid: 76a26212356604847b069b0418c6b577, type: 2}
+  - {fileID: 11400000, guid: 76a26212356604847b069b0418c6b577, type: 2}
   rewards:
   - item: {fileID: 11400000, guid: d589c2021da9fa54fa47f26611edba9c, type: 2}
     count: 100
   - item: {fileID: 11400000, guid: a914fdd14479d664da1107774fac53b1, type: 2}
     count: 1
   - item: {fileID: 11400000, guid: b50855268140af34ea17af25299b95ac, type: 2}
-    count: 1
+    count: 3
   - item: {fileID: 11400000, guid: 2e12f2250b6f33944bf7f0282f2480d7, type: 2}
     count: 2
   - item: {fileID: 11400000, guid: 75629c7a660287c42859f2a90cf401ea, type: 2}
