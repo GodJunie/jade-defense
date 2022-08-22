@@ -14,7 +14,7 @@ namespace B409.Jade.UI {
 
         private Dictionary<string, UniTaskCompletionSource> sources = new Dictionary<string, UniTaskCompletionSource>();
 
-        public async UniTask EventStart(string id) {
+        public async UniTask WaitEvent(string id) {
             var info = this.eventList.Find(e => e.Id == id);
 
             if(info == null) {
@@ -31,6 +31,11 @@ namespace B409.Jade.UI {
                 throw new Exception(string.Format("There is no completion source, id: {0}", id));
             }
             sources[id].TrySetResult();
+        }
+
+        public void EventStart(string id) {
+            var info = this.eventList.Find(e => e.Id == id);
+            info.OnEventStart.Invoke();
         }
 
         [Serializable]

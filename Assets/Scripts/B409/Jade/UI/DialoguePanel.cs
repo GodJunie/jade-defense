@@ -207,7 +207,7 @@ namespace B409.Jade.UI {
                     if(chatOn) {
                         await FadeOutChat();
                     }
-                    await this.eventObject.EventStart(sequence.EventId);
+                    await this.eventObject.WaitEvent(sequence.EventId);
                     await WaitClick(defaultWaitDuration);
                 }
                 return;

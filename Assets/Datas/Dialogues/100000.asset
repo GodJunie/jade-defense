@@ -27,7 +27,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    eventObject: {fileID: 3235318025869141745, guid: d33cf04e36b224f4d84e4818bf24765b, type: 3}
+    eventObject: {fileID: 7404484002836396859, guid: d33cf04e36b224f4d84e4818bf24765b, type: 3}
     eventId: 
   - sequenceSort: 0
     leftCharacter:
