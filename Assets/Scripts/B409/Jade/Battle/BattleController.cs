@@ -204,12 +204,13 @@ namespace B409.Jade.Battle {
                 var stage = GameManager.Instance.CurrentStage;
                 var stageSequence = GameManager.Instance.CurrentStageSequence;
 
-                Instantiate(stage.InGameBackground);
-
                 if(!(stageSequence is DailyRoutineData)) {
                     return;
                 }
+
                 this.data = (stageSequence as DailyRoutineData).Battle;
+
+                Instantiate(this.data.Background);
             }
 
             this.enemyDatas = data.Enemies;

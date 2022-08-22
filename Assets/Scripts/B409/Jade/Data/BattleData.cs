@@ -10,6 +10,11 @@ namespace B409.Jade.Data {
         [HideLabel]
         [SerializeField]
         private int id;
+        [BoxGroup("Background")]
+        [HideLabel]
+        [PreviewField(Alignment = ObjectFieldAlignment.Center, Height = 100f)]
+        [SerializeField]
+        private GameObject background;
         [HorizontalGroup("group", .5f)]
         [ListDrawerSettings(Expanded = true, AddCopiesLastElement = true)]
         [SerializeField]
@@ -20,6 +25,7 @@ namespace B409.Jade.Data {
         private List<MaterialData> rewards;
 
         public int Id => id;
+        public GameObject Background => background;
         public List<UnitData> Enemies => enemies;
         public List<MaterialData> Rewards => rewards;
     }

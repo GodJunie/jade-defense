@@ -204,9 +204,13 @@ namespace B409.Jade.UI {
                 }
 
                 if(script.Script != "") {
-                    leftCharacter?.SetFocus(script.ScriptFocus == DialogueData.ScriptFocus.Left);
-                    rightCharacter?.SetFocus(script.ScriptFocus == DialogueData.ScriptFocus.Right);
-                    
+                    if(leftCharacter != null) {
+                        leftCharacter.SetFocus(script.ScriptFocus == DialogueData.ScriptFocus.Left);
+                    }
+                    if(rightCharacter != null) {
+                        rightCharacter.SetFocus(script.ScriptFocus == DialogueData.ScriptFocus.Right);
+                    }
+
                     await PlayScript(script.Script, script.Speed, script.Skippable);
                     await WaitClick(defaultWaitDuration);
                 }

@@ -75,6 +75,7 @@ namespace B409.Jade.UI {
                 graphic.color = originColor.Lerp(color, i / duration);
             }
             graphic.color = color;
+            return;
         }
 
         public async UniTask FadeOut(float duration = 0.5f) {

@@ -32,3 +32,23 @@ MonoBehaviour:
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+  - sequenceSort: 4
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards:
+    - data: {fileID: 11400000, guid: ccc71a76c1fd38a4b9369afb23050518, type: 2}
+      count: 20
