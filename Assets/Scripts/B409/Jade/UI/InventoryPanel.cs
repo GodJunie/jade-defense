@@ -49,6 +49,10 @@ namespace B409.Jade.UI {
                 Debug.Log(string.Format("id: {0}, count: {1}", id, count));
 
                 var data = DataManager.Instance.Items.Find(e => e.Id == id);
+
+                if(!data.Inventory)
+                    continue;
+
                 var slot = Instantiate(slotPrefab, this.container);
 
                 slot.Init(data, count,

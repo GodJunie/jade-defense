@@ -13,12 +13,9 @@ MonoBehaviour:
   m_Name: 10000
   m_EditorClassIdentifier: 
   id: 10000
-  scripts:
-  - Let's get some eggs and feed teratomas.
-  - I can get it  from livestocks.
+  scripts: []
   day: 1
-  monsters:
-  - {fileID: 11400000, guid: 1cad6710dcf223e468247eb06cf52ce3, type: 2}
+  monsters: []
   salesCount: 0
   trades: []
   battle: {fileID: 11400000, guid: f5c347bac3f42f346bfee0ddfabbba8d, type: 2}

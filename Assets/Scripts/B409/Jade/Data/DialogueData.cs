@@ -161,18 +161,25 @@ namespace B409.Jade.Data {
             [SerializeField]
             private string eventId;
 
+            [HorizontalGroup("box/group")]
+            [ShowIfGroup("box/group/ShowReward")]
+            [BoxGroup("box/group/ShowReward/Rewards")]
+            [SerializeField]
+            private List<RewardInfo> rewards;
+
             public CharacterInfo LeftCharacter => leftCharacter;
             public ScriptInfo ScriptInfo => scriptInfo;
             public CharacterInfo RightCharacter => rightCharacter;
             public SequenceSort SequenceSort => sequenceSort;
             public DialogueEvent EventObject => eventObject;
             public string EventId => eventId;
-      
+            public List<RewardInfo> Rewards => rewards;
 
             public DialogueSequenceData() {
                 this.leftCharacter = new CharacterInfo();
                 this.rightCharacter = new CharacterInfo();
                 this.scriptInfo = new ScriptInfo();
+                this.rewards = new List<RewardInfo>();
             }
 
 #if UNITY_EDITOR
@@ -215,6 +222,12 @@ namespace B409.Jade.Data {
                 }
             }
 
+            private bool ShowReward {
+                get {
+                    return sequenceSort == SequenceSort.Reward;
+                }
+            }
+
             private string Summary {
                 get {
                     switch(this.sequenceSort) {
@@ -234,6 +247,12 @@ namespace B409.Jade.Data {
                             return string.Format("Play Event Id: {0}", eventId);
                         }
                         return "";
+                    case SequenceSort.Reward:
+                        string str = "Rewards";
+                        foreach(var reward in this.rewards) {
+                            str += string.Format("/id: {0}, count: {1}", (reward.Data as IDataID).Id, reward.Count);
+                        }
+                        return str;
                     default:
                         return "";
                     }
@@ -320,8 +339,25 @@ namespace B409.Jade.Data {
             public ScriptFocus ScriptFocus => scriptFocus;
         }
 
+        [System.Serializable]
+        public class RewardInfo {
+            [HorizontalGroup("group", .5f)]
+            [BoxGroup("group/Data")]
+            [HideLabel]
+            [SerializeField]
+            private ScriptableObject data;
+            [HorizontalGroup("group", .5f)]
+            [BoxGroup("group/Count")]
+            [HideLabel]
+            [SerializeField]
+            private int count;
+
+            public ScriptableObject Data => data;
+            public int Count => count;
+        }
+
         public enum ScriptFocus : int { Left, Right, None };
-        public enum SequenceSort : int { Script, Effect, Control, Object };
+        public enum SequenceSort : int { Script, Effect, Control, Object, Reward };
         public enum CharacterMode : int { None, Appear, Disappear };
         #endregion
 

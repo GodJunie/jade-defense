@@ -27,6 +27,14 @@ namespace B409.Jade.Data {
         [HideLabel]
         [SerializeField]
         private int sellPrice;
+        [BoxGroup("group/Price/CanSell")]
+        [HideLabel]
+        [SerializeField]
+        private bool canSell = true;
+        [BoxGroup("group/Price/Inventory")]
+        [HideLabel]
+        [SerializeField]
+        private bool inventory = true;
 
         [VerticalGroup("group/group")]
         [BoxGroup("group/group/ID")]
@@ -52,6 +60,8 @@ namespace B409.Jade.Data {
         public string Descriptoin => description;
         public int BuyPrice => buyPrice;
         public int SellPrice => sellPrice;
+        public bool CanSell => canSell;
+        public bool Inventory => inventory;
         public Sprite Icon => icon;
     }
 }

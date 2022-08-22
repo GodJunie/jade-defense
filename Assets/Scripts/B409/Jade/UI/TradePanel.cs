@@ -238,10 +238,14 @@ namespace B409.Jade.UI {
                 int id = pair.Key;
                 int count = pair.Value;
 
+                var item = DataManager.Instance.Items.Find(e => e.Id == id);
+
+                if(!item.CanSell)
+                    continue;
+
                 var gridSlot = GetSellGridSlot();
                 var listSlot = GetSellListSlot();
 
-                var item = DataManager.Instance.Items.Find(e => e.Id == id);
 
                 gridSlot.Init(item, count, sellGridScrollRect, () => {
                     ShowInfo(item, false);

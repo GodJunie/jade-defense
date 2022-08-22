@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: 400001
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 29a51de44e39bcb40a0a2c2c81bf86fd, type: 3}
+  buyPrice: 0
+  sellPrice: 0
+  canSell: 0
+  inventory: 0
   id: 400001
   name: Soul
   description: Soul

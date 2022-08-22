@@ -214,6 +214,18 @@ namespace B409.Jade.UI {
             case DialogueData.SequenceSort.Effect:
 
                 return;
+            case DialogueData.SequenceSort.Reward:
+                foreach(var reward in sequence.Rewards) {
+                    var data = reward.Data;
+                    if(data is ItemData) {
+                        GameManager.Instance.Progress.AddItem((data as ItemData).Id, reward.Count);
+                    } else if(data is MonsterData) {
+                        GameManager.Instance.Progress.AddMonster((data as MonsterData).Id, reward.Count);
+                    } else {
+                        throw new Exception(string.Format("Data is not item neither monster, name: {0}", data.name));
+                    }
+                }
+                return;
             default:
                 return;
             }

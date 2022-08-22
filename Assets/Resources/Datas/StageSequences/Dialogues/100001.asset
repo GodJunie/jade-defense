@@ -29,6 +29,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 6564596975694186928, guid: 824c41c08d1984d469940bf8760e6cfa, type: 3}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 1
@@ -44,6 +45,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -59,6 +61,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -75,6 +78,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -90,6 +94,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -105,6 +110,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -121,6 +127,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -136,6 +143,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -151,6 +159,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -166,6 +175,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -181,6 +191,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -196,6 +207,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 3
     leftCharacter:
       mode: 0
@@ -211,6 +223,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: JadeMeetTeratoma
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -226,6 +239,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -241,6 +255,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -256,6 +271,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -271,6 +287,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -286,6 +303,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -301,6 +319,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -316,6 +335,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -331,6 +351,7 @@ MonoBehaviour:
       target: {fileID: 3328306218506788300, guid: 35d34e101090e0841987577c42cdb56e, type: 3}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -346,6 +367,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -361,6 +383,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -376,6 +399,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -392,6 +416,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -407,6 +432,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -422,6 +448,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -438,6 +465,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -453,6 +481,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -468,6 +497,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -483,6 +513,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -498,6 +529,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -513,6 +545,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -529,6 +562,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -544,6 +578,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -559,6 +594,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -574,6 +610,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -589,6 +626,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -604,6 +642,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -619,6 +658,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -634,6 +674,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -649,6 +690,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -664,6 +706,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -679,6 +722,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 3
     leftCharacter:
       mode: 0
@@ -694,6 +738,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: SoldiersAppear
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -709,6 +754,7 @@ MonoBehaviour:
       target: {fileID: 3092187786161246119, guid: 866002d16a418ab4f827e2b01d0ded80, type: 3}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -724,6 +770,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -739,6 +786,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -754,6 +802,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -769,6 +818,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -784,6 +834,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -799,6 +850,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -814,6 +866,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -829,6 +882,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -845,6 +899,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -860,6 +915,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -875,6 +931,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -891,6 +948,7 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -906,3 +964,28 @@ MonoBehaviour:
       target: {fileID: 0}
     eventObject: {fileID: 0}
     eventId: 
+    rewards: []
+  - sequenceSort: 4
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards:
+    - data: {fileID: 11400000, guid: 1cad6710dcf223e468247eb06cf52ce3, type: 2}
+      count: 1
+    - data: {fileID: 11400000, guid: 491f1df46333f624aa1a277005fa32fb, type: 2}
+      count: 1
+    - data: {fileID: 11400000, guid: a605c21ceaae03140ae802af7a8f4cb3, type: 2}
+      count: 1
+    - data: {fileID: 11400000, guid: e40133b6b8960dd46a67a48c41659fcd, type: 2}
+      count: 1

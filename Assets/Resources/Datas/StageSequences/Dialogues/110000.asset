@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2627f94fa25ca224ea51af9d22f883eb, type: 3}
-  m_Name: 100000
+  m_Name: 110000
   m_EditorClassIdentifier: 
-  id: 100000
+  id: 110000
   datas:
   - sequenceSort: 3
     leftCharacter:
@@ -27,33 +27,81 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
-    eventObject: {fileID: 7404484002836396859, guid: d33cf04e36b224f4d84e4818bf24765b, type: 3}
+    eventObject: {fileID: 347132507861169201, guid: 309dcc84549f9bc408cfcc483b5cc391, type: 3}
     eventId: 
     rewards: []
   - sequenceSort: 0
     leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 2
-      name: ???
-      script: "ir\u2026 Sir! can you hear me?"
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
+      mode: 1
       target: {fileID: 6118293056195659511, guid: 5a5e49bbaef00974897a66d5dfd36f2e, type: 3}
     scriptInfo:
-      scriptFocus: 2
+      scriptFocus: 0
       name: Jade
-      script: "Um\u2026 What am I doing here?\r"
+      script: Good morning, Ladies and Gentlemen!
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 1
+      target: {fileID: 3328306218506788300, guid: 35d34e101090e0841987577c42cdb56e, type: 3}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: "Mighty strong morning, what should we do now?\r"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 1
+      name: Teratomas
+      script: Jade. Jade?
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 1
+      name: 
+      script: Jade! Jade!
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 0
+      name: Jade
+      script: "I\u2019m an idiot for asking them \u2018questions\u2019..."
       speed: 20
       skippable: 1
     rightCharacter:
@@ -68,8 +116,8 @@ MonoBehaviour:
       target: {fileID: 0}
     scriptInfo:
       scriptFocus: 2
-      name: Jade
-      script: "I can move my\u2026 arms. legs are good too."
+      name: 
+      script: I am Jade. A thief from Midgard.
       speed: 20
       skippable: 1
     rightCharacter:
@@ -84,9 +132,106 @@ MonoBehaviour:
       target: {fileID: 0}
     scriptInfo:
       scriptFocus: 2
-      name: Jade
-      script: "My name is Jade. I used to \u2018work\u2019 at Asgard\u2026 and at
-        the high cliff of Asgard\u2026"
+      name: 
+      script: "No, to be precise, I\u2019m not just a thief."
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: <b>I am the grand master thief Jade who steals the jewels of Asgardian
+        gods!</b>
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: If you say this out loud in the Adventurer's Guild of Midgard or in
+        a bar...
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: "Soldiers will be dispatched immediately to arrest me\u2026"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: "\u2026will never happen.\r"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: "never.\r"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: Who would believe such nonsense?
       speed: 20
       skippable: 1
     rightCharacter:
@@ -109,164 +254,17 @@ MonoBehaviour:
       mode: 0
       target: {fileID: 0}
     eventObject: {fileID: 0}
-    eventId: OpenEye
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 1
-      target: {fileID: 6118293056195659511, guid: 5a5e49bbaef00974897a66d5dfd36f2e, type: 3}
-    scriptInfo:
-      scriptFocus: 1
-      name: ???
-      script: "Don\u2019t move! you might be had a damage at head or spine"
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 1
-      target: {fileID: 2025944677643304210, guid: 20e7660994961d2499df1f27d66a4811, type: 3}
-    eventObject: {fileID: 0}
-    eventId: 
+    eventId: OpenMap
     rewards: []
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
-      scriptFocus: 0
-      name: Jade
-      script: "Um, nope, I think I\u2019m alright. I can see clearly, and I can listen
-        to everything. My legs and arms are good too."
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 0
-      name: Jade
-      script: But, where am I?
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: ???
-      script: "Here\u2019s Midgard Sir. I spotted you during an air patrol mission,
-        so I protected you."
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: ???
-      script: "If I missed you, I don\u2019t even want to think about it. you\u2019re
-        falling faster than hunting falcons."
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 0
-      name: Jade
-      script: "Okay, I owe you big\u2026 really appreciate it."
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 0
+      scriptFocus: 2
       name: 
-      script: "I have no issues so I\u2019m leaving now"
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 0
-      name: 
-      script: "Thank you again, Tha\u2026"
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: ???
-      script: No! if you damage your head it could be dangerous! I will do some medical
-        check for you, hang on.
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 0
-      name: Jade
-      script: "Haha, thank you! you don\u2019t need to do this though."
+      script: To get from Midgard to Asgard, you have to cross the Bifrost, a rainbow
+        bridge built by the gods.
       speed: 20
       skippable: 1
     rightCharacter:
@@ -282,8 +280,9 @@ MonoBehaviour:
     scriptInfo:
       scriptFocus: 2
       name: 
-      script: "These fancy armors and bright white wings, I\u2019m not sure but if
-        she\u2019s the Valkyrie of Asgard? if she knows what I have done at Asgard?"
+      script: "Of course, I can\u2019t cross that bridge. You can't just go to Asgard
+        just because you want to go unless you are a hero with a strong will and
+        excellent abilities.\r"
       speed: 20
       skippable: 1
     rightCharacter:
@@ -299,153 +298,7 @@ MonoBehaviour:
     scriptInfo:
       scriptFocus: 2
       name: 
-      script: "I\u2019m literally dead!"
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: Valkyrie
-      script: First of all, could you look my eyes strictly please?
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: 
-      script: Seems good, next is move your fingers please.
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: 
-      script: Any double vision or blurry views?
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 0
-      name: Jade
-      script: "I\u2019m totally good. I can see and can hear. um\u2026 and there\u2019s
-        no hurt because of you.\r\nHow do I address you? Are you good with Valkyrie?\r"
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: Valkyrie
-      script: Of course! Please call me whatever you want.
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: 
-      script: According to the diagnosis, you seem really fine. I can relive now!
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: 
-      script: Literally, you falled from that place.
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: 
-      script: "What happened to you? Why did you fall from Asgard? It seems almighty
-        god gives you a tough test.\r"
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 2
-      name: Jade
-      script: "She thinks I\u2019m the chosen warrior of the god?"
+      script: "I\u2019m not such a hero."
       speed: 20
       skippable: 1
     rightCharacter:
@@ -461,8 +314,7 @@ MonoBehaviour:
     scriptInfo:
       scriptFocus: 2
       name: 
-      script: Well, falling from Asgard to Midgard directly seems like a really tough
-        test to the warrior.
+      script: "I don't think I can be a hero, and I don't want to be.\r"
       speed: 20
       skippable: 1
     rightCharacter:
@@ -478,7 +330,8 @@ MonoBehaviour:
     scriptInfo:
       scriptFocus: 2
       name: 
-      script: "Good chance, let\u2019s bluff and get out of here!"
+      script: Someone who wants to kill himself and be a noble savior will take the
+        risk.
       speed: 20
       skippable: 1
     rightCharacter:
@@ -492,139 +345,10 @@ MonoBehaviour:
       mode: 0
       target: {fileID: 0}
     scriptInfo:
-      scriptFocus: 0
+      scriptFocus: 2
       name: 
-      script: Well, kind of. I made a little mistake, but this test is also calling
-        of fate and the blessing of god.
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: Valkyrie
-      script: "The calling of the fate and blessing of god\u2026"
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: 
-      script: It could be.
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: 
-      script: Maybe fate bound us.
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 0
-      name: Jade
-      script: "Anyways I\u2019m leaving now! No time to lose anymore. Thank you Valkyrie!"
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: Valkyrie
-      script: Wait hold on Sir! Here is way far from Midgard's downton.
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: 
-      script: "Recently, there\u2019re lots of cases of increased monsters so you
-        have to prepare"
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 0
-      name: Jade
-      script: "Oh, I didn\u2019t notice that. Now I have no decent sword."
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: Valkyrie
-      script: I can take care of it! take this!
+      script: After a thousand people or so become the sacrifice offering, wouldn't
+        at least one of them become a true hero?
       speed: 20
       skippable: 1
     rightCharacter:
@@ -647,120 +371,7 @@ MonoBehaviour:
       mode: 0
       target: {fileID: 0}
     eventObject: {fileID: 0}
-    eventId: GiveStone
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: Valkyrie
-      script: "This is \u2018Stone of Communication\u2019."
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: 
-      script: Treasure for Peace between noncommunicable tribes.
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: 
-      script: If you hold this stone but meet monsters, you can see the effect immediately.
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: 
-      script: Then, I hope you have an adventure that answers the higher calling
-        and finally meets what you want.
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 0
-      name: Jade
-      script: Sure! I will!
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: Valkyrie
-      script: Oh, before you leave, could you please let me know your name?
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: 
-      script: My apologies.
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
+    eventId: CloseMap
     rewards: []
   - sequenceSort: 0
     leftCharacter:
@@ -769,7 +380,7 @@ MonoBehaviour:
     scriptInfo:
       scriptFocus: 2
       name: Jade
-      script: Is it okay to share my name with her?
+      script: Anyway, Asgard is not a place for thieves like me.
       speed: 20
       skippable: 1
     rightCharacter:
@@ -785,24 +396,7 @@ MonoBehaviour:
     scriptInfo:
       scriptFocus: 2
       name: 
-      script: Yeah, anyways after she returns to Asgard, she will know what I have
-        done so whatever.
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 0
-      name: 
-      script: My name is Jade. then goodbye!
+      script: But I could actually steal a lot of stuff from Asgard.
       speed: 20
       skippable: 1
     rightCharacter:
@@ -818,7 +412,8 @@ MonoBehaviour:
     scriptInfo:
       scriptFocus: 2
       name: 
-      script: "Wooooo! I\u2019m free now!"
+      script: "The reason why I could be a \u2018grand master thief that steals the
+        jewels of Asgardian gods\u2019,"
       speed: 20
       skippable: 1
     rightCharacter:
@@ -834,8 +429,7 @@ MonoBehaviour:
     scriptInfo:
       scriptFocus: 2
       name: 
-      script: the stone of communication? I have no idea about this but I can get
-        some coins if I sell this at the black market.
+      script: was an egg.
       speed: 20
       skippable: 1
     rightCharacter:
@@ -844,23 +438,7 @@ MonoBehaviour:
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: Valkyrie
-      script: Please take care of yourself Jade!
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 4
+  - sequenceSort: 3
     leftCharacter:
       mode: 0
       target: {fileID: 0}
@@ -874,7 +452,331 @@ MonoBehaviour:
       mode: 0
       target: {fileID: 0}
     eventObject: {fileID: 0}
+    eventId: ShowEgg
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: Jade
+      script: "No joke.\r"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
     eventId: 
-    rewards:
-    - data: {fileID: 11400000, guid: ab5f37ce90c619c40b15776ea32d5255, type: 2}
-      count: 1
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: The desperate efforts to get the eggs led me to Asgard.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: Well, it doesn't matter now.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: "Not to mention Asgard, I\u2019m roaming the outskirts of Midgard with
+        nothing to steal."
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: Let's focus on the issue of survival right before me.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 3
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: Imagine
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: Jade
+      script: Recently, I felt strange vibrations in and around Yggdrasil.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: No one knows whether it was a simple shaking, the aftermath of an earthquake,
+        or a harbinger of doom.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: What is certain is that the number of monsters has increased in various
+        places since the vibration.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: That's why Midgard's army regularly patrols the outskirts where I am
+        now.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: The most dangerous threat is this patrol force.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: I actually met them a while ago.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: Fortunately, I have a group of Teratomas who are very loyal to me.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: If I gather more Teratomas strong enough to fight against the patrol
+        force and win with certainty, I will be able to keep myself safe and sound.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: Hey Guys! Let's gather more Teratoma allies to create the strongest
+        monster army!
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 1
+      name: Teratomas
+      script: Jade? Jade? Jade?
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 1
+      name: 
+      script: Jade! Jade? Jade!
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 1
+      name: 
+      script: Jade! Jade? Jade! Jade?
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 0
+      name: Jade
+      script: Uh oh, stop it, stop it.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: "I feel like I\u2019m getting more and more stupid.\r"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
