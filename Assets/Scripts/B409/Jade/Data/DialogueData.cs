@@ -268,7 +268,8 @@ namespace B409.Jade.Data {
                     case SequenceSort.Reward:
                         string str = "Rewards";
                         foreach(var reward in this.rewards) {
-                            str += string.Format("/id: {0}, count: {1}", (reward.Data as IDataID).Id, reward.Count);
+                            if(reward.Data != null && reward.Data is IDataID)
+                                str += string.Format("/id: {0}, count: {1}", (reward.Data as IDataID).Id, reward.Count);
                         }
                         return str;
                     default:

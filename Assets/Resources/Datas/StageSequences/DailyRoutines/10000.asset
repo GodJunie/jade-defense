@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 10000
   scripts: []
-  day: 1
+  day: 0
   monsters: []
   salesCount: 0
   trades: []

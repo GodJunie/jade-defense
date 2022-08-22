@@ -203,7 +203,12 @@ namespace B409.Jade.Game {
                 if(Progress.DDay > 0) {
                     LoadMainScene();
                 } else {
-                    LoadBattleScene();
+                    if((CurrentStageSequence as DailyRoutineData).Battle == null) {
+                        StageSequenceEnd();
+                        return;
+                    } else {
+                        LoadBattleScene();
+                    }
                 }
             } else if(CurrentStageSequence is DialogueData) {
                 // dialogue

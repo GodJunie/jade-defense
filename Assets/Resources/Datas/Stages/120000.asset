@@ -18,32 +18,11 @@ MonoBehaviour:
   name: "2\uC2A4\uD14C\uC774\uC9C0"
   description: "2\uC2A4\uD14C\uC774\uC9C0"
   datas:
-  - day: 5
-    monsters:
-    - {fileID: 11400000, guid: 4e6cefaa1b5245f4fa08ad1658cd82c1, type: 2}
-    - {fileID: 11400000, guid: 36eaecf7e1d25524ba4f5966d5482448, type: 2}
-    - {fileID: 11400000, guid: 55f463958283f76429b5b9ebbc433ee0, type: 2}
-    - {fileID: 11400000, guid: ee250303d84dae84daa2c986ec49767b, type: 2}
-    - {fileID: 11400000, guid: c6ad07dc9a5a6574a8d47fe68f8bed33, type: 2}
-    battle: {fileID: 11400000, guid: 794f27cdd210f704788de0956f9f6456, type: 2}
-  - day: 5
-    monsters:
-    - {fileID: 11400000, guid: 4e6cefaa1b5245f4fa08ad1658cd82c1, type: 2}
-    - {fileID: 11400000, guid: 36eaecf7e1d25524ba4f5966d5482448, type: 2}
-    - {fileID: 11400000, guid: 55f463958283f76429b5b9ebbc433ee0, type: 2}
-    - {fileID: 11400000, guid: ee250303d84dae84daa2c986ec49767b, type: 2}
-    - {fileID: 11400000, guid: c6ad07dc9a5a6574a8d47fe68f8bed33, type: 2}
-    - {fileID: 11400000, guid: fa409de59b8a09a439ad8aa28ad8a600, type: 2}
-    - {fileID: 11400000, guid: 95f5707e4eaa1dd46925e8ea3fffc5ef, type: 2}
-    battle: {fileID: 11400000, guid: 77a5f2a451ab02748ad0789e647c6d5d, type: 2}
-  - day: 5
-    monsters:
-    - {fileID: 11400000, guid: 4e6cefaa1b5245f4fa08ad1658cd82c1, type: 2}
-    - {fileID: 11400000, guid: 36eaecf7e1d25524ba4f5966d5482448, type: 2}
-    - {fileID: 11400000, guid: 55f463958283f76429b5b9ebbc433ee0, type: 2}
-    - {fileID: 11400000, guid: ee250303d84dae84daa2c986ec49767b, type: 2}
-    - {fileID: 11400000, guid: c6ad07dc9a5a6574a8d47fe68f8bed33, type: 2}
-    - {fileID: 11400000, guid: fa409de59b8a09a439ad8aa28ad8a600, type: 2}
-    - {fileID: 11400000, guid: 95f5707e4eaa1dd46925e8ea3fffc5ef, type: 2}
-    - {fileID: 11400000, guid: e65f897cbe0214748bf9a3ac95eeb848, type: 2}
-    battle: {fileID: 11400000, guid: c4d8e11e40cfce9429300d95ae1d44e0, type: 2}
+  - Dialogues/120000
+  - Dialogues/120001
+  - DailyRoutines/12000
+  - Dialogues/120002
+  - DailyRoutines/12001
+  - Dialogues/120003
+  - DailyRoutines/12002
+  - Dialogues/120004

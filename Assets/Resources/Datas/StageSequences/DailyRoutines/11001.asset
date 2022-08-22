@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1aba2187eed0b94b8e90991290df523, type: 3}
-  m_Name: 10002
+  m_Name: 11001
   m_EditorClassIdentifier: 
-  id: 10002
+  id: 11001
   scripts: []
   day: 5
   monsters:
@@ -159,4 +159,4 @@ MonoBehaviour:
     rate: 3
   - sale: {fileID: 11400000, guid: b90b0db9794ed6449a09e13ae52f10d3, type: 2}
     rate: 2
-  battle: {fileID: 11400000, guid: 16684c3df353e8148a05f0fd2a6c02e6, type: 2}
+  battle: {fileID: 11400000, guid: 61694d9dc10e1a54fb9776421a7919da, type: 2}

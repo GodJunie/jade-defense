@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2627f94fa25ca224ea51af9d22f883eb, type: 3}
+  m_Name: 130003
+  m_EditorClassIdentifier: 
+  id: 130003
+  datas:
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: Lion of dawn appear
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []

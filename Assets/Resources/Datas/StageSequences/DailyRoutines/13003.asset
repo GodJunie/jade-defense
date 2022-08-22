@@ -9,11 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ba8502080cef1545bee096c10b79d8f, type: 3}
-  m_Name: 104100
+  m_Script: {fileID: 11500000, guid: f1aba2187eed0b94b8e90991290df523, type: 3}
+  m_Name: 13003
   m_EditorClassIdentifier: 
-  id: 104100
-  enemies: []
-  rewards:
-  - item: {fileID: 11400000, guid: d589c2021da9fa54fa47f26611edba9c, type: 2}
-    count: 100
+  id: 13003
+  scripts: []
+  day: 1
+  monsters: []
+  salesCount: 0
+  trades: []
+  battle: {fileID: 0}

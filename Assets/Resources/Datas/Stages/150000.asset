@@ -17,4 +17,5 @@ MonoBehaviour:
   inGameBackground: {fileID: 1461120247514626, guid: 75a0984438b817e449723840e2d04c55, type: 3}
   name: "5\uC2A4\uD14C\uC774\uC9C0"
   description: "5\uC2A4\uD14C\uC774\uC9C0"
-  datas: []
+  datas:
+  - 
