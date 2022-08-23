@@ -150,4 +150,7 @@ MonoBehaviour:
     rate: 3
   - sale: {fileID: 11400000, guid: b90b0db9794ed6449a09e13ae52f10d3, type: 2}
     rate: 2
+  enemies:
+  - enemy: {fileID: 11400000, guid: 574d3ed6253aafb4191b9f6a4e0feced, type: 2}
+    count: 1
   battle: {fileID: 11400000, guid: 9b67b221efa5d2840803dff1b3e8a4d8, type: 2}

@@ -200,8 +200,6 @@ namespace B409.Jade.Battle {
             InitCamera();
 
             if(!isTest) {
-                var progress = GameManager.Instance.Progress;
-                var stage = GameManager.Instance.CurrentStage;
                 var stageSequence = GameManager.Instance.CurrentStageSequence;
 
                 if(!(stageSequence is DailyRoutineData)) {
@@ -209,9 +207,9 @@ namespace B409.Jade.Battle {
                 }
 
                 this.data = (stageSequence as DailyRoutineData).Battle;
-
-                Instantiate(this.data.Background);
             }
+
+            Instantiate(this.data.Background);
 
             this.enemyDatas = data.Enemies;
             

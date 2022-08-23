@@ -18,4 +18,7 @@ MonoBehaviour:
   monsters: []
   salesCount: 0
   trades: []
+  enemies:
+  - enemy: {fileID: 11400000, guid: 713179d43f51b234480c5b0001e6aef0, type: 2}
+    count: 2
   battle: {fileID: 11400000, guid: f5c347bac3f42f346bfee0ddfabbba8d, type: 2}

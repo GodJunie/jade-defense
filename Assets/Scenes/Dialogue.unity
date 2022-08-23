@@ -1132,7 +1132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTest: 0
-  data: {fileID: 11400000, guid: 278e8d11244bd3c4f894ab286381fe10, type: 2}
+  data: {fileID: 0}
   textName: {fileID: 428643077}
   textScript: {fileID: 114584673}
   leftCharacterHolder: {fileID: 691370531}

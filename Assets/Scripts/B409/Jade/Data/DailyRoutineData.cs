@@ -37,6 +37,13 @@ namespace B409.Jade.Data {
         private List<TradeInfo> trades;
 
         [HorizontalGroup("group")]
+        [VerticalGroup("group/group2")]
+        [BoxGroup("group/group2/Enemies")]
+        [SerializeField]
+        private List<EnemyInfo> enemies;
+
+
+        [VerticalGroup("group/group2")]
         [InlineEditor(Expanded = true)]
         [SerializeField]
         private BattleData battle;
@@ -58,6 +65,14 @@ namespace B409.Jade.Data {
             get {
                 return trades.Sum(e => e.Rate);
             }
+        }
+
+        [BoxGroup("group/group2/Enemies")]
+        [Button("Load", Style = ButtonStyle.Box)]
+        private void LoadEnemeis() {
+            if(battle == null) return;
+
+            this.enemies = battle.Enemies.Distinct().Select(e => new EnemyInfo(e, battle.Enemies.Count(e2 => e2 == e))).ToList();
         }
 #endif
 
@@ -121,6 +136,28 @@ namespace B409.Jade.Data {
 
             public IEnumerable<Type> GetFilteredTypeList() {
                 return new List<Type>() { typeof(MonsterData), typeof(ItemData) };
+            }
+        }
+  
+        [Serializable]
+        public class EnemyInfo {
+            [HorizontalGroup("group", .5f)]
+            [BoxGroup("group/Enemy")]
+            [HideLabel]
+            [SerializeField]
+            private UnitData enemy;
+            [HorizontalGroup("group", .5f)]
+            [BoxGroup("group/Count")]
+            [HideLabel]
+            [SerializeField]
+            private int count;
+
+            public UnitData Enemy => enemy;
+            public int Count => count;
+
+            public EnemyInfo(UnitData enemy, int count) {
+                this.enemy = enemy;
+                this.count = count;
             }
         }
     }
