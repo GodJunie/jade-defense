@@ -13,4 +13,425 @@ MonoBehaviour:
   m_Name: 120011
   m_EditorClassIdentifier: 
   id: 120011
-  datas: []
+  datas:
+  - sequenceSort: 3
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 1097565751690455736, guid: c8c6a0960a5e2c844b88e2b48d9210a7, type: 3}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 1
+      target: {fileID: 6118293056195659511, guid: 5a5e49bbaef00974897a66d5dfd36f2e, type: 3}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: Jade
+      script: We are leaving soon!
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 1
+      target: {fileID: 2903410488047823891, guid: 7f1f5b54e9f84664891f2a98f26403f0, type: 3}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: "It's dark. Stick together while marching, and be careful not to bump
+        into something or sprain your ankle. \r"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: "During the march, I\u2019ll take the lead."
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: If there is a problem in the back, report it to the front in relay.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: Foxes
+      script: Got it, Jade.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: 
+      script: Let's go before the weather gets hot.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: Quite a few desert foxes decided to accompany the expedition of the
+        monster army.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 2
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: Thanks to a lot of claws.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: I wanted to gather more of them, but if there are too many foxes, another
+        problem will arise.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: Excessive greed leads to destruction.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: Dvergr's last words came to mind.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: Dvergr
+      script: Final advice before you leave.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 1
+      target: {fileID: 4905491954760329984, guid: 8d4bfe3b777741c4899ce9946ef01d64, type: 3}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: 
+      script: You have to be very careful with that thing.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: 
+      script: The reason I couldn't reveal the identity of the stone was because
+        of my lack of knowledge.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: 
+      script: "So I can't say for sure, but I can't erase the ominous and repulsive
+        feeling about the stone.\r"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: 
+      script: Every time I looked into the stone, it felt like it was talking to
+        me.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: 
+      script: "Look at me, here I am, use me as you will, and so on.\r"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 2
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: Jade
+      script: "I was greatly indebted to Mr. Dvergr. \r"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: If i have a chance to meet him again, I will give him a better gift
+        than cool water.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: Jade
+      script: "Alright. Let\u2019s go!"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 3
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: WalkOut
+    rewards: []
