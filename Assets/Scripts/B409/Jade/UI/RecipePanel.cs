@@ -110,8 +110,12 @@ namespace B409.Jade.UI {
         }
 
         public void OnConfirm() {
-            GameManager.Instance.Making(this.levelData, this.data);
-            mainScreen.Init();
+            if(GameManager.Instance.Progress.CheckAPEnough(levelData.AP)) {
+                GameManager.Instance.Making(this.levelData, this.data);
+                mainScreen.Init();
+            } else {
+                mainScreen.Log("You don't have enough AP.");
+            }
             this.infoPanel.SetActive(false);
             this.gameObject.SetActive(false);
         }

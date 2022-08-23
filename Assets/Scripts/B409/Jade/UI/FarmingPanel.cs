@@ -89,8 +89,12 @@ namespace B409.Jade.UI {
         }
 
         public void OnEnterFarm() {
-            GameManager.Instance.Farming(data);
-            mainScreen.Init();
+            if(GameManager.Instance.Progress.CheckAPEnough(data.AP)) {
+                GameManager.Instance.Farming(data);
+                mainScreen.Init();
+            } else {
+                mainScreen.Log("You don't have enough AP.");
+            }
             this.infoPanel.SetActive(false);
             this.gameObject.SetActive(false);
         }
