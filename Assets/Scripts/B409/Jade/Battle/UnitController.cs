@@ -101,7 +101,7 @@ namespace B409.Jade.Battle {
                             target.OnDamage(this.Data.Status.Atk);
                             break;
                         case AttackMode.DamageOverTime:
-                            target.OnDamageOverTime(this.Data.Status.Atk, this.Data.Status.Duration, this.Data.Status.Interval);
+                            target.OnDamageOverTime(this.Data.Status.Atk, this.Data.Status.Duration, this.Data.Status.DotCount);
                             break;
                         case AttackMode.Heal:
                             target.OnHeal(this.Data.Status.Heal);
@@ -185,7 +185,7 @@ namespace B409.Jade.Battle {
                         }
                     }
 
-                    dots = dots.Where(e => e.Duration > 0).ToList();
+                    dots = dots.Where(e => e.Count > 0).ToList();
                 }
             }
         }
@@ -260,8 +260,8 @@ namespace B409.Jade.Battle {
             this.slows.Add(new Slow(duration, slowRate));
         }
 
-        public void OnDamageOverTime(float damage, float duration, float interval) {
-            this.dots.Add(new DamageOverTime(damage, duration, interval));
+        public void OnDamageOverTime(float damage, float duration, int count) {
+            this.dots.Add(new DamageOverTime(damage, duration, count));
         }
 
         public void OnStop() {

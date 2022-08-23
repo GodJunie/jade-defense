@@ -47,6 +47,9 @@ TextureImporter:
   - first:
       213: 470934796808318134
     second: Combat_Icons_7
+  - first:
+      213: -57001667106083562
+    second: Combat_Icons_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -311,6 +314,27 @@ TextureImporter:
       bones: []
       spriteID: 6bc612cd3b8198600800000000000000
       internalID: 470934796808318134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Combat_Icons_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61d6988294d753ff0800000000000000
+      internalID: -57001667106083562
       vertices: []
       indices: 
       edges: []
