@@ -134,6 +134,12 @@ namespace B409.Jade.Game {
             this.StageSequence++;
         }
 
+        public bool CheckAPEnough(float ap) {
+            ap *= (1 - GameConsts.GetApDiscountRate(Parameters[Parameter.Strength]));
+
+            return this.AP >= ap;
+        }
+
         public void ConsumeAP(float ap) {
             ap *= (1 - GameConsts.GetApDiscountRate(Parameters[Parameter.Strength]));
             this.AP -= ap;
