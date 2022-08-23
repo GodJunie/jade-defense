@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Ancient Lizard
   prefab: {fileID: 3705831633680118671, guid: 323ad67093c9f314fb2201e664c31f72, type: 3}
   status:
-    cooltime: 5
+    cooltime: 0.1
     hp: 1700
     moveSpeed: 0
     range: 1
@@ -35,3 +35,5 @@ MonoBehaviour:
     distance: 0
     slowRate: 0
   cost: []
+  buyPrice: 0
+  sellPrice: 0

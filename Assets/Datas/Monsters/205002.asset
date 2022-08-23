@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Soul of Apprentice Wizard
   prefab: {fileID: 2610822099127862184, guid: 436343a4f42afcb42bd6d29796b691b2, type: 3}
   status:
-    cooltime: 1
+    cooltime: 3
     hp: 170
     moveSpeed: 1
     range: 1
@@ -37,3 +37,5 @@ MonoBehaviour:
   cost:
   - item: {fileID: 11400000, guid: ccc71a76c1fd38a4b9369afb23050518, type: 2}
     count: 2
+  buyPrice: 0
+  sellPrice: 0

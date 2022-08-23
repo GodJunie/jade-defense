@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Soul of Soldier
   prefab: {fileID: 9066550688050896664, guid: 7d8eb17654a009342829cd7fe856f5b0, type: 3}
   status:
-    cooltime: 1
+    cooltime: 3
     hp: 170
     moveSpeed: 1
     range: 0.3
@@ -37,3 +37,5 @@ MonoBehaviour:
   cost:
   - item: {fileID: 11400000, guid: ccc71a76c1fd38a4b9369afb23050518, type: 2}
     count: 2
+  buyPrice: 0
+  sellPrice: 0

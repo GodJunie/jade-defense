@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Fox Bandit
   prefab: {fileID: 7586491907923939134, guid: 2709535f71afb5e4c91f1cfd0b5dc968, type: 3}
   status:
-    cooltime: 1
+    cooltime: 3
     hp: 300
     moveSpeed: 1
     range: 0.3

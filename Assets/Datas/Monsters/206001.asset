@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Outland Lizard Spear man
   prefab: {fileID: 8701691400478109805, guid: 73e8a8c5299f0614c86c4533103ff7d8, type: 3}
   status:
-    cooltime: 1
+    cooltime: 3
     hp: 170
     moveSpeed: 1
     range: 1
@@ -35,3 +35,5 @@ MonoBehaviour:
     distance: 0
     slowRate: 0
   cost: []
+  buyPrice: 0
+  sellPrice: 0

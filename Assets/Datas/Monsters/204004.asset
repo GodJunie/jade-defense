@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Spirit of Valley Water
   prefab: {fileID: 7449778412792988414, guid: 36840a6cd3932394c8956ba51601fcd8, type: 3}
   status:
-    cooltime: 1
+    cooltime: 5
     hp: 170
     moveSpeed: 1
     range: 0.5

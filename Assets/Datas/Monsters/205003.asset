@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Soul of Knight
   prefab: {fileID: 1701109430655624811, guid: 9e90acb972fccf44ea0092c06e4fcee1, type: 3}
   status:
-    cooltime: 1
+    cooltime: 5
     hp: 200
     moveSpeed: 1
     range: 0.5
@@ -37,3 +37,5 @@ MonoBehaviour:
   cost:
   - item: {fileID: 11400000, guid: ccc71a76c1fd38a4b9369afb23050518, type: 2}
     count: 3
+  buyPrice: 0
+  sellPrice: 0

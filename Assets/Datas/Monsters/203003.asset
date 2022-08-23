@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Pig Warrior
   prefab: {fileID: 7645037120964393471, guid: 95daba1c84e33a941a38418888ff2449, type: 3}
   status:
-    cooltime: 1
+    cooltime: 4
     hp: 100
     moveSpeed: 1
     range: 0.7

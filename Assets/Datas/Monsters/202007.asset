@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Fox Chief
   prefab: {fileID: 3057974119078451742, guid: 836e7369c706be64a8d9e058bfffb49c, type: 3}
   status:
-    cooltime: 5
+    cooltime: 8
     hp: 1700
     moveSpeed: 0
     range: 2

@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Outland Lizard Bandit
   prefab: {fileID: 7242303026033368925, guid: b64c9ab04450209428a33c43ac27e2f3, type: 3}
   status:
-    cooltime: 1
+    cooltime: 3
     hp: 180
     moveSpeed: 1
     range: 0.5
@@ -35,3 +35,5 @@ MonoBehaviour:
     distance: 0
     slowRate: 0
   cost: []
+  buyPrice: 0
+  sellPrice: 0

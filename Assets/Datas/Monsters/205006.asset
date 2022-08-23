@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Soul of Wizard
   prefab: {fileID: 2512011483014296781, guid: 99a295dea8d11d240b3ef7aa9c005b5b, type: 3}
   status:
-    cooltime: 1
+    cooltime: 6
     hp: 160
     moveSpeed: 1
     range: 3

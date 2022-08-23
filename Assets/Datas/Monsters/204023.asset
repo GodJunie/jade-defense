@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Spirit of Tornado
   prefab: {fileID: 4543176893479964638, guid: e88a4c54389e3da4ab65859be960f419, type: 3}
   status:
-    cooltime: 1
+    cooltime: 6
     hp: 200
     moveSpeed: 1
     range: 0.5

@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Fox Wizard
   prefab: {fileID: 6699564115591661113, guid: 0c05f931580cb454c8c3ff22f7a4341f, type: 3}
   status:
-    cooltime: 4
+    cooltime: 6
     hp: 250
     moveSpeed: 1
     range: 3

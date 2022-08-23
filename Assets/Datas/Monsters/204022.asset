@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Spirit of Ignis
   prefab: {fileID: 1224075197247168737, guid: 253bb8cbe7cac11419eafb1bdf11ab15, type: 3}
   status:
-    cooltime: 1
+    cooltime: 6
     hp: 200
     moveSpeed: 1
     range: 0.5

@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Serimnir
   prefab: {fileID: 5629041472217577995, guid: 43fff782feea88540a562685f63de2ff, type: 3}
   status:
-    cooltime: 5
+    cooltime: 8
     hp: 400
     moveSpeed: 0.3
     range: 2
