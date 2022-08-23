@@ -111,9 +111,7 @@ namespace B409.Jade.UI {
         private TradeSellListSlot sellListSlotPrefab;
 
 
-        private bool sellViewIsGrid;
-        private bool sellViewItems;
-        private bool sellViewMonsters;
+        private bool sellViewIsGridMode;
 
         private List<TradeBuySlot> buySlotPool = new List<TradeBuySlot>();
         private List<TradeSellGridSlot> sellGridSlotPool = new List<TradeSellGridSlot>();
@@ -122,14 +120,8 @@ namespace B409.Jade.UI {
         private ScriptableObject data;
         private bool buy;
 
-        private List<ContentSizeFitter> fitters;
-
-        private void Awake() {
-            this.fitters = this.GetComponentsInChildren<ContentSizeFitter>().ToList();
-        }
-
         private void Fit() {
-            foreach(var fitter in fitters) {
+            foreach(var fitter in this.GetComponentsInChildren<ContentSizeFitter>()) {
                 LayoutRebuilder.ForceRebuildLayoutImmediate((RectTransform)fitter.transform);
             }
         }
@@ -218,7 +210,12 @@ namespace B409.Jade.UI {
         #endregion
 
         #region Sell
-        public void OpenSellPanel() {
+        public void OpenGridSellPanel() {
+            this.sellViewIsGridMode = true;
+
+            sellGridScrollRect.gameObject.SetActive(true);
+            sellListScrollRect.gameObject.SetActive(false);
+
             this.gameObject.SetActive(true);
             this.infoPanel.SetActive(false);
 
@@ -231,9 +228,6 @@ namespace B409.Jade.UI {
             var progress = GameManager.Instance.Progress;
 
             foreach(var slot in sellGridSlotPool) {
-                slot.gameObject.SetActive(false);
-            }
-            foreach(var slot in sellListSlotPool) {
                 slot.gameObject.SetActive(false);
             }
 
@@ -249,13 +243,8 @@ namespace B409.Jade.UI {
                     continue;
 
                 var gridSlot = GetSellGridSlot();
-                var listSlot = GetSellListSlot();
-
 
                 gridSlot.Init(item, count, sellGridScrollRect, () => {
-                    ShowInfo(item, false);
-                });
-                listSlot.Init(item, count, sellListScrollRect, () => {
                     ShowInfo(item, false);
                 });
             }
@@ -265,13 +254,68 @@ namespace B409.Jade.UI {
                 int count = pair.Value;
 
                 var gridSlot = GetSellGridSlot();
-                var listSlot = GetSellListSlot();
 
                 var monster = DataManager.Instance.Monsters.Find(e => e.Id == id);
 
                 gridSlot.Init(monster, count, sellGridScrollRect, () => {
                     ShowInfo(monster, false);
                 });
+            }
+
+            this.textGold.text = progress.Gold.ToString("N0");
+
+            OrderGridSellSlots();
+
+            Fit();
+        }
+
+        public void OpenListSellPanel() {
+            this.sellViewIsGridMode = false;
+
+            sellGridScrollRect.gameObject.SetActive(false);
+            sellListScrollRect.gameObject.SetActive(true);
+
+            this.gameObject.SetActive(true);
+            this.infoPanel.SetActive(false);
+
+            tabBuy.interactable = true;
+            tabSell.interactable = false;
+
+            buyPanel.SetActive(false);
+            sellPanel.SetActive(true);
+
+            var progress = GameManager.Instance.Progress;
+
+            foreach(var slot in sellListSlotPool) {
+                slot.gameObject.SetActive(false);
+            }
+
+            Debug.Log(progress.Trades.Count);
+
+            foreach(var pair in progress.Items) {
+                int id = pair.Key;
+                int count = pair.Value;
+
+                var item = DataManager.Instance.Items.Find(e => e.Id == id);
+
+                if(!item.CanSell)
+                    continue;
+
+                var listSlot = GetSellListSlot();
+
+                listSlot.Init(item, count, sellListScrollRect, () => {
+                    ShowInfo(item, false);
+                });
+            }
+
+            foreach(var pair in progress.Monsters) {
+                int id = pair.Key;
+                int count = pair.Value;
+
+                var listSlot = GetSellListSlot();
+
+                var monster = DataManager.Instance.Monsters.Find(e => e.Id == id);
+
                 listSlot.Init(monster, count, sellListScrollRect, () => {
                     ShowInfo(monster, false);
                 });
@@ -279,7 +323,7 @@ namespace B409.Jade.UI {
 
             this.textGold.text = progress.Gold.ToString("N0");
 
-            OrderSellSlots();
+            OrderListSellSlots();
 
             Fit();
         }
@@ -308,14 +352,7 @@ namespace B409.Jade.UI {
             return slot;
         }
 
-        public void SetSellView(bool isGrid) {
-            this.sellViewIsGrid = isGrid;
-
-            sellGridScrollRect.gameObject.SetActive(isGrid);
-            sellListScrollRect.gameObject.SetActive(!isGrid);
-        }
-
-        private void OrderSellSlots() {
+        private void OrderGridSellSlots() {
             var progress = GameManager.Instance.Progress;
 
             var gridSlots = sellGridSlotPool.Where(e => e.gameObject.activeInHierarchy).OrderByDescending(e => e.IsItem).ThenBy(e => e.Id).ToList();
@@ -323,6 +360,10 @@ namespace B409.Jade.UI {
             for(int i = 0; i < gridSlots.Count; i++) {
                 gridSlots[i].transform.SetSiblingIndex(i);
             }
+        }
+
+        private void OrderListSellSlots() {
+            var progress = GameManager.Instance.Progress;
 
             var listSlots = sellListSlotPool.Where(e => e.gameObject.activeInHierarchy).OrderByDescending(e => e.IsItem).ThenBy(e => e.Id).ToList();
 
@@ -354,7 +395,7 @@ namespace B409.Jade.UI {
 
                 float discountRate = GameConsts.GetTradeDiscountRate(GameManager.Instance.Progress.Parameters[Parameter.Intelligence]);
 
-                var price = sale.BuyPrice * (1 - discountRate);
+                var price = Mathf.FloorToInt(sale.BuyPrice * (1 - discountRate));
 
                 textPrice.text = price.ToString("N0");
 
@@ -418,7 +459,18 @@ namespace B409.Jade.UI {
                     progress.SellMonster(data as MonsterData);
                 }
 
-                OpenSellPanel();
+                if(sellViewIsGridMode)
+                    OpenGridSellPanel();
+                else
+                    OpenListSellPanel();
+
+                if(data is ItemData) {
+                    if(progress.Items.ContainsKey((data as ItemData).Id))
+                        ShowInfo(data, false);
+                } else if(data is MonsterData) {
+                    if(progress.Monsters.ContainsKey((data as MonsterData).Id))
+                        ShowInfo(data, false);
+                }
             }
         }
         #endregion

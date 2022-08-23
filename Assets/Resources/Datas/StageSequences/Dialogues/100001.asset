@@ -14,961 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 100001
   datas:
-  - sequenceSort: 3
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 2
-      name: 
-      script: 
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 6564596975694186928, guid: 824c41c08d1984d469940bf8760e6cfa, type: 3}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 1
-      target: {fileID: 6118293056195659511, guid: 5a5e49bbaef00974897a66d5dfd36f2e, type: 3}
-    scriptInfo:
-      scriptFocus: 0
-      name: Jade
-      script: Okay now, what am I supposed to do?
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 2
-      name: 
-      script: After getting far from her, I can have a bit of time to catch my breath.
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 2
-      name: 
-      script: "How good if the living beings of high heaven are just like Valkyrie\u2019s
-        kindness?"
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 2
-      name: 
-      script: Because of her, I can save my life, not like a crushed rotten tomato.
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 2
-      name: 
-      script: "You think I\u2019m like a kind of warrior from a fairytale, how pathetic."
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 2
-      name: 
-      script: "If I\u2019m a hero, that Valkyrie could be greater than the goddess
-        Freyja."
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 0
-      name: 
-      script: Okay whatever. Where is it?
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 2
-      name: 
-      script: I was in chaos so I have no chance to check my current position.
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 2
-      name: 
-      script: "I\u2019m sure I'm somewhere in Midgard, but how far from my home?"
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 2
-      name: 
-      script: I have no idea.
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 2
-      name: 
-      script: Even take a risk, am I supposed to ask Valkyrie?
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 3
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 0
-      name: 
-      script: 
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: JadeMeetTeratoma
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 2
-      name: Jade
-      script: "What\u2019s going on?"
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 2
-      name: 
-      script: My pocket is shining now.
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 2
-      name: 
-      script: Oh, the stone from Valkyrie.
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 0
-      name: 
-      script: She said this is the stone of communication, right?
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 0
-      name: 
-      script: This is the only way!
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 0
-      name: 
-      script: If this thing is even for noncommunicable tribes,
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 0
-      name: 
-      script: "I pray, show what you got!\r"
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: Teratomas
-      script: I need eggs. Give me eggs.
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 1
-      target: {fileID: 3328306218506788300, guid: 35d34e101090e0841987577c42cdb56e, type: 3}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: 
-      script: Starving. starve to death. I need eggs.
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: 
-      script: There're eggs.
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 0
-      name: Jade
-      script: "What\u2019s the hell!"
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 2
-      name: 
-      script: "What is the meaning of \u201CI need eggs\u201D? this is not the time
-        for that!"
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 2
-      name: 
-      script: Wait, Am I hearing the thought of Teratoma?
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 2
-      name: 
-      script: "\u2026 I thought Valkyrie was insane."
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 2
-      name: 
-      script: "She said this is the stone of communication, but it\u2019s real to
-        communicate with monsters!"
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 2
-      name: 
-      script: "Then get some eggs from my bag\u2026"
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 0
-      name: 
-      script: Hey! take this!
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: Teratomas
-      script: Eggs! Eggs! Eggs!
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: 
-      script: Eggs! We alive! Eggs!
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 0
-      name: Jade
-      script: Hooo. it works.
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 0
-      name: 
-      script: You dumb Teratomas, see! I, almighty Jade is the savior of you from
-        starvation!
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 0
-      name: 
-      script: "\u2026\u2026"
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 0
-      name: 
-      script: Ha, I lost my mind. I bluffed because I was so nervous.
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: Teratomas
-      script: Ja....de.....
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: 
-      script: Jade....
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: 
-      script: Jade?
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: 
-      script: Jade! Jade! Jade!
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 0
-      name: Jade
-      script: Huh?
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 2
-      name: 
-      script: "What\u2019s wrong with them?"
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 2
-      name: 
-      script: Do they express a thankful mind to me because of eggs?
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 0
-      name: 
-      script: 
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 2
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 3
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 0
-      name: 
-      script: 
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: SoldiersAppear
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: Soldiers
-      script: What are you talking about?
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 1
-      target: {fileID: 3092187786161246119, guid: 866002d16a418ab4f827e2b01d0ded80, type: 3}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: 
-      script: Who are you! Identification!
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 0
-      name: Jade
-      script: Huh?
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 1
-      name: Soldiers
-      script: The Teratomas! present arms!
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 2
-      name: Jade
-      script: So many things happened to me today.
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 2
-      name: 
-      script: "I can\u2019t catch up with my mind now."
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 2
-      name: 
-      script: "But I\u2019m quite sure about one thing."
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 2
-      name: 
-      script: Almost dying with high altitude airborne,
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 2
-      name: 
-      script: After woke up met Valkyrie and got weird stone,
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 2
-      name: 
-      script: "I thought I\u2019m already dead with Teratoma but suddenly I started
-        to communicate with them,"
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 2
-      name: 
-      script: "But anyways I really need to avoid being caught by soldiers over there.\r"
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 2
-      name: 
-      script: "Anything happens, Whatever it takes.\r"
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 0
-      name: 
-      script: "I don\u2019t know what\u2019s going on, go Teratomas! take down those
-        soldiers!"
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 2
-      name: 
-      script: I have a card, and I need to deal.
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
   - sequenceSort: 4
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 0
       name: 
@@ -978,6 +28,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards:
@@ -989,3 +40,1072 @@ MonoBehaviour:
       count: 1
     - data: {fileID: 11400000, guid: e40133b6b8960dd46a67a48c41659fcd, type: 2}
       count: 1
+  - sequenceSort: 3
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 6564596975694186928, guid: 824c41c08d1984d469940bf8760e6cfa, type: 3}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 1
+      target: {fileID: 6118293056195659511, guid: 5a5e49bbaef00974897a66d5dfd36f2e, type: 3}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: Jade
+      script: Okay now, what am I supposed to do?
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: After getting far from her, I can have a bit of time to catch my breath.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: "How good if the living beings of high heaven are just like Valkyrie\u2019s
+        kindness?"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: Because of her, I can save my life, not like a crushed rotten tomato.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: "You think I\u2019m like a kind of warrior from a fairytale, how pathetic."
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: "If I\u2019m a hero, that Valkyrie could be greater than the goddess
+        Freyja."
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: Okay whatever. Where is it?
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: I was in chaos so I have no chance to check my current position.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: "I\u2019m sure I'm somewhere in Midgard, but how far from my home?"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: I have no idea.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: Even take a risk, am I supposed to ask Valkyrie?
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 3
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: JadeMeetTeratoma
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: Jade
+      script: "What\u2019s going on?"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: My pocket is shining now.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: Oh, the stone from Valkyrie.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: She said this is the stone of communication, right?
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: This is the only way!
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: If this thing is even for noncommunicable tribes,
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: "I pray, show what you got!\r"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: Teratomas
+      script: I need eggs. Give me eggs.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 1
+      target: {fileID: 3328306218506788300, guid: 35d34e101090e0841987577c42cdb56e, type: 3}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: 
+      script: Starving. starve to death. I need eggs.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: 
+      script: There're eggs.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: Jade
+      script: "What\u2019s the hell!"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: "What is the meaning of \u201CI need eggs\u201D? this is not the time
+        for that!"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: Wait, Am I hearing the thought of Teratoma?
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: "\u2026 I thought Valkyrie was insane."
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: "She said this is the stone of communication, but it\u2019s real to
+        communicate with monsters!"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: "Then get some eggs from my bag\u2026"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: Hey! take this!
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: Teratomas
+      script: Eggs! Eggs! Eggs!
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: 
+      script: Eggs! We alive! Eggs!
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: Jade
+      script: Hooo. it works.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: You dumb Teratomas, see! I, almighty Jade is the savior of you from
+        starvation!
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: "\u2026\u2026"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: Ha, I lost my mind. I bluffed because I was so nervous.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: Teratomas
+      script: Ja....de.....
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: 
+      script: Jade....
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: 
+      script: Jade?
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: 
+      script: Jade! Jade! Jade!
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: Jade
+      script: Huh?
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: "What\u2019s wrong with them?"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: Do they express a thankful mind to me because of eggs?
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 2
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 3
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: SoldiersAppear
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: Soldiers
+      script: What are you talking about?
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 1
+      target: {fileID: 3092187786161246119, guid: 866002d16a418ab4f827e2b01d0ded80, type: 3}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: 
+      script: Who are you! Identification!
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: Jade
+      script: Huh?
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: Soldiers
+      script: The Teratomas! present arms!
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: Jade
+      script: So many things happened to me today.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: "I can\u2019t catch up with my mind now."
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: "But I\u2019m quite sure about one thing."
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: Almost dying with high altitude airborne,
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: After woke up met Valkyrie and got weird stone,
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: "I thought I\u2019m already dead with Teratoma but suddenly I started
+        to communicate with them,"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: "But anyways I really need to avoid being caught by soldiers over there.\r"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: "Anything happens, Whatever it takes.\r"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: "I don\u2019t know what\u2019s going on, go Teratomas! take down those
+        soldiers!"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: I have a card, and I need to deal.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []

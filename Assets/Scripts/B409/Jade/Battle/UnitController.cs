@@ -37,6 +37,9 @@ namespace B409.Jade.Battle {
         [SerializeField]
         private HpBar hpBar;
 
+        [SerializeField]
+        private List<EffectInfo> effects;
+
         // Events
         public Action OnDead;
 
@@ -55,6 +58,7 @@ namespace B409.Jade.Battle {
         private List<UnitController> attackTargets = new List<UnitController>();
 
         private float mapSize;
+
         private bool inMap {
             get {
                 if(this.IsPlayer) {
@@ -115,6 +119,10 @@ namespace B409.Jade.Battle {
                         default:
                             break;
                         }
+
+                        foreach(var effect in this.effects) {
+                            effect.GenerateEffect(this, target);
+                        }
                     }
                 }
             };
@@ -133,6 +141,9 @@ namespace B409.Jade.Battle {
                 }
                 if(entry.Animation.Name == dieAnimation) {
                     // ÀÎ»ý ³¡!
+                    foreach(var effect in this.effects) {
+                        effect.DestroyAllEffect();
+                    }
                     Destroy(this.gameObject);
                 }
             };
@@ -459,11 +470,54 @@ namespace B409.Jade.Battle {
         #endregion
         #endregion
 
+        #region Effect
+        public enum EffectPivot : int { Origin, Target };
+
+        [Serializable]
+        public class EffectInfo {
+            [SerializeField]
+            private EffectPivot pivot;
+            [SerializeField]
+            private Effect effect;
+
+            private List<Effect> pool;
+
+            public void GenerateEffect(UnitController origin, UnitController target) {
+                if(pool == null)
+                    pool = new List<Effect>();
+
+                var effect = pool.Find(e => !e.gameObject.activeInHierarchy);
+
+                if(effect == null) {
+                    effect = Instantiate(this.effect);
+                    this.pool.Add(effect);
+                }
+
+                if(pivot == EffectPivot.Origin) {
+                    effect.transform.position = origin.transform.position;
+                    effect.transform.rotation = origin.IsPlayer ? Quaternion.identity : Quaternion.Euler(0f, 180f, 0f);
+                } else if(pivot == EffectPivot.Target) {
+                    effect.transform.position = target.transform.position;
+                    effect.transform.rotation = target.IsPlayer ? Quaternion.identity : Quaternion.Euler(0f, 180f, 0f);
+                }
+
+                effect.EffectOn();
+            }
+
+            public void DestroyAllEffect() {
+                foreach(var effect in pool) {
+                    Destroy(effect.gameObject);
+                }
+            }
+        }
+
+        #endregion
+
         #region Editor
 #if UNITY_EDITOR
         public string[] animations {
             get {
-                return this.anim.skeleton.Data.Animations.Select(e => e.Name).ToArray();
+                return this.anim?.skeleton?.Data.Animations.Select(e => e.Name).ToArray();
             }
         }
 

@@ -36,8 +36,11 @@ namespace B409.Jade.Game {
             }
         }
 
+        [JsonProperty]
         private Dictionary<int, int> itemLogs;
+        [JsonProperty]
         private Dictionary<int, int> monsterLogs;
+        [JsonProperty]
         private Dictionary<Parameter, float> parameterLogs;
 
         [JsonConstructor]
@@ -51,10 +54,6 @@ namespace B409.Jade.Game {
             this.Parameters = parameters;
             this.Trades = trades;
             this.RefreshCount = refreshCount;
-
-            this.itemLogs = new Dictionary<int, int>();
-            this.monsterLogs = new Dictionary<int, int>();
-            this.parameterLogs = new Dictionary<Parameter, float>();
         }
 
         public GameProgress() {

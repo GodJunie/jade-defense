@@ -31,12 +31,14 @@ namespace B409.Jade.UI {
         [SerializeField]
         private GameObject infoPanel;
 
-        private List<EnemySlot> slotPool;
+        private List<EnemySlot> slotPool = new List<EnemySlot>();
 
         public void Open() {
             var data = GameManager.Instance.CurrentStageSequence as DailyRoutineData;
 
             infoPanel.SetActive(false);
+            this.gameObject.SetActive(true);
+
 
             foreach(var slot in slotPool) {
                 slot.gameObject.SetActive(false);

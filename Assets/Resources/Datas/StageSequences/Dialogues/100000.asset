@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 100000
   datas:
-  - sequenceSort: 3
+  - sequenceSort: 4
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 0
       name: 
@@ -27,6 +28,27 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards:
+    - data: {fileID: 11400000, guid: ab5f37ce90c619c40b15776ea32d5255, type: 2}
+      count: 1
+  - sequenceSort: 3
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 7404484002836396859, guid: d33cf04e36b224f4d84e4818bf24765b, type: 3}
     eventId: 
     rewards: []
@@ -34,6 +56,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: ???
@@ -43,6 +66,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -50,6 +74,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 6118293056195659511, guid: 5a5e49bbaef00974897a66d5dfd36f2e, type: 3}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: Jade
@@ -59,6 +84,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -66,6 +92,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: Jade
@@ -75,6 +102,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -82,6 +110,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: Jade
@@ -92,6 +121,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -99,6 +129,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 0
       name: 
@@ -108,6 +139,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: OpenEye
     rewards: []
@@ -115,6 +147,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 1
       target: {fileID: 6118293056195659511, guid: 5a5e49bbaef00974897a66d5dfd36f2e, type: 3}
+      animation: 
     scriptInfo:
       scriptFocus: 1
       name: ???
@@ -124,6 +157,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 1
       target: {fileID: 2025944677643304210, guid: 20e7660994961d2499df1f27d66a4811, type: 3}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -131,6 +165,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 0
       name: Jade
@@ -141,6 +176,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -148,6 +184,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 0
       name: Jade
@@ -157,6 +194,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -164,6 +202,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 1
       name: ???
@@ -174,6 +213,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -181,6 +221,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 1
       name: ???
@@ -191,6 +232,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -198,6 +240,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 0
       name: Jade
@@ -207,6 +250,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -214,6 +258,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 0
       name: 
@@ -223,6 +268,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -230,6 +276,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 0
       name: 
@@ -239,6 +286,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -246,6 +294,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 1
       name: ???
@@ -256,6 +305,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -263,6 +313,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 0
       name: Jade
@@ -272,6 +323,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -279,6 +331,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -289,6 +342,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -296,6 +350,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -305,6 +360,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -312,6 +368,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 1
       name: Valkyrie
@@ -321,6 +378,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -328,6 +386,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 1
       name: 
@@ -337,6 +396,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -344,6 +404,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 1
       name: 
@@ -353,6 +414,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -360,6 +422,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 0
       name: Jade
@@ -370,6 +433,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -377,6 +441,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 1
       name: Valkyrie
@@ -386,6 +451,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -393,6 +459,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 1
       name: 
@@ -402,6 +469,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -409,6 +477,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 1
       name: 
@@ -418,6 +487,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -425,6 +495,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 1
       name: 
@@ -435,6 +506,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -442,6 +514,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: Jade
@@ -451,6 +524,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -458,6 +532,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -468,6 +543,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -475,6 +551,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -484,6 +561,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -491,6 +569,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 0
       name: 
@@ -501,6 +580,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -508,6 +588,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 1
       name: Valkyrie
@@ -517,6 +598,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -524,6 +606,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 1
       name: 
@@ -533,6 +616,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -540,6 +624,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 1
       name: 
@@ -549,6 +634,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -556,6 +642,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 0
       name: Jade
@@ -565,6 +652,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -572,6 +660,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 1
       name: Valkyrie
@@ -581,6 +670,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -588,6 +678,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 1
       name: 
@@ -598,6 +689,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -605,6 +697,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 0
       name: Jade
@@ -614,6 +707,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -621,6 +715,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 1
       name: Valkyrie
@@ -630,6 +725,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -637,6 +733,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 0
       name: 
@@ -646,6 +743,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: GiveStone
     rewards: []
@@ -653,6 +751,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 1
       name: Valkyrie
@@ -662,6 +761,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -669,6 +769,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 1
       name: 
@@ -678,6 +779,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -685,6 +787,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 1
       name: 
@@ -694,6 +797,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -701,6 +805,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 1
       name: 
@@ -711,6 +816,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -718,6 +824,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 0
       name: Jade
@@ -727,6 +834,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -734,6 +842,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 1
       name: Valkyrie
@@ -743,6 +852,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -750,6 +860,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 1
       name: 
@@ -759,6 +870,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -766,6 +878,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: Jade
@@ -775,6 +888,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -782,6 +896,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -792,6 +907,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -799,6 +915,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 0
       name: 
@@ -808,6 +925,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -815,6 +933,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -824,6 +943,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -831,6 +951,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -841,6 +962,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
@@ -848,6 +970,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 1
       name: Valkyrie
@@ -857,24 +980,7 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
-  - sequenceSort: 4
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 0
-      name: 
-      script: 
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards:
-    - data: {fileID: 11400000, guid: ab5f37ce90c619c40b15776ea32d5255, type: 2}
-      count: 1

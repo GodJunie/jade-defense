@@ -23,7 +23,7 @@ namespace B409.Jade.UI {
             this.textAtk.text = status.Atk.ToString("0");
             this.textRange.text = status.Range.ToString("0.#");
             this.textMoveSpeed.text = (status.MoveSpeed * 100).ToString("0");
-            this.textAtkSpeed.text = (1 / status.AttackSpeed).ToString("0.000");
+            this.textAtkSpeed.text = (1 / status.AttackSpeed).ToString("0.00");
             this.textCooltime.text = status.Cooltime.ToString("0.#");
         }
     }

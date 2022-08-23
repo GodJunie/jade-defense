@@ -32,6 +32,8 @@ namespace B409.Jade.UI {
         private Transform chatObject;
         [SerializeField]
         private float defaultWaitDuration = 1f;
+        [SerializeField]
+        private Button buttonSkip;
 
         private DialogueEvent eventObject;
         private bool chatOn = true;
@@ -57,17 +59,14 @@ namespace B409.Jade.UI {
         }
 
         private void Start() {
-            // fade
-            imageFade.gameObject.SetActive(true);
-            imageFade.color = Color.white;
-            imageFade.DOFade(0f, 1f);
-
-            // test
             if(isTest) {
 
             } else {
                 this.data = GameManager.Instance.CurrentStageSequence as DialogueData;
             }
+
+            // fade
+            FadeIn();
 
             Open();
         }
@@ -77,6 +76,17 @@ namespace B409.Jade.UI {
                 if(click != null)
                     click.Cancel();
             }
+        }
+
+        private async void FadeIn() {
+            imageFade.gameObject.SetActive(true);
+            imageFade.color = Color.white;
+            await imageFade.DOFade(0f, 1f);
+            imageFade.gameObject.SetActive(false);
+
+            bool canSkip = GameManager.Instance.StoryCollection.Contains(data.Id);
+
+            buttonSkip.gameObject.SetActive(canSkip);
         }
 
         private async UniTask FadeInChat(float duration = 0.5f) {
@@ -271,8 +281,9 @@ namespace B409.Jade.UI {
             }
         }
 
-        private async void DialogueEnd() {
-            await imageFade.DOFade(1f, .5f);
+        public async void DialogueEnd() {
+            imageFade.gameObject.SetActive(true);
+            await imageFade.DOFade(1f, 1f);
             GameManager.Instance.StageSequenceEnd();
         }
     }

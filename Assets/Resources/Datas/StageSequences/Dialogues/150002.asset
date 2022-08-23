@@ -14,24 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 150002
   datas:
-  - sequenceSort: 0
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-      animation: 
-    scriptInfo:
-      scriptFocus: 2
-      name: 
-      script: Meet Soul Knights
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-      animation: 
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
   - sequenceSort: 4
     leftCharacter:
       mode: 0
@@ -52,3 +34,21 @@ MonoBehaviour:
     rewards:
     - data: {fileID: 11400000, guid: ccc71a76c1fd38a4b9369afb23050518, type: 2}
       count: 20
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: Meet Soul Knights
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []

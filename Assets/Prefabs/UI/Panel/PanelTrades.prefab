@@ -1273,8 +1273,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8827949222057732425}
         m_TargetAssemblyTypeName: B409.Jade.UI.TradePanel, Assembly-CSharp
-        m_MethodName: SetSellView
-        m_Mode: 6
+        m_MethodName: OpenListSellPanel
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3543,7 +3543,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8827949222057732425}
         m_TargetAssemblyTypeName: B409.Jade.UI.TradePanel, Assembly-CSharp
-        m_MethodName: OpenSellPanel
+        m_MethodName: OpenGridSellPanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5568,8 +5568,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8827949222057732425}
         m_TargetAssemblyTypeName: B409.Jade.UI.TradePanel, Assembly-CSharp
-        m_MethodName: SetSellView
-        m_Mode: 6
+        m_MethodName: OpenGridSellPanel
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

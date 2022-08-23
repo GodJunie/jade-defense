@@ -57,16 +57,7 @@ namespace B409.Jade.Battle {
         private TMP_Text textSelectedMonsterName;
         [FoldoutGroup("Party/Info")]
         [SerializeField]
-        private TMP_Text textSelectedMonsterCooltime;
-        [FoldoutGroup("Party/Info")]
-        [SerializeField]
-        private TMP_Text textSelectedMonsterRange;
-        [FoldoutGroup("Party/Info")]
-        [SerializeField]
-        private TMP_Text textSelectedMonsterHp;
-        [FoldoutGroup("Party/Info")]
-        [SerializeField]
-        private TMP_Text textSelectedMonsterSpeed;
+        private UnitStatus selectedUnitStatus;
         [FoldoutGroup("Party/Info")]
         [SerializeField]
         private TMP_Text textSelectedMonsterDescription;
@@ -81,20 +72,7 @@ namespace B409.Jade.Battle {
         private List<Image> imagesPartyMonster;
         [FoldoutGroup("Party/Party")]
         [SerializeField]
-        private List<GameObject> statusesPartyMonster;
-        [FoldoutGroup("Party/Party")]
-        [SerializeField]
-        private List<TMP_Text> textsPartyCooltime;
-        [FoldoutGroup("Party/Party")]
-        [SerializeField]
-        private List<TMP_Text> textsPartyRange;
-        [FoldoutGroup("Party/Party")]
-        [SerializeField]
-        private List<TMP_Text> textsPartyHp;
-        [FoldoutGroup("Party/Party")]
-        [SerializeField]
-        private List<TMP_Text> textsPartySpeed;
-
+        private List<UnitStatus> statusesPartyMonster;
 
         [TitleGroup("Map")]
         [SerializeField]
@@ -269,10 +247,7 @@ namespace B409.Jade.Battle {
             imageSelectedMonster.sprite = data.Icon;
             textSelectedMonsterName.text = data.Name;
             // status
-            textSelectedMonsterCooltime.text = data.Status.Cooltime.ToString("0.#");
-            textSelectedMonsterRange.text = data.Status.Range.ToString("0.#");
-            textSelectedMonsterHp.text = data.Status.Hp.ToString("0");
-            textSelectedMonsterSpeed.text = data.Status.MoveSpeed.ToString("0.#");
+            selectedUnitStatus.SetUI(data.Status);
             textSelectedMonsterDescription.text = data.Status.GetAttackDescriptionString();
 
             buttonMonsterIn.SetActive(monsterIn);
@@ -321,23 +296,17 @@ namespace B409.Jade.Battle {
             for(int i = 0; i < 5; i++) {
                 var image = imagesPartyMonster[i];
                 var status = statusesPartyMonster[i];
-                var cooltime = textsPartyCooltime[i];
-                var range = textsPartyRange[i];
-                var hp = textsPartyHp[i];
-                var speed = textsPartySpeed[i];
 
                 if(i < monsterDatas.Count) {
                     var data = monsterDatas[i];
                     image.gameObject.SetActive(true);
                     image.sprite = data.Icon;
-                    status.SetActive(true);
-                    cooltime.text = data.Status.Cooltime.ToString("0.#");
-                    range.text = data.Status.Range.ToString("0.#");
-                    hp.text = data.Status.Hp.ToString("0");
-                    speed.text = data.Status.MoveSpeed.ToString("0.#");
+                    status.SetUI(data.Status);
+                    status.gameObject.SetActive(true);
+                    
                 } else {
                     image.gameObject.SetActive(false);
-                    status.SetActive(false);
+                    status.gameObject.SetActive(false);
                 }
             }
         }
@@ -505,7 +474,7 @@ namespace B409.Jade.Battle {
             pos += new Vector3(0f, 1f, 1f) * UnityEngine.Random.Range(-0.3f, 0.3f);
 
             var unit = Instantiate(data.Prefab, pos, Quaternion.identity);
-            unit.Init(data, isPlayer, this.mapSize);
+            unit.Init(data, isPlayer, this.mapSize - spawnPosPad);
 
             unit.OnDead += () => {
                 if(isPlayer) {

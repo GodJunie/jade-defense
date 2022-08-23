@@ -140,9 +140,9 @@ namespace B409.Jade.Battle {
             string d = "";
 
             if(status.AttackMode == AttackMode.Heal) {
-                d = string.Format("Heal <sprite name=Hp> <color={0}>{1} HP</color> ", GameConsts.HpColor.GetHexString(), status.Heal);
+                d = string.Format("Heal <sprite index=0> <color={0}>{1} HP</color> ", GameConsts.HpColor.GetHexString(), status.Heal);
             } else {
-                d = string.Format("Inflicts <sprite name=Atk> <color={0}>{1} dmg</color> ", GameConsts.DamageColor.GetHexString(), status.Atk);
+                d = string.Format("Inflicts <sprite index=5> <color={0}>{1} dmg</color> ", GameConsts.DamageColor.GetHexString(), status.Atk);
             }
 
             if(status.TargetCount == 0) {
@@ -176,10 +176,10 @@ namespace B409.Jade.Battle {
             case AttackMode.Heal:
                 break;
             case AttackMode.Stun:
-                d += string.Format("and stuns for {0:0.#} secs", status.Duration);
+                d += string.Format("and <sprite index=6> <color={1}>stuns</color> for <color={2}>{0:0.#} secs</color>", status.Duration, GameConsts.StunColor.GetHexString(), GameConsts.DurationColor.GetHexString());
                 break;
             case AttackMode.Slow:
-                d += string.Format("and slow down <sprite name=Slow> <color={2}>{0:P1}</color> speed for <color={3}>{1:0.#} secs</color>", status.SlowRate, status.Duration, GameConsts.SlowColor.GetHexString(), GameConsts.DurationColor.GetHexString());
+                d += string.Format("and slow down <sprite index=3> <color={2}>{0:P1}</color> speed for <color={3}>{1:0.#} secs</color>", status.SlowRate, status.Duration, GameConsts.SlowColor.GetHexString(), GameConsts.DurationColor.GetHexString());
                 break;
             default:
                 break;

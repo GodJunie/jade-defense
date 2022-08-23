@@ -9,6 +9,7 @@ public static class GameConsts {
     public static Color SlowColor = new Color32(63, 227, 255, 255);
     public static Color DurationColor = new Color32(255, 217, 73, 255);
     public static Color TargetColor = new Color32(255, 163, 32, 255);
+    public static Color StunColor = new Color(141, 31, 244, 255);
 
 
     public static Color ButtonGreen = new Color32(82, 255, 0, 255);

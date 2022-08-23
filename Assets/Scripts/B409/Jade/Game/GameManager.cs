@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Sirenix.OdinInspector;
 using Cysharp.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace B409.Jade.Game {
     using Data;
@@ -13,6 +14,7 @@ namespace B409.Jade.Game {
     public class GameManager : SingletonBehaviour<GameManager> {
         #region Consts 
         private const string GameProgressKey = "GameProgress";
+        private const string StoryCollectionKey = "StoryCollection";
         #endregion
 
         #region SerializedField
@@ -28,17 +30,23 @@ namespace B409.Jade.Game {
 
         #region Members 
         public GameProgress Progress { get; private set; }
+        public List<int> StoryCollection { get; private set; }
         #endregion
 
         #region Mono
         protected override void Awake() {
             base.Awake();
+
             string json = PlayerPrefs.GetString(GameProgressKey, "");
             if(json == "") {
                 this.Progress = new GameProgress();
             } else {
                 this.Progress = GameProgress.FromJson(json);
             }
+
+            string storyJson = PlayerPrefs.GetString(StoryCollectionKey, "[]");
+            this.StoryCollection = JsonConvert.DeserializeObject<List<int>>(storyJson);
+
             Debug.Log(json);
             LoadData();
         }
@@ -77,11 +85,17 @@ namespace B409.Jade.Game {
 
             Progress.TurnEnd();
 
-            Save();
             LoadScene();
         }
 
         public void StageSequenceEnd() {
+            if(CurrentStageSequence is DialogueData) {
+                StoryCollection.Add(CurrentStageSequence.Id);
+                var json = JsonConvert.SerializeObject(StoryCollection);
+                Debug.Log(json);
+                PlayerPrefs.SetString(StoryCollectionKey, json);
+            }
+
             Progress.NextStageSequence();
 
             if(Progress.StageSequence == CurrentStage.Datas.Count) {
@@ -233,5 +247,10 @@ namespace B409.Jade.Game {
             SceneManager.LoadScene(endingScene);
         }
         #endregion
+
+        [Button]
+        private void DeletePrefsKey(string key) {
+            PlayerPrefs.DeleteKey(key);
+        }
     }
 }
