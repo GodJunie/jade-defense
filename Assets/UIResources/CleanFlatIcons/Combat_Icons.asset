@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!21 &-5503202079033505111
+--- !u!21 &-4525457328045770361
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 1
@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Name: Combat_Icons
   m_EditorClassIdentifier: 
   hashCode: -1739381487
-  material: {fileID: -5503202079033505111}
+  material: {fileID: -4525457328045770361}
   materialHashCode: 0
   m_Version: 1.1.0
   m_FaceInfo:
@@ -123,12 +123,18 @@ MonoBehaviour:
     m_Scale: 1
     m_Name: Target
     m_HashCode: -1045916975
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 8
+    m_Scale: 1
+    m_Name: AttackSpeed
+    m_HashCode: 635048143
   m_SpriteGlyphTable:
   - m_Index: 0
     m_Metrics:
       m_Width: 128
       m_Height: 128
-      m_HorizontalBearingX: 1
+      m_HorizontalBearingX: 10
       m_HorizontalBearingY: 100
       m_HorizontalAdvance: 128
     m_GlyphRect:
@@ -143,7 +149,7 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 128
       m_Height: 128
-      m_HorizontalBearingX: 1
+      m_HorizontalBearingX: 10
       m_HorizontalBearingY: 100
       m_HorizontalAdvance: 128
     m_GlyphRect:
@@ -158,7 +164,7 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 128
       m_Height: 128
-      m_HorizontalBearingX: 1
+      m_HorizontalBearingX: 10
       m_HorizontalBearingY: 100
       m_HorizontalAdvance: 128
     m_GlyphRect:
@@ -173,7 +179,7 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 128
       m_Height: 128
-      m_HorizontalBearingX: 1
+      m_HorizontalBearingX: 10
       m_HorizontalBearingY: 100
       m_HorizontalAdvance: 128
     m_GlyphRect:
@@ -188,7 +194,7 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 128
       m_Height: 128
-      m_HorizontalBearingX: 1
+      m_HorizontalBearingX: 10
       m_HorizontalBearingY: 100
       m_HorizontalAdvance: 128
     m_GlyphRect:
@@ -203,7 +209,7 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 128
       m_Height: 128
-      m_HorizontalBearingX: 1
+      m_HorizontalBearingX: 10
       m_HorizontalBearingY: 100
       m_HorizontalAdvance: 128
     m_GlyphRect:
@@ -218,7 +224,7 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 128
       m_Height: 128
-      m_HorizontalBearingX: 1
+      m_HorizontalBearingX: 10
       m_HorizontalBearingY: 100
       m_HorizontalAdvance: 128
     m_GlyphRect:
@@ -233,12 +239,27 @@ MonoBehaviour:
     m_Metrics:
       m_Width: 128
       m_Height: 128
-      m_HorizontalBearingX: 1
+      m_HorizontalBearingX: 10
       m_HorizontalBearingY: 100
       m_HorizontalAdvance: 128
     m_GlyphRect:
       m_X: 384
       m_Y: 256
+      m_Width: 128
+      m_Height: 128
+    m_Scale: 1
+    m_AtlasIndex: 0
+    sprite: {fileID: 0}
+  - m_Index: 8
+    m_Metrics:
+      m_Width: 128
+      m_Height: 128
+      m_HorizontalBearingX: 10
+      m_HorizontalBearingY: 100
+      m_HorizontalAdvance: 128
+    m_GlyphRect:
+      m_X: 0
+      m_Y: 128
       m_Width: 128
       m_Height: 128
     m_Scale: 1

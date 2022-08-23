@@ -51,18 +51,9 @@ namespace B409.Jade.UI {
         [SerializeField]
         private Image imageMonster;
         [FoldoutGroup("Info/Monster")]
-        [FoldoutGroup("Info/Monster/Status Text")]
         [SerializeField]
-        private TMP_Text textCooltime;
-        [FoldoutGroup("Info/Monster/Status Text")]
-        [SerializeField]
-        private TMP_Text textRange;
-        [FoldoutGroup("Info/Monster/Status Text")]
-        [SerializeField]
-        private TMP_Text textMoveSpeed;
-        [FoldoutGroup("Info/Monster/Status Text")]
-        [SerializeField]
-        private TMP_Text textHp;
+        private UnitStatus unitStatus;
+
         [FoldoutGroup("Info/Monster")]
         [SerializeField]
         private TMP_Text textMonsterDescription;
@@ -131,6 +122,18 @@ namespace B409.Jade.UI {
         private ScriptableObject data;
         private bool buy;
 
+        private List<ContentSizeFitter> fitters;
+
+        private void Awake() {
+            this.fitters = this.GetComponentsInChildren<ContentSizeFitter>().ToList();
+        }
+
+        private void Fit() {
+            foreach(var fitter in fitters) {
+                LayoutRebuilder.ForceRebuildLayoutImmediate((RectTransform)fitter.transform);
+            }
+        }
+
         #region Buy
         public void OpenBuyPanel() {
             this.gameObject.SetActive(true);
@@ -180,6 +183,8 @@ namespace B409.Jade.UI {
             this.textGold.text = progress.Gold.ToString("N0");
 
             OrderBuySlots();
+
+            Fit();
         }
 
         private TradeBuySlot GetBuySlot() {
@@ -275,6 +280,8 @@ namespace B409.Jade.UI {
             this.textGold.text = progress.Gold.ToString("N0");
 
             OrderSellSlots();
+
+            Fit();
         }
 
         private TradeSellGridSlot GetSellGridSlot() {
@@ -344,7 +351,13 @@ namespace B409.Jade.UI {
 
             if(buy) {
                 buttonConfirm.image.color = GameConsts.ButtonGreen;
-                textPrice.text = sale.BuyPrice.ToString("N0");
+
+                float discountRate = GameConsts.GetTradeDiscountRate(GameManager.Instance.Progress.Parameters[Parameter.Intelligence]);
+
+                var price = sale.BuyPrice * (1 - discountRate);
+
+                textPrice.text = price.ToString("N0");
+
                 if(sale.BuyPrice > GameManager.Instance.Progress.Gold) {
                     buttonConfirm.interactable = false;
                     textPrice.color = Color.red;
@@ -359,6 +372,8 @@ namespace B409.Jade.UI {
 
                 buttonConfirm.interactable = true;
             }
+
+            Fit();
         }
 
         private void ShowItemInfo(ItemData data) {
@@ -380,11 +395,8 @@ namespace B409.Jade.UI {
 
             this.textName.text = data.Name;
 
-            this.textCooltime.text = string.Format("{0:0.#}", data.Status.Cooltime);
-            this.textRange.text = data.Status.Range.ToString("0.#");
-            this.textHp.text = data.Status.Hp.ToString("0");
-            this.textMoveSpeed.text = data.Status.MoveSpeed.ToString("0");
-
+            this.unitStatus.SetUI(data.Status);
+          
             this.textMonsterDescription.text = data.Status.GetAttackDescriptionString();
         }
 

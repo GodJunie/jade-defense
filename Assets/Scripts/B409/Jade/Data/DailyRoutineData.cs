@@ -82,6 +82,7 @@ namespace B409.Jade.Data {
         public int SalesCount => salesCount;
         public List<TradeInfo> Trades => trades;
         public List<MonsterData> Monsters => monsters;
+        public List<EnemyInfo> Enemies => enemies;
 
         [Serializable]
         public class TradeInfo {

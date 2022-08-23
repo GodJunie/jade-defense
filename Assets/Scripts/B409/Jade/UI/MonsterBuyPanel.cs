@@ -60,18 +60,8 @@ namespace B409.Jade.UI {
         private TMP_Text textInfoName;
 
         [BoxGroup("Info")]
-        [FoldoutGroup("Info/Status Text")]
         [SerializeField]
-        private TMP_Text textCooltime;
-        [FoldoutGroup("Info/Status Text")]
-        [SerializeField]
-        private TMP_Text textRange;
-        [FoldoutGroup("Info/Status Text")]
-        [SerializeField]
-        private TMP_Text textMoveSpeed;
-        [FoldoutGroup("Info/Status Text")]
-        [SerializeField]
-        private TMP_Text textHp;
+        private UnitStatus unitStatus;
 
         [BoxGroup("Info")]
         [SerializeField]
@@ -146,10 +136,7 @@ namespace B409.Jade.UI {
 
             this.textInfoName.text = data.Name;
 
-            this.textCooltime.text = string.Format("{0:0.#}", data.Status.Cooltime);
-            this.textRange.text = data.Status.Range.ToString("0.#");
-            this.textHp.text = data.Status.Hp.ToString("0");
-            this.textMoveSpeed.text = data.Status.MoveSpeed.ToString("0");
+            this.unitStatus.SetUI(data.Status);
 
             this.textAttackDescription.text = data.Status.GetAttackDescriptionString();
 

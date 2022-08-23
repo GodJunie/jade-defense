@@ -48,9 +48,9 @@ namespace B409.Jade.Battle {
         [SerializeField]
         private float heal;
         [BoxGroup("Attack")]
-        [ShowIf("ShowInterval")]
+        [ShowIf("ShowDotCount")]
         [SerializeField]
-        private float interval;
+        private int dotCount;
         [BoxGroup("Attack")]
         [ShowIf("ShowDuration")]
         [SerializeField]
@@ -82,7 +82,7 @@ namespace B409.Jade.Battle {
         public float AttackSpeed => attackSpeed;
         public float Atk => atk;
         public float Heal => heal;
-        public float Interval => interval;
+        public int DotCount => dotCount;
         public float Duration => duration;
         public float Distance => distance;
         public float SlowRate => slowRate;
@@ -105,7 +105,7 @@ namespace B409.Jade.Battle {
             }
         }
 
-        private bool ShowInterval {
+        private bool ShowDotCount {
             get {
                 return this.attackMode == AttackMode.DamageOverTime;
             }
