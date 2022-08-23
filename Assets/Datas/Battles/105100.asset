@@ -13,10 +13,13 @@ MonoBehaviour:
   m_Name: 105100
   m_EditorClassIdentifier: 
   id: 105100
+  background: {fileID: 0}
   enemies:
   - {fileID: 11400000, guid: c6ad07dc9a5a6574a8d47fe68f8bed33, type: 2}
+  - {fileID: 11400000, guid: 37a012722d7780e43b58366775253375, type: 2}
   - {fileID: 11400000, guid: 4e6cefaa1b5245f4fa08ad1658cd82c1, type: 2}
   - {fileID: 11400000, guid: 36eaecf7e1d25524ba4f5966d5482448, type: 2}
+  - {fileID: 11400000, guid: 9438997252a6ef54d8f835b2255b191c, type: 2}
   - {fileID: 11400000, guid: 55f463958283f76429b5b9ebbc433ee0, type: 2}
   - {fileID: 11400000, guid: ee250303d84dae84daa2c986ec49767b, type: 2}
   - {fileID: 11400000, guid: fa409de59b8a09a439ad8aa28ad8a600, type: 2}

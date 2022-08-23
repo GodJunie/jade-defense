@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: 105200
   m_EditorClassIdentifier: 
   id: 105200
+  background: {fileID: 0}
   enemies:
+  - {fileID: 11400000, guid: 211a7d99e8b6c6c4aad55812df1d687a, type: 2}
   - {fileID: 11400000, guid: 1e344668ec33de24e84fef0c79a42735, type: 2}
   - {fileID: 11400000, guid: 0d2a52fcd79840f42bf9c2dd84fa4a51, type: 2}
   - {fileID: 11400000, guid: e7cb247513250214bb7f8b3751ecafcc, type: 2}
