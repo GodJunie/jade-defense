@@ -20,12 +20,16 @@ MonoBehaviour:
   datas:
   - Dialogues/120000
   - Dialogues/120001
+  - DailyRoutines/12000
   - Dialogues/120002
   - Dialogues/120003
   - Dialogues/120004
-  - DailyRoutines/12000
-  - Dialogues/120005
   - DailyRoutines/12001
+  - Dialogues/120005
   - Dialogues/120006
-  - DailyRoutines/12002
   - Dialogues/120007
+  - Dialogues/120008
+  - Dialogues/120009
+  - DailyRoutines/12002
+  - Dialogues/120010
+  - Dialogues/120011

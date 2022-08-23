@@ -44,11 +44,16 @@ namespace B409.Jade.UI {
 
 
         private void Awake() {
-            var graphics = GetComponentsInChildren<Graphic>();
+            chatObject.gameObject.SetActive(true);
+            var graphics = chatObject.GetComponentsInChildren<Graphic>();
             foreach(var graphic in graphics) {
+                var color = graphic.color;
                 this.chatGraphics.Add(graphic);
-                this.chatAlphaOrigin.Add(graphic.GetInstanceID(), graphic.color.a);
+                this.chatAlphaOrigin.Add(graphic.GetInstanceID(), color.a);
+                color.a = 0f;
+                graphic.color = color;
             }
+            chatOn = false;
         }
 
         private void Start() {
@@ -218,6 +223,7 @@ namespace B409.Jade.UI {
             case DialogueData.SequenceSort.Object:
                 if(sequence.EventObject != null) {
                     this.eventObject = Instantiate(sequence.EventObject, Vector3.zero, Quaternion.identity);
+                    await WaitClick(defaultWaitDuration);
                 }
                 if(!string.IsNullOrEmpty(sequence.EventId)) {
                     if(chatOn) {

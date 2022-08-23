@@ -1131,8 +1131,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f5db272fd1cb96419d0c2054dd5864b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isTest: 1
-  data: {fileID: 11400000, guid: e33c9153577522f4e88846f3b483d648, type: 2}
+  isTest: 0
+  data: {fileID: 11400000, guid: 3ee68fd6e858e74419e8db7b9eaa44a8, type: 2}
   textName: {fileID: 428643077}
   textScript: {fileID: 114584673}
   leftCharacterHolder: {fileID: 691370531}

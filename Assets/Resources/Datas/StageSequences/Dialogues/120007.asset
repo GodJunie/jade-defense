@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2627f94fa25ca224ea51af9d22f883eb, type: 3}
-  m_Name: 120005
+  m_Name: 120007
   m_EditorClassIdentifier: 
-  id: 120005
+  id: 120007
   datas:
   - sequenceSort: 3
     leftCharacter:
@@ -29,18 +29,19 @@ MonoBehaviour:
       mode: 0
       target: {fileID: 0}
       animation: 
-    eventObject: {fileID: 1246082858377315882, guid: b75d530bc129a134f830178eac15b764, type: 3}
+    eventObject: {fileID: 9181896504633798446, guid: c63ceb68f6deac34e85674c2ac0bc340, type: 3}
     eventId: 
     rewards: []
   - sequenceSort: 0
     leftCharacter:
-      mode: 1
-      target: {fileID: 6118293056195659511, guid: 5a5e49bbaef00974897a66d5dfd36f2e, type: 3}
+      mode: 0
+      target: {fileID: 0}
       animation: 
     scriptInfo:
-      scriptFocus: 0
+      scriptFocus: 2
       name: Jade
-      script: "Ugh, my joints ache all over when the night comes\u2026"
+      script: 'Asgard is also a sacred world of gods, but it is a very prosperous
+        land. '
       speed: 20
       skippable: 1
     rightCharacter:
@@ -58,7 +59,8 @@ MonoBehaviour:
     scriptInfo:
       scriptFocus: 2
       name: 
-      script: It's been quite some time since I came to Svartalfheim Wasteland.
+      script: When I first arrived in Asgard, not knowing exactly what the portal
+        works, I wondered if this was real.
       speed: 20
       skippable: 1
     rightCharacter:
@@ -76,8 +78,9 @@ MonoBehaviour:
     scriptInfo:
       scriptFocus: 2
       name: 
-      script: "I\u2019m doing well collecting several monsters, but I\u2019m still
-        cold and hungry."
+      script: Strange foods that I had never seen or smelled, gigantic buildings
+        that I don't know how they were built with stones, and clothes that shone
+        as if they were woven from silver or gold thread.
       speed: 20
       skippable: 1
     rightCharacter:
@@ -95,7 +98,8 @@ MonoBehaviour:
     scriptInfo:
       scriptFocus: 2
       name: 
-      script: I remember the time that I was a grand master thief in Asgard.
+      script: Midgard's black market merchants seem to treat Asgard's goods as very
+        valuable stuff.
       speed: 20
       skippable: 1
     rightCharacter:
@@ -113,7 +117,62 @@ MonoBehaviour:
     scriptInfo:
       scriptFocus: 2
       name: 
-      script: Where the hell did it go wrong?
+      script: Every time you sold something, you could get gold coins in return.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: Gold coins!
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: The gold coin I had never touched in my life, and thought that I could
+        feel its cool and soft touch only in my imagination until the day I die.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: It was truly a touching experience.
       speed: 20
       skippable: 1
     rightCharacter:

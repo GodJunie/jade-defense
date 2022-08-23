@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2627f94fa25ca224ea51af9d22f883eb, type: 3}
-  m_Name: 120005
+  m_Name: 120009
   m_EditorClassIdentifier: 
-  id: 120005
+  id: 120009
   datas:
   - sequenceSort: 3
     leftCharacter:
@@ -29,18 +29,19 @@ MonoBehaviour:
       mode: 0
       target: {fileID: 0}
       animation: 
-    eventObject: {fileID: 1246082858377315882, guid: b75d530bc129a134f830178eac15b764, type: 3}
+    eventObject: {fileID: 5240436838085511005, guid: 60537d4f2ad90034caeeb17dc9f42a85, type: 3}
     eventId: 
     rewards: []
   - sequenceSort: 0
     leftCharacter:
-      mode: 1
-      target: {fileID: 6118293056195659511, guid: 5a5e49bbaef00974897a66d5dfd36f2e, type: 3}
+      mode: 0
+      target: {fileID: 0}
       animation: 
     scriptInfo:
-      scriptFocus: 0
+      scriptFocus: 2
       name: Jade
-      script: "Ugh, my joints ache all over when the night comes\u2026"
+      script: After I ran away as fast as possible, I could barely breathe after
+        sprinting for a while.
       speed: 20
       skippable: 1
     rightCharacter:
@@ -58,7 +59,7 @@ MonoBehaviour:
     scriptInfo:
       scriptFocus: 2
       name: 
-      script: It's been quite some time since I came to Svartalfheim Wasteland.
+      script: "It felt like my heart was going to pop out of my mouth.\r"
       speed: 20
       skippable: 1
     rightCharacter:
@@ -76,8 +77,7 @@ MonoBehaviour:
     scriptInfo:
       scriptFocus: 2
       name: 
-      script: "I\u2019m doing well collecting several monsters, but I\u2019m still
-        cold and hungry."
+      script: The black-winged demon did not pursue me.
       speed: 20
       skippable: 1
     rightCharacter:
@@ -95,7 +95,8 @@ MonoBehaviour:
     scriptInfo:
       scriptFocus: 2
       name: 
-      script: I remember the time that I was a grand master thief in Asgard.
+      script: Judging from the appearance of that black-winged demon, it must have
+        never been a resident of Asgard.
       speed: 20
       skippable: 1
     rightCharacter:
@@ -113,7 +114,81 @@ MonoBehaviour:
     scriptInfo:
       scriptFocus: 2
       name: 
-      script: Where the hell did it go wrong?
+      script: From the point of view of the unknown demon, she was lucky to meet
+        me at the portal.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: "I would never accuse Asgard of the portal's secrets.\r"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: "I didn't want to cut the goose\u2019s stomach that lays the golden
+        egg."
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: What the hell was that demon?
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: What a devil has something to do with Asgard.
       speed: 20
       skippable: 1
     rightCharacter:
