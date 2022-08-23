@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: d2d9b4d38bb4a46a7868c1054fefd98c, type: 3}
   id: 204002
-  name: Spirit of Fire
-  description: Spirit of Fire
+  name: Bark of Fire
+  description: It's the spirit of Fire. It's still burning.
   prefab: {fileID: 2770130927134955094, guid: 94e6ff102deb50d47a7eac3b4978f31d, type: 3}
   status:
     cooltime: 5

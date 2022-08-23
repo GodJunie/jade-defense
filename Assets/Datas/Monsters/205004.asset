@@ -15,7 +15,7 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 4d58df2030c954cd9a1b00f89998d990, type: 3}
   id: 205004
   name: Soul of Blade Warrior
-  description: Soul of Blade Warrior
+  description: ...
   prefab: {fileID: 5081814491215758669, guid: 451626cb52d3aa1408b60a267fc0a8f2, type: 3}
   status:
     cooltime: 6

@@ -15,7 +15,7 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 7ab9fbbd403704e8a8593437675eb34d, type: 3}
   id: 205003
   name: Soul of Knight
-  description: Soul of Knight
+  description: ...
   prefab: {fileID: 1701109430655624811, guid: 9e90acb972fccf44ea0092c06e4fcee1, type: 3}
   status:
     cooltime: 5

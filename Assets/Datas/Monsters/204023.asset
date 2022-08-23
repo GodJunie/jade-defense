@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 0d35f9bd5a955dc46b2b6e23b778f79f, type: 3}
   id: 204023
-  name: Spirit of Tornado
-  description: Spirit of Tornado
+  name: Bark of Tornado
+  description: It's a powerful tornado spirit. Hold on tight!
   prefab: {fileID: 4543176893479964638, guid: e88a4c54389e3da4ab65859be960f419, type: 3}
   status:
     cooltime: 6

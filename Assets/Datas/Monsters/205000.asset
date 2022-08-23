@@ -15,7 +15,7 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 37a5a636690414136ae4f5a781ff0e66, type: 3}
   id: 205000
   name: Soul of Soldier
-  description: Soul of Soldier
+  description: ...
   prefab: {fileID: 9066550688050896664, guid: 7d8eb17654a009342829cd7fe856f5b0, type: 3}
   status:
     cooltime: 3

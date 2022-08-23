@@ -15,7 +15,7 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 39de2e33983d2461db426b0d983f2b15, type: 3}
   id: 201001
   name: TeratoBud
-  description: Bud of Yggdrasill
+  description: Teratoma, who loves eggs and tea leaves, is also hated by farmers.
   prefab: {fileID: 2396844474389726675, guid: b631227a28a77774abb23ddd96cb4215, type: 3}
   status:
     cooltime: 3

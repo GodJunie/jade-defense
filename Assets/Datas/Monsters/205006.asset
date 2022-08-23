@@ -15,7 +15,7 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 19407ee35610e4e8aad972033535628e, type: 3}
   id: 205006
   name: Soul of Wizard
-  description: Soul of Wizard
+  description: ...
   prefab: {fileID: 2512011483014296781, guid: 99a295dea8d11d240b3ef7aa9c005b5b, type: 3}
   status:
     cooltime: 6

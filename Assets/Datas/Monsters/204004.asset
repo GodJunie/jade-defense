@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 8113f42fb645d4e90a76e66080fd4b89, type: 3}
   id: 204004
-  name: Spirit of Valley Water
-  description: Spirit of Valley Water
+  name: Bark of Valley Water
+  description: It's the spirit of valley water. It really hates getting dirty.
   prefab: {fileID: 7449778412792988414, guid: 36840a6cd3932394c8956ba51601fcd8, type: 3}
   status:
     cooltime: 5

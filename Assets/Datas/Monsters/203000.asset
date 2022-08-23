@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 587dd5e1ea05248a285340fbf3972fac, type: 3}
   id: 203000
-  name: Pig Henchman
-  description: Pig Henchman
+  name: Pig sentry
+  description: These are sentries with wooden shields. Smallest and weakest, but
+    stubborn and firm.
   prefab: {fileID: 3128442038926316438, guid: a0415ec2b01938643b13ac38f01bf4f8, type: 3}
   status:
     cooltime: 3

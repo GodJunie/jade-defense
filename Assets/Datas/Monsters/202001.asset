@@ -15,7 +15,7 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 4ed99b3f0f817401f886f3746920c649, type: 3}
   id: 202001
   name: Fox Trainee
-  description: Fox Trainee
+  description: It's Fox Trainees. Their military life is a long way off.
   prefab: {fileID: 6364866786003199411, guid: b7da33ebb32f6864486057ad675f25ab, type: 3}
   status:
     cooltime: 3

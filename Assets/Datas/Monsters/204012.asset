@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 54da18da7a21b432799ef87f61c1690b, type: 3}
   id: 204012
-  name: Spirit of Spark
-  description: Spirit of Spark
+  name: Bark of Spark
+  description: It's the spirit of Spark. This guy is pretty mean.
   prefab: {fileID: 1081949171698213384, guid: 6cc5db293d0d0074bb75a2a8b984d6ee, type: 3}
   status:
     cooltime: 3

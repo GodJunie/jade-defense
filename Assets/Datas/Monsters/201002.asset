@@ -15,7 +15,8 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 14e9480f621b04dbaac1e2a43ef55687, type: 3}
   id: 201002
   name: TeratoSprout
-  description: Bud of Yggdrasill2
+  description: This teratoma is known to collect tea leaves and chew it like drinking
+    tea.
   prefab: {fileID: 7873105012748281004, guid: 9d63df81306463b40bbb51b36953eb46, type: 3}
   status:
     cooltime: 3

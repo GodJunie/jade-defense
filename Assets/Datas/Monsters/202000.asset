@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 7ea61927dbbc34e0699362ffbce76c16, type: 3}
   id: 202000
-  name: Fox Henchman
-  description: Fox Henchman
+  name: Fox Scout
+  description: These young foxes are mainly in charge of scouts. When they're discovered,
+    they throw stones and disappear immediately.
   prefab: {fileID: 1641255098926260126, guid: c6014e2716ff07a4db55e61ba1635880, type: 3}
   status:
     cooltime: 3

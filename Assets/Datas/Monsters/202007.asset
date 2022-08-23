@@ -15,7 +15,8 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: be03d5034b209486eaf2e7e0eb51ad83, type: 3}
   id: 202007
   name: Fox Chief
-  description: Fox Chief
+  description: Only the strongest warrior can ascend to the chief. There's probably
+    no one who can stand up to him in this desert.
   prefab: {fileID: 3057974119078451742, guid: 836e7369c706be64a8d9e058bfffb49c, type: 3}
   status:
     cooltime: 8

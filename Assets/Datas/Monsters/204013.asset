@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: ca1e8983329764262bb556cab4b1006a, type: 3}
   id: 204013
-  name: Spirit of Wind
-  description: Spirit of Wind
+  name: Bark of Wind
+  description: It's the spirit of wind. This guy looks like a naughty boy
   prefab: {fileID: 2138802567349366526, guid: b972eb89797b622468a942ad5485a8d3, type: 3}
   status:
     cooltime: 3

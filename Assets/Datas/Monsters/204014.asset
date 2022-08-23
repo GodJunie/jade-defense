@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 1d321f52493424c46920d5dbcd05b976, type: 3}
   id: 204014
-  name: Spirit of Water drop
-  description: Spirit of Water drop
+  name: Bark of Water drop
+  description: It's the spirit of wind. It hates to be tainted.
   prefab: {fileID: 6463641377932570172, guid: 79426de5fecea624b979ecae63e9a24e, type: 3}
   status:
     cooltime: 3

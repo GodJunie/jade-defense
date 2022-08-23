@@ -15,7 +15,9 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 1616cb2066e69432bb2099eda1a4794d, type: 3}
   id: 201008
   name: TeratoLeaf
-  description: Leaf Bundle of Yggdrasill
+  description: This slippery, hard teratoma is famous for its ability to stay healthy
+    and steady no matter how much you attack it. Farmers prefer to lift him up and
+    drop him off in another forest, rather than attack him.
   prefab: {fileID: 5107964302463474885, guid: 0a76ccc66cca5574aa311a831b101f49, type: 3}
   status:
     cooltime: 5

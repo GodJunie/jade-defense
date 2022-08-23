@@ -15,7 +15,15 @@ MonoBehaviour:
   id: 15002
   scripts: []
   day: 5
-  monsters: []
+  monsters:
+  - {fileID: 11400000, guid: 868ab03aa92b8f5408cd25cf6938a045, type: 2}
+  - {fileID: 11400000, guid: d16274b23ea7d9e46a9d4dc1e64d7b64, type: 2}
+  - {fileID: 11400000, guid: ae6c195b7076cd24a818884be659dda0, type: 2}
+  - {fileID: 11400000, guid: d8716002e0a00b04c9260e743f6cba96, type: 2}
+  - {fileID: 11400000, guid: febb2bd092a09ae4c99ee28e2a87ab81, type: 2}
+  - {fileID: 11400000, guid: 5cfc5742bef77844ba37dc6b406d7cf5, type: 2}
+  - {fileID: 11400000, guid: 1ee6cb2f3eee68a4cae6cd4f9e76f0ce, type: 2}
+  - {fileID: 11400000, guid: e0e0a4ff890e22c499f8eea1fdeccb1f, type: 2}
   salesCount: 0
   trades: []
   enemies:

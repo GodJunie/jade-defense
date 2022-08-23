@@ -15,7 +15,7 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: eeb12610da32944579bbbcf62e882622, type: 3}
   id: 203003
   name: Pig Warrior
-  description: Pig Warrior
+  description: It's a solid pig warrior. It looks scary.
   prefab: {fileID: 7645037120964393471, guid: 95daba1c84e33a941a38418888ff2449, type: 3}
   status:
     cooltime: 4

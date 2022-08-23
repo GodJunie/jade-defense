@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: e8edf6774a4e342a782c4f5210243288, type: 3}
   id: 204011
-  name: Spirit of Sand
-  description: Spirit of Sand
+  name: Bark of Sand
+  description: It's the spirit of sand. This friend doesn't seem confident yet.
   prefab: {fileID: 3595723789117319452, guid: 458487dbd8c6dfb4698953b881b0b899, type: 3}
   status:
     cooltime: 3

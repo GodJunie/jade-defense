@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 6994ffa6fa8aa594996a228ccfcdba35, type: 3}
   id: 204022
-  name: Spirit of Ignis
-  description: Spirit of Ignis
+  name: Bark of Ignis
+  description: It's a powerful fire spirit. Now he wants me to call him Ignis. Edgelord...
   prefab: {fileID: 1224075197247168737, guid: 253bb8cbe7cac11419eafb1bdf11ab15, type: 3}
   status:
     cooltime: 6
