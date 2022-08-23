@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 11000
   scripts:
+  - Let's see... we need more teratoma's, let's get some eggs for them on the Livestock
+    tab!
   - 
   day: 5
   monsters:
