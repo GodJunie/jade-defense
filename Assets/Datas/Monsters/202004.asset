@@ -15,7 +15,8 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 56a10d749fe6440e9909102f5b21ce56, type: 3}
   id: 202004
   name: Fox Shaman
-  description: Fox Shaman
+  description: All the acts of the fox tribe begin with a ritual, which Shaman administers.
+    Foxes always visit shamans when they want to tell fortunes or get advice.
   prefab: {fileID: 4746109655196642692, guid: e07d1a115c3195d41b8cce21824f2f7b, type: 3}
   status:
     cooltime: 5

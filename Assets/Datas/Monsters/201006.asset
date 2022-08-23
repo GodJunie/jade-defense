@@ -15,7 +15,8 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 1a28e6d8f7c4042c8b2fb3b2146ff5fc, type: 3}
   id: 201006
   name: TeratoVine
-  description: Vines of Yggdrasill
+  description: Teratoma, who always looks unhappy and sad, is a sensitive guy, so
+    you'd better stay away.
   prefab: {fileID: 7054783715633654857, guid: f9ef8fda3db2130428f99a2c8b040108, type: 3}
   status:
     cooltime: 6

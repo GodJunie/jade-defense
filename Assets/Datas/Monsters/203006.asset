@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 4e221b72ad0ef43bd943f8e6fffe6332, type: 3}
   id: 203006
-  name: Pig Trespasser
-  description: Pig Trespasser
+  name: Pig Wizard
+  description: These floating pigs heal their allies. They sacrifice their eyes and
+    master the magic of recovery, but their own eyes don't seem to heal.
   prefab: {fileID: 6784331725310233539, guid: 24f27b9daf4a40f4b8f34cdc04731f9a, type: 3}
   status:
     cooltime: 6

@@ -15,7 +15,12 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 17c276d53f63e4c34965a5ea4e3dabaf, type: 3}
   id: 203005
   name: Pig Thief
-  description: Pig Thief
+  description: 'For pigs, thieves are a little different from what they usually mean.
+
+    For
+    them, a thief refers to a powerful warrior who destroys an enemy without a trace
+    and sweeps away trophies. If you crush all your enemies with a iron mace, there''s
+    no witness.'
   prefab: {fileID: 165608084055117575, guid: be739a268fce5034893ec27785fef3af, type: 3}
   status:
     cooltime: 6

@@ -15,7 +15,10 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 4fcf200c19b384102a5540d08338833d, type: 3}
   id: 201004
   name: TeratoFruit
-  description: Fruit of Yggdrasill
+  description: 'The tea leaves torn by this teratoma are always said to be the best
+    tea leaves.
+
+    You''re so mean!'
   prefab: {fileID: 8132927189149865726, guid: 91a690bf0a2f0b34eaa7d0263bc7eaf0, type: 3}
   status:
     cooltime: 3

@@ -15,7 +15,7 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 1a7e7495061434b70b61237349caaeda, type: 3}
   id: 205001
   name: Soul of wrath
-  description: Soul of Wrath
+  description: ...
   prefab: {fileID: 3540767977828803352, guid: 189cf939dd9fb07469ed2c4c20ec2365, type: 3}
   status:
     cooltime: 3

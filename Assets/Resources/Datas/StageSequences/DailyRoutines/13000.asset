@@ -13,9 +13,42 @@ MonoBehaviour:
   m_Name: 13000
   m_EditorClassIdentifier: 
   id: 13000
-  scripts: []
+  scripts:
+  - On the [Enemies] tab, i can identify the next enemy!
   day: 3
-  monsters: []
+  monsters:
+  - {fileID: 11400000, guid: 1cad6710dcf223e468247eb06cf52ce3, type: 2}
+  - {fileID: 11400000, guid: 491f1df46333f624aa1a277005fa32fb, type: 2}
+  - {fileID: 11400000, guid: a605c21ceaae03140ae802af7a8f4cb3, type: 2}
+  - {fileID: 11400000, guid: e40133b6b8960dd46a67a48c41659fcd, type: 2}
+  - {fileID: 11400000, guid: b048a21286f5c104898b2a372606e69c, type: 2}
+  - {fileID: 11400000, guid: c0fba5c38f7c47f47950c0c22694dd42, type: 2}
+  - {fileID: 11400000, guid: e3a1de9e950c96842ae357f51f791e2c, type: 2}
+  - {fileID: 11400000, guid: 745b47de337ba0a47b078958757b891a, type: 2}
+  - {fileID: 11400000, guid: 389ecefaf3ab10048b67bfd12c5b9988, type: 2}
+  - {fileID: 11400000, guid: 4e6cefaa1b5245f4fa08ad1658cd82c1, type: 2}
+  - {fileID: 11400000, guid: 36eaecf7e1d25524ba4f5966d5482448, type: 2}
+  - {fileID: 11400000, guid: 55f463958283f76429b5b9ebbc433ee0, type: 2}
+  - {fileID: 11400000, guid: ee250303d84dae84daa2c986ec49767b, type: 2}
+  - {fileID: 11400000, guid: c6ad07dc9a5a6574a8d47fe68f8bed33, type: 2}
+  - {fileID: 11400000, guid: fa409de59b8a09a439ad8aa28ad8a600, type: 2}
+  - {fileID: 11400000, guid: 95f5707e4eaa1dd46925e8ea3fffc5ef, type: 2}
+  - {fileID: 11400000, guid: e65f897cbe0214748bf9a3ac95eeb848, type: 2}
+  - {fileID: 11400000, guid: 34b0cf9972aaa1f4a96d5c46901c8d72, type: 2}
+  - {fileID: 11400000, guid: ecf9877c9b3dd434b8375cdee9ce7409, type: 2}
+  - {fileID: 11400000, guid: 3e66668c80c6a3f4da811c3ff9eb3bf7, type: 2}
+  - {fileID: 11400000, guid: d0661bdcabbdc4245932a4788cc0cdf8, type: 2}
+  - {fileID: 11400000, guid: 495265afb6d12024a8453b9f3cacda37, type: 2}
+  - {fileID: 11400000, guid: 68496e8961ecff447a0a9c6483350ee4, type: 2}
+  - {fileID: 11400000, guid: 7f6be3e5526b9104abcea6831112eeb3, type: 2}
+  - {fileID: 11400000, guid: 7357056216894ab459fc25e2504a7d2f, type: 2}
+  - {fileID: 11400000, guid: d93893f05df8b65448eba01493f9a9bc, type: 2}
+  - {fileID: 11400000, guid: 7d0d0f386f2c4054a950f055b9a7f5f0, type: 2}
+  - {fileID: 11400000, guid: 5f9da279b40e0b648b9b48b496b0040c, type: 2}
+  - {fileID: 11400000, guid: 37a012722d7780e43b58366775253375, type: 2}
+  - {fileID: 11400000, guid: 9438997252a6ef54d8f835b2255b191c, type: 2}
+  - {fileID: 11400000, guid: 211a7d99e8b6c6c4aad55812df1d687a, type: 2}
+  - {fileID: 11400000, guid: 6de6591b29b54d74e81117c08df1b21c, type: 2}
   salesCount: 10
   trades:
   - sale: {fileID: 11400000, guid: 1cad6710dcf223e468247eb06cf52ce3, type: 2}
@@ -101,7 +134,7 @@ MonoBehaviour:
   - sale: {fileID: 11400000, guid: 2e12f2250b6f33944bf7f0282f2480d7, type: 2}
     rate: 2
   - sale: {fileID: 11400000, guid: 10a5f22fa84bc76439071b22027e598b, type: 2}
-    rate: 5
+    rate: 10
   - sale: {fileID: 11400000, guid: 839cdc6b477a4834cb515d129ebf87cc, type: 2}
     rate: 3
   - sale: {fileID: 11400000, guid: d01f26e10b6314f489b446ab8fad8538, type: 2}
@@ -122,8 +155,6 @@ MonoBehaviour:
     rate: 3
   - sale: {fileID: 11400000, guid: 4798147202ceb8e4fb0ffe48ca90b35f, type: 2}
     rate: 3
-  - sale: {fileID: 11400000, guid: c7f866d537b2f924bb4f40b057ddf435, type: 2}
-    rate: 5
   - sale: {fileID: 11400000, guid: 399a39c2c2c2f97468829fccced19baf, type: 2}
     rate: 3
   - sale: {fileID: 11400000, guid: 7e6cc04742966de4b8882872197f316d, type: 2}

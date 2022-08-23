@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: c9406a1953ecb493a9ccf5e8197c6c7d, type: 3}
   id: 204001
-  name: Spirit of Dirt
-  description: Spirit of Dirt
+  name: Bark of Dirt
+  description: It's the spirit of Dirt. This friend is trying.
   prefab: {fileID: 5449003599360474792, guid: e9fa3ec3b1d754249b00ea0a40c8797c, type: 3}
   status:
     cooltime: 5

@@ -15,7 +15,9 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: e1c40c94c526a4cae91b4662d0938ba9, type: 3}
   id: 202005
   name: Fox Apprentice Wizard
-  description: Fox Apprentice Wizard
+  description: Magic is a difficult thing. Fox wizards believe that before they harm
+    someone, they should learn to treat someone. Until you become a true wizard,
+    you are allowed to learn only healing magic.
   prefab: {fileID: 2003035266538773228, guid: 3b56a9bff923e884fbce0f497a0e4d73, type: 3}
   status:
     cooltime: 5

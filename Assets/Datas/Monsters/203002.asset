@@ -15,7 +15,8 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 715fef6d64f364ce3987d2f6c9e7c54e, type: 3}
   id: 203002
   name: Pig Apprentice Wizard
-  description: Pig Apprentice Wizard
+  description: Here's the Pig Apprentice Wizard. This apprentice can make a long-range
+    attack. Well, I think the weapon would have done pretty well if it had been learned.
   prefab: {fileID: 6709610741712609718, guid: b881eea56ae964743afc4b58924abba1, type: 3}
   status:
     cooltime: 5

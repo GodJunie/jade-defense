@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 97eb6a0c4a0d349b3b4408c5114b7c9f, type: 3}
   id: 204010
-  name: Spirit of Bark
-  description: Spirit of Tree
+  name: Bark of Sapling
+  description: It's the spirit of sapling. Maybe it's because he's still young, but
+    he looks like a coward.
   prefab: {fileID: 8212898876767867685, guid: 938b220907249174d9eed81d5462cbef, type: 3}
   status:
     cooltime: 3

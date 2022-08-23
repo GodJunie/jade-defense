@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: d4c2275e8f5d1cf4796e4d3f207b37ef, type: 3}
   id: 204021
-  name: Spirit of Earth
-  description: Spirit of Earth
+  name: Bark of Earth
+  description: It's a powerful earth spirit.
   prefab: {fileID: 6923013767313134817, guid: 34957e356e7b451459fbf28d3918736a, type: 3}
   status:
     cooltime: 6

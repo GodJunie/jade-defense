@@ -15,7 +15,8 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: ae083b17ccb784d458c0514045970a0b, type: 3}
   id: 201007
   name: TeratoMushroom
-  description: Mushroom of Yggdrasill
+  description: As soon as you see this teratoma, it's a good idea to stop breathing
+    and avoid it. If you keep inhaling his spores, you'll find yourself lying down.
   prefab: {fileID: 2570187248312658741, guid: 93e94b5922f10414f9d157c6e53db41b, type: 3}
   status:
     cooltime: 8

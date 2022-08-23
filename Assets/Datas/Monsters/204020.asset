@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: a75c992e74e75944688746fdb0a7ee19, type: 3}
   id: 204020
-  name: Spirit of Tree
-  description: Spirit of Tree
+  name: Bark of Old Tree
+  description: It's a powerful tree spirit.
   prefab: {fileID: 4438354892599105137, guid: 99775e6d9a7a29b43872175e019fb671, type: 3}
   status:
     cooltime: 6

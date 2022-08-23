@@ -15,7 +15,7 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 701e40d7288c6466ea956763bcd2f233, type: 3}
   id: 205007
   name: Fenrir
-  description: Fenrir
+  description: He's the guardian of Asgard, he's the commander of the Soul Army.
   prefab: {fileID: 6100908216128088238, guid: 9a0697feb67f54141990c02a3b26ce16, type: 3}
   status:
     cooltime: 10

@@ -15,7 +15,7 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 480f4c9e1e6a145b7be86e7394e88d78, type: 3}
   id: 201005
   name: TeratoEggplant
-  description: Eggplant of Yggdrasill
+  description: It is said that fruits and stems have healing power.
   prefab: {fileID: 1863606715737535681, guid: b797e24eac32ab24ebc4d6cc31b3facf, type: 3}
   status:
     cooltime: 5

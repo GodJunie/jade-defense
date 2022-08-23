@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: fcccb799999275f478c50aaadda70d3b, type: 3}
   id: 204024
-  name: Spirit of Water
-  description: Spirit of Water
+  name: Bark of Water
+  description: It's a powerful water spirit. Now it's clean because no one can touch
+    it.
   prefab: {fileID: 1497469741088436530, guid: 80a7089ad4716d340bfb9d28756a3ad1, type: 3}
   status:
     cooltime: 6

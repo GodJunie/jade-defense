@@ -15,7 +15,7 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: eca813596d35a4f538e63aab93fbffc7, type: 3}
   id: 205005
   name: Soul of Centauros
-  description: Soul of Centauros
+  description: ...
   prefab: {fileID: 3957765672394102307, guid: 23827b11efd58914db30336b19fa926d, type: 3}
   status:
     cooltime: 6

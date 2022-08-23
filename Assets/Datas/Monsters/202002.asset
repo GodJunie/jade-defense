@@ -15,7 +15,11 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: ac84914ef34ab423d85e2bbec6dc44b6, type: 3}
   id: 202002
   name: Fox Bandit
-  description: Fox Bandit
+  description: 'These foxes are looking for enemy forces to pass by, then quickly
+    plunder them and slowly disappear.
+
+    Most of the loot is dedicated to the
+    tribes. That determines the promotion.'
   prefab: {fileID: 7586491907923939134, guid: 2709535f71afb5e4c91f1cfd0b5dc968, type: 3}
   status:
     cooltime: 3
