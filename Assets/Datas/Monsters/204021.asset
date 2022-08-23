@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Spirit of Earth
   prefab: {fileID: 6923013767313134817, guid: 34957e356e7b451459fbf28d3918736a, type: 3}
   status:
-    cooltime: 1
+    cooltime: 6
     hp: 200
     moveSpeed: 1
     range: 0.5

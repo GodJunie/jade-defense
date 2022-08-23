@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Fenrir
   prefab: {fileID: 6100908216128088238, guid: 9a0697feb67f54141990c02a3b26ce16, type: 3}
   status:
-    cooltime: 1
+    cooltime: 10
     hp: 1500
     moveSpeed: 0
     range: 3
@@ -36,4 +36,6 @@ MonoBehaviour:
     slowRate: 0
   cost:
   - item: {fileID: 11400000, guid: ccc71a76c1fd38a4b9369afb23050518, type: 2}
-    count: 5
+    count: 10
+  buyPrice: 0
+  sellPrice: 0

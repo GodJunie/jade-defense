@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Spirit of Water
   prefab: {fileID: 1497469741088436530, guid: 80a7089ad4716d340bfb9d28756a3ad1, type: 3}
   status:
-    cooltime: 1
+    cooltime: 6
     hp: 200
     moveSpeed: 1
     range: 0.5

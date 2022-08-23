@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Spirit of Sand
   prefab: {fileID: 3595723789117319452, guid: 458487dbd8c6dfb4698953b881b0b899, type: 3}
   status:
-    cooltime: 1
+    cooltime: 3
     hp: 130
     moveSpeed: 1
     range: 0.3

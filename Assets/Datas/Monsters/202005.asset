@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Fox Apprentice Wizard
   prefab: {fileID: 2003035266538773228, guid: 3b56a9bff923e884fbce0f497a0e4d73, type: 3}
   status:
-    cooltime: 2
+    cooltime: 5
     hp: 200
     moveSpeed: 1
     range: 2

@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Soul of Blade Warrior
   prefab: {fileID: 5081814491215758669, guid: 451626cb52d3aa1408b60a267fc0a8f2, type: 3}
   status:
-    cooltime: 1
+    cooltime: 6
     hp: 170
     moveSpeed: 1.5
     range: 0.5
@@ -37,3 +37,5 @@ MonoBehaviour:
   cost:
   - item: {fileID: 11400000, guid: ccc71a76c1fd38a4b9369afb23050518, type: 2}
     count: 3
+  buyPrice: 0
+  sellPrice: 0

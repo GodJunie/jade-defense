@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Spirit of Tree
   prefab: {fileID: 4438354892599105137, guid: 99775e6d9a7a29b43872175e019fb671, type: 3}
   status:
-    cooltime: 1
+    cooltime: 6
     hp: 550
     moveSpeed: 1
     range: 0.5

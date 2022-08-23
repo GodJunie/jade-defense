@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Spirit of Windblast
   prefab: {fileID: 7227429877696875407, guid: d3deef8b57c2af14b85a7458b456deab, type: 3}
   status:
-    cooltime: 1
+    cooltime: 5
     hp: 170
     moveSpeed: 1
     range: 0.5

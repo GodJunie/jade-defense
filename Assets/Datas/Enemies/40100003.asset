@@ -30,7 +30,7 @@ MonoBehaviour:
     attackMode: 1
     atk: 45
     heal: 0
-    interval: 3
+    interval: 1
     duration: 3
     distance: 0
     slowRate: 0

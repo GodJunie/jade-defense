@@ -18,8 +18,8 @@ MonoBehaviour:
   description: Pig Apprentice Wizard
   prefab: {fileID: 6709610741712609718, guid: b881eea56ae964743afc4b58924abba1, type: 3}
   status:
-    cooltime: 1
-    hp: 70
+    cooltime: 5
+    hp: 170
     moveSpeed: 1
     range: 2
     targetFilterMode: 3

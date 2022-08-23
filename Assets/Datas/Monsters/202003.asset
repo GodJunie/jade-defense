@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Fox Warrior
   prefab: {fileID: 4574770898336295727, guid: 4289039f753c40a4a9d8553df23fef71, type: 3}
   status:
-    cooltime: 1
+    cooltime: 5
     hp: 450
     moveSpeed: 1
     range: 0.4

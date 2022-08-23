@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Spirit of Spark
   prefab: {fileID: 1081949171698213384, guid: 6cc5db293d0d0074bb75a2a8b984d6ee, type: 3}
   status:
-    cooltime: 1
+    cooltime: 3
     hp: 130
     moveSpeed: 1
     range: 0.3

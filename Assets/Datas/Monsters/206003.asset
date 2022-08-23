@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Outland Lizard Warrior
   prefab: {fileID: 663056100821627287, guid: a90489d1eb3a62640bb03613ceabe2de, type: 3}
   status:
-    cooltime: 1
+    cooltime: 5
     hp: 180
     moveSpeed: 1
     range: 0.5
@@ -30,8 +30,10 @@ MonoBehaviour:
     attackMode: 1
     atk: 25
     heal: 0
-    interval: 5
+    interval: 1
     duration: 5
     distance: 0
     slowRate: 0
   cost: []
+  buyPrice: 0
+  sellPrice: 0

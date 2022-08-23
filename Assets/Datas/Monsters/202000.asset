@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Fox Henchman
   prefab: {fileID: 1641255098926260126, guid: c6014e2716ff07a4db55e61ba1635880, type: 3}
   status:
-    cooltime: 1
+    cooltime: 3
     hp: 250
     moveSpeed: 1
     range: 2

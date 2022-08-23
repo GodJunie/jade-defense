@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Spirit of Dirt
   prefab: {fileID: 5449003599360474792, guid: e9fa3ec3b1d754249b00ea0a40c8797c, type: 3}
   status:
-    cooltime: 1
+    cooltime: 5
     hp: 170
     moveSpeed: 1
     range: 0.5

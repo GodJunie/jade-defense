@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Soul of Centauros
   prefab: {fileID: 3957765672394102307, guid: 23827b11efd58914db30336b19fa926d, type: 3}
   status:
-    cooltime: 1
+    cooltime: 6
     hp: 300
     moveSpeed: 1.5
     range: 0.5
@@ -37,3 +37,5 @@ MonoBehaviour:
   cost:
   - item: {fileID: 11400000, guid: ccc71a76c1fd38a4b9369afb23050518, type: 2}
     count: 4
+  buyPrice: 0
+  sellPrice: 0
