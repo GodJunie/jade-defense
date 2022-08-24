@@ -383,6 +383,9 @@ namespace B409.Jade.Battle {
 
         #region Game
         public void GameStart() {
+            if(this.monsterDatas.Count == 0)
+                return;
+
             panelSetParty.SetActive(false);
 
             SetMonsterWait();

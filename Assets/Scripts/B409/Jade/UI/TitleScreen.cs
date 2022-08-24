@@ -35,6 +35,11 @@ namespace B409.Jade.UI {
             scroll = true;
         }
 
+        private void Start() {
+            imageWhite.color = Color.white;
+            this.imageWhite.DOFade(0f, 1f);
+        }
+
         private void Update() {
             if(scroll) {
                 camera.transform.position += Vector3.right * Time.deltaTime * scrollSpeed;

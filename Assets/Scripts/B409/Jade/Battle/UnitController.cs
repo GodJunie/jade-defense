@@ -68,14 +68,25 @@ namespace B409.Jade.Battle {
                 }
             }
         }
+
         private bool canAttack => this.State == State.Idle || this.State == State.Move;
+
+        private int targetCount {
+            get {
+                if(this.Data.Status.AttackMode == AttackMode.Heal) {
+                    return targets.Count(e => e.Hp < e.Data.Status.Hp);
+                } else {
+                    return targets.Count;
+                }
+            }
+        }
 
         #region Mono
         private void Awake() {
             detector.OnEnter = () => {
                 this.targets = detector.Targets.Where(e => e != null && this.Data.Status.TargetEnemy == (e.IsPlayer ^ this.IsPlayer) && e.State != State.Die && e != this).ToList();
 
-                if(targets.Count > 0) {
+                if(targetCount > 0) {
                     if(this.canAttack)
                         ChangeState(State.Attack);
                 }
@@ -84,7 +95,7 @@ namespace B409.Jade.Battle {
             detector.OnExit = () => {
                 this.targets = detector.Targets.Where(e => e != null && this.Data.Status.TargetEnemy == (e.IsPlayer ^ this.IsPlayer) && e.State != State.Die && e != this).ToList();
 
-                if(targets.Count > 0) {
+                if(targetCount > 0) {
                     if(this.canAttack)
                         ChangeState(State.Attack);
                 }
@@ -141,9 +152,6 @@ namespace B409.Jade.Battle {
                 }
                 if(entry.Animation.Name == dieAnimation) {
                     // ÀÎ»ý ³¡!
-                    foreach(var effect in this.effects) {
-                        effect.DestroyAllEffect();
-                    }
                     Destroy(this.gameObject);
                 }
             };
@@ -286,7 +294,7 @@ namespace B409.Jade.Battle {
 
         #region State
         private void CheckState() {
-            if(this.targets.Count > 0) {
+            if(targetCount > 0) {
                 ChangeState(State.Attack);
             } else {
                 if(this.inMap) {
@@ -493,6 +501,7 @@ namespace B409.Jade.Battle {
                 if(pool == null)
                     pool = new List<Effect>();
 
+                pool = pool.Where(e => e != null && e.gameObject != null).ToList();
                 var effect = pool.Find(e => !e.gameObject.activeInHierarchy);
 
                 if(effect == null) {
@@ -518,15 +527,9 @@ namespace B409.Jade.Battle {
                 }
 
                 effect.transform.position = pos;
+                effect.transform.SetParent(t.transform);
 
                 effect.EffectOn(duration);
-            }
-
-            public void DestroyAllEffect() {
-                if(pool != null)
-                    foreach(var effect in pool) {
-                        Destroy(effect.gameObject);
-                    }
             }
         }
 

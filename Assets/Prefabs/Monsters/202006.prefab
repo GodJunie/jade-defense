@@ -663,3 +663,8 @@ MonoBehaviour:
   detector: {fileID: 3917906167069968853}
   anim: {fileID: 6272776019234307923}
   hpBar: {fileID: 5898250946930714819}
+  effects:
+  - pivot: 1
+    effect: {fileID: 4119164443619770287, guid: 2785a93a7aa80c846883c12e95f95c9c, type: 3}
+    align: 1
+    duration: 1
