@@ -110,6 +110,13 @@ namespace B409.Jade.UI {
         [SerializeField]
         private TradeSellListSlot sellListSlotPrefab;
 
+        [BoxGroup("Sell")]
+        [SerializeField]
+        private Toggle sellMonsterToggle;
+        [BoxGroup("Sell")]
+        [SerializeField]
+        private Toggle sellItemToggle;
+
 
         private bool sellViewIsGridMode;
 
@@ -119,6 +126,17 @@ namespace B409.Jade.UI {
 
         private ScriptableObject data;
         private bool buy;
+
+        private void Awake() {
+            this.sellMonsterToggle.onValueChanged.AddListener((isOn) => {
+                if(sellViewIsGridMode) OpenGridSellPanel();
+                else OpenListSellPanel();
+            });
+            this.sellItemToggle.onValueChanged.AddListener((isOn) => {
+                if(sellViewIsGridMode) OpenGridSellPanel();
+                else OpenListSellPanel();
+            });
+        }
 
         private void Fit() {
             foreach(var fitter in this.GetComponentsInChildren<ContentSizeFitter>()) {
@@ -233,33 +251,37 @@ namespace B409.Jade.UI {
 
             Debug.Log(progress.Trades.Count);
 
-            foreach(var pair in progress.Items) {
-                int id = pair.Key;
-                int count = pair.Value;
+            if(sellItemToggle.isOn) {
+                foreach(var pair in progress.Items) {
+                    int id = pair.Key;
+                    int count = pair.Value;
 
-                var item = DataManager.Instance.Items.Find(e => e.Id == id);
+                    var item = DataManager.Instance.Items.Find(e => e.Id == id);
 
-                if(!item.CanSell)
-                    continue;
+                    if(!item.CanSell)
+                        continue;
 
-                var gridSlot = GetSellGridSlot();
+                    var gridSlot = GetSellGridSlot();
 
-                gridSlot.Init(item, count, sellGridScrollRect, () => {
-                    ShowInfo(item, false);
-                });
+                    gridSlot.Init(item, count, sellGridScrollRect, () => {
+                        ShowInfo(item, false);
+                    });
+                }
             }
+            
+            if(sellMonsterToggle.isOn) {
+                foreach(var pair in progress.Monsters) {
+                    int id = pair.Key;
+                    int count = pair.Value;
 
-            foreach(var pair in progress.Monsters) {
-                int id = pair.Key;
-                int count = pair.Value;
+                    var gridSlot = GetSellGridSlot();
 
-                var gridSlot = GetSellGridSlot();
+                    var monster = DataManager.Instance.Monsters.Find(e => e.Id == id);
 
-                var monster = DataManager.Instance.Monsters.Find(e => e.Id == id);
-
-                gridSlot.Init(monster, count, sellGridScrollRect, () => {
-                    ShowInfo(monster, false);
-                });
+                    gridSlot.Init(monster, count, sellGridScrollRect, () => {
+                        ShowInfo(monster, false);
+                    });
+                }
             }
 
             this.textGold.text = progress.Gold.ToString("N0");
@@ -292,33 +314,37 @@ namespace B409.Jade.UI {
 
             Debug.Log(progress.Trades.Count);
 
-            foreach(var pair in progress.Items) {
-                int id = pair.Key;
-                int count = pair.Value;
+            if(sellItemToggle.isOn) {
+                foreach(var pair in progress.Items) {
+                    int id = pair.Key;
+                    int count = pair.Value;
 
-                var item = DataManager.Instance.Items.Find(e => e.Id == id);
+                    var item = DataManager.Instance.Items.Find(e => e.Id == id);
 
-                if(!item.CanSell)
-                    continue;
+                    if(!item.CanSell)
+                        continue;
 
-                var listSlot = GetSellListSlot();
+                    var listSlot = GetSellListSlot();
 
-                listSlot.Init(item, count, sellListScrollRect, () => {
-                    ShowInfo(item, false);
-                });
+                    listSlot.Init(item, count, sellListScrollRect, () => {
+                        ShowInfo(item, false);
+                    });
+                }
             }
+           
+            if(sellMonsterToggle.isOn) {
+                foreach(var pair in progress.Monsters) {
+                    int id = pair.Key;
+                    int count = pair.Value;
 
-            foreach(var pair in progress.Monsters) {
-                int id = pair.Key;
-                int count = pair.Value;
+                    var listSlot = GetSellListSlot();
 
-                var listSlot = GetSellListSlot();
+                    var monster = DataManager.Instance.Monsters.Find(e => e.Id == id);
 
-                var monster = DataManager.Instance.Monsters.Find(e => e.Id == id);
-
-                listSlot.Init(monster, count, sellListScrollRect, () => {
-                    ShowInfo(monster, false);
-                });
+                    listSlot.Init(monster, count, sellListScrollRect, () => {
+                        ShowInfo(monster, false);
+                    });
+                }
             }
 
             this.textGold.text = progress.Gold.ToString("N0");
