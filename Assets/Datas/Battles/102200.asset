@@ -15,13 +15,14 @@ MonoBehaviour:
   id: 102200
   background: {fileID: 1696707214452814555, guid: b981f1bfb8bf27a48b0a631b9a7b972c, type: 3}
   enemies:
-  - {fileID: 11400000, guid: a9930aae7a9aeeb479241856a5043f52, type: 2}
-  - {fileID: 11400000, guid: d7596250a8e05b046b0041354104a7a2, type: 2}
   - {fileID: 11400000, guid: deb5ad50cc707c34ea9eb0016dd7add4, type: 2}
+  - {fileID: 11400000, guid: a9930aae7a9aeeb479241856a5043f52, type: 2}
+  - {fileID: 11400000, guid: deb5ad50cc707c34ea9eb0016dd7add4, type: 2}
+  - {fileID: 11400000, guid: d7596250a8e05b046b0041354104a7a2, type: 2}
   - {fileID: 11400000, guid: d345fee5b37ce1e4abf676701b15f7e1, type: 2}
   - {fileID: 11400000, guid: fdf456d321d45cb49827beadd76ec9e1, type: 2}
+  - {fileID: 11400000, guid: d345fee5b37ce1e4abf676701b15f7e1, type: 2}
   - {fileID: 11400000, guid: deb5ad50cc707c34ea9eb0016dd7add4, type: 2}
-  - {fileID: 11400000, guid: fdf456d321d45cb49827beadd76ec9e1, type: 2}
   - {fileID: 11400000, guid: d345fee5b37ce1e4abf676701b15f7e1, type: 2}
   rewards:
   - item: {fileID: 11400000, guid: d589c2021da9fa54fa47f26611edba9c, type: 2}

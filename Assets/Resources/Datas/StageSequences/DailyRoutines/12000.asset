@@ -34,10 +34,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 36eaecf7e1d25524ba4f5966d5482448, type: 2}
   - {fileID: 11400000, guid: 55f463958283f76429b5b9ebbc433ee0, type: 2}
   - {fileID: 11400000, guid: ee250303d84dae84daa2c986ec49767b, type: 2}
-  - {fileID: 11400000, guid: c6ad07dc9a5a6574a8d47fe68f8bed33, type: 2}
-  - {fileID: 11400000, guid: fa409de59b8a09a439ad8aa28ad8a600, type: 2}
-  - {fileID: 11400000, guid: 95f5707e4eaa1dd46925e8ea3fffc5ef, type: 2}
-  - {fileID: 11400000, guid: e65f897cbe0214748bf9a3ac95eeb848, type: 2}
   salesCount: 10
   trades:
   - sale: {fileID: 11400000, guid: 1cad6710dcf223e468247eb06cf52ce3, type: 2}
