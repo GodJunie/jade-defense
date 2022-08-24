@@ -4,9 +4,6 @@ using UnityEngine;
 
 namespace B409.Jade.Battle {
     public class Effect : MonoBehaviour {
-        [SerializeField]
-        private float duration;
-
         private float timer = 0f;
 
         private void Update() {
@@ -15,8 +12,8 @@ namespace B409.Jade.Battle {
                 this.gameObject.SetActive(false);
             }
         }
-
-        public void EffectOn() {
+     
+        public void EffectOn(float duration) {
             this.timer = duration;
             this.gameObject.SetActive(true);
         }

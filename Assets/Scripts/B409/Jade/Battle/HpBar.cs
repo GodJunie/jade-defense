@@ -36,5 +36,11 @@ namespace B409.Jade.Battle {
             this.imageFill.fillAmount = this.hp / this.maxHp;
             this.textHp.text = string.Format("{0:0}/{1:0}", this.hp, this.maxHp);
         }
+
+        public Vector3 HpBarPos {
+            get {
+                return imageFill.transform.position;
+            }
+        }
     }
 }

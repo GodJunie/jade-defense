@@ -584,6 +584,8 @@ MonoBehaviour:
   effects:
   - pivot: 1
     effect: {fileID: 2299195676605958410, guid: 9ebf89b011ed6cb4bb623d77040b890a, type: 3}
+    align: 1
+    duration: 1
 --- !u!1 &7541685794893487764
 GameObject:
   m_ObjectHideFlags: 0

@@ -207,6 +207,15 @@ MonoBehaviour:
   detector: {fileID: 265136173250118320}
   anim: {fileID: 1863373419225507834}
   hpBar: {fileID: 1595583088027690888}
+  effects:
+  - pivot: 1
+    effect: {fileID: 8703510564622258123, guid: 59485649371ea814c8349edbbbd761b2, type: 3}
+    align: 0
+    duration: 2
+  - pivot: 0
+    effect: {fileID: 8086428885791523066, guid: 5f6de36e705bbfd469a11d367b8a4372, type: 3}
+    align: 1
+    duration: 1
 --- !u!1 &2139073928074106122
 GameObject:
   m_ObjectHideFlags: 0

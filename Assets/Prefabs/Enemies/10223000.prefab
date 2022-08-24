@@ -317,6 +317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultDirection: 1
+  idleAnimation: Idle
   moveAnimation: Run
   attackAnimation: Attack
   dieAnimation: Die
@@ -324,6 +325,11 @@ MonoBehaviour:
   detector: {fileID: 3854362157127457762}
   anim: {fileID: 5666389515759530339}
   hpBar: {fileID: 399444130582929783}
+  effects:
+  - pivot: 0
+    effect: {fileID: 8086428885791523066, guid: 5f6de36e705bbfd469a11d367b8a4372, type: 3}
+    align: 1
+    duration: 1
 --- !u!1 &7642525004386244543
 GameObject:
   m_ObjectHideFlags: 0

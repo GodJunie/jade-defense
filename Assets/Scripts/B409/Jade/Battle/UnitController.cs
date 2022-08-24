@@ -185,8 +185,10 @@ namespace B409.Jade.Battle {
                     slows = slows.Where(e => e.Duration > 0).ToList();
                     var maxSlowRate = slows.Select(e => e.SlowRate).Max();
                     this.moveSpeed = this.Data.Status.MoveSpeed * (1 - maxSlowRate);
+                    this.anim.skeleton.SetColor(GameConsts.SlowColor);
                 } else {
                     this.moveSpeed = this.Data.Status.MoveSpeed;
+                    this.anim.skeleton.SetColor(Color.white);
                 }
 
                 if(dots.Count > 0) {
@@ -472,6 +474,7 @@ namespace B409.Jade.Battle {
 
         #region Effect
         public enum EffectPivot : int { Origin, Target };
+        public enum EffectAlign : int { Top, Center, Bottom };
 
         [Serializable]
         public class EffectInfo {
@@ -479,6 +482,10 @@ namespace B409.Jade.Battle {
             private EffectPivot pivot;
             [SerializeField]
             private Effect effect;
+            [SerializeField]
+            private EffectAlign align;
+            [SerializeField]
+            private float duration;
 
             private List<Effect> pool;
 
@@ -493,15 +500,26 @@ namespace B409.Jade.Battle {
                     this.pool.Add(effect);
                 }
 
+                var pos = Vector3.zero;
+                var t = pivot == EffectPivot.Origin ? origin : target;
+                if(align == EffectAlign.Top) {
+                    pos = t.hpBar.HpBarPos;
+                } else if(align == EffectAlign.Center) {
+                    pos = (t.transform.position + t.hpBar.HpBarPos) / 2f;
+                } else if(align == EffectAlign.Bottom) {
+                    pos = t.transform.position;
+                }
+                pos.z = t.transform.position.z;
+
                 if(pivot == EffectPivot.Origin) {
-                    effect.transform.position = origin.transform.position;
                     effect.transform.rotation = origin.IsPlayer ? Quaternion.identity : Quaternion.Euler(0f, 180f, 0f);
                 } else if(pivot == EffectPivot.Target) {
-                    effect.transform.position = target.transform.position;
                     effect.transform.rotation = target.IsPlayer ? Quaternion.identity : Quaternion.Euler(0f, 180f, 0f);
                 }
 
-                effect.EffectOn();
+                effect.transform.position = pos;
+
+                effect.EffectOn(duration);
             }
 
             public void DestroyAllEffect() {
