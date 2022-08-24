@@ -29,7 +29,7 @@ MonoBehaviour:
     attackSpeed: 0.7
     attackMode: 2
     atk: 1
-    heal: 8
+    heal: 7
     dotCount: 0
     duration: 0
     distance: 0
