@@ -15,19 +15,19 @@ MonoBehaviour:
   name: Fishing
   datas:
   - inquiredParameters:
-    - parameter: 1
+    - parameter: 0
       value: 0
-    - parameter: 3
+    - parameter: 2
       value: 3
     - parameter: 4
       value: 6
     rewardParameters:
-    - parameter: 1
+    - parameter: 0
       value: 1
-    - parameter: 3
-      value: 2
+    - parameter: 2
+      value: 1
     - parameter: 4
-      value: 1
+      value: 2
     ap: 30
     name: A small fishing Spot
     description: 't''s an ordinary fishing spot.
@@ -41,19 +41,19 @@ MonoBehaviour:
     - item: {fileID: 0}
       rate: 10
   - inquiredParameters:
-    - parameter: 1
+    - parameter: 0
       value: 25
-    - parameter: 3
+    - parameter: 2
       value: 25
     - parameter: 4
       value: 25
     rewardParameters:
-    - parameter: 1
+    - parameter: 0
       value: 1
-    - parameter: 3
-      value: 2
+    - parameter: 2
+      value: 1
     - parameter: 4
-      value: 1
+      value: 2
     ap: 30
     name: A small fishing Spot
     description: 't''s an ordinary fishing spot.
@@ -67,19 +67,19 @@ MonoBehaviour:
     - item: {fileID: 0}
       rate: 10
   - inquiredParameters:
-    - parameter: 1
+    - parameter: 0
       value: 50
-    - parameter: 3
+    - parameter: 2
       value: 50
     - parameter: 4
       value: 50
     rewardParameters:
-    - parameter: 1
+    - parameter: 0
       value: 1
-    - parameter: 3
-      value: 2
+    - parameter: 2
+      value: 1
     - parameter: 4
-      value: 1
+      value: 2
     ap: 30
     name: A shrimp fishing ground
     description: '"Be careful, no matter how many shrimps there are, you might not
@@ -90,19 +90,19 @@ MonoBehaviour:
     - item: {fileID: 0}
       rate: 30
   - inquiredParameters:
-    - parameter: 1
+    - parameter: 0
       value: 75
-    - parameter: 3
+    - parameter: 2
       value: 75
     - parameter: 4
       value: 75
     rewardParameters:
-    - parameter: 1
+    - parameter: 0
       value: 1
-    - parameter: 3
-      value: 2
+    - parameter: 2
+      value: 1
     - parameter: 4
-      value: 1
+      value: 2
     ap: 30
     name: A tuna fishing ground
     description: "The fisherman smiles, saying, \"These tuna are the biggest sellers
@@ -113,19 +113,19 @@ MonoBehaviour:
     - item: {fileID: 0}
       rate: 30
   - inquiredParameters:
-    - parameter: 1
+    - parameter: 0
       value: 100
-    - parameter: 3
+    - parameter: 2
       value: 100
     - parameter: 4
       value: 100
     rewardParameters:
-    - parameter: 1
+    - parameter: 0
       value: 1
-    - parameter: 3
-      value: 2
+    - parameter: 2
+      value: 1
     - parameter: 4
-      value: 1
+      value: 2
     ap: 30
     name: A pearl shell farm
     description: '"Until you open your clam''s mouth, no one knows what''s in it."

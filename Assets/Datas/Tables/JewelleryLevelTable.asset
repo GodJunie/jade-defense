@@ -23,9 +23,9 @@ MonoBehaviour:
       value: 0
     rewardParameters:
     - parameter: 0
-      value: 2
-    - parameter: 1
       value: 1
+    - parameter: 1
+      value: 2
     - parameter: 4
       value: 1
     ap: 30
@@ -44,9 +44,9 @@ MonoBehaviour:
       value: 25
     rewardParameters:
     - parameter: 0
-      value: 2
-    - parameter: 1
       value: 1
+    - parameter: 1
+      value: 2
     - parameter: 4
       value: 1
     ap: 30
@@ -65,9 +65,9 @@ MonoBehaviour:
       value: 50
     rewardParameters:
     - parameter: 0
-      value: 2
-    - parameter: 1
       value: 1
+    - parameter: 1
+      value: 2
     - parameter: 4
       value: 1
     ap: 30

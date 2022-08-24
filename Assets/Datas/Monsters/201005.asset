@@ -29,8 +29,8 @@ MonoBehaviour:
     attackSpeed: 0.7
     attackMode: 2
     atk: 1
-    heal: 5
-    interval: 0
+    heal: 8
+    dotCount: 0
     duration: 0
     distance: 0
     slowRate: 0

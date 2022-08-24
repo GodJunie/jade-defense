@@ -15,18 +15,18 @@ MonoBehaviour:
   name: Gathering
   datas:
   - inquiredParameters:
-    - parameter: 0
+    - parameter: 1
       value: 0
-    - parameter: 2
-      value: 3
     - parameter: 3
+      value: 3
+    - parameter: 4
       value: 3
     rewardParameters:
-    - parameter: 0
+    - parameter: 1
       value: 1
-    - parameter: 2
-      value: 2
     - parameter: 3
+      value: 2
+    - parameter: 4
       value: 1
     ap: 30
     name: A tea leaf forest
@@ -41,18 +41,18 @@ MonoBehaviour:
     - item: {fileID: 0}
       rate: 10
   - inquiredParameters:
-    - parameter: 0
-      value: 25
-    - parameter: 2
+    - parameter: 1
       value: 25
     - parameter: 3
+      value: 25
+    - parameter: 4
       value: 25
     rewardParameters:
-    - parameter: 0
+    - parameter: 1
       value: 1
-    - parameter: 2
-      value: 2
     - parameter: 3
+      value: 2
+    - parameter: 4
       value: 1
     ap: 30
     name: Herb forest
@@ -67,18 +67,18 @@ MonoBehaviour:
     - item: {fileID: 0}
       rate: 10
   - inquiredParameters:
-    - parameter: 0
-      value: 50
-    - parameter: 2
+    - parameter: 1
       value: 50
     - parameter: 3
+      value: 50
+    - parameter: 4
       value: 50
     rewardParameters:
-    - parameter: 0
+    - parameter: 1
       value: 1
-    - parameter: 2
-      value: 2
     - parameter: 3
+      value: 2
+    - parameter: 4
       value: 1
     ap: 30
     name: A sunny forest
@@ -93,18 +93,18 @@ MonoBehaviour:
     - item: {fileID: 0}
       rate: 10
   - inquiredParameters:
-    - parameter: 0
-      value: 75
-    - parameter: 2
+    - parameter: 1
       value: 75
     - parameter: 3
+      value: 75
+    - parameter: 4
       value: 75
     rewardParameters:
-    - parameter: 0
+    - parameter: 1
       value: 1
-    - parameter: 2
-      value: 2
     - parameter: 3
+      value: 2
+    - parameter: 4
       value: 1
     ap: 30
     name: An abandoned rice field
@@ -115,18 +115,18 @@ MonoBehaviour:
     - item: {fileID: 0}
       rate: 30
   - inquiredParameters:
-    - parameter: 0
-      value: 100
-    - parameter: 2
+    - parameter: 1
       value: 100
     - parameter: 3
+      value: 100
+    - parameter: 4
       value: 100
     rewardParameters:
-    - parameter: 0
+    - parameter: 1
       value: 1
-    - parameter: 2
-      value: 2
     - parameter: 3
+      value: 2
+    - parameter: 4
       value: 1
     ap: 30
     name: A rock salt forest

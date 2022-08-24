@@ -15,7 +15,7 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 8c724234354b34aab87023373a25d651, type: 3}
   id: 201003
   name: TeratoFlower
-  description: Flower of Yggdrasill
+  description: If you approach the flower, you will get stung by it!
   prefab: {fileID: 8773225380857765575, guid: 9120fd51eda9b7a4b9b5a0538675736d, type: 3}
   status:
     cooltime: 6
@@ -30,7 +30,7 @@ MonoBehaviour:
     attackMode: 5
     atk: 30
     heal: 0
-    interval: 0
+    dotCount: 0
     duration: 5
     distance: 0
     slowRate: 0.594
