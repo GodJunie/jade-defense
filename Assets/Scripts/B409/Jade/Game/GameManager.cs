@@ -19,6 +19,8 @@ namespace B409.Jade.Game {
 
         #region SerializedField
         [SerializeField]
+        private string titleScene;
+        [SerializeField]
         private string mainScene;
         [SerializeField]
         private string battleScene;
@@ -110,6 +112,11 @@ namespace B409.Jade.Game {
             if(Progress.StageSequence == CurrentStage.Datas.Count) {
                 // Stage Clear!
                 Progress.NextStage();
+            }
+
+            if(Progress.Stage == DataManager.Instance.Stages.Count) {
+                LoadTitleScene();
+                return;
             }
 
             StageSequenceStart();
@@ -240,6 +247,11 @@ namespace B409.Jade.Game {
                 throw new Exception(string.Format("Stage Sequence is Undefined Data type"));
             }
         }
+
+        public void LoadTitleScene() {
+            SceneManager.LoadScene(titleScene);
+        }
+
         public void LoadMainScene() {
             SceneManager.LoadScene(mainScene);
         }

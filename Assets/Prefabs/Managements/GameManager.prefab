@@ -43,7 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 339edc0a025e5294592638051abd359b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  titleScene: Scenes/Title
   mainScene: Scenes/Main
-  battleScene: Scenes/BattleDemo
+  battleScene: Scenes/Battle
   dialogueScene: Scenes/Dialogue
   endingScene: Scenes/Ending
