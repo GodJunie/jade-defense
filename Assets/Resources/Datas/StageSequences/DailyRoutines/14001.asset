@@ -141,7 +141,7 @@ MonoBehaviour:
   - sale: {fileID: 11400000, guid: 2e12f2250b6f33944bf7f0282f2480d7, type: 2}
     rate: 2
   - sale: {fileID: 11400000, guid: 10a5f22fa84bc76439071b22027e598b, type: 2}
-    rate: 10
+    rate: 12.6
   - sale: {fileID: 11400000, guid: 839cdc6b477a4834cb515d129ebf87cc, type: 2}
     rate: 3
   - sale: {fileID: 11400000, guid: d01f26e10b6314f489b446ab8fad8538, type: 2}
@@ -165,8 +165,6 @@ MonoBehaviour:
   - sale: {fileID: 11400000, guid: 399a39c2c2c2f97468829fccced19baf, type: 2}
     rate: 3
   - sale: {fileID: 11400000, guid: 7e6cc04742966de4b8882872197f316d, type: 2}
-    rate: 3
-  - sale: {fileID: 11400000, guid: af7ade278f2c4f84396866ef8c59f718, type: 2}
     rate: 3
   - sale: {fileID: 11400000, guid: 6cfc62c1f8f4cbe4aa6b0dce0ba211a5, type: 2}
     rate: 3
