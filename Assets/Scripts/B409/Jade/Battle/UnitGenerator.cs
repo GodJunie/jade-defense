@@ -19,6 +19,7 @@ namespace B409.Jade.Battle {
 
         }
 
+#if UNITY_EDITOR
         [Button]
         private void GenerateMonster(SkeletonDataAsset asset) {
             var str = asset.name.Split(new char[] { '_' });
@@ -60,5 +61,6 @@ namespace B409.Jade.Battle {
 
             unit.InitObjects();
         }
+#endif
     }
 }
