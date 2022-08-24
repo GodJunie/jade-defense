@@ -151,7 +151,7 @@ MonoBehaviour:
     scriptInfo:
       scriptFocus: 1
       name: ???
-      script: "Don\u2019t move! you might be had a damage at head or spine"
+      script: "Don\u2019t move! you might be had a damage at head or spine."
       speed: 20
       skippable: 1
     rightCharacter:
@@ -206,8 +206,8 @@ MonoBehaviour:
     scriptInfo:
       scriptFocus: 1
       name: ???
-      script: "Here\u2019s Midgard Sir. I spotted you during an air patrol mission,
-        so I protected you."
+      script: "Here\u2019s Midgard. I spotted you during an air patrol mission, so
+        I protected you."
       speed: 20
       skippable: 1
     rightCharacter:
@@ -262,7 +262,7 @@ MonoBehaviour:
     scriptInfo:
       scriptFocus: 0
       name: 
-      script: "I have no issues so I\u2019m leaving now"
+      script: "I have no issues so I\u2019m leaving now."
       speed: 20
       skippable: 1
     rightCharacter:
@@ -390,7 +390,7 @@ MonoBehaviour:
     scriptInfo:
       scriptFocus: 1
       name: 
-      script: Seems good, next is move your fingers please.
+      script: Seems good, next is look at my fingers please.
       speed: 20
       skippable: 1
     rightCharacter:
@@ -664,7 +664,7 @@ MonoBehaviour:
     scriptInfo:
       scriptFocus: 1
       name: Valkyrie
-      script: Wait hold on Sir! Here is way far from Midgard's downton.
+      script: Wait, hold on! Here is way far from Midgard's downton.
       speed: 20
       skippable: 1
     rightCharacter:
@@ -683,7 +683,7 @@ MonoBehaviour:
       scriptFocus: 1
       name: 
       script: "Recently, there\u2019re lots of cases of increased monsters so you
-        have to prepare"
+        have to prepare."
       speed: 20
       skippable: 1
     rightCharacter:
@@ -937,7 +937,7 @@ MonoBehaviour:
     scriptInfo:
       scriptFocus: 2
       name: 
-      script: "Wooooo! I\u2019m free now!"
+      script: "Whew! I\u2019m free now!"
       speed: 20
       skippable: 1
     rightCharacter:
@@ -955,7 +955,7 @@ MonoBehaviour:
     scriptInfo:
       scriptFocus: 2
       name: 
-      script: the stone of communication? I have no idea about this but I can get
+      script: The stone of communication? I have no idea about this but I can get
         some coins if I sell this at the black market.
       speed: 20
       skippable: 1

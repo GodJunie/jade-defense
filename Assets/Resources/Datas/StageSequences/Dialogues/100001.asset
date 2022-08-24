@@ -176,7 +176,7 @@ MonoBehaviour:
     scriptInfo:
       scriptFocus: 0
       name: 
-      script: Okay whatever. Where is it?
+      script: Where is it?
       speed: 20
       skippable: 1
     rightCharacter:
