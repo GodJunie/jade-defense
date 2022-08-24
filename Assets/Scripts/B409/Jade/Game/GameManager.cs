@@ -59,9 +59,18 @@ namespace B409.Jade.Game {
             Save();
             LoadScene();
         }
-        
+
         public void Continue() {
             LoadScene();
+        }
+
+        public void Retry() {
+            string json = PlayerPrefs.GetString(GameProgressKey, "");
+         
+            this.Progress = GameProgress.FromJson(json);
+
+            LoadData();
+            Continue();
         }
 
         public void Save() {

@@ -523,9 +523,10 @@ namespace B409.Jade.Battle {
             }
 
             public void DestroyAllEffect() {
-                foreach(var effect in pool) {
-                    Destroy(effect.gameObject);
-                }
+                if(pool != null)
+                    foreach(var effect in pool) {
+                        Destroy(effect.gameObject);
+                    }
             }
         }
 

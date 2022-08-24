@@ -2498,7 +2498,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxSpeed: 0.25
-  parallaxSize: 0
+  parallaxSize: 10.9875
 --- !u!1 &3780925241645084187
 GameObject:
   m_ObjectHideFlags: 0
@@ -5874,7 +5874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxSpeed: -0.05
-  parallaxSize: 1.6125
+  parallaxSize: 10.9875
 --- !u!1 &8046938641691576190
 GameObject:
   m_ObjectHideFlags: 0

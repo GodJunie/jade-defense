@@ -144,6 +144,28 @@ namespace B409.Jade.Battle {
         [SerializeField]
         private TMP_Text textEnemyCount;
 
+        [TitleGroup("UI")]
+        [BoxGroup("UI/StageClear")]
+        [SerializeField]
+        private GameObject panelStageFailed;
+        [BoxGroup("UI/StageClear")]
+        [SerializeField]
+        private ItemSlot itemSlotPrefab;
+        [BoxGroup("UI/StageClear")]
+        [SerializeField]
+        private Transform itemSlotContainer;
+        [BoxGroup("UI/StageClear")]
+        [SerializeField]
+        private ResultMonsterSlot resultMonsterSlotPrefab;
+        [BoxGroup("UI/StageClear")]
+        [SerializeField]
+        private Transform resultMonsterSlotContainer;
+
+
+        [TitleGroup("UI")]
+        [SerializeField]
+        private GameObject panelStageClear;
+
 
         private Transform cameraTransform;
         private float cameraBoundX;
@@ -156,6 +178,7 @@ namespace B409.Jade.Battle {
 
 
         private List<UnitData> enemyDatas = new List<UnitData>();
+
 
         float monsterTimer = 0f;
         float enemyTimer = 0f;
@@ -504,13 +527,51 @@ namespace B409.Jade.Battle {
         }
 
         private void StageClear() {
-            Debug.Log("Clear!");
-            foreach(var monster in this.monsters) {
-                GameManager.Instance.Progress.AddMonster(monster.Data.Id, 1);
-                monster.OnStop();
+            var progress = GameManager.Instance.Progress;
+
+            for(int i = 0; i < monsterDatas.Count; i++) {
+                var monsterData = monsterDatas[i];
+                bool alive = true;
+                if(monsters.Count > i) {
+                    var monster = monsters[i];
+                    if(monster == null)
+                        alive = false;
+                    else
+                        monster.OnStop();
+                }
+
+                var slot = Instantiate(resultMonsterSlotPrefab, resultMonsterSlotContainer);
+                slot.Init(monsterData.Icon, !alive);
+
+                if(alive)
+                    progress.AddMonster(monsterData.Id, 1);
             }
-            GameManager.Instance.Progress.AddItems(this.data.Rewards.ToDictionary(e => e.Item.Id, e => e.Count));
-            GameManager.Instance.StageSequenceEnd();
+
+            foreach(var reward in this.data.Rewards) {
+                var item = reward.Item;
+                var count = reward.Count;
+
+                var slot = Instantiate(itemSlotPrefab, itemSlotContainer);
+                slot.Init(item, count);
+
+                progress.AddItem(item.Id, count);
+            }
+
+            panelStageClear.SetActive(true);
+
+            for(int i = 0; i < panelStageClear.transform.childCount; i++) {
+                var child = panelStageClear.transform.GetChild(i);
+                child.localScale = Vector3.one * 1.2f;
+                child.DOScale(1f, 1f);
+            }
+
+            foreach(var g in panelStageClear.GetComponentsInChildren<Graphic>()) {
+                var color = g.color;
+                var alpha = color.a;
+                color.a = 0f;
+                g.color = color;
+                g.DOFade(alpha, 1f);
+            }
         }
 
         private void StageFailed() {
@@ -518,8 +579,35 @@ namespace B409.Jade.Battle {
             foreach(var enemy in this.enemies) {
                 enemy.OnStop();
             }
+
+            panelStageFailed.SetActive(true);
+
+            for(int i = 0; i < panelStageFailed.transform.childCount; i++) {
+                var child = panelStageFailed.transform.GetChild(i);
+                child.localScale = Vector3.one * 1.2f;
+                child.DOScale(1f, 1f);
+            }
+
+            foreach(var g in panelStageFailed.GetComponentsInChildren<Graphic>()) {
+                var color = g.color;
+                var alpha = color.a;
+                color.a = 0f;
+                g.color = color;
+                g.DOFade(alpha, 1f);
+            }
         }
 
+        public async void NextStage() {
+            imageFade.gameObject.SetActive(true);
+            await imageFade.DOFade(1f, 1f);
+            GameManager.Instance.StageSequenceEnd();
+        }
+
+        public async void GoToMain() {
+            imageFade.gameObject.SetActive(true);
+            await imageFade.DOFade(1f, 1f);
+            GameManager.Instance.Retry();
+        }
         #endregion
 
         #region Screen and Minimap
