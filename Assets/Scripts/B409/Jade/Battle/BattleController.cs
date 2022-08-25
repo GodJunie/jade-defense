@@ -165,6 +165,9 @@ namespace B409.Jade.Battle {
         [TitleGroup("UI")]
         [SerializeField]
         private GameObject panelStageClear;
+        [TitleGroup("UI")]
+        [SerializeField]
+        private GameObject panelPause;
 
 
         private Transform cameraTransform;
@@ -172,6 +175,7 @@ namespace B409.Jade.Battle {
         private float minimapRatio;
 
         private bool isPlaying = false;
+        private bool isPaused = false;
 
         private List<UnitController> monsters = new List<UnitController>();
         private List<UnitController> enemies = new List<UnitController>();
@@ -232,6 +236,14 @@ namespace B409.Jade.Battle {
 
                 if(enemyGenIndex < enemyDatas.Count) {
                     GenerateEnemies();
+                }
+
+                if(Input.GetKeyDown(KeyCode.Escape)) {
+                    if(isPaused) {
+                        Resume();
+                    } else {
+                        Pause();
+                    }
                 }
             }
         }
@@ -708,6 +720,20 @@ namespace B409.Jade.Battle {
             var cPos = cameraTransform.position;
             cPos.x = x / minimapRatio;
             cameraTransform.position = cPos;
+        }
+        #endregion
+
+        #region Pause
+        public void Pause() {
+            Time.timeScale = 0f;
+            panelPause.SetActive(true);
+            isPaused = true;
+        }
+
+        public void Resume() {
+            Time.timeScale = 1f;
+            panelPause.SetActive(false);
+            isPaused = false;
         }
         #endregion
     }

@@ -1407,5 +1407,5 @@ MonoBehaviour:
   rightCharacterHolder: {fileID: 882416028}
   imageFade: {fileID: 741999511}
   chatObject: {fileID: 1064391284}
-  defaultWaitDuration: 0
+  defaultWaitDuration: 0.5
   buttonSkip: {fileID: 581291212}
