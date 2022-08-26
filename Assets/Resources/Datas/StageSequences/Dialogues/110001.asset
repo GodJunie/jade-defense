@@ -18,6 +18,7 @@ MonoBehaviour:
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 0
       name: 
@@ -27,13 +28,57 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 6953060479577409321, guid: d9031198c896f1547bd8eeea1b046db5, type: 3}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+  - sequenceSort: 5
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 8300000, guid: 1293edc105c0f4af49b6a4d5f3ed3422, type: 3}
+    sfx: {fileID: 0}
+  - sequenceSort: 5
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 8300000, guid: 2a05edc68949420448c04ad1d1baa556, type: 3}
   - sequenceSort: 3
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 0
       name: 
@@ -43,13 +88,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: ShowEgg
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 1
       target: {fileID: 6118293056195659511, guid: 5a5e49bbaef00974897a66d5dfd36f2e, type: 3}
+      animation: 
     scriptInfo:
       scriptFocus: 0
       name: Jade
@@ -59,13 +108,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 0
       name: 
@@ -75,13 +128,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 0
       name: 
@@ -91,13 +148,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 0
       name: 
@@ -107,13 +168,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 2
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -123,13 +188,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 3
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 0
       name: 
@@ -139,13 +208,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: GoPast
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: Jade
@@ -156,13 +229,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -173,13 +250,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -189,13 +270,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -206,13 +291,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -223,13 +312,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -239,13 +332,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
-  - sequenceSort: 3
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+  - sequenceSort: 5
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 0
       name: 
@@ -255,13 +352,217 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 8300000, guid: da517b9377bc44f268554c57dce556bc, type: 3}
+    sfx: {fileID: 0}
+  - sequenceSort: 3
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: Hey
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+  - sequenceSort: 5
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 8300000, guid: 4a068a7cc3cfa448097bbb55da65fa8f, type: 3}
+  - sequenceSort: 5
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 8300000, guid: 4a068a7cc3cfa448097bbb55da65fa8f, type: 3}
+  - sequenceSort: 5
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 8300000, guid: 4a068a7cc3cfa448097bbb55da65fa8f, type: 3}
+  - sequenceSort: 5
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 8300000, guid: 4a068a7cc3cfa448097bbb55da65fa8f, type: 3}
+  - sequenceSort: 5
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 8300000, guid: 4a068a7cc3cfa448097bbb55da65fa8f, type: 3}
+  - sequenceSort: 5
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 8300000, guid: 4a068a7cc3cfa448097bbb55da65fa8f, type: 3}
+  - sequenceSort: 5
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 8300000, guid: 4a068a7cc3cfa448097bbb55da65fa8f, type: 3}
+  - sequenceSort: 5
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 8300000, guid: 4a068a7cc3cfa448097bbb55da65fa8f, type: 3}
+  - sequenceSort: 5
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 8300000, guid: 4a068a7cc3cfa448097bbb55da65fa8f, type: 3}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: Jade
@@ -272,13 +573,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -288,13 +593,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -305,13 +614,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -322,13 +635,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -339,13 +656,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -357,13 +678,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -373,13 +698,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -389,13 +718,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -405,13 +738,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -421,13 +758,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -437,13 +778,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -453,13 +798,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -469,29 +818,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
-  - sequenceSort: 0
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+  - sequenceSort: 5
     leftCharacter:
       mode: 0
       target: {fileID: 0}
-    scriptInfo:
-      scriptFocus: 2
-      name: 
-      script: The egg fell out of my hand and fell to the grass.
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-  - sequenceSort: 3
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 0
       name: 
@@ -501,13 +838,77 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
-    eventId: EggFellOut
+    eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 8300000, guid: bcb83799445754a338935ee8a782c435, type: 3}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: The egg fell out of my hand and fell to the grass.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+  - sequenceSort: 5
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 8300000, guid: d4871a9ec58364d32bdae61fe22172ae, type: 3}
+  - sequenceSort: 3
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: EggFellOut
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: Jade
@@ -517,13 +918,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -533,13 +938,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -550,13 +959,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -568,13 +981,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 1
       target: {fileID: 6118293056195659511, guid: 5a5e49bbaef00974897a66d5dfd36f2e, type: 3}
+      animation: 
     scriptInfo:
       scriptFocus: 0
       name: 
@@ -584,13 +1001,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 2
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -600,13 +1021,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -616,13 +1041,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -632,13 +1061,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 1
       target: {fileID: 6118293056195659511, guid: 5a5e49bbaef00974897a66d5dfd36f2e, type: 3}
+      animation: 
     scriptInfo:
       scriptFocus: 0
       name: 
@@ -648,13 +1081,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 2
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -664,13 +1101,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
-  - sequenceSort: 3
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+  - sequenceSort: 5
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 0
       name: 
@@ -680,13 +1121,97 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 8300000, guid: 97fb8288bc971904fa47fd6008e79e0e, type: 3}
+  - sequenceSort: 3
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: Light
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+  - sequenceSort: 5
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 8300000, guid: d4871a9ec58364d32bdae61fe22172ae, type: 3}
+  - sequenceSort: 5
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 8300000, guid: 1ab2de325547e486d96637683a186feb, type: 3}
+  - sequenceSort: 5
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 8300000, guid: 03e7cb3e089e91f4cb897c30242bbd85, type: 3}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: Jade
@@ -696,13 +1221,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -713,13 +1242,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -730,13 +1263,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -746,13 +1283,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -763,13 +1304,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -779,13 +1324,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -796,13 +1345,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -812,13 +1365,17 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     scriptInfo:
       scriptFocus: 2
       name: 
@@ -829,6 +1386,9 @@ MonoBehaviour:
     rightCharacter:
       mode: 0
       target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
