@@ -847,6 +847,26 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+  - sequenceSort: 5
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 8300000, guid: 4b1cc088bf6a1df439fdf0c336ee0ab9, type: 3}
   - sequenceSort: 3
     leftCharacter:
       mode: 0

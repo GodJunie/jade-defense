@@ -273,67 +273,7 @@ MonoBehaviour:
     eventId: 
     rewards: []
     bgm: {fileID: 0}
-    sfx: {fileID: 8300000, guid: 164ae3b15ad704542adaab2955c1131d, type: 3}
-  - sequenceSort: 5
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-      animation: 
-    scriptInfo:
-      scriptFocus: 0
-      name: 
-      script: 
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-      animation: 
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-    bgm: {fileID: 0}
-    sfx: {fileID: 8300000, guid: 164ae3b15ad704542adaab2955c1131d, type: 3}
-  - sequenceSort: 5
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-      animation: 
-    scriptInfo:
-      scriptFocus: 0
-      name: 
-      script: 
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-      animation: 
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-    bgm: {fileID: 0}
-    sfx: {fileID: 8300000, guid: 164ae3b15ad704542adaab2955c1131d, type: 3}
-  - sequenceSort: 5
-    leftCharacter:
-      mode: 0
-      target: {fileID: 0}
-      animation: 
-    scriptInfo:
-      scriptFocus: 0
-      name: 
-      script: 
-      speed: 20
-      skippable: 1
-    rightCharacter:
-      mode: 0
-      target: {fileID: 0}
-      animation: 
-    eventObject: {fileID: 0}
-    eventId: 
-    rewards: []
-    bgm: {fileID: 0}
-    sfx: {fileID: 8300000, guid: 164ae3b15ad704542adaab2955c1131d, type: 3}
+    sfx: {fileID: 8300000, guid: c21c3e196a1689846bbe8bcfca7e0993, type: 3}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
