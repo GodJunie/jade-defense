@@ -55,6 +55,7 @@ MonoBehaviour:
   detector: {fileID: 8961986772780258602}
   anim: {fileID: 1928614262188459505}
   hpBar: {fileID: 3473330265737560412}
+  effects: []
 --- !u!1 &1070830540522604500
 GameObject:
   m_ObjectHideFlags: 0

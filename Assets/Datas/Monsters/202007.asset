@@ -36,8 +36,8 @@ MonoBehaviour:
     distance: 0
     slowRate: 0
   cost:
-  - item: {fileID: 11400000, guid: 3b7f714761727d54cb44def06d47cbe1, type: 2}
-    count: 3
+  - item: {fileID: 11400000, guid: a6d0e8549b775ed4282034afc3543642, type: 2}
+    count: 1
   - item: {fileID: 11400000, guid: 0cab179eb99b45b4d85e859b4b88fbf8, type: 2}
     count: 1
   - item: {fileID: 11400000, guid: 567e8ea71961e7546ba9a4287711676b, type: 2}

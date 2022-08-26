@@ -60,6 +60,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: e5ce66546ea3e7745ba88cef6d45ca6e, type: 2}
     - {fileID: 11400000, guid: 636c5d244125f714caf4fbbda167bd85, type: 2}
     - {fileID: 11400000, guid: 97ef98aa9acba6243a3ca8cd63684514, type: 2}
+    - {fileID: 11400000, guid: 588fcc87bddff7344897dec040e1bbe6, type: 2}
   - inquiredParameters:
     - parameter: 1
       value: 50

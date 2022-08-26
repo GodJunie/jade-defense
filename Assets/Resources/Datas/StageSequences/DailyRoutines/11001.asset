@@ -18,6 +18,8 @@ MonoBehaviour:
     [Cooking], and [Crafting] tabs!
   - The [Trade], [inventory], [Monsters], [Enemies] tabs do not consume APs.
   - On the [Enemies] tab, i can identify the next enemy!
+  - Now that the battle is over and you've got gold, let's visit the [Trade Tab!]
+    Merchants even change what they sell only once!
   day: 5
   monsters:
   - {fileID: 11400000, guid: 1cad6710dcf223e468247eb06cf52ce3, type: 2}
@@ -62,34 +64,6 @@ MonoBehaviour:
   - sale: {fileID: 11400000, guid: fa409de59b8a09a439ad8aa28ad8a600, type: 2}
     rate: 0.3
   - sale: {fileID: 11400000, guid: 95f5707e4eaa1dd46925e8ea3fffc5ef, type: 2}
-    rate: 0.3
-  - sale: {fileID: 11400000, guid: e65f897cbe0214748bf9a3ac95eeb848, type: 2}
-    rate: 0.1
-  - sale: {fileID: 11400000, guid: 1e344668ec33de24e84fef0c79a42735, type: 2}
-    rate: 0.6
-  - sale: {fileID: 11400000, guid: 0d2a52fcd79840f42bf9c2dd84fa4a51, type: 2}
-    rate: 0.6
-  - sale: {fileID: 11400000, guid: e7cb247513250214bb7f8b3751ecafcc, type: 2}
-    rate: 0.6
-  - sale: {fileID: 11400000, guid: ff6b7eb34dcb0604f837d5adedebae16, type: 2}
-    rate: 0.3
-  - sale: {fileID: 11400000, guid: 00cdd0f90d3533141a3e950bda2a2541, type: 2}
-    rate: 0.3
-  - sale: {fileID: 11400000, guid: 54b2331661f38ec48b3ff2a2d74b4c98, type: 2}
-    rate: 0.3
-  - sale: {fileID: 11400000, guid: f03b12f97c6081a469b27786b93d2350, type: 2}
-    rate: 0.3
-  - sale: {fileID: 11400000, guid: c0ce09920e3a6624589081e140b68827, type: 2}
-    rate: 0.1
-  - sale: {fileID: 11400000, guid: 5f9da279b40e0b648b9b48b496b0040c, type: 2}
-    rate: 0.3
-  - sale: {fileID: 11400000, guid: 37a012722d7780e43b58366775253375, type: 2}
-    rate: 0.3
-  - sale: {fileID: 11400000, guid: 9438997252a6ef54d8f835b2255b191c, type: 2}
-    rate: 0.3
-  - sale: {fileID: 11400000, guid: 211a7d99e8b6c6c4aad55812df1d687a, type: 2}
-    rate: 0.3
-  - sale: {fileID: 11400000, guid: 6de6591b29b54d74e81117c08df1b21c, type: 2}
     rate: 0.3
   - sale: {fileID: 11400000, guid: 850fca931e1dad0458e9eca700d63bc3, type: 2}
     rate: 1
