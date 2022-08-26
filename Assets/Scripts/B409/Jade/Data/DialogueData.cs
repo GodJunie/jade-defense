@@ -94,6 +94,11 @@ namespace B409.Jade.Data {
                             return string.Format("Index: {0}, No object to play event", i);
                         }
                         break;
+                    case SequenceSort.Sound:
+                        if(data.Sfx == null && data.Bgm == null) {
+                            return string.Format("Index: {0}, No clip to play", i);
+                        }
+                        break;
                     }
                 }
 
@@ -167,6 +172,22 @@ namespace B409.Jade.Data {
             [SerializeField]
             private List<RewardInfo> rewards;
 
+
+            [HorizontalGroup("box/group")]
+            [ShowIfGroup("box/group/ShowSound")]
+            [BoxGroup("box/group/ShowSound/Sounds")]
+            [HorizontalGroup("box/group/ShowSound/Sounds/group", .5f)]
+            [BoxGroup("box/group/ShowSound/Objects/group/Bgm")]
+            [HideLabel]
+            [SerializeField]
+            private AudioClip bgm;
+            [HorizontalGroup("box/group/ShowSound/Sounds/group", .5f)]
+            [BoxGroup("box/group/ShowSound/Objects/group/Sfx")]
+            [HideLabel]
+            [SerializeField]
+            private AudioClip sfx;
+
+
             public CharacterInfo LeftCharacter => leftCharacter;
             public ScriptInfo ScriptInfo => scriptInfo;
             public CharacterInfo RightCharacter => rightCharacter;
@@ -174,6 +195,8 @@ namespace B409.Jade.Data {
             public DialogueEvent EventObject => eventObject;
             public string EventId => eventId;
             public List<RewardInfo> Rewards => rewards;
+            public AudioClip Bgm => bgm;
+            public AudioClip Sfx => sfx;
 
             public DialogueSequenceData() {
                 this.leftCharacter = new CharacterInfo();
@@ -228,6 +251,12 @@ namespace B409.Jade.Data {
                 }
             }
 
+            private bool ShowSound {
+                get {
+                    return sequenceSort == SequenceSort.Sound;
+                }
+            }
+
             private string Summary {
                 get {
                     switch(this.sequenceSort) {
@@ -272,6 +301,13 @@ namespace B409.Jade.Data {
                                 str += string.Format("/id: {0}, count: {1}", (reward.Data as IDataID).Id, reward.Count);
                         }
                         return str;
+                    case SequenceSort.Sound:
+                        string soundStr = "Sounds";
+                        if(bgm != null)
+                            soundStr += string.Format(" / Bgm: {0}", bgm.name);
+                        if(sfx != null)
+                            soundStr += string.Format(" / Sfx: {0}", sfx.name);
+                        return soundStr;
                     default:
                         return "";
                     }
@@ -384,7 +420,7 @@ namespace B409.Jade.Data {
         }
 
         public enum ScriptFocus : int { Left, Right, None };
-        public enum SequenceSort : int { Script, Effect, Control, Object, Reward };
+        public enum SequenceSort : int { Script, Effect, Control, Object, Reward, Sound };
         public enum CharacterMode : int { None, Appear, Disappear, Animation };
         #endregion
 

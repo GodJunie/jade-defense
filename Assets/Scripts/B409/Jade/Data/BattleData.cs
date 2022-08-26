@@ -10,11 +10,21 @@ namespace B409.Jade.Data {
         [HideLabel]
         [SerializeField]
         private int id;
-        [BoxGroup("Background")]
+        [BoxGroup("Settings")]
+        [HorizontalGroup("Settings/group", .5f)]
+        [BoxGroup("Settings/group/Background")]
         [HideLabel]
         [PreviewField(Alignment = ObjectFieldAlignment.Center, Height = 100f)]
         [SerializeField]
         private GameObject background;
+        [HorizontalGroup("Settings/group", .5f)]
+        [BoxGroup("Settings/group/Bgm")]
+        [HideLabel]
+        [PreviewField(Alignment = ObjectFieldAlignment.Center, Height = 100f)]
+        [SerializeField]
+        private AudioClip bgm;
+
+
         [HorizontalGroup("group", .5f)]
         [ListDrawerSettings(Expanded = true, AddCopiesLastElement = true)]
         [SerializeField]
@@ -28,5 +38,6 @@ namespace B409.Jade.Data {
         public GameObject Background => background;
         public List<UnitData> Enemies => enemies;
         public List<MaterialData> Rewards => rewards;
+        public AudioClip Bgm => bgm;
     }
 }

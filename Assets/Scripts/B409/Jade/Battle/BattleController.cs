@@ -170,6 +170,11 @@ namespace B409.Jade.Battle {
         private GameObject panelPause;
 
 
+        [TitleGroup("Sound")]
+        [SerializeField]
+        private AudioClip bgm;
+
+
         private Transform cameraTransform;
         private float cameraBoundX;
         private float minimapRatio;
@@ -217,7 +222,9 @@ namespace B409.Jade.Battle {
             Instantiate(this.data.Background);
 
             this.enemyDatas = data.Enemies;
-            
+
+            SoundManager.Instance.PlayBgm(bgm);
+
             if(isTest) {
                 GameStart();
             } else {
@@ -413,6 +420,8 @@ namespace B409.Jade.Battle {
 
             GenerateMonsters();
             GenerateEnemies();
+
+            SoundManager.Instance.PlayBgm(data.Bgm);
         }
 
         private void SetMonsterCountUI() {

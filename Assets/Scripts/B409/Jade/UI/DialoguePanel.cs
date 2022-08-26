@@ -258,6 +258,14 @@ namespace B409.Jade.UI {
                     }
                 }
                 return;
+            case DialogueData.SequenceSort.Sound:
+                if(sequence.Bgm != null) {
+                    SoundManager.Instance.PlayBgm(sequence.Bgm);
+                }
+                if(sequence.Sfx != null) {
+                    SoundManager.Instance.PlaySfx(sequence.Sfx);
+                }
+                break;
             default:
                 return;
             }

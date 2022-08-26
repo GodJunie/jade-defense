@@ -42,6 +42,9 @@ namespace B409.Jade.UI {
         [SerializeField]
         private string jadeInteract;
 
+        [SerializeField]
+        private AudioClip bgm;
+
         public DailyRoutineData data;
         #endregion
 
@@ -52,6 +55,8 @@ namespace B409.Jade.UI {
             imageFade.DOFade(0f, 1f);
 
             GameManager.Instance.TurnStart();
+
+            SoundManager.Instance.PlayBgm(bgm);
 
             var data = GameManager.Instance.CurrentStageSequence;
 

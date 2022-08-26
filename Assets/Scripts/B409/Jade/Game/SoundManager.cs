@@ -33,5 +33,13 @@ namespace B409.Jade.Game {
             source.clip = clip;
             source.Play();
         }
+
+        public void PlayBgm(AudioClip clip) {
+            if(bgmSource.clip == clip)
+                return;
+            bgmSource.clip = clip;
+            bgmSource.loop = true;
+            bgmSource.Play();
+        }
     }
 }

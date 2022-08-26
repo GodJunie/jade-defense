@@ -27,6 +27,9 @@ namespace B409.Jade.UI {
         [SerializeField]
         private Transform monsterHolder;
 
+        [SerializeField]
+        private AudioClip bgm;
+
         private new Camera camera;
         private bool scroll;
 
@@ -38,6 +41,7 @@ namespace B409.Jade.UI {
         private void Start() {
             imageWhite.color = Color.white;
             this.imageWhite.DOFade(0f, 1f);
+            SoundManager.Instance.PlayBgm(bgm);
         }
 
         private void Update() {
