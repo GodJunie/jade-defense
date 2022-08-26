@@ -32,6 +32,28 @@ MonoBehaviour:
     eventObject: {fileID: 9181896504633798446, guid: c63ceb68f6deac34e85674c2ac0bc340, type: 3}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+  - sequenceSort: 5
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 8300000, guid: 7093635f328f84c59af6f67a2e028a3e, type: 3}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -51,6 +73,8 @@ MonoBehaviour:
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -70,6 +94,8 @@ MonoBehaviour:
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -90,6 +116,8 @@ MonoBehaviour:
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -109,6 +137,8 @@ MonoBehaviour:
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -127,6 +157,8 @@ MonoBehaviour:
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -145,6 +177,8 @@ MonoBehaviour:
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -164,6 +198,8 @@ MonoBehaviour:
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -182,3 +218,5 @@ MonoBehaviour:
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
