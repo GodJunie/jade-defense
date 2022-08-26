@@ -172,7 +172,14 @@ namespace B409.Jade.Battle {
 
         [TitleGroup("Sound")]
         [SerializeField]
-        private AudioClip bgm;
+        private AudioClip battleRobbyBgm;
+        [TitleGroup("Sound")]
+        [SerializeField]
+        private AudioClip clearBgm;
+        [TitleGroup("Sound")]
+        [SerializeField]
+        private AudioClip failedBgm;
+
 
 
         private Transform cameraTransform;
@@ -223,7 +230,7 @@ namespace B409.Jade.Battle {
 
             this.enemyDatas = data.Enemies;
 
-            SoundManager.Instance.PlayBgm(bgm);
+            SoundManager.Instance.PlayBgm(battleRobbyBgm);
 
             if(isTest) {
                 GameStart();
@@ -553,6 +560,8 @@ namespace B409.Jade.Battle {
         private void StageClear() {
             var progress = GameManager.Instance.Progress;
 
+            SoundManager.Instance.PlayBgm(clearBgm);
+
             for(int i = 0; i < monsterDatas.Count; i++) {
                 var monsterData = monsterDatas[i];
                 bool alive = true;
@@ -599,7 +608,8 @@ namespace B409.Jade.Battle {
         }
 
         private void StageFailed() {
-            Debug.Log("Failed!");
+            SoundManager.Instance.PlayBgm(failedBgm);
+
             foreach(var enemy in this.enemies) {
                 enemy.OnStop();
             }
