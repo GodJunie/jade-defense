@@ -425,7 +425,7 @@ namespace B409.Jade.UI {
 
                 textPrice.text = price.ToString("N0");
 
-                if(sale.BuyPrice > GameManager.Instance.Progress.Gold) {
+                if(price > GameManager.Instance.Progress.Gold) {
                     buttonConfirm.interactable = false;
                     textPrice.color = Color.red;
                 } else {
