@@ -1897,3 +1897,4 @@ MonoBehaviour:
   - {fileID: 516335700}
   - {fileID: 540576703}
   monsterHolder: {fileID: 1775082248}
+  bgm: {fileID: 8300000, guid: 8c939ba6596ae45968a660c18b04d92f, type: 3}

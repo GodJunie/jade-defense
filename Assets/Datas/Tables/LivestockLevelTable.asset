@@ -23,11 +23,11 @@ MonoBehaviour:
       value: 0
     rewardParameters:
     - parameter: 2
-      value: 1
+      value: 2
     - parameter: 3
       value: 1
     - parameter: 4
-      value: 2
+      value: 1
     ap: 30
     name: Chicken Farm
     description: "Which came first, the chicken or the egg?\r"
@@ -47,11 +47,11 @@ MonoBehaviour:
       value: 25
     rewardParameters:
     - parameter: 2
-      value: 1
+      value: 2
     - parameter: 3
       value: 1
     - parameter: 4
-      value: 2
+      value: 1
     ap: 30
     name: Small cattle pens
     description: '"Now that I''ve been robbed of livestock by the wolves, I think
@@ -72,11 +72,11 @@ MonoBehaviour:
       value: 50
     rewardParameters:
     - parameter: 2
-      value: 1
+      value: 2
     - parameter: 3
       value: 1
     - parameter: 4
-      value: 2
+      value: 1
     ap: 30
     name: Cattle pens
     description: '"Strangely, baby dragons keep stealing livestock. Well, the occasional
@@ -97,11 +97,11 @@ MonoBehaviour:
       value: 75
     rewardParameters:
     - parameter: 2
-      value: 1
+      value: 2
     - parameter: 3
       value: 1
     - parameter: 4
-      value: 2
+      value: 1
     ap: 30
     name: A well protected cattle shed
     description: '"Finally, no one can steal the livestock! But I feel like my side
@@ -122,11 +122,11 @@ MonoBehaviour:
       value: 100
     rewardParameters:
     - parameter: 2
-      value: 1
+      value: 2
     - parameter: 3
       value: 1
     - parameter: 4
-      value: 2
+      value: 1
     ap: 30
     name: A large cattle shed
     description: '"The money that sold wolf claws and dragon claws made perfect livestock

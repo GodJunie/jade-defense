@@ -276,6 +276,7 @@ MonoBehaviour:
   detector: {fileID: 2961062437506335908}
   anim: {fileID: 6307442495509870605}
   hpBar: {fileID: 7362779581105162437}
+  effects: []
 --- !u!1 &3974808359911135600
 GameObject:
   m_ObjectHideFlags: 0

@@ -18434,6 +18434,9 @@ MonoBehaviour:
   resultMonsterSlotContainer: {fileID: 138655896}
   panelStageClear: {fileID: 1938432511}
   panelPause: {fileID: 884664535}
+  battleRobbyBgm: {fileID: 8300000, guid: 49e990b7a00d54f18b292c0bbfddc1a5, type: 3}
+  clearBgm: {fileID: 8300000, guid: 14a7bfc0e9c1848248283e4ed671d2bd, type: 3}
+  failedBgm: {fileID: 8300000, guid: f9d0998af53d94c3e8ec1779c8e6b982, type: 3}
 --- !u!4 &1471091859
 Transform:
   m_ObjectHideFlags: 0

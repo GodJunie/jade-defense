@@ -31,14 +31,14 @@ MonoBehaviour:
     attackMode: 3
     atk: 50
     heal: 0
-    interval: 0
+    dotCount: 0
     duration: 2
     distance: 0
     slowRate: 0
   cost:
-  - item: {fileID: 11400000, guid: 144e3015abcb36844b2d8f50bee8dd1c, type: 2}
+  - item: {fileID: 11400000, guid: 0cab179eb99b45b4d85e859b4b88fbf8, type: 2}
     count: 1
   - item: {fileID: 11400000, guid: 43309e0d33e8a9545be2372cedf01a03, type: 2}
-    count: 1
+    count: 3
   buyPrice: 150
   sellPrice: 15
