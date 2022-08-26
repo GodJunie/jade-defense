@@ -177,12 +177,12 @@ namespace B409.Jade.Data {
             [ShowIfGroup("box/group/ShowSound")]
             [BoxGroup("box/group/ShowSound/Sounds")]
             [HorizontalGroup("box/group/ShowSound/Sounds/group", .5f)]
-            [BoxGroup("box/group/ShowSound/Objects/group/Bgm")]
+            [BoxGroup("box/group/ShowSound/Sounds/group/Bgm")]
             [HideLabel]
             [SerializeField]
             private AudioClip bgm;
             [HorizontalGroup("box/group/ShowSound/Sounds/group", .5f)]
-            [BoxGroup("box/group/ShowSound/Objects/group/Sfx")]
+            [BoxGroup("box/group/ShowSound/Sounds/group/Sfx")]
             [HideLabel]
             [SerializeField]
             private AudioClip sfx;
