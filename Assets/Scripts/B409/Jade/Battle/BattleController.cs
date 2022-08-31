@@ -35,44 +35,8 @@ namespace B409.Jade.Battle {
 
         [TitleGroup("Party")]
         [SerializeField]
-        private GameObject panelSetParty;
-        [TitleGroup("Party")]
-        [FoldoutGroup("Party/Owned")]
-        [SerializeField]
-        private MonsterOwnedSlot monsterSlotPrefab;
-        [FoldoutGroup("Party/Owned")]
-        [SerializeField]
-        private Transform monsterSlotContainer;
-        [FoldoutGroup("Party/Owned")]
-        [SerializeField]
-        private ScrollRect monsterScrollRect;
-        [FoldoutGroup("Party/Info")]
-        [SerializeField]
-        private GameObject panelSelectedMonster;
-        [FoldoutGroup("Party/Info")]
-        [SerializeField]
-        private Image imageSelectedMonster;
-        [FoldoutGroup("Party/Info")]
-        [SerializeField]
-        private TMP_Text textSelectedMonsterName;
-        [FoldoutGroup("Party/Info")]
-        [SerializeField]
-        private UnitStatus selectedUnitStatus;
-        [FoldoutGroup("Party/Info")]
-        [SerializeField]
-        private TMP_Text textSelectedMonsterDescription;
-        [FoldoutGroup("Party/Info")]
-        [SerializeField]
-        private GameObject buttonMonsterIn;
-        [FoldoutGroup("Party/Info")]
-        [SerializeField]
-        private GameObject buttonMonsterOut;
-        [FoldoutGroup("Party/Party")]
-        [SerializeField]
-        private List<Image> imagesPartyMonster;
-        [FoldoutGroup("Party/Party")]
-        [SerializeField]
-        private List<UnitStatus> statusesPartyMonster;
+        private PartyPanel panelSetParty;
+
 
         [TitleGroup("Map")]
         [SerializeField]
@@ -235,7 +199,7 @@ namespace B409.Jade.Battle {
             if(isTest) {
                 GameStart();
             } else {
-                SetMakePartyUI();
+                panelSetParty.Open();
             }
         }
 
@@ -262,158 +226,13 @@ namespace B409.Jade.Battle {
             }
         }
 
-        #region Party
-        private MonsterData selectedMonsterData;
-        private int selectedMonsterIndex;
-        private Dictionary<int, MonsterOwnedSlot> monsterSlotPool = new Dictionary<int, MonsterOwnedSlot>();
-
-        private void SetMakePartyUI() {
-            panelSetParty.SetActive(true);
-            panelSelectedMonster.SetActive(false);
-            this.monsterDatas.Clear();
-
-            var progress = GameManager.Instance.Progress;
-
-            foreach(var monster in progress.Monsters) {
-                var slot = Instantiate(monsterSlotPrefab, monsterSlotContainer);
-                int id = monster.Key;
-                int count = monster.Value;
-                var data = DataManager.Instance.Monsters.Find(e => e.Id == id);
-                slot.Init(data, count, monsterScrollRect, () => {
-                    ShowMonsterInfo(data, true);
-                });
-                this.monsterSlotPool.Add(id, slot);
-            }
-
-            SetInPartyMonsterUI();
-        }
-
-        private void ShowMonsterInfo(MonsterData data, bool monsterIn) {
-            this.selectedMonsterData = data;
-
-            panelSelectedMonster.SetActive(true);
-
-            imageSelectedMonster.sprite = data.Icon;
-            textSelectedMonsterName.text = data.Name;
-            // status
-            selectedUnitStatus.SetUI(data.Status);
-            textSelectedMonsterDescription.text = data.Status.GetAttackDescriptionString();
-
-            buttonMonsterIn.SetActive(monsterIn);
-            buttonMonsterOut.SetActive(!monsterIn);
-        }
-
-        public void MonsterInParty(bool monsterIn) {
-            if(monsterIn) {
-                if(this.monsterDatas.Count == 5)
-                    return;
-
-                int id = selectedMonsterData.Id;
-
-                this.monsterDatas.Add(selectedMonsterData);
-
-                var progress = GameManager.Instance.Progress;
-                progress.UseMonster(id, 1);
-
-                if(progress.Monsters.ContainsKey(id)) {
-                    this.monsterSlotPool[id].Init(selectedMonsterData.Icon, progress.Monsters[id]);
-                } else {
-                    this.monsterSlotPool[id].gameObject.SetActive(false);
-                }
-            } else {
-                if(selectedMonsterIndex < this.monsterDatas.Count) {
-                    var monsterData = this.monsterDatas[selectedMonsterIndex];
-
-                    this.monsterDatas.RemoveAt(selectedMonsterIndex);
-
-                    var progress = GameManager.Instance.Progress;
-                    progress.AddMonster(monsterData.Id, 1);
-
-                    var slot = monsterSlotPool[monsterData.Id];
-                    slot.gameObject.SetActive(true);
-                    slot.Init(monsterData.Icon, progress.Monsters[monsterData.Id]);
-                }
-            }
-
-            panelSelectedMonster.SetActive(false);
-            selectedMonsterData = null;
-
-            SetInPartyMonsterUI();
-        }
-
-        private void SetInPartyMonsterUI() {
-            for(int i = 0; i < 5; i++) {
-                var image = imagesPartyMonster[i];
-                var status = statusesPartyMonster[i];
-
-                if(i < monsterDatas.Count) {
-                    var data = monsterDatas[i];
-                    image.gameObject.SetActive(true);
-                    image.sprite = data.Icon;
-                    status.SetUI(data.Status);
-                    status.gameObject.SetActive(true);
-                    
-                } else {
-                    image.gameObject.SetActive(false);
-                    status.gameObject.SetActive(false);
-                }
-            }
-        }
-
-        public void SelectMonsterInParty(int index) {
-            if(index < this.monsterDatas.Count) {
-                this.selectedMonsterIndex = index;
-
-                ShowMonsterInfo(this.monsterDatas[index] as MonsterData, false);
-            }
-        }
-
-        public void MoveUp(int index) {
-            if(index > 0 && index < this.monsterDatas.Count) {
-                if(this.selectedMonsterData != null) {
-                    if(index == this.selectedMonsterIndex)
-                        this.selectedMonsterIndex = index - 1;
-                    else if(this.selectedMonsterIndex == index - 1)
-                        this.selectedMonsterIndex = index;
-                }
-
-                var prev = this.monsterDatas[index - 1];
-                var data = this.monsterDatas[index];
-                this.monsterDatas[index - 1] = data;
-                this.monsterDatas[index] = prev;
-
-
-                SetInPartyMonsterUI();
-            }
-        }
-
-        public void MoveDown(int index) {
-            if(index < this.monsterDatas.Count - 1) {
-                if(this.selectedMonsterData != null) {
-                    if(index == this.selectedMonsterIndex)
-                        this.selectedMonsterIndex = index + 1;
-                    else if(this.selectedMonsterIndex == index + 1)
-                        this.selectedMonsterIndex = index;
-                }
-
-                var data = this.monsterDatas[index];
-                var next = this.monsterDatas[index + 1];
-                this.monsterDatas[index] = next;
-                this.monsterDatas[index + 1] = data;
-
-                SetInPartyMonsterUI();
-            }
-        }
-        #endregion
-
-
         #region Game
-        public void GameStart() {
-            if(this.monsterDatas.Count == 0)
-                return;
-
-            panelSetParty.SetActive(false);
-
+        public void InitMonsterData(List<UnitData> monsterDatas) {
+            this.monsterDatas = monsterDatas;
+            GameStart();
+        }
+        
+        private void GameStart() {
             SetMonsterWait();
             SetEnemyWait();
 

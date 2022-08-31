@@ -322,6 +322,9 @@ namespace B409.Jade.Battle {
             case State.Die:
                 DieExit();
                 break;
+            case State.Stun:
+                StunExit();
+                break;
             default:
                 break;
             }
@@ -340,6 +343,9 @@ namespace B409.Jade.Battle {
                 break;
             case State.Die:
                 DieEnter();
+                break;
+            case State.Stun:
+                StunEnter();
                 break;
             default:
                 break;

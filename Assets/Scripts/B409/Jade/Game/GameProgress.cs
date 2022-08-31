@@ -42,6 +42,8 @@ namespace B409.Jade.Game {
         private Dictionary<int, int> monsterLogs;
         [JsonProperty]
         private Dictionary<Parameter, float> parameterLogs;
+        [JsonProperty]
+        private Dictionary<int, int> lockedMonsters;
 
         [JsonConstructor]
         public GameProgress(int dDay, int stage, int stageSequence, float ap, Dictionary<int, int> items, Dictionary<int, int> monsters, Dictionary<Parameter, float> parameters, Dictionary<int, int> trades, int refreshCount) {
@@ -71,6 +73,7 @@ namespace B409.Jade.Game {
             this.itemLogs = new Dictionary<int, int>();
             this.monsterLogs = new Dictionary<int, int>();
             this.parameterLogs = new Dictionary<Parameter, float>();
+            this.lockedMonsters = new Dictionary<int, int>();
         }
 
         public static GameProgress FromJson(string json) {
@@ -418,6 +421,20 @@ namespace B409.Jade.Game {
             this.parameterLogs.Clear();
 
             return log;
+        }
+    
+        public void LockAllMonseters() {
+            this.lockedMonsters = new Dictionary<int, int>(this.Monsters);
+            foreach(var pair in Monsters) {
+                UseMonster(pair.Key, pair.Value);
+            }
+        }
+
+        public void UnlockAllMonsters() {
+            foreach(var pair in lockedMonsters) {
+                AddMonster(pair.Key, pair.Value);
+            }
+            this.lockedMonsters.Clear();
         }
     }
 }
