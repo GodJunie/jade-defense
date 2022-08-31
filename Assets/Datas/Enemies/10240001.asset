@@ -18,19 +18,19 @@ MonoBehaviour:
   description: Knight Templar
   prefab: {fileID: 5451520444147913940, guid: e208c80dc1fadb243b622018a59cc3e8, type: 3}
   status:
-    cooltime: 1
-    hp: 80
+    cooltime: 3
+    hp: 300
     moveSpeed: 1
-    range: 0.5
+    range: 0.4
     targetFilterMode: 3
     descending: 0
     targetCount: 1
     targetEnemy: 1
     attackSpeed: 1
     attackMode: 0
-    atk: 18
+    atk: 28
     heal: 0
-    interval: 0
+    dotCount: 0
     duration: 0
     distance: 0
     slowRate: 0

@@ -18,19 +18,19 @@ MonoBehaviour:
   description: Knight Templar(Blue)
   prefab: {fileID: 6782649364160066367, guid: a038f567ddc329a4ab0ce2a8922d33f2, type: 3}
   status:
-    cooltime: 1
-    hp: 80
+    cooltime: 3
+    hp: 205
     moveSpeed: 1
-    range: 0.5
+    range: 2
     targetFilterMode: 3
     descending: 0
     targetCount: 1
     targetEnemy: 1
-    attackSpeed: 1
+    attackSpeed: 0.7
     attackMode: 0
-    atk: 18
+    atk: 24
     heal: 0
-    interval: 0
+    dotCount: 0
     duration: 0
     distance: 0
     slowRate: 0

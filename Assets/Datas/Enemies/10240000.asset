@@ -18,19 +18,19 @@ MonoBehaviour:
   description: Cat Knights
   prefab: {fileID: 949370441416618368, guid: 8608fe804f3ceb5438384c6068fd3326, type: 3}
   status:
-    cooltime: 1
-    hp: 75
+    cooltime: 3
+    hp: 270
     moveSpeed: 1
-    range: 0.5
+    range: 0.4
     targetFilterMode: 3
     descending: 0
     targetCount: 1
     targetEnemy: 1
     attackSpeed: 1
     attackMode: 0
-    atk: 16
+    atk: 24
     heal: 0
-    interval: 0
+    dotCount: 0
     duration: 0
     distance: 0
     slowRate: 0

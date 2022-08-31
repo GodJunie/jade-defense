@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1aba2187eed0b94b8e90991290df523, type: 3}
+  m_Name: 12004
+  m_EditorClassIdentifier: 
+  id: 12004
+  scripts:
+  - On the [Enemies] tab, i can identify the next enemy!
+  - It's cold at night! I'm starting to hate the desert.
+  - How long will the Asgard guys come after me? What did I do wrong? Well, there
+    are some misdemeanors, but...
+  day: 2
+  monsters: []
+  salesCount: 10
+  trades:
+  - sale: {fileID: 11400000, guid: 1cad6710dcf223e468247eb06cf52ce3, type: 2}
+    rate: 0.6
+  - sale: {fileID: 11400000, guid: 491f1df46333f624aa1a277005fa32fb, type: 2}
+    rate: 0.6
+  - sale: {fileID: 11400000, guid: a605c21ceaae03140ae802af7a8f4cb3, type: 2}
+    rate: 0.6
+  - sale: {fileID: 11400000, guid: b048a21286f5c104898b2a372606e69c, type: 2}
+    rate: 0.3
+  - sale: {fileID: 11400000, guid: e40133b6b8960dd46a67a48c41659fcd, type: 2}
+    rate: 0.6
+  - sale: {fileID: 11400000, guid: c0fba5c38f7c47f47950c0c22694dd42, type: 2}
+    rate: 0.3
+  - sale: {fileID: 11400000, guid: e3a1de9e950c96842ae357f51f791e2c, type: 2}
+    rate: 0.3
+  - sale: {fileID: 11400000, guid: 745b47de337ba0a47b078958757b891a, type: 2}
+    rate: 0.1
+  - sale: {fileID: 11400000, guid: 389ecefaf3ab10048b67bfd12c5b9988, type: 2}
+    rate: 0.3
+  - sale: {fileID: 11400000, guid: 4e6cefaa1b5245f4fa08ad1658cd82c1, type: 2}
+    rate: 0.6
+  - sale: {fileID: 11400000, guid: 36eaecf7e1d25524ba4f5966d5482448, type: 2}
+    rate: 0.6
+  - sale: {fileID: 11400000, guid: 55f463958283f76429b5b9ebbc433ee0, type: 2}
+    rate: 0.6
+  - sale: {fileID: 11400000, guid: ee250303d84dae84daa2c986ec49767b, type: 2}
+    rate: 0.3
+  - sale: {fileID: 11400000, guid: c6ad07dc9a5a6574a8d47fe68f8bed33, type: 2}
+    rate: 0.3
+  - sale: {fileID: 11400000, guid: fa409de59b8a09a439ad8aa28ad8a600, type: 2}
+    rate: 0.3
+  - sale: {fileID: 11400000, guid: 95f5707e4eaa1dd46925e8ea3fffc5ef, type: 2}
+    rate: 0.3
+  - sale: {fileID: 11400000, guid: 850fca931e1dad0458e9eca700d63bc3, type: 2}
+    rate: 2
+  - sale: {fileID: 11400000, guid: cfebe6db4d440ec4f95200221f7c1041, type: 2}
+    rate: 2
+  - sale: {fileID: 11400000, guid: 9ac75ae4d997daf49b2c7361ebc78cb3, type: 2}
+    rate: 2
+  - sale: {fileID: 11400000, guid: d6a8a12ca56771241bde3e9d1371f553, type: 2}
+    rate: 2
+  - sale: {fileID: 11400000, guid: 567e8ea71961e7546ba9a4287711676b, type: 2}
+    rate: 2
+  - sale: {fileID: 11400000, guid: 5f683135bcc412a4c8dc7248337a9082, type: 2}
+    rate: 4
+  - sale: {fileID: 11400000, guid: 10a5f22fa84bc76439071b22027e598b, type: 2}
+    rate: 11.3
+  - sale: {fileID: 11400000, guid: 839cdc6b477a4834cb515d129ebf87cc, type: 2}
+    rate: 8
+  - sale: {fileID: 11400000, guid: 413dffb8e9b38b34a92a89061d803313, type: 2}
+    rate: 8
+  - sale: {fileID: 11400000, guid: 43309e0d33e8a9545be2372cedf01a03, type: 2}
+    rate: 8
+  - sale: {fileID: 11400000, guid: 25f6b5f76baab5549b43a849f1859318, type: 2}
+    rate: 8
+  - sale: {fileID: 11400000, guid: 41c9d1852d7a7d3448a09aa07eab9e9a, type: 2}
+    rate: 8
+  - sale: {fileID: 11400000, guid: dee6bd5528c069346b3ad70bbb3c2434, type: 2}
+    rate: 4
+  - sale: {fileID: 11400000, guid: 144e3015abcb36844b2d8f50bee8dd1c, type: 2}
+    rate: 8
+  - sale: {fileID: 11400000, guid: 0cab179eb99b45b4d85e859b4b88fbf8, type: 2}
+    rate: 4
+  - sale: {fileID: 11400000, guid: daf234e15aa11ee49a1aaaeeccea9a6a, type: 2}
+    rate: 3
+  - sale: {fileID: 11400000, guid: cc3dd6c5bbb67c34dab31070659567ab, type: 2}
+    rate: 2
+  - sale: {fileID: 11400000, guid: 4698e7bc9a1df2b419c0c7a178891be6, type: 2}
+    rate: 1
+  - sale: {fileID: 11400000, guid: 39b9b10ba05f09941bce5370e2cf707c, type: 2}
+    rate: 3
+  - sale: {fileID: 11400000, guid: 3b7f714761727d54cb44def06d47cbe1, type: 2}
+    rate: 2
+  - sale: {fileID: 11400000, guid: a6d0e8549b775ed4282034afc3543642, type: 2}
+    rate: 1
+  enemies:
+  - enemy: {fileID: 11400000, guid: 8b3d7e429e42e8546ab18f2f9907b2cb, type: 2}
+    count: 2
+  - enemy: {fileID: 11400000, guid: 3cfe5d87e73cd5740af4d7b0105286a5, type: 2}
+    count: 2
+  - enemy: {fileID: 11400000, guid: 85ea1fa72332a68409e4e57d68188198, type: 2}
+    count: 2
+  battle: {fileID: 11400000, guid: 7b7dac6e9695ced4dad0ce9e84a186bd, type: 2}

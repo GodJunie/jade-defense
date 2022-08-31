@@ -27,10 +27,10 @@ MonoBehaviour:
     targetCount: 1
     targetEnemy: 1
     attackSpeed: 2
-    attackMode: 0
-    atk: 33
+    attackMode: 1
+    atk: 11
     heal: 0
-    interval: 0
-    duration: 0
+    dotCount: 3
+    duration: 2
     distance: 0
     slowRate: 0

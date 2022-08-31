@@ -13,29 +13,20 @@ MonoBehaviour:
   m_Name: 101200
   m_EditorClassIdentifier: 
   id: 101200
-  background: {fileID: 1461120247514626, guid: 52169514a18a040229a0d1fa46a7d82f, type: 3}
-  bgm: {fileID: 8300000, guid: 55387991297aa417682cf0281812da58, type: 3}
+  background: {fileID: 1461120247514626, guid: ce7758c2172386340a019e353cb41dea, type: 3}
+  bgm: {fileID: 8300000, guid: be92dc8b561c248729a3e1dd91a5e43a, type: 3}
   enemies:
-  - {fileID: 11400000, guid: d104538bfcd007d48be7deb434e75b3a, type: 2}
-  - {fileID: 11400000, guid: d41e035a571d27e4f8da6b51b1c3c54c, type: 2}
   - {fileID: 11400000, guid: d41e035a571d27e4f8da6b51b1c3c54c, type: 2}
   - {fileID: 11400000, guid: c32da3a657706c745891d177e2c39373, type: 2}
-  - {fileID: 11400000, guid: c32da3a657706c745891d177e2c39373, type: 2}
-  - {fileID: 11400000, guid: c32da3a657706c745891d177e2c39373, type: 2}
   - {fileID: 11400000, guid: 350d7d0f69843694fa96097267a25a2d, type: 2}
   - {fileID: 11400000, guid: 350d7d0f69843694fa96097267a25a2d, type: 2}
-  - {fileID: 11400000, guid: 350d7d0f69843694fa96097267a25a2d, type: 2}
-  - {fileID: 11400000, guid: 76a26212356604847b069b0418c6b577, type: 2}
-  - {fileID: 11400000, guid: 76a26212356604847b069b0418c6b577, type: 2}
   - {fileID: 11400000, guid: 76a26212356604847b069b0418c6b577, type: 2}
   rewards:
   - item: {fileID: 11400000, guid: d589c2021da9fa54fa47f26611edba9c, type: 2}
     count: 100
-  - item: {fileID: 11400000, guid: 399a39c2c2c2f97468829fccced19baf, type: 2}
+  - item: {fileID: 11400000, guid: 60f8ec9a060303f4fb8b5fae244ac2fa, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: 6475d979bdcdecd41844424dd46b9ce0, type: 2}
     count: 3
-  - item: {fileID: 11400000, guid: 41c9d1852d7a7d3448a09aa07eab9e9a, type: 2}
-    count: 3
-  - item: {fileID: 11400000, guid: 144e3015abcb36844b2d8f50bee8dd1c, type: 2}
-    count: 3
-  - item: {fileID: 11400000, guid: 839cdc6b477a4834cb515d129ebf87cc, type: 2}
+  - item: {fileID: 11400000, guid: 0465222f67f9b7e4ba9cb95425060404, type: 2}
     count: 3

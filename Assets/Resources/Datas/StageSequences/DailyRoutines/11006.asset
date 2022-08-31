@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1aba2187eed0b94b8e90991290df523, type: 3}
+  m_Name: 11006
+  m_EditorClassIdentifier: 
+  id: 11006
+  scripts:
+  - On the [Enemies] tab, i can identify the next enemy!
+  - The more each action, the higher the stats. I can collect and produce in a new
+    level of space according to the elevated stats.
+  - If you tap the stat box on the right, you can get a detailed view of the current
+    statistics, yes, the box under D-day.
+  day: 3
+  monsters: []
+  salesCount: 10
+  trades:
+  - sale: {fileID: 11400000, guid: 1cad6710dcf223e468247eb06cf52ce3, type: 2}
+    rate: 0.6
+  - sale: {fileID: 11400000, guid: 491f1df46333f624aa1a277005fa32fb, type: 2}
+    rate: 0.6
+  - sale: {fileID: 11400000, guid: a605c21ceaae03140ae802af7a8f4cb3, type: 2}
+    rate: 0.6
+  - sale: {fileID: 11400000, guid: b048a21286f5c104898b2a372606e69c, type: 2}
+    rate: 0.3
+  - sale: {fileID: 11400000, guid: e40133b6b8960dd46a67a48c41659fcd, type: 2}
+    rate: 0.6
+  - sale: {fileID: 11400000, guid: c0fba5c38f7c47f47950c0c22694dd42, type: 2}
+    rate: 0.3
+  - sale: {fileID: 11400000, guid: e3a1de9e950c96842ae357f51f791e2c, type: 2}
+    rate: 0.3
+  - sale: {fileID: 11400000, guid: 745b47de337ba0a47b078958757b891a, type: 2}
+    rate: 0.1
+  - sale: {fileID: 11400000, guid: 389ecefaf3ab10048b67bfd12c5b9988, type: 2}
+    rate: 0.3
+  - sale: {fileID: 11400000, guid: 4e6cefaa1b5245f4fa08ad1658cd82c1, type: 2}
+    rate: 0.6
+  - sale: {fileID: 11400000, guid: 36eaecf7e1d25524ba4f5966d5482448, type: 2}
+    rate: 0.6
+  - sale: {fileID: 11400000, guid: 55f463958283f76429b5b9ebbc433ee0, type: 2}
+    rate: 0.6
+  - sale: {fileID: 11400000, guid: ee250303d84dae84daa2c986ec49767b, type: 2}
+    rate: 0.3
+  - sale: {fileID: 11400000, guid: c6ad07dc9a5a6574a8d47fe68f8bed33, type: 2}
+    rate: 0.3
+  - sale: {fileID: 11400000, guid: fa409de59b8a09a439ad8aa28ad8a600, type: 2}
+    rate: 0.3
+  - sale: {fileID: 11400000, guid: 95f5707e4eaa1dd46925e8ea3fffc5ef, type: 2}
+    rate: 0.3
+  - sale: {fileID: 11400000, guid: b50855268140af34ea17af25299b95ac, type: 2}
+    rate: 5
+  - sale: {fileID: 11400000, guid: 75629c7a660287c42859f2a90cf401ea, type: 2}
+    rate: 5
+  - sale: {fileID: 11400000, guid: 2e12f2250b6f33944bf7f0282f2480d7, type: 2}
+    rate: 5
+  - sale: {fileID: 11400000, guid: 10a5f22fa84bc76439071b22027e598b, type: 2}
+    rate: 15.3
+  - sale: {fileID: 11400000, guid: 413dffb8e9b38b34a92a89061d803313, type: 2}
+    rate: 5
+  - sale: {fileID: 11400000, guid: 833074a196207034d81e6e0d0fc18e71, type: 2}
+    rate: 3
+  - sale: {fileID: 11400000, guid: 0465222f67f9b7e4ba9cb95425060404, type: 2}
+    rate: 10
+  - sale: {fileID: 11400000, guid: 6475d979bdcdecd41844424dd46b9ce0, type: 2}
+    rate: 10
+  - sale: {fileID: 11400000, guid: 4798147202ceb8e4fb0ffe48ca90b35f, type: 2}
+    rate: 10
+  - sale: {fileID: 11400000, guid: 399a39c2c2c2f97468829fccced19baf, type: 2}
+    rate: 3
+  - sale: {fileID: 11400000, guid: 7e6cc04742966de4b8882872197f316d, type: 2}
+    rate: 10
+  - sale: {fileID: 11400000, guid: 06b602e78a1fc3149a66f057c8a0238d, type: 2}
+    rate: 3
+  - sale: {fileID: 11400000, guid: a914fdd14479d664da1107774fac53b1, type: 2}
+    rate: 2
+  - sale: {fileID: 11400000, guid: ca2e979313aa1844489baeb7da42fbd5, type: 2}
+    rate: 1
+  - sale: {fileID: 11400000, guid: 4e56db5c6bb00a246be6564d3c38967d, type: 2}
+    rate: 3
+  - sale: {fileID: 11400000, guid: 60f8ec9a060303f4fb8b5fae244ac2fa, type: 2}
+    rate: 2
+  - sale: {fileID: 11400000, guid: af0c164a14f2c0c4392121afb06d230b, type: 2}
+    rate: 1
+  enemies:
+  - enemy: {fileID: 11400000, guid: a9930aae7a9aeeb479241856a5043f52, type: 2}
+    count: 1
+  - enemy: {fileID: 11400000, guid: d7596250a8e05b046b0041354104a7a2, type: 2}
+    count: 1
+  - enemy: {fileID: 11400000, guid: fdf456d321d45cb49827beadd76ec9e1, type: 2}
+    count: 2
+  - enemy: {fileID: 11400000, guid: d345fee5b37ce1e4abf676701b15f7e1, type: 2}
+    count: 2
+  - enemy: {fileID: 11400000, guid: deb5ad50cc707c34ea9eb0016dd7add4, type: 2}
+    count: 2
+  battle: {fileID: 11400000, guid: 7f5b83d70c7e91c4891bebbaba780ddf, type: 2}

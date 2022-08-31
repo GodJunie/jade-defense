@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 103000
   background: {fileID: 1461120247514626, guid: 8633b97c6fb1741319432743ee8c49fd, type: 3}
+  bgm: {fileID: 0}
   enemies:
   - {fileID: 11400000, guid: b36a9b18a41a71d4b9a717199b384727, type: 2}
   - {fileID: 11400000, guid: b36a9b18a41a71d4b9a717199b384727, type: 2}
