@@ -188,6 +188,21 @@ namespace B409.Jade.Data {
             private AudioClip sfx;
 
 
+            [HorizontalGroup("box/group")]
+            [ShowIfGroup("box/group/ShowEtc")]
+            [BoxGroup("box/group/ShowEtc/Etc")]
+            [HorizontalGroup("box/group/ShowEtc/Etc/group")]
+            [BoxGroup("box/group/ShowEtc/Etc/group/Lock Monster")]
+            [HideLabel]
+            [SerializeField]
+            private bool lockMonster;
+
+            [HorizontalGroup("box/group/ShowEtc/Etc/group")]
+            [BoxGroup("box/group/ShowEtc/Etc/group/Unlock Monster")]
+            [HideLabel]
+            [SerializeField]
+            private bool unlockMonster;
+
             public CharacterInfo LeftCharacter => leftCharacter;
             public ScriptInfo ScriptInfo => scriptInfo;
             public CharacterInfo RightCharacter => rightCharacter;
@@ -197,6 +212,8 @@ namespace B409.Jade.Data {
             public List<RewardInfo> Rewards => rewards;
             public AudioClip Bgm => bgm;
             public AudioClip Sfx => sfx;
+            public bool LockMonster => lockMonster;
+            public bool UnlockMonster => unlockMonster;
 
             public DialogueSequenceData() {
                 this.leftCharacter = new CharacterInfo();
@@ -233,6 +250,7 @@ namespace B409.Jade.Data {
                 }
             }
 
+            #region Flags
             private bool ShowScript {
                 get {
                     return sequenceSort == SequenceSort.Script;
@@ -256,6 +274,13 @@ namespace B409.Jade.Data {
                     return sequenceSort == SequenceSort.Sound;
                 }
             }
+
+            private bool ShowEtc {
+                get {
+                    return sequenceSort == SequenceSort.Etc;
+                }
+            }
+            #endregion
 
             private string Summary {
                 get {
@@ -284,8 +309,6 @@ namespace B409.Jade.Data {
                         }
 
                         return string.Format("{0} / {1} : {2} / {3}", left, scriptInfo.Name, scriptInfo.Script, right);
-                    case SequenceSort.Effect:
-                        return "";
                     case SequenceSort.Object:
                         if(this.eventObject != null) {
                             return string.Format("Load Event Object : {0}", eventObject.name);
@@ -308,6 +331,12 @@ namespace B409.Jade.Data {
                         if(sfx != null)
                             soundStr += string.Format(" / Sfx: {0}", sfx.name);
                         return soundStr;
+                    case SequenceSort.Etc:
+                        if(lockMonster)
+                            return "Lock Monsters";
+                        if(unlockMonster)
+                            return "Unlock Monsters";
+                        return "";
                     default:
                         return "";
                     }
@@ -420,7 +449,7 @@ namespace B409.Jade.Data {
         }
 
         public enum ScriptFocus : int { Left, Right, None };
-        public enum SequenceSort : int { Script, Effect, Control, Object, Reward, Sound };
+        public enum SequenceSort : int { Script, Object, Reward, Sound, Etc };
         public enum CharacterMode : int { None, Appear, Disappear, Animation };
         #endregion
 

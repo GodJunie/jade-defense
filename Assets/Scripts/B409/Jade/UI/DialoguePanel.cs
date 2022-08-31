@@ -243,8 +243,11 @@ namespace B409.Jade.UI {
                     await WaitClick(defaultWaitDuration);
                 }
                 return;
-            case DialogueData.SequenceSort.Effect:
-
+            case DialogueData.SequenceSort.Etc:
+                if(sequence.LockMonster)
+                    GameManager.Instance.Progress.LockAllMonseters();
+                if(sequence.UnlockMonster)
+                    GameManager.Instance.Progress.UnlockAllMonsters();
                 return;
             case DialogueData.SequenceSort.Reward:
                 foreach(var reward in sequence.Rewards) {
