@@ -21,7 +21,16 @@ MonoBehaviour:
   - Now that the battle is over and you've got gold, let's visit the [Trade Tab!]
     Merchants even change what they sell only once!
   day: 2
-  monsters: []
+  monsters:
+  - {fileID: 11400000, guid: 1cad6710dcf223e468247eb06cf52ce3, type: 2}
+  - {fileID: 11400000, guid: 491f1df46333f624aa1a277005fa32fb, type: 2}
+  - {fileID: 11400000, guid: a605c21ceaae03140ae802af7a8f4cb3, type: 2}
+  - {fileID: 11400000, guid: e40133b6b8960dd46a67a48c41659fcd, type: 2}
+  - {fileID: 11400000, guid: b048a21286f5c104898b2a372606e69c, type: 2}
+  - {fileID: 11400000, guid: c0fba5c38f7c47f47950c0c22694dd42, type: 2}
+  - {fileID: 11400000, guid: e3a1de9e950c96842ae357f51f791e2c, type: 2}
+  - {fileID: 11400000, guid: 745b47de337ba0a47b078958757b891a, type: 2}
+  - {fileID: 11400000, guid: 389ecefaf3ab10048b67bfd12c5b9988, type: 2}
   salesCount: 10
   trades:
   - sale: {fileID: 11400000, guid: 1cad6710dcf223e468247eb06cf52ce3, type: 2}

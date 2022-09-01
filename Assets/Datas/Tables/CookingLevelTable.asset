@@ -18,11 +18,11 @@ MonoBehaviour:
     - parameter: 1
       value: 0
     - parameter: 2
-      value: 3
+      value: 6
     - parameter: 3
       value: 3
     - parameter: 4
-      value: 6
+      value: 3
     rewardParameters:
     - parameter: 1
       value: 1

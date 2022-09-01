@@ -21,7 +21,7 @@ MonoBehaviour:
   status:
     cooltime: 6
     hp: 350
-    moveSpeed: 0.2
+    moveSpeed: 0.4
     range: 3
     targetFilterMode: 3
     descending: 0
@@ -31,7 +31,7 @@ MonoBehaviour:
     attackMode: 0
     atk: 20
     heal: 0
-    interval: 0
+    dotCount: 0
     duration: 0
     distance: 0
     slowRate: 0

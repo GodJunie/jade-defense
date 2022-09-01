@@ -20,8 +20,8 @@ MonoBehaviour:
   status:
     cooltime: 5
     hp: 150
-    moveSpeed: 0.2
-    range: 2.5
+    moveSpeed: 0.4
+    range: 3.5
     targetFilterMode: 3
     descending: 0
     targetCount: 0
