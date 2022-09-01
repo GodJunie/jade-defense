@@ -449,7 +449,7 @@ namespace B409.Jade.Data {
         }
 
         public enum ScriptFocus : int { Left, Right, None };
-        public enum SequenceSort : int { Script, Object, Reward, Sound, Etc };
+        public enum SequenceSort : int { Script = 0, Object = 3, Reward, Sound, Etc };
         public enum CharacterMode : int { None, Appear, Disappear, Animation };
         #endregion
 
