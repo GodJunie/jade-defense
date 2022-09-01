@@ -341,8 +341,15 @@ namespace B409.Jade.Battle {
         }
 
         private void GenerateUnit(UnitData data, bool isPlayer) {
-            var posX = isPlayer ? -1f : 1f;
-            posX *= (mapSize + spawnPosPad);
+            float posX = mapSize;
+
+            if(data.Status.MoveSpeed == 0) {
+                posX -= spawnPosPad;
+            } else {
+                posX += spawnPosPad;
+            }
+            posX *= isPlayer ? -1f : 1f;
+
             var pos = new Vector3(posX, -1.15f, 0f);
             pos += new Vector3(0f, 1f, 1f) * UnityEngine.Random.Range(-0.3f, 0.3f);
 

@@ -47,6 +47,7 @@ namespace B409.Jade.Battle {
         public UnitData Data { get; private set; }
         public float Hp { get; private set; }
         public bool IsPlayer { get; private set; }
+        public bool IsAppear { get; set; }
 
         // about slow
         private float moveSpeed;
@@ -180,6 +181,9 @@ namespace B409.Jade.Battle {
             case State.Die:
                 Die();
                 break;
+            case State.Appear:
+                Appear();
+                break;
             default:
                 break;
             }
@@ -218,6 +222,7 @@ namespace B409.Jade.Battle {
             this.IsPlayer = isPlayer;
             this.mapSize = mapSize;
             this.detector.gameObject.SetActive(false);
+            this.hitbox.enabled = false;
 
             this.detector.transform.localPosition = new Vector3(this.hitbox.offset.x * this.hitbox.transform.localScale.x, 0, 0f);
             this.detector.SetRange(this.hitbox.size.x * this.hitbox.transform.localScale.x + data.Status.Range);
@@ -230,7 +235,11 @@ namespace B409.Jade.Battle {
                 this.anim.transform.localRotation = Quaternion.Euler(0f, 180f, 0f);
             }
 
-            this.ChangeState(State.Move);
+            if(moveSpeed == 0) {
+                this.ChangeState(State.Appear);
+            } else {
+                this.ChangeState(State.Move);
+            }
         }
 
         public void OnDamage(float damage) {
@@ -297,10 +306,14 @@ namespace B409.Jade.Battle {
             if(targetCount > 0) {
                 ChangeState(State.Attack);
             } else {
-                if(this.inMap) {
-                    ChangeState(State.Move);
-                } else {
+                if(this.Data.Status.MoveSpeed == 0) {
                     ChangeState(State.Idle);
+                } else {
+                    if(this.inMap) {
+                        ChangeState(State.Move);
+                    } else {
+                        ChangeState(State.Idle);
+                    }
                 }
             }
         }
@@ -325,6 +338,9 @@ namespace B409.Jade.Battle {
             case State.Stun:
                 StunExit();
                 break;
+            case State.Appear:
+                AppearExit();
+                break;
             default:
                 break;
             }
@@ -347,10 +363,30 @@ namespace B409.Jade.Battle {
             case State.Stun:
                 StunEnter();
                 break;
+            case State.Appear:
+                AppearEnter();
+                break;
             default:
                 break;
             }
         }
+
+        #region Appear
+        private void AppearEnter() {
+            IsAppear = false;
+        }
+
+        private void Appear() {
+            if(IsAppear) {
+                ChangeState(State.Idle);
+            }
+        }
+
+        private void AppearExit() {
+            this.hitbox.enabled = true;
+            this.detector.gameObject.SetActive(true);
+        }
+        #endregion
 
         #region Idle
         private void IdleEnter() {
@@ -385,6 +421,7 @@ namespace B409.Jade.Battle {
             } else {
                 if(this.inMap) {
                     this.detector.gameObject.SetActive(true);
+                    this.hitbox.enabled = true;
                 }
             }
         }
@@ -473,6 +510,7 @@ namespace B409.Jade.Battle {
         private void DieEnter() {
             anim.AnimationState.SetAnimation(0, dieAnimation, false);
             this.hitbox.enabled = false;
+            this.detector.gameObject.SetActive(false);
             this.OnDead?.Invoke();
         }
 
