@@ -43,8 +43,10 @@ namespace B409.Jade.Battle {
         private float mapSize = 5f;
         [TitleGroup("Map")]
         [SerializeField]
-        private float spawnPosPad = 2f;
-
+        private float spawnPosPad = 1f;
+        [TitleGroup("Map")]
+        [SerializeField]
+        private float mapPad = 2f;
 
 
         [TitleGroup("Camera")]
@@ -344,7 +346,7 @@ namespace B409.Jade.Battle {
             float posX = mapSize;
 
             if(data.Status.MoveSpeed == 0) {
-                posX -= spawnPosPad;
+                posX -= mapPad;
             } else {
                 posX += spawnPosPad;
             }
@@ -354,7 +356,7 @@ namespace B409.Jade.Battle {
             pos += new Vector3(0f, 1f, 1f) * UnityEngine.Random.Range(-0.3f, 0.3f);
 
             var unit = Instantiate(data.Prefab, pos, Quaternion.identity);
-            unit.Init(data, isPlayer, this.mapSize - spawnPosPad);
+            unit.Init(data, isPlayer, this.mapSize - mapPad);
 
             unit.OnDead += () => {
                 if(isPlayer) {

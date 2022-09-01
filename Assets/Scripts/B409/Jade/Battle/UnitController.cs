@@ -149,7 +149,6 @@ namespace B409.Jade.Battle {
                 Debug.Log(entry.Animation.Name);
                 if(entry.Animation.Name == attackAnimation) {
                     attackEnd = true;
-                    anim.AnimationState.SetAnimation(0, idleAnimation, true);
                 }
                 if(entry.Animation.Name == dieAnimation) {
                     // ÀÎ»ý ³¡!
@@ -402,6 +401,7 @@ namespace B409.Jade.Battle {
 
         #region Appear
         private void AppearEnter() {
+            anim.AnimationState.SetAnimation(0, idleAnimation, true);
             IsAppear = false;
         }
 
@@ -493,6 +493,7 @@ namespace B409.Jade.Battle {
             float timeScale = Mathf.Max(1f, duration / this.Data.Status.AttackSpeed);
 
             anim.AnimationState.SetAnimation(0, attackAnimation, false).TimeScale = timeScale;
+            anim.AnimationState.AddAnimation(0, idleAnimation, true, 0f);
         }
 
         private void Attack() {

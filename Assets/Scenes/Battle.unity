@@ -8454,16 +8454,16 @@ MonoBehaviour:
   isTest: 0
   data: {fileID: 11400000, guid: f56ebbbc96850c44b8540befd73de584, type: 2}
   monsterDatas:
-  - {fileID: 11400000, guid: e65f897cbe0214748bf9a3ac95eeb848, type: 2}
-  - {fileID: 11400000, guid: e0e0a4ff890e22c499f8eea1fdeccb1f, type: 2}
+  - {fileID: 11400000, guid: 13774c009ceca904db1dbc7643d20238, type: 2}
   - {fileID: 11400000, guid: c6ad07dc9a5a6574a8d47fe68f8bed33, type: 2}
   - {fileID: 11400000, guid: 95f5707e4eaa1dd46925e8ea3fffc5ef, type: 2}
   - {fileID: 11400000, guid: ee250303d84dae84daa2c986ec49767b, type: 2}
   - {fileID: 11400000, guid: fa409de59b8a09a439ad8aa28ad8a600, type: 2}
   imageFade: {fileID: 287893054}
   panelSetParty: {fileID: 1108261599}
-  mapSize: 7
+  mapSize: 8
   spawnPosPad: 1
+  mapPad: 2
   cameraScrollSpeed: 5
   pinContainer: {fileID: 2146339234}
   pinPrefab: {fileID: 1718589549028876746, guid: 9501ccd5a3b57bd46acc0b039a3ada71, type: 3}
