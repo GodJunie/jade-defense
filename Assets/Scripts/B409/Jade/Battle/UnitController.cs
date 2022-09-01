@@ -221,6 +221,7 @@ namespace B409.Jade.Battle {
             this.Data = data;
             this.IsPlayer = isPlayer;
             this.mapSize = mapSize;
+
             this.detector.gameObject.SetActive(false);
             this.hitbox.enabled = false;
 
@@ -235,10 +236,11 @@ namespace B409.Jade.Battle {
                 this.anim.transform.localRotation = Quaternion.Euler(0f, 180f, 0f);
             }
 
-            if(moveSpeed == 0) {
-                this.ChangeState(State.Appear);
+            if(data.Status.MoveSpeed == 0) {
+                Debug.Log("Appear");
+                InitState(State.Appear);
             } else {
-                this.ChangeState(State.Move);
+                InitState(State.Move);
             }
         }
 
@@ -318,11 +320,38 @@ namespace B409.Jade.Battle {
             }
         }
 
+        private void InitState(State state) {
+            switch(state) {
+            case State.Idle:
+                IdleEnter();
+                break;
+            case State.Move:
+                MoveEnter();
+                break;
+            case State.Attack:
+                AttackEnter();
+                break;
+            case State.Die:
+                DieEnter();
+                break;
+            case State.Stun:
+                StunEnter();
+                break;
+            case State.Appear:
+                AppearEnter();
+                break;
+            default:
+                break;
+            }
+
+            this.State = state;
+        }
+
         private void ChangeState(State state) {
             if(this.State == State.Die)
                 return;
 
-            switch(state) {
+            switch(this.State) {
             case State.Idle:
                 IdleExit();
                 break;
@@ -347,7 +376,7 @@ namespace B409.Jade.Battle {
 
             this.State = state;
 
-            switch(state) {
+            switch(this.State) {
             case State.Idle:
                 IdleEnter();
                 break;
@@ -383,6 +412,7 @@ namespace B409.Jade.Battle {
         }
 
         private void AppearExit() {
+            Debug.Log("Appear Exit!");
             this.hitbox.enabled = true;
             this.detector.gameObject.SetActive(true);
         }

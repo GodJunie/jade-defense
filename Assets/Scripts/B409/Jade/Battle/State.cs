@@ -3,5 +3,5 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace B409.Jade.Battle {
-    public enum State : int { Appear, Idle, Move, Attack, Stun, Die }
+    public enum State : int { None, Appear, Idle, Move, Attack, Stun, Die }
 }

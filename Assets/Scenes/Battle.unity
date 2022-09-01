@@ -8451,10 +8451,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63fb1096f23c3504999e2ae43e19f5c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isTest: 1
+  isTest: 0
   data: {fileID: 11400000, guid: f56ebbbc96850c44b8540befd73de584, type: 2}
   monsterDatas:
   - {fileID: 11400000, guid: e65f897cbe0214748bf9a3ac95eeb848, type: 2}
+  - {fileID: 11400000, guid: e0e0a4ff890e22c499f8eea1fdeccb1f, type: 2}
   - {fileID: 11400000, guid: c6ad07dc9a5a6574a8d47fe68f8bed33, type: 2}
   - {fileID: 11400000, guid: 95f5707e4eaa1dd46925e8ea3fffc5ef, type: 2}
   - {fileID: 11400000, guid: ee250303d84dae84daa2c986ec49767b, type: 2}
