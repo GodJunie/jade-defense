@@ -52,13 +52,11 @@ namespace B409.Jade.UI {
         }
 
         public async void NewGame() {
-            SoundManager.Instance.BgmOff();
             await Fade();
             GameManager.Instance.NewGame();
         }
 
         public async void ContinueGame() {
-            SoundManager.Instance.BgmOff();
             await Fade();
             GameManager.Instance.Continue();
         }
@@ -73,6 +71,7 @@ namespace B409.Jade.UI {
                 t.DOScale(1.5f, .5f);
             }
             await UniTask.Delay(TimeSpan.FromSeconds(2f));
+            SoundManager.Instance.BgmOff();
             await this.imageWhite.DOFade(1f, 1f);
         }
 

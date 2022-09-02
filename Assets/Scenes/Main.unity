@@ -1655,70 +1655,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 94749224}
     m_Modifications:
-    - target: {fileID: 405832266380099985, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -35
-      objectReference: {fileID: 0}
-    - target: {fileID: 405832266849828898, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 405832266849828898, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 405832266849828898, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 405832266849828898, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 405832266979777904, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 405832267079047526, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 405832267079047526, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 405832267079047526, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 405832267079047526, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1755153717048877715, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1922522218757311117, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 542415631191372739, guid: 72dcfe1acfcde406b8b7dc8b42635600, type: 2}
-    - target: {fileID: 1922522218757311117, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2466473384246093832, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2466473384342253702, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -35
-      objectReference: {fileID: 0}
-    - target: {fileID: 2466473385712833404, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2466473385728936250, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1807,54 +1743,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PanelFarming
       objectReference: {fileID: 0}
-    - target: {fileID: 2466473385728936253, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2466473385728936254, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
       propertyPath: mainScreen
       value: 
       objectReference: {fileID: 1353925008}
-    - target: {fileID: 2981606674993133296, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 72dcfe1acfcde406b8b7dc8b42635600, type: 2}
-    - target: {fileID: 2981606674993133296, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 542415631191372739, guid: 72dcfe1acfcde406b8b7dc8b42635600, type: 2}
-    - target: {fileID: 4355844334940149346, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 542415631191372739, guid: 72dcfe1acfcde406b8b7dc8b42635600, type: 2}
-    - target: {fileID: 4355844334940149346, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6944098607383659509, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 542415631191372739, guid: 72dcfe1acfcde406b8b7dc8b42635600, type: 2}
-    - target: {fileID: 6944098607383659509, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8094325997058550111, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 542415631191372739, guid: 72dcfe1acfcde406b8b7dc8b42635600, type: 2}
-    - target: {fileID: 8094325997058550111, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8140740994149566224, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 542415631191372739, guid: 72dcfe1acfcde406b8b7dc8b42635600, type: 2}
-    - target: {fileID: 8140740994149566224, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ef892d3bc5ffd943a3221e189dd4307, type: 3}
 --- !u!224 &1040041090833438432
