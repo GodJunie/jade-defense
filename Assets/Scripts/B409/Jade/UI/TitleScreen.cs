@@ -52,11 +52,15 @@ namespace B409.Jade.UI {
         }
 
         public async void NewGame() {
+            if(!scroll)
+                return;
             await Fade();
             GameManager.Instance.NewGame();
         }
 
         public async void ContinueGame() {
+            if(!scroll)
+                return;
             await Fade();
             GameManager.Instance.Continue();
         }
@@ -76,6 +80,8 @@ namespace B409.Jade.UI {
         }
 
         public void Quit() {
+            if(!scroll)
+                return;
 #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;
 #endif

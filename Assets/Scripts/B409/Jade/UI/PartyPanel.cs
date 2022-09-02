@@ -166,11 +166,25 @@ namespace B409.Jade.UI {
             }
         }
 
-        public void GameStart() {
+        private bool gameStart = false;
+
+        public async void GameStart() {
             if(this.partySlots.Count == 0)
                 return;
+            if(gameStart)
+                return;
+
+            gameStart = true;
 
             battleController.InitMonsterData(this.partySlots.Select(e => e.Data as UnitData).ToList());
+
+            var tasks = new List<UniTask>();
+            foreach(var graphic in this.GetComponentsInChildren<Graphic>()) {
+                tasks.Add(graphic.DOFade(0f, 1f).ToUniTask());
+            }
+            tasks.Add(this.transform.DOScale(2f, 1f).ToUniTask());
+            await UniTask.WhenAll(tasks);
+
             gameObject.SetActive(false);
         }
     }
