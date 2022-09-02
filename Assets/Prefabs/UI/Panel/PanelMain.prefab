@@ -2903,8 +2903,8 @@ RectTransform:
   - {fileID: 4896529792537449244}
   - {fileID: 4896529792812328170}
   - {fileID: 4896529792847497397}
-  - {fileID: 4896529792199858061}
   - {fileID: 8689897951495133472}
+  - {fileID: 4896529792199858061}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2974,6 +2974,7 @@ MonoBehaviour:
   jadeIdle: Idle
   jadeInteract: Emotion
   bgm: {fileID: 8300000, guid: cd047077205f04d6aa89ba936a7959a0, type: 3}
+  panelSettings: {fileID: 0}
   data: {fileID: 0}
 --- !u!1 &4896529792190187232
 GameObject:
@@ -3215,7 +3216,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4896529792188406098}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -6761,7 +6762,7 @@ RectTransform:
   - {fileID: 1389975437453693155}
   - {fileID: 8524397715012017756}
   m_Father: {fileID: 4896529792188406098}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

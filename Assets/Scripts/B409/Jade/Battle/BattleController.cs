@@ -461,12 +461,14 @@ namespace B409.Jade.Battle {
 
         public async void NextStage() {
             imageFade.gameObject.SetActive(true);
+            SoundManager.Instance.BgmOff();
             await imageFade.DOFade(1f, 1f);
             GameManager.Instance.StageSequenceEnd();
         }
 
         public async void GoToMain() {
             imageFade.gameObject.SetActive(true);
+            SoundManager.Instance.BgmOff();
             await imageFade.DOFade(1f, 1f);
             GameManager.Instance.Retry();
         }

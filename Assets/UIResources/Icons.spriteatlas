@@ -37,8 +37,27 @@ SpriteAtlas:
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: 081efa63d7804604eb6dabeb06af2636, type: 3}
+  - {fileID: 21300000, guid: 80898c839fb5adc4191b1ff6d6381e80, type: 3}
+  - {fileID: 21300000, guid: 836541a3547363a4b9f4f03901d46601, type: 3}
+  - {fileID: 21300000, guid: bc5653750374066489a0e1575213fa56, type: 3}
+  - {fileID: 21300000, guid: f7e6ac75cdd2bec40be3f8215da84f3c, type: 3}
+  - {fileID: 21300000, guid: d0ae29d582b7d764c8a7989fde9b57d7, type: 3}
+  - {fileID: 21300000, guid: 1542b556fc607f3488319f787d375bf9, type: 3}
+  - {fileID: 21300000, guid: 71c3ab9661dcfe64193cb80bd5fbe4be, type: 3}
+  - {fileID: 21300000, guid: d92db4a689c4f6b41a3e5855ff340e7d, type: 3}
+  - {fileID: 21300000, guid: fcc756f7aa417d74bb4becf0decbb152, type: 3}
+  - {fileID: 21300000, guid: e58aa608a31d4414fb505c5943029994, type: 3}
   - {fileID: 21300000, guid: 89b696f8b087ab149a2a9e7ca5494dea, type: 3}
+  - {fileID: 21300000, guid: 9ba129b97da6c154ab8e65994a26cd52, type: 3}
+  - {fileID: 21300000, guid: f402dfe9a43f3a045ae6b3337a3caf7b, type: 3}
+  - {fileID: 21300000, guid: e5b2d86a25cfdc440831cef8a1a5d214, type: 3}
+  - {fileID: 21300000, guid: 25d7aa9a0fa06d34cbf537253a5296d9, type: 3}
+  - {fileID: 21300000, guid: ce4f61ba7155a4a4190c0f431175f0ee, type: 3}
   - {fileID: 21300000, guid: b7e7980b7f16fd646b14a0cd7b8ceb09, type: 3}
+  - {fileID: 21300000, guid: 9a8de24b03f04ee4983ef1803212cd79, type: 3}
+  - {fileID: 21300000, guid: eabaa95cdf4b82445a733b82fcc1eca0, type: 3}
+  - {fileID: 21300000, guid: f23c85ec781de9247934b54bde19b397, type: 3}
   - {fileID: -57001667106083562, guid: 1b9c913e2e0def148981e7abb5216194, type: 3}
   - {fileID: -6074837758263751413, guid: 1b9c913e2e0def148981e7abb5216194, type: 3}
   - {fileID: -5641629329333482966, guid: 1b9c913e2e0def148981e7abb5216194, type: 3}
@@ -48,9 +67,31 @@ SpriteAtlas:
   - {fileID: 47104063090206143, guid: 1b9c913e2e0def148981e7abb5216194, type: 3}
   - {fileID: 470934796808318134, guid: 1b9c913e2e0def148981e7abb5216194, type: 3}
   - {fileID: 2018921304731460371, guid: 1b9c913e2e0def148981e7abb5216194, type: 3}
+  - {fileID: 21300000, guid: c1d0728ec3a4cb445a1e1dcca757e4e7, type: 3}
+  - {fileID: 21300000, guid: dc0267fe42bf99745b71f608e72714bf, type: 3}
+  - {fileID: 21300000, guid: 267f736ff62af5047ab531195fbda3c7, type: 3}
   m_PackedSpriteNamesToIndex:
+  - icon_media_16
+  - icon_media_8
+  - icon_media_19
+  - icon_media_12
+  - icon_media_18
+  - icon_media_10
+  - icon_media_20
+  - icon_media_7
+  - icon_media_5
+  - icon_media_14
+  - icon_media_17
   - icon_mining
+  - icon_media_2
+  - icon_media_22
+  - icon_media_13
+  - icon_media_1
+  - icon_media_15
   - Compat_Icons_psd
+  - icon_media_3
+  - icon_media_4
+  - icon_media_11
   - Combat_Icons_8
   - Combat_Icons_1
   - Combat_Icons_0
@@ -60,6 +101,9 @@ SpriteAtlas:
   - Combat_Icons_4
   - Combat_Icons_7
   - Combat_Icons_6
+  - icon_media_21
+  - icon_media_9
+  - icon_media_6
   m_RenderDataMap: {}
   m_Tag: Icons
   m_IsVariant: 0

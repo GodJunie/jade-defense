@@ -268,6 +268,9 @@ namespace B409.Jade.UI {
                 if(sequence.Sfx != null) {
                     SoundManager.Instance.PlaySfx(sequence.Sfx);
                 }
+                if(sequence.BgmOff) {
+                    SoundManager.Instance.BgmOff();
+                }
                 break;
             default:
                 return;

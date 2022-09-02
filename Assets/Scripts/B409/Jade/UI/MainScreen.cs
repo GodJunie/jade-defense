@@ -45,6 +45,9 @@ namespace B409.Jade.UI {
         [SerializeField]
         private AudioClip bgm;
 
+        [SerializeField]
+        private SettingsPanel panelSettings;
+
         public DailyRoutineData data;
         #endregion
 
@@ -75,6 +78,14 @@ namespace B409.Jade.UI {
             this.Init();
         }
 
+        private void Update() {
+            if(Input.GetKeyDown(KeyCode.Escape)) {
+                if(panelSettings.gameObject.activeInHierarchy) {
+                    panelSettings.Open();
+                }
+            }
+        }
+
         #endregion
 
         #region Action
@@ -84,7 +95,8 @@ namespace B409.Jade.UI {
             // 거래상이 있는데 재고 많으면 안살거냐고 물어보고
             // ㅇㅋ 확정
             // Fade 시키고
-            await imageFade.DOFade(1f, 0.5f);
+            SoundManager.Instance.BgmOff();
+            await imageFade.DOFade(1f, 1f);
             GameManager.Instance.TurnEnd();
         }
         #endregion
@@ -104,7 +116,10 @@ namespace B409.Jade.UI {
             this.textScript.DOText(text, textSpeed).SetSpeedBased();
         }
 
-        public void Quit() {
+        public async void Quit() {
+            imageFade.gameObject.SetActive(true);
+            SoundManager.Instance.BgmOff();
+            await imageFade.DOFade(1f, 1f);
             GameManager.Instance.LoadTitleScene();
         }
 

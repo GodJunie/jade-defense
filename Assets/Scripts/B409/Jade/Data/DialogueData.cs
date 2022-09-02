@@ -176,16 +176,21 @@ namespace B409.Jade.Data {
             [HorizontalGroup("box/group")]
             [ShowIfGroup("box/group/ShowSound")]
             [BoxGroup("box/group/ShowSound/Sounds")]
-            [HorizontalGroup("box/group/ShowSound/Sounds/group", .5f)]
+            [HorizontalGroup("box/group/ShowSound/Sounds/group")]
             [BoxGroup("box/group/ShowSound/Sounds/group/Bgm")]
             [HideLabel]
             [SerializeField]
             private AudioClip bgm;
-            [HorizontalGroup("box/group/ShowSound/Sounds/group", .5f)]
+            [HorizontalGroup("box/group/ShowSound/Sounds/group")]
             [BoxGroup("box/group/ShowSound/Sounds/group/Sfx")]
             [HideLabel]
             [SerializeField]
             private AudioClip sfx;
+            [HorizontalGroup("box/group/ShowSound/Sounds/group")]
+            [BoxGroup("box/group/ShowSound/Sounds/group/BgmOff")]
+            [HideLabel]
+            [SerializeField]
+            private bool bgmOff = false;
 
 
             [HorizontalGroup("box/group")]
@@ -212,6 +217,7 @@ namespace B409.Jade.Data {
             public List<RewardInfo> Rewards => rewards;
             public AudioClip Bgm => bgm;
             public AudioClip Sfx => sfx;
+            public bool BgmOff => bgmOff;
             public bool LockMonster => lockMonster;
             public bool UnlockMonster => unlockMonster;
 
