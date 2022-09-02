@@ -32,12 +32,12 @@ MonoBehaviour:
     attackMode: 2
     atk: 0
     heal: 30
-    interval: 0
+    dotCount: 0
     duration: 0
     distance: 0
     slowRate: 0
   cost:
-  - item: {fileID: 11400000, guid: cc3dd6c5bbb67c34dab31070659567ab, type: 2}
+  - item: {fileID: 11400000, guid: daf234e15aa11ee49a1aaaeeccea9a6a, type: 2}
     count: 4
   - item: {fileID: 11400000, guid: 0cab179eb99b45b4d85e859b4b88fbf8, type: 2}
     count: 1
