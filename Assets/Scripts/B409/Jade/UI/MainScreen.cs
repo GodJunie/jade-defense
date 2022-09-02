@@ -104,6 +104,10 @@ namespace B409.Jade.UI {
             this.textScript.DOText(text, textSpeed).SetSpeedBased();
         }
 
+        public void Quit() {
+            GameManager.Instance.LoadTitleScene();
+        }
+
         #region UI
         public void Init() {
             var progress = GameManager.Instance.Progress;
