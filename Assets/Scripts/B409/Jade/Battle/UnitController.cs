@@ -107,6 +107,7 @@ namespace B409.Jade.Battle {
             };
 
             anim.AnimationState.Event += (entry, e) => {
+                Debug.Log(string.Format("Id: {2}, Animation Name: {0}, Event Name: {1}", entry.Animation.Name, e.Data.Name, Data.Id));
                 if(e.Data.Name == "attackPoint" && entry.Animation.Name == attackAnimation) {
                     // АјАн!
                     foreach(var target in attackTargets) {
@@ -114,6 +115,7 @@ namespace B409.Jade.Battle {
 
                         switch(Data.Status.AttackMode) {
                         case AttackMode.Attack:
+                            Debug.Log(string.Format("Id: {0}, Attack", this.Data.Id));
                             target.OnDamage(this.Data.Status.Atk);
                             break;
                         case AttackMode.DamageOverTime:
@@ -155,6 +157,10 @@ namespace B409.Jade.Battle {
                     Destroy(this.gameObject);
                 }
             };
+
+            anim.AnimationState.Data.SetMix(attackAnimation, idleAnimation, 0f);
+            anim.AnimationState.Data.SetMix(attackAnimation, idleAnimation, 0f);
+            anim.AnimationState.Data.SetMix(attackAnimation, attackAnimation, 0f);
         }
 
         // Start is called before the first frame update
