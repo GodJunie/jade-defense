@@ -72,7 +72,7 @@ namespace B409.Jade.UI {
         }
 
         private void Update() {
-            if(Input.GetMouseButtonDown(0)) {
+            if(Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)) {
                 if(click != null)
                     click.Cancel();
             }
