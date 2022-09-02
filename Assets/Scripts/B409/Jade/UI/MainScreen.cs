@@ -80,7 +80,7 @@ namespace B409.Jade.UI {
 
         private void Update() {
             if(Input.GetKeyDown(KeyCode.Escape)) {
-                if(panelSettings.gameObject.activeInHierarchy) {
+                if(!panelSettings.gameObject.activeInHierarchy) {
                     panelSettings.Open();
                 }
             }
@@ -100,6 +100,12 @@ namespace B409.Jade.UI {
             GameManager.Instance.TurnEnd();
         }
         #endregion
+        public async void Quit() {
+            imageFade.gameObject.SetActive(true);
+            SoundManager.Instance.BgmOff();
+            await imageFade.DOFade(1f, 1f);
+            GameManager.Instance.LoadTitleScene();
+        }
 
         public void Hint() {
             jadeAnim.AnimationState.SetAnimation(0, jadeInteract, false);
@@ -114,13 +120,6 @@ namespace B409.Jade.UI {
             this.textScript.DOKill();
             this.textScript.text = "";
             this.textScript.DOText(text, textSpeed).SetSpeedBased();
-        }
-
-        public async void Quit() {
-            imageFade.gameObject.SetActive(true);
-            SoundManager.Instance.BgmOff();
-            await imageFade.DOFade(1f, 1f);
-            GameManager.Instance.LoadTitleScene();
         }
 
         #region UI

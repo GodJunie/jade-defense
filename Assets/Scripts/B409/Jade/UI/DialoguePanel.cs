@@ -34,6 +34,8 @@ namespace B409.Jade.UI {
         private float defaultWaitDuration = 1f;
         [SerializeField]
         private Button buttonSkip;
+        [SerializeField]
+        private SettingsPanel panelSettings;
 
         private DialogueEvent eventObject;
         private bool chatOn = true;
@@ -44,6 +46,7 @@ namespace B409.Jade.UI {
         private List<Graphic> chatGraphics = new List<Graphic>();
         private Dictionary<int, float> chatAlphaOrigin = new Dictionary<int, float>();
 
+        private bool quitting = false;
 
         private void Awake() {
             chatObject.gameObject.SetActive(true);
@@ -72,9 +75,15 @@ namespace B409.Jade.UI {
         }
 
         private void Update() {
-            if(Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)) {
-                if(click != null)
-                    click.Cancel();
+            if(!panelSettings.gameObject.activeInHierarchy && !quitting) {
+                if(Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)) {
+                    if(click != null)
+                        click.Cancel();
+                }
+
+                if(Input.GetKeyDown(KeyCode.Escape)) {
+                    panelSettings.Open();
+                }
             }
         }
 
@@ -293,6 +302,14 @@ namespace B409.Jade.UI {
             } else {
                 await task;
             }
+        }
+
+        public async void Quit() {
+            quitting = true;
+            imageFade.gameObject.SetActive(true);
+            SoundManager.Instance.BgmOff();
+            await imageFade.DOFade(1f, 1f);
+            GameManager.Instance.LoadTitleScene();
         }
 
         public async void DialogueEnd() {

@@ -35,6 +35,8 @@ namespace B409.Jade.UI {
 
             this.buttonBgmMute.image.sprite = SoundManager.Instance.BgmMute ? spriteMuteOn : spriteMuteOff;
             this.buttonSfxMute.image.sprite = SoundManager.Instance.SfxMute ? spriteMuteOn : spriteMuteOff;
+
+            Time.timeScale = 0f;
         }
 
         public void MuteBgm() {
@@ -47,6 +49,11 @@ namespace B409.Jade.UI {
             SoundManager.Instance.MuteSfx(!SoundManager.Instance.SfxMute);
 
             this.buttonSfxMute.image.sprite = SoundManager.Instance.SfxMute ? spriteMuteOn : spriteMuteOff;
+        }
+
+        public void Close() {
+            Time.timeScale = 1f;
+            gameObject.SetActive(false);
         }
     }
 }

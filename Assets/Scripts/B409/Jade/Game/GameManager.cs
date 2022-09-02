@@ -39,18 +39,8 @@ namespace B409.Jade.Game {
         protected override void Awake() {
             base.Awake();
 
-            string json = PlayerPrefs.GetString(GameProgressKey, "");
-            if(json == "") {
-                this.Progress = new GameProgress();
-            } else {
-                this.Progress = GameProgress.FromJson(json);
-            }
-
-            string storyJson = PlayerPrefs.GetString(StoryCollectionKey, "[]");
-            this.StoryCollection = JsonConvert.DeserializeObject<List<int>>(storyJson);
-
-            Debug.Log(json);
-            LoadData();
+            string json = PlayerPrefs.GetString(StoryCollectionKey, "[]");
+            this.StoryCollection = JsonConvert.DeserializeObject<List<int>>(json);
         }
         #endregion
 
@@ -249,6 +239,15 @@ namespace B409.Jade.Game {
         }
 
         public void LoadTitleScene() {
+            string json = PlayerPrefs.GetString(GameProgressKey, "");
+            if(json == "") {
+                this.Progress = new GameProgress();
+            } else {
+                this.Progress = GameProgress.FromJson(json);
+            }
+
+            LoadData();
+
             SceneManager.LoadScene(titleScene);
         }
 

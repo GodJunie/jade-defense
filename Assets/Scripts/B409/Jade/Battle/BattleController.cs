@@ -133,7 +133,7 @@ namespace B409.Jade.Battle {
         private GameObject panelStageClear;
         [TitleGroup("UI")]
         [SerializeField]
-        private GameObject panelPause;
+        private SettingsPanel panelSettings;
 
 
         [TitleGroup("Sound")]
@@ -173,6 +173,7 @@ namespace B409.Jade.Battle {
         private int monsterCount;
         private int enemyCount;
 
+        private bool quitting = false;
 
         // Start is called before the first frame update
         void Start() {
@@ -217,14 +218,10 @@ namespace B409.Jade.Battle {
                 if(enemyGenIndex < enemyDatas.Count) {
                     GenerateEnemies();
                 }
+            }
 
-                if(Input.GetKeyDown(KeyCode.Escape)) {
-                    if(isPaused) {
-                        Resume();
-                    } else {
-                        Pause();
-                    }
-                }
+            if(Input.GetKeyDown(KeyCode.Escape)) {
+                Pause();
             }
         }
 
@@ -472,6 +469,20 @@ namespace B409.Jade.Battle {
             await imageFade.DOFade(1f, 1f);
             GameManager.Instance.Retry();
         }
+
+        public void Pause() {
+            if(!panelSettings.gameObject.activeInHierarchy && !quitting) {
+                panelSettings.Open();
+            }
+        }
+
+        public async void Quit() {
+            quitting = true;
+            imageFade.gameObject.SetActive(true);
+            SoundManager.Instance.BgmOff();
+            await imageFade.DOFade(1f, 1f);
+            GameManager.Instance.LoadTitleScene();
+        }
         #endregion
 
         #region Screen and Minimap
@@ -569,20 +580,6 @@ namespace B409.Jade.Battle {
             var cPos = cameraTransform.position;
             cPos.x = x / minimapRatio;
             cameraTransform.position = cPos;
-        }
-        #endregion
-
-        #region Pause
-        public void Pause() {
-            Time.timeScale = 0f;
-            panelPause.SetActive(true);
-            isPaused = true;
-        }
-
-        public void Resume() {
-            Time.timeScale = 1f;
-            panelPause.SetActive(false);
-            isPaused = false;
         }
         #endregion
     }
