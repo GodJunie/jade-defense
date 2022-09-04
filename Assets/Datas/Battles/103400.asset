@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ba8502080cef1545bee096c10b79d8f, type: 3}
+  m_Name: 103400
+  m_EditorClassIdentifier: 
+  id: 103400
+  background: {fileID: 1639210852879390, guid: d9059fafc845f42299a081e32bcb29c9, type: 3}
+  bgm: {fileID: 8300000, guid: 03e7cb3e089e91f4cb897c30242bbd85, type: 3}
+  enemies:
+  - {fileID: 11400000, guid: f7e468b90e85020459b511a129532aca, type: 2}
+  - {fileID: 11400000, guid: f7e468b90e85020459b511a129532aca, type: 2}
+  - {fileID: 11400000, guid: e7520cb4b227a22409e59aa8e67d885a, type: 2}
+  - {fileID: 11400000, guid: e7520cb4b227a22409e59aa8e67d885a, type: 2}
+  - {fileID: 11400000, guid: 0c92f87841170534dbcf6746d237a0d8, type: 2}
+  - {fileID: 11400000, guid: 0c92f87841170534dbcf6746d237a0d8, type: 2}
+  - {fileID: 11400000, guid: 0c92f87841170534dbcf6746d237a0d8, type: 2}
+  rewards:
+  - item: {fileID: 11400000, guid: d589c2021da9fa54fa47f26611edba9c, type: 2}
+    count: 100
+  - item: {fileID: 11400000, guid: ca2e979313aa1844489baeb7da42fbd5, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: 4698e7bc9a1df2b419c0c7a178891be6, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: af0c164a14f2c0c4392121afb06d230b, type: 2}
+    count: 1

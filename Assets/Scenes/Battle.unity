@@ -3644,7 +3644,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8574676932031490703, guid: dac715fe1b31c1d41ba13cafedb4f317, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dac715fe1b31c1d41ba13cafedb4f317, type: 3}
@@ -8355,7 +8355,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7667647352492813258, guid: 32d572cafb7d51448b594e22a0505fb0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32d572cafb7d51448b594e22a0505fb0, type: 3}
@@ -8669,14 +8669,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63fb1096f23c3504999e2ae43e19f5c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isTest: 0
-  data: {fileID: 11400000, guid: f56ebbbc96850c44b8540befd73de584, type: 2}
+  isTest: 1
+  data: {fileID: 11400000, guid: f5c347bac3f42f346bfee0ddfabbba8d, type: 2}
   monsterDatas:
-  - {fileID: 11400000, guid: 13774c009ceca904db1dbc7643d20238, type: 2}
-  - {fileID: 11400000, guid: c6ad07dc9a5a6574a8d47fe68f8bed33, type: 2}
-  - {fileID: 11400000, guid: 95f5707e4eaa1dd46925e8ea3fffc5ef, type: 2}
-  - {fileID: 11400000, guid: ee250303d84dae84daa2c986ec49767b, type: 2}
-  - {fileID: 11400000, guid: fa409de59b8a09a439ad8aa28ad8a600, type: 2}
+  - {fileID: 11400000, guid: e40133b6b8960dd46a67a48c41659fcd, type: 2}
+  - {fileID: 11400000, guid: a605c21ceaae03140ae802af7a8f4cb3, type: 2}
+  - {fileID: 11400000, guid: 491f1df46333f624aa1a277005fa32fb, type: 2}
+  - {fileID: 11400000, guid: 1cad6710dcf223e468247eb06cf52ce3, type: 2}
   imageFade: {fileID: 287893054}
   panelSetParty: {fileID: 1108261599}
   mapSize: 8
@@ -9045,7 +9044,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1382406197748594332, guid: 0c33cd2705c79e34e83d3a8185c9685e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c33cd2705c79e34e83d3a8185c9685e, type: 3}

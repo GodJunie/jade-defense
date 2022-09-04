@@ -18,8 +18,8 @@ MonoBehaviour:
   description: Hella's Shadow
   prefab: {fileID: 1295796432350755672, guid: 9522bc21d3fd0cf4f9aac2a47be3f214, type: 3}
   status:
-    cooltime: 1
-    hp: 3000
+    cooltime: 10
+    hp: 3500
     moveSpeed: 1
     range: 2
     targetFilterMode: 3
@@ -30,7 +30,7 @@ MonoBehaviour:
     attackMode: 3
     atk: 70
     heal: 0
-    interval: 0
+    dotCount: 0
     duration: 3
     distance: 0
     slowRate: 0.469

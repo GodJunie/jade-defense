@@ -17,4 +17,12 @@ MonoBehaviour:
   inGameBackground: {fileID: 1461120247514626, guid: a6c36a1149bb6664eaa746e0cf4140bd, type: 3}
   name: "6\uC2A4\uD14C\uC774\uC9C0"
   description: "6\uC2A4\uD14C\uC774\uC9C0"
-  datas: []
+  datas:
+  - DailyRoutines/16000
+  - DailyRoutines/16001
+  - DailyRoutines/16002
+  - DailyRoutines/16003
+  - DailyRoutines/16004
+  - DailyRoutines/16005
+  - DailyRoutines/16006
+  - DailyRoutines/16007

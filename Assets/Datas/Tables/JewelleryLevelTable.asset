@@ -15,19 +15,23 @@ MonoBehaviour:
   name: Jewelry
   datas:
   - inquiredParameters:
-    - parameter: 0
-      value: 0
-    - parameter: 4
-      value: 3
     - parameter: 1
       value: 0
+    - parameter: 0
+      value: 15
+    - parameter: 3
+      value: 15
+    - parameter: 2
+      value: 75
     rewardParameters:
-    - parameter: 0
-      value: 1
     - parameter: 1
-      value: 2
-    - parameter: 4
-      value: 1
+      value: 25
+    - parameter: 0
+      value: 5
+    - parameter: 3
+      value: 5
+    - parameter: 2
+      value: 5
     ap: 30
     datas:
     - {fileID: 11400000, guid: 1444acd205dc7c34d80d141bb04981d9, type: 2}
@@ -36,19 +40,23 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 0ae986228a9829140935877ece070302, type: 2}
     - {fileID: 11400000, guid: 3708bf0f9f6f55b4fbf8db66a2bbbce7, type: 2}
   - inquiredParameters:
-    - parameter: 0
-      value: 25
-    - parameter: 4
-      value: 25
     - parameter: 1
-      value: 25
+      value: 200
+    - parameter: 0
+      value: 200
+    - parameter: 3
+      value: 200
+    - parameter: 2
+      value: 200
     rewardParameters:
-    - parameter: 0
-      value: 1
     - parameter: 1
-      value: 2
-    - parameter: 4
-      value: 1
+      value: 25
+    - parameter: 0
+      value: 5
+    - parameter: 3
+      value: 5
+    - parameter: 2
+      value: 5
     ap: 30
     datas:
     - {fileID: 11400000, guid: 9b50af89340758742a8162963fae02f6, type: 2}
@@ -57,19 +65,23 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 786b537aad2c674418a488a5774fc1da, type: 2}
     - {fileID: 11400000, guid: c2f499da0a580f041a702063fea7f6e5, type: 2}
   - inquiredParameters:
-    - parameter: 0
-      value: 50
-    - parameter: 4
-      value: 50
     - parameter: 1
-      value: 50
+      value: 400
+    - parameter: 0
+      value: 400
+    - parameter: 3
+      value: 400
+    - parameter: 2
+      value: 400
     rewardParameters:
-    - parameter: 0
-      value: 1
     - parameter: 1
-      value: 2
-    - parameter: 4
-      value: 1
+      value: 25
+    - parameter: 0
+      value: 5
+    - parameter: 3
+      value: 5
+    - parameter: 2
+      value: 5
     ap: 30
     datas:
     - {fileID: 11400000, guid: 3b1f87153432b0c4a8cc1439b2a09e05, type: 2}

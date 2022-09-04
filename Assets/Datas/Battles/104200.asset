@@ -13,13 +13,31 @@ MonoBehaviour:
   m_Name: 104200
   m_EditorClassIdentifier: 
   id: 104200
+  background: {fileID: 1461120247514626, guid: a6c36a1149bb6664eaa746e0cf4140bd, type: 3}
+  bgm: {fileID: 8300000, guid: 784b3c46e47de044cb762f05da6c79fd, type: 3}
   enemies:
-  - {fileID: 11400000, guid: f1deecc0b58e052478c8eb8c9ff97db7, type: 2}
-  - {fileID: 11400000, guid: f1deecc0b58e052478c8eb8c9ff97db7, type: 2}
-  - {fileID: 11400000, guid: f1deecc0b58e052478c8eb8c9ff97db7, type: 2}
-  - {fileID: 11400000, guid: f1deecc0b58e052478c8eb8c9ff97db7, type: 2}
-  - {fileID: 11400000, guid: f1deecc0b58e052478c8eb8c9ff97db7, type: 2}
-  - {fileID: 11400000, guid: f1deecc0b58e052478c8eb8c9ff97db7, type: 2}
+  - {fileID: 11400000, guid: 2edd24e6155a31741b379faca50224ba, type: 2}
+  - {fileID: 11400000, guid: 7913acd7605442a48ad72a05edab69aa, type: 2}
+  - {fileID: 11400000, guid: 84ae38e2a855efc43bd50757cdab31d8, type: 2}
+  - {fileID: 11400000, guid: 2edd24e6155a31741b379faca50224ba, type: 2}
+  - {fileID: 11400000, guid: 84ae38e2a855efc43bd50757cdab31d8, type: 2}
+  - {fileID: 11400000, guid: 0b813284d19c7154b9b69b29fdee923f, type: 2}
+  - {fileID: 11400000, guid: 2edd24e6155a31741b379faca50224ba, type: 2}
+  - {fileID: 11400000, guid: 86d841d36ea87cd4f869898a7f94b214, type: 2}
+  - {fileID: 11400000, guid: 84ae38e2a855efc43bd50757cdab31d8, type: 2}
+  - {fileID: 11400000, guid: 86d841d36ea87cd4f869898a7f94b214, type: 2}
+  - {fileID: 11400000, guid: 7913acd7605442a48ad72a05edab69aa, type: 2}
+  - {fileID: 11400000, guid: 86d841d36ea87cd4f869898a7f94b214, type: 2}
+  - {fileID: 11400000, guid: 0b813284d19c7154b9b69b29fdee923f, type: 2}
+  - {fileID: 11400000, guid: 0b813284d19c7154b9b69b29fdee923f, type: 2}
   rewards:
   - item: {fileID: 11400000, guid: d589c2021da9fa54fa47f26611edba9c, type: 2}
     count: 100
+  - item: {fileID: 11400000, guid: 2a8f5b526502ed84591e7a20a532b0c6, type: 2}
+    count: 3
+  - item: {fileID: 11400000, guid: 5f683135bcc412a4c8dc7248337a9082, type: 2}
+    count: 1
+  - item: {fileID: 11400000, guid: 833074a196207034d81e6e0d0fc18e71, type: 2}
+    count: 3
+  - item: {fileID: 11400000, guid: 850fca931e1dad0458e9eca700d63bc3, type: 2}
+    count: 1

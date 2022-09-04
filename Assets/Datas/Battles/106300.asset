@@ -13,8 +13,16 @@ MonoBehaviour:
   m_Name: 106300
   m_EditorClassIdentifier: 
   id: 106300
+  background: {fileID: 1461120247514626, guid: 54374d08da879d94d9226a5d722559a2, type: 3}
+  bgm: {fileID: 8300000, guid: 45af01fefc47241afab3277130558c46, type: 3}
   enemies:
-  - {fileID: 11400000, guid: 13774c009ceca904db1dbc7643d20238, type: 2}
+  - {fileID: 11400000, guid: a60e235b74bbf714eaac4e9d4c8ca2c2, type: 2}
+  - {fileID: 11400000, guid: 198673b203db7bc43a4dfb80d3f7e0a4, type: 2}
+  - {fileID: 11400000, guid: 198673b203db7bc43a4dfb80d3f7e0a4, type: 2}
+  - {fileID: 11400000, guid: 57663a99517d27d4bb4612a51a9f5586, type: 2}
+  - {fileID: 11400000, guid: 740791bacb3b80b468291d6b5def5695, type: 2}
+  - {fileID: 11400000, guid: 740791bacb3b80b468291d6b5def5695, type: 2}
+  - {fileID: 11400000, guid: cf37ad324d3d7a244a690a7443e6dbc5, type: 2}
   rewards:
   - item: {fileID: 11400000, guid: d589c2021da9fa54fa47f26611edba9c, type: 2}
     count: 100

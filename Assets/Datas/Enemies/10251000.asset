@@ -18,8 +18,8 @@ MonoBehaviour:
   description: Cat Commando(Red)
   prefab: {fileID: 986053330206043974, guid: 3841454e1170f404eb119d3b9894a22b, type: 3}
   status:
-    cooltime: 1
-    hp: 85
+    cooltime: 5
+    hp: 225
     moveSpeed: 1
     range: 0.5
     targetFilterMode: 3
@@ -28,9 +28,9 @@ MonoBehaviour:
     targetEnemy: 1
     attackSpeed: 1
     attackMode: 0
-    atk: 20
+    atk: 39
     heal: 0
-    interval: 0
+    dotCount: 0
     duration: 0
     distance: 0
     slowRate: 0

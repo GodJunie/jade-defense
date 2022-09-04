@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: 105200
   m_EditorClassIdentifier: 
   id: 105200
-  background: {fileID: 0}
+  background: {fileID: 1461120247514626, guid: e3aba1d2a91e420448041722ccbd3d70, type: 3}
+  bgm: {fileID: 8300000, guid: f43a5eb31143e416c86eeee51575ed0f, type: 3}
   enemies:
   - {fileID: 11400000, guid: 211a7d99e8b6c6c4aad55812df1d687a, type: 2}
   - {fileID: 11400000, guid: 1e344668ec33de24e84fef0c79a42735, type: 2}
@@ -23,7 +24,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 00cdd0f90d3533141a3e950bda2a2541, type: 2}
   - {fileID: 11400000, guid: 54b2331661f38ec48b3ff2a2d74b4c98, type: 2}
   - {fileID: 11400000, guid: f03b12f97c6081a469b27786b93d2350, type: 2}
-  - {fileID: 11400000, guid: c0ce09920e3a6624589081e140b68827, type: 2}
   rewards:
-  - item: {fileID: 11400000, guid: d589c2021da9fa54fa47f26611edba9c, type: 2}
-    count: 100
+  - item: {fileID: 11400000, guid: ccc71a76c1fd38a4b9369afb23050518, type: 2}
+    count: 15

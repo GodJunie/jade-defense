@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 15001
   m_EditorClassIdentifier: 
   id: 15001
-  scripts: []
-  day: 0
+  scripts:
+  - On the [Enemies] tab, i can identify the next enemy!
+  - I can't believe I have to fight with my friends who trusted me.
+  day: 2
   monsters:
   - {fileID: 11400000, guid: 868ab03aa92b8f5408cd25cf6938a045, type: 2}
   - {fileID: 11400000, guid: d16274b23ea7d9e46a9d4dc1e64d7b64, type: 2}
@@ -44,7 +46,5 @@ MonoBehaviour:
   - enemy: {fileID: 11400000, guid: fa409de59b8a09a439ad8aa28ad8a600, type: 2}
     count: 1
   - enemy: {fileID: 11400000, guid: 95f5707e4eaa1dd46925e8ea3fffc5ef, type: 2}
-    count: 1
-  - enemy: {fileID: 11400000, guid: e65f897cbe0214748bf9a3ac95eeb848, type: 2}
     count: 1
   battle: {fileID: 11400000, guid: d11b89d743aa6f44bb01ee562042671a, type: 2}

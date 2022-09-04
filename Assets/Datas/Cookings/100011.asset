@@ -15,11 +15,11 @@ MonoBehaviour:
   id: 100011
   materials:
   - item: {fileID: 11400000, guid: 4798147202ceb8e4fb0ffe48ca90b35f, type: 2}
-    count: 2
+    count: 10
   - item: {fileID: 11400000, guid: 10a5f22fa84bc76439071b22027e598b, type: 2}
     count: 1
   - item: {fileID: 11400000, guid: 833074a196207034d81e6e0d0fc18e71, type: 2}
-    count: 1
+    count: 3
   - item: {fileID: 11400000, guid: 399a39c2c2c2f97468829fccced19baf, type: 2}
     count: 1
   result:

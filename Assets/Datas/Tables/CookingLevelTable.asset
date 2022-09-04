@@ -17,90 +17,79 @@ MonoBehaviour:
   - inquiredParameters:
     - parameter: 1
       value: 0
-    - parameter: 2
-      value: 6
+    - parameter: 0
+      value: 15
     - parameter: 3
-      value: 3
+      value: 15
     - parameter: 4
-      value: 3
+      value: 15
+    - parameter: 2
+      value: 75
     rewardParameters:
     - parameter: 1
-      value: 1
-    - parameter: 2
-      value: 1
+      value: 8
+    - parameter: 0
+      value: 8
     - parameter: 3
-      value: 1
+      value: 8
     - parameter: 4
-      value: 1
+      value: 8
+    - parameter: 2
+      value: 8
     ap: 30
     datas:
     - {fileID: 11400000, guid: 032638d6818c28f44a135b2021194ca9, type: 2}
     - {fileID: 11400000, guid: 633f3efb125e7124abdafb28fdf42b75, type: 2}
     - {fileID: 11400000, guid: 9fe6a1efb7043344e845755599dc0194, type: 2}
-  - inquiredParameters:
-    - parameter: 1
-      value: 25
-    - parameter: 2
-      value: 25
-    - parameter: 3
-      value: 25
-    - parameter: 4
-      value: 25
-    rewardParameters:
-    - parameter: 1
-      value: 1
-    - parameter: 2
-      value: 1
-    - parameter: 3
-      value: 1
-    - parameter: 4
-      value: 1
-    ap: 30
-    datas:
-    - {fileID: 11400000, guid: e5ce66546ea3e7745ba88cef6d45ca6e, type: 2}
-    - {fileID: 11400000, guid: 636c5d244125f714caf4fbbda167bd85, type: 2}
-    - {fileID: 11400000, guid: 97ef98aa9acba6243a3ca8cd63684514, type: 2}
     - {fileID: 11400000, guid: 588fcc87bddff7344897dec040e1bbe6, type: 2}
   - inquiredParameters:
     - parameter: 1
-      value: 50
-    - parameter: 2
-      value: 50
+      value: 200
+    - parameter: 0
+      value: 200
     - parameter: 3
-      value: 50
+      value: 200
     - parameter: 4
-      value: 50
+      value: 200
+    - parameter: 2
+      value: 200
     rewardParameters:
     - parameter: 1
-      value: 1
-    - parameter: 2
-      value: 1
+      value: 8
+    - parameter: 0
+      value: 8
     - parameter: 3
-      value: 1
+      value: 8
     - parameter: 4
-      value: 1
+      value: 8
+    - parameter: 2
+      value: 8
     ap: 30
     datas:
-    - {fileID: 11400000, guid: ddd3ea87b7ab2324993544d898b25cd8, type: 2}
-    - {fileID: 11400000, guid: 28fc3148ea4ed24429360d069164fbbf, type: 2}
+    - {fileID: 11400000, guid: b2755939eacab7a4c93cdb60f177a926, type: 2}
+    - {fileID: 11400000, guid: e5ce66546ea3e7745ba88cef6d45ca6e, type: 2}
+    - {fileID: 11400000, guid: 636c5d244125f714caf4fbbda167bd85, type: 2}
+    - {fileID: 11400000, guid: 97ef98aa9acba6243a3ca8cd63684514, type: 2}
   - inquiredParameters:
     - parameter: 1
-      value: 75
+      value: 400
     - parameter: 2
-      value: 75
+      value: 400
     - parameter: 3
-      value: 75
+      value: 400
     - parameter: 4
-      value: 75
+      value: 400
     rewardParameters:
     - parameter: 1
-      value: 1
-    - parameter: 2
-      value: 1
+      value: 8
+    - parameter: 0
+      value: 8
     - parameter: 3
-      value: 1
+      value: 8
     - parameter: 4
-      value: 1
+      value: 8
+    - parameter: 2
+      value: 8
     ap: 30
     datas:
     - {fileID: 11400000, guid: 1958e265ee7afc8409a603896768b0a1, type: 2}

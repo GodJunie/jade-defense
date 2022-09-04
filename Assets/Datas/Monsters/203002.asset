@@ -23,7 +23,7 @@ MonoBehaviour:
     hp: 170
     moveSpeed: 0.7
     range: 2
-    targetFilterMode: 3
+    targetFilterMode: 1
     descending: 0
     targetCount: 1
     targetEnemy: 1
@@ -39,6 +39,6 @@ MonoBehaviour:
   - item: {fileID: 11400000, guid: db204d57c7ae059459a53d484ec2715a, type: 2}
     count: 1
   - item: {fileID: 11400000, guid: 833074a196207034d81e6e0d0fc18e71, type: 2}
-    count: 1
+    count: 3
   buyPrice: 100
   sellPrice: 10

@@ -15,19 +15,23 @@ MonoBehaviour:
   name: Livestock
   datas:
   - inquiredParameters:
-    - parameter: 2
+    - parameter: 0
       value: 0
     - parameter: 3
       value: 0
     - parameter: 4
+      value: 0
+    - parameter: 2
       value: 0
     rewardParameters:
-    - parameter: 2
-      value: 2
+    - parameter: 0
+      value: 5
     - parameter: 3
-      value: 1
+      value: 5
     - parameter: 4
-      value: 1
+      value: 5
+    - parameter: 2
+      value: 25
     ap: 30
     name: Chicken Farm
     description: "Which came first, the chicken or the egg?\r"
@@ -39,19 +43,23 @@ MonoBehaviour:
     - item: {fileID: 0}
       rate: 10
   - inquiredParameters:
-    - parameter: 2
-      value: 25
+    - parameter: 0
+      value: 125
     - parameter: 3
-      value: 25
+      value: 125
     - parameter: 4
-      value: 25
+      value: 125
+    - parameter: 2
+      value: 125
     rewardParameters:
-    - parameter: 2
-      value: 2
+    - parameter: 0
+      value: 5
     - parameter: 3
-      value: 1
+      value: 5
     - parameter: 4
-      value: 1
+      value: 5
+    - parameter: 2
+      value: 25
     ap: 30
     name: Small cattle pens
     description: '"Now that I''ve been robbed of livestock by the wolves, I think
@@ -64,19 +72,23 @@ MonoBehaviour:
     - item: {fileID: 0}
       rate: 10
   - inquiredParameters:
-    - parameter: 2
-      value: 50
+    - parameter: 0
+      value: 250
     - parameter: 3
-      value: 50
+      value: 250
     - parameter: 4
-      value: 50
+      value: 250
+    - parameter: 2
+      value: 250
     rewardParameters:
-    - parameter: 2
-      value: 2
+    - parameter: 0
+      value: 5
     - parameter: 3
-      value: 1
+      value: 5
     - parameter: 4
-      value: 1
+      value: 5
+    - parameter: 2
+      value: 25
     ap: 30
     name: Cattle pens
     description: '"Strangely, baby dragons keep stealing livestock. Well, the occasional
@@ -89,19 +101,23 @@ MonoBehaviour:
     - item: {fileID: 0}
       rate: 10
   - inquiredParameters:
-    - parameter: 2
-      value: 75
+    - parameter: 0
+      value: 375
     - parameter: 3
-      value: 75
+      value: 375
     - parameter: 4
-      value: 75
+      value: 375
+    - parameter: 2
+      value: 375
     rewardParameters:
-    - parameter: 2
-      value: 2
+    - parameter: 0
+      value: 5
     - parameter: 3
-      value: 1
+      value: 5
     - parameter: 4
-      value: 1
+      value: 5
+    - parameter: 2
+      value: 25
     ap: 30
     name: A well protected cattle shed
     description: '"Finally, no one can steal the livestock! But I feel like my side
@@ -114,19 +130,23 @@ MonoBehaviour:
     - item: {fileID: 0}
       rate: 10
   - inquiredParameters:
-    - parameter: 2
-      value: 100
+    - parameter: 0
+      value: 500
     - parameter: 3
-      value: 100
+      value: 500
     - parameter: 4
-      value: 100
+      value: 500
+    - parameter: 2
+      value: 500
     rewardParameters:
-    - parameter: 2
-      value: 2
+    - parameter: 0
+      value: 5
     - parameter: 3
-      value: 1
+      value: 5
     - parameter: 4
-      value: 1
+      value: 5
+    - parameter: 2
+      value: 25
     ap: 30
     name: A large cattle shed
     description: '"The money that sold wolf claws and dragon claws made perfect livestock

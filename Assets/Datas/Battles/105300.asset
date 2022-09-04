@@ -13,8 +13,21 @@ MonoBehaviour:
   m_Name: 105300
   m_EditorClassIdentifier: 
   id: 105300
+  background: {fileID: 1461120247514626, guid: 75a0984438b817e449723840e2d04c55, type: 3}
+  bgm: {fileID: 8300000, guid: 6f84cf654adb848e5b1e1f7a2d2dca7c, type: 3}
   enemies:
-  - {fileID: 11400000, guid: 1a078e1932be97e4f84d7e7a44eaac85, type: 2}
+  - {fileID: 11400000, guid: c6ad07dc9a5a6574a8d47fe68f8bed33, type: 2}
+  - {fileID: 11400000, guid: 389ecefaf3ab10048b67bfd12c5b9988, type: 2}
+  - {fileID: 11400000, guid: 5f9da279b40e0b648b9b48b496b0040c, type: 2}
+  - {fileID: 11400000, guid: b048a21286f5c104898b2a372606e69c, type: 2}
+  - {fileID: 11400000, guid: fa409de59b8a09a439ad8aa28ad8a600, type: 2}
+  - {fileID: 11400000, guid: 37a012722d7780e43b58366775253375, type: 2}
+  - {fileID: 11400000, guid: ee250303d84dae84daa2c986ec49767b, type: 2}
+  - {fileID: 11400000, guid: e3a1de9e950c96842ae357f51f791e2c, type: 2}
+  - {fileID: 11400000, guid: c0fba5c38f7c47f47950c0c22694dd42, type: 2}
+  - {fileID: 11400000, guid: 9438997252a6ef54d8f835b2255b191c, type: 2}
+  - {fileID: 11400000, guid: 95f5707e4eaa1dd46925e8ea3fffc5ef, type: 2}
+  - {fileID: 11400000, guid: 745b47de337ba0a47b078958757b891a, type: 2}
   rewards:
-  - item: {fileID: 11400000, guid: d589c2021da9fa54fa47f26611edba9c, type: 2}
-    count: 100
+  - item: {fileID: 11400000, guid: ccc71a76c1fd38a4b9369afb23050518, type: 2}
+    count: 15

@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: 106600
   m_EditorClassIdentifier: 
   id: 106600
+  background: {fileID: 1461120247514626, guid: abaff49980d28c449bb71e9eb8d0d1f6, type: 3}
+  bgm: {fileID: 8300000, guid: 473e9d43b75d646c9b11b4d2bb6d566a, type: 3}
   enemies:
-  - {fileID: 11400000, guid: 3bf304b045e720748a6c24a143558232, type: 2}
+  - {fileID: 11400000, guid: 13774c009ceca904db1dbc7643d20238, type: 2}
   rewards: []

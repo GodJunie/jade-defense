@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Lion of Dawn
   prefab: {fileID: 8854434855383650770, guid: c5be30c0b5ccbb54abd828000fe6f8e5, type: 3}
   status:
-    cooltime: 1
+    cooltime: 10
     hp: 1500
     moveSpeed: 1
     range: 0.6
@@ -28,9 +28,9 @@ MonoBehaviour:
     targetEnemy: 1
     attackSpeed: 2
     attackMode: 3
-    atk: 90
+    atk: 190
     heal: 0
-    interval: 0
+    dotCount: 0
     duration: 5
     distance: 0
     slowRate: 0

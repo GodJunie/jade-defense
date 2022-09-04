@@ -14,23 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 103100
   background: {fileID: 1639210852879390, guid: d9059fafc845f42299a081e32bcb29c9, type: 3}
-  bgm: {fileID: 0}
+  bgm: {fileID: 8300000, guid: 898f7098952254bb389327931568ea02, type: 3}
   enemies:
-  - {fileID: 11400000, guid: d3ab904af043fdf4ba98cfba28462138, type: 2}
-  - {fileID: 11400000, guid: d3ab904af043fdf4ba98cfba28462138, type: 2}
-  - {fileID: 11400000, guid: 02afd536a9d2d4b4d8cd6d95fea59d7c, type: 2}
-  - {fileID: 11400000, guid: 02afd536a9d2d4b4d8cd6d95fea59d7c, type: 2}
-  - {fileID: 11400000, guid: 02afd536a9d2d4b4d8cd6d95fea59d7c, type: 2}
+  - {fileID: 11400000, guid: aec19d1d9b6e8a240b1d15a0d8748a0c, type: 2}
+  - {fileID: 11400000, guid: aec19d1d9b6e8a240b1d15a0d8748a0c, type: 2}
+  - {fileID: 11400000, guid: aec19d1d9b6e8a240b1d15a0d8748a0c, type: 2}
+  - {fileID: 11400000, guid: e52979b61ebe4a44f93e2f38f18dc25d, type: 2}
+  - {fileID: 11400000, guid: e52979b61ebe4a44f93e2f38f18dc25d, type: 2}
+  - {fileID: 11400000, guid: e52979b61ebe4a44f93e2f38f18dc25d, type: 2}
+  - {fileID: 11400000, guid: 02b6c80faa84d5e4198638222bb8db60, type: 2}
+  - {fileID: 11400000, guid: 02b6c80faa84d5e4198638222bb8db60, type: 2}
+  - {fileID: 11400000, guid: 02b6c80faa84d5e4198638222bb8db60, type: 2}
   rewards:
   - item: {fileID: 11400000, guid: d589c2021da9fa54fa47f26611edba9c, type: 2}
     count: 100
-  - item: {fileID: 11400000, guid: 8819069af7e162d408dc99326cf7db3c, type: 2}
+  - item: {fileID: 11400000, guid: cc3dd6c5bbb67c34dab31070659567ab, type: 2}
     count: 1
-  - item: {fileID: 11400000, guid: a6d0e8549b775ed4282034afc3543642, type: 2}
+  - item: {fileID: 11400000, guid: a914fdd14479d664da1107774fac53b1, type: 2}
     count: 1
-  - item: {fileID: 11400000, guid: ca2e979313aa1844489baeb7da42fbd5, type: 2}
-    count: 1
-  - item: {fileID: 11400000, guid: 4698e7bc9a1df2b419c0c7a178891be6, type: 2}
-    count: 1
-  - item: {fileID: 11400000, guid: af0c164a14f2c0c4392121afb06d230b, type: 2}
+  - item: {fileID: 11400000, guid: 60f8ec9a060303f4fb8b5fae244ac2fa, type: 2}
     count: 1

@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 16000
   m_EditorClassIdentifier: 
   id: 16000
-  scripts: []
-  day: 5
+  scripts:
+  - The Outland lizards chose to stand by Hella.
+  - Outland lizards seem familiar with lava.
+  day: 2
   monsters: []
   salesCount: 10
   trades:
@@ -148,11 +150,11 @@ MonoBehaviour:
     rate: 2
   enemies:
   - enemy: {fileID: 11400000, guid: e0368a5788bf0ca46b73a97c6cf48ee1, type: 2}
-    count: 2
+    count: 4
   - enemy: {fileID: 11400000, guid: 4d5fb1fd661840146846df5d575a2421, type: 2}
-    count: 1
+    count: 3
   - enemy: {fileID: 11400000, guid: 198673b203db7bc43a4dfb80d3f7e0a4, type: 2}
-    count: 1
+    count: 2
   - enemy: {fileID: 11400000, guid: 57663a99517d27d4bb4612a51a9f5586, type: 2}
-    count: 1
+    count: 2
   battle: {fileID: 11400000, guid: 37d4952e7d22d0f47970cfc83b962da3, type: 2}

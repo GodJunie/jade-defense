@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: 15000
   m_EditorClassIdentifier: 
   id: 15000
-  scripts: []
-  day: 5
+  scripts:
+  - On the [Enemies] tab, i can identify the next enemy!
+  - It's all my fault.
+  - We must find the black valkyrie.
+  day: 2
   monsters:
   - {fileID: 11400000, guid: 868ab03aa92b8f5408cd25cf6938a045, type: 2}
   - {fileID: 11400000, guid: d16274b23ea7d9e46a9d4dc1e64d7b64, type: 2}

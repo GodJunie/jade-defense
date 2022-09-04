@@ -13,8 +13,14 @@ MonoBehaviour:
   m_Name: 13001
   m_EditorClassIdentifier: 
   id: 13001
-  scripts: []
-  day: 3
+  scripts:
+  - On the [Enemies] tab, i can identify the next enemy!
+  - This forest is kind of quiet, creepy.
+  - I never thought I'd talk to them all my life
+  - The 'Bark of Old Tree' looks very industrious.
+  - These are the barks of Yggdrasill, each of which has the power of wood, land,
+    fire, wind, and water.
+  day: 2
   monsters:
   - {fileID: 11400000, guid: 1cad6710dcf223e468247eb06cf52ce3, type: 2}
   - {fileID: 11400000, guid: 491f1df46333f624aa1a277005fa32fb, type: 2}
@@ -84,22 +90,6 @@ MonoBehaviour:
     rate: 0.3
   - sale: {fileID: 11400000, guid: e65f897cbe0214748bf9a3ac95eeb848, type: 2}
     rate: 0.1
-  - sale: {fileID: 11400000, guid: 1e344668ec33de24e84fef0c79a42735, type: 2}
-    rate: 0.6
-  - sale: {fileID: 11400000, guid: 0d2a52fcd79840f42bf9c2dd84fa4a51, type: 2}
-    rate: 0.6
-  - sale: {fileID: 11400000, guid: e7cb247513250214bb7f8b3751ecafcc, type: 2}
-    rate: 0.6
-  - sale: {fileID: 11400000, guid: ff6b7eb34dcb0604f837d5adedebae16, type: 2}
-    rate: 0.3
-  - sale: {fileID: 11400000, guid: 00cdd0f90d3533141a3e950bda2a2541, type: 2}
-    rate: 0.3
-  - sale: {fileID: 11400000, guid: 54b2331661f38ec48b3ff2a2d74b4c98, type: 2}
-    rate: 0.3
-  - sale: {fileID: 11400000, guid: f03b12f97c6081a469b27786b93d2350, type: 2}
-    rate: 0.3
-  - sale: {fileID: 11400000, guid: c0ce09920e3a6624589081e140b68827, type: 2}
-    rate: 0.1
   - sale: {fileID: 11400000, guid: 5f9da279b40e0b648b9b48b496b0040c, type: 2}
     rate: 0.3
   - sale: {fileID: 11400000, guid: 37a012722d7780e43b58366775253375, type: 2}
@@ -111,76 +101,66 @@ MonoBehaviour:
   - sale: {fileID: 11400000, guid: 6de6591b29b54d74e81117c08df1b21c, type: 2}
     rate: 0.3
   - sale: {fileID: 11400000, guid: 850fca931e1dad0458e9eca700d63bc3, type: 2}
-    rate: 1
-  - sale: {fileID: 11400000, guid: b50855268140af34ea17af25299b95ac, type: 2}
-    rate: 3
+    rate: 2
   - sale: {fileID: 11400000, guid: cfebe6db4d440ec4f95200221f7c1041, type: 2}
-    rate: 1
-  - sale: {fileID: 11400000, guid: 75629c7a660287c42859f2a90cf401ea, type: 2}
-    rate: 3
+    rate: 2
   - sale: {fileID: 11400000, guid: 9ac75ae4d997daf49b2c7361ebc78cb3, type: 2}
-    rate: 1
+    rate: 2
   - sale: {fileID: 11400000, guid: d6a8a12ca56771241bde3e9d1371f553, type: 2}
-    rate: 1
-  - sale: {fileID: 11400000, guid: 4343383087fbdc546bdedfd570175388, type: 2}
-    rate: 1
+    rate: 2
   - sale: {fileID: 11400000, guid: 567e8ea71961e7546ba9a4287711676b, type: 2}
-    rate: 1
+    rate: 2
   - sale: {fileID: 11400000, guid: 560b14d501b3a1b40b7596b30c9c0bb9, type: 2}
-    rate: 1
-  - sale: {fileID: 11400000, guid: 4d3faea022c796f4fb8a5685081f4264, type: 2}
-    rate: 1
+    rate: 2
   - sale: {fileID: 11400000, guid: 2e12f2250b6f33944bf7f0282f2480d7, type: 2}
-    rate: 2
+    rate: 3
   - sale: {fileID: 11400000, guid: 10a5f22fa84bc76439071b22027e598b, type: 2}
-    rate: 12.6
-  - sale: {fileID: 11400000, guid: 839cdc6b477a4834cb515d129ebf87cc, type: 2}
+    rate: 11.7
+  - sale: {fileID: 11400000, guid: 69624cb59e1ef1343bf8c2f5fd87af4b, type: 2}
+    rate: 5
+  - sale: {fileID: 11400000, guid: 4d650708846712c439d76e00bdab76a6, type: 2}
+    rate: 4
+  - sale: {fileID: 11400000, guid: 8819069af7e162d408dc99326cf7db3c, type: 2}
     rate: 3
-  - sale: {fileID: 11400000, guid: d01f26e10b6314f489b446ab8fad8538, type: 2}
+  - sale: {fileID: 11400000, guid: bfd0f655e0497c643b224e27d90ced7d, type: 2}
+    rate: 1
+  - sale: {fileID: 11400000, guid: 39b9b10ba05f09941bce5370e2cf707c, type: 2}
+    rate: 5
+  - sale: {fileID: 11400000, guid: 3b7f714761727d54cb44def06d47cbe1, type: 2}
+    rate: 4
+  - sale: {fileID: 11400000, guid: a6d0e8549b775ed4282034afc3543642, type: 2}
     rate: 3
-  - sale: {fileID: 11400000, guid: 99560d3f98795c84e85aec7aaa877621, type: 2}
+  - sale: {fileID: 11400000, guid: 0b3c0773a9ac18547abd60c75ba0bd4f, type: 2}
+    rate: 1
+  - sale: {fileID: 11400000, guid: 06b602e78a1fc3149a66f057c8a0238d, type: 2}
+    rate: 5
+  - sale: {fileID: 11400000, guid: a914fdd14479d664da1107774fac53b1, type: 2}
+    rate: 4
+  - sale: {fileID: 11400000, guid: ca2e979313aa1844489baeb7da42fbd5, type: 2}
     rate: 3
-  - sale: {fileID: 11400000, guid: 413dffb8e9b38b34a92a89061d803313, type: 2}
-    rate: 2
-  - sale: {fileID: 11400000, guid: 43309e0d33e8a9545be2372cedf01a03, type: 2}
+  - sale: {fileID: 11400000, guid: 7ea384d607faed24e98ef48d0b3e9cb3, type: 2}
+    rate: 1
+  - sale: {fileID: 11400000, guid: daf234e15aa11ee49a1aaaeeccea9a6a, type: 2}
+    rate: 5
+  - sale: {fileID: 11400000, guid: cc3dd6c5bbb67c34dab31070659567ab, type: 2}
+    rate: 4
+  - sale: {fileID: 11400000, guid: 4698e7bc9a1df2b419c0c7a178891be6, type: 2}
     rate: 3
-  - sale: {fileID: 11400000, guid: 833074a196207034d81e6e0d0fc18e71, type: 2}
+  - sale: {fileID: 11400000, guid: f25570339eb9d7e468cc56b40cd537d0, type: 2}
+    rate: 1
+  - sale: {fileID: 11400000, guid: 4e56db5c6bb00a246be6564d3c38967d, type: 2}
+    rate: 5
+  - sale: {fileID: 11400000, guid: 60f8ec9a060303f4fb8b5fae244ac2fa, type: 2}
+    rate: 4
+  - sale: {fileID: 11400000, guid: af0c164a14f2c0c4392121afb06d230b, type: 2}
     rate: 3
-  - sale: {fileID: 11400000, guid: 0465222f67f9b7e4ba9cb95425060404, type: 2}
-    rate: 3
-  - sale: {fileID: 11400000, guid: 6475d979bdcdecd41844424dd46b9ce0, type: 2}
-    rate: 3
-  - sale: {fileID: 11400000, guid: 25f6b5f76baab5549b43a849f1859318, type: 2}
-    rate: 3
-  - sale: {fileID: 11400000, guid: 4798147202ceb8e4fb0ffe48ca90b35f, type: 2}
-    rate: 3
-  - sale: {fileID: 11400000, guid: 399a39c2c2c2f97468829fccced19baf, type: 2}
-    rate: 3
-  - sale: {fileID: 11400000, guid: 7e6cc04742966de4b8882872197f316d, type: 2}
-    rate: 3
-  - sale: {fileID: 11400000, guid: 6cfc62c1f8f4cbe4aa6b0dce0ba211a5, type: 2}
-    rate: 3
-  - sale: {fileID: 11400000, guid: 7d8ac0eccd5512e4caf725a54febe4a0, type: 2}
-    rate: 3
-  - sale: {fileID: 11400000, guid: 2a8f5b526502ed84591e7a20a532b0c6, type: 2}
-    rate: 2
-  - sale: {fileID: 11400000, guid: db204d57c7ae059459a53d484ec2715a, type: 2}
-    rate: 2
-  - sale: {fileID: 11400000, guid: 41c9d1852d7a7d3448a09aa07eab9e9a, type: 2}
-    rate: 3
-  - sale: {fileID: 11400000, guid: dee6bd5528c069346b3ad70bbb3c2434, type: 2}
-    rate: 2
-  - sale: {fileID: 11400000, guid: 144e3015abcb36844b2d8f50bee8dd1c, type: 2}
-    rate: 3
-  - sale: {fileID: 11400000, guid: 0cab179eb99b45b4d85e859b4b88fbf8, type: 2}
-    rate: 2
-  - sale: {fileID: 11400000, guid: eece1363856079a45888ffdd587789b1, type: 2}
-    rate: 3
-  - sale: {fileID: 11400000, guid: b90b0db9794ed6449a09e13ae52f10d3, type: 2}
-    rate: 2
+  - sale: {fileID: 11400000, guid: 530ff8c0a165cb84db1016901a246704, type: 2}
+    rate: 1
   enemies:
-  - enemy: {fileID: 11400000, guid: d3ab904af043fdf4ba98cfba28462138, type: 2}
-    count: 2
-  - enemy: {fileID: 11400000, guid: 02afd536a9d2d4b4d8cd6d95fea59d7c, type: 2}
+  - enemy: {fileID: 11400000, guid: aec19d1d9b6e8a240b1d15a0d8748a0c, type: 2}
+    count: 3
+  - enemy: {fileID: 11400000, guid: e52979b61ebe4a44f93e2f38f18dc25d, type: 2}
+    count: 3
+  - enemy: {fileID: 11400000, guid: 02b6c80faa84d5e4198638222bb8db60, type: 2}
     count: 3
   battle: {fileID: 11400000, guid: b3d860cabaf8616448c7eba639436b35, type: 2}

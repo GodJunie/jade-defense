@@ -26,12 +26,12 @@ MonoBehaviour:
     descending: 0
     targetCount: 0
     targetEnemy: 1
-    attackSpeed: 1
+    attackSpeed: 3
     attackMode: 1
     atk: 20
     heal: 0
     dotCount: 3
-    duration: 3.1
+    duration: 4
     distance: 0
     slowRate: 0
   cost:

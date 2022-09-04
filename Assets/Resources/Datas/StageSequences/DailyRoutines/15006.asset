@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1aba2187eed0b94b8e90991290df523, type: 3}
+  m_Name: 15006
+  m_EditorClassIdentifier: 
+  id: 15006
+  scripts:
+  - On the [Enemies] tab, i can identify the next enemy!
+  - I'm sorry guys, hang in there a little bit.
+  day: 2
+  monsters: []
+  salesCount: 0
+  trades: []
+  enemies:
+  - enemy: {fileID: 11400000, guid: c0ce09920e3a6624589081e140b68827, type: 2}
+    count: 1
+  battle: {fileID: 11400000, guid: 617397aeb2f60c3478a92a106f0d9c9c, type: 2}

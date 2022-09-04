@@ -18,19 +18,19 @@ MonoBehaviour:
   description: Elite Soldier
   prefab: {fileID: 1249774490081884178, guid: ca98d38922aad1e4680e6dcb44633d29, type: 3}
   status:
-    cooltime: 1
-    hp: 90
+    cooltime: 4
+    hp: 340
     moveSpeed: 1
-    range: 0.5
+    range: 0.4
     targetFilterMode: 3
     descending: 0
     targetCount: 1
     targetEnemy: 1
     attackSpeed: 1
     attackMode: 0
-    atk: 25
+    atk: 35
     heal: 0
-    interval: 0
+    dotCount: 0
     duration: 0
     distance: 0
     slowRate: 0

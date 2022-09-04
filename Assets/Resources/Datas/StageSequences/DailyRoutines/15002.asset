@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 15002
   m_EditorClassIdentifier: 
   id: 15002
-  scripts: []
-  day: 5
+  scripts:
+  - On the [Enemies] tab, i can identify the next enemy!
+  - These souls are too reticent.
+  day: 2
   monsters:
   - {fileID: 11400000, guid: 868ab03aa92b8f5408cd25cf6938a045, type: 2}
   - {fileID: 11400000, guid: d16274b23ea7d9e46a9d4dc1e64d7b64, type: 2}
@@ -42,7 +44,5 @@ MonoBehaviour:
   - enemy: {fileID: 11400000, guid: 54b2331661f38ec48b3ff2a2d74b4c98, type: 2}
     count: 1
   - enemy: {fileID: 11400000, guid: f03b12f97c6081a469b27786b93d2350, type: 2}
-    count: 1
-  - enemy: {fileID: 11400000, guid: c0ce09920e3a6624589081e140b68827, type: 2}
     count: 1
   battle: {fileID: 11400000, guid: 2505f609006a3ac4dbd12d7cd5e78e67, type: 2}
