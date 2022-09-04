@@ -86,7 +86,7 @@ namespace B409.Jade.UI {
 
             this.Price = sale.BuyPrice;
 
-            float discountRate = GameConsts.GetTradeDiscountRate(GameManager.Instance.Progress.Parameters[Parameter.Intelligence]);
+            float discountRate = GameManager.Instance.TradeDiscountRate;
 
             this.textPrice.text = string.Format("{0:n0} <size=40><color=red>(-{1:0}%)</color></size>", Mathf.FloorToInt(sale.BuyPrice * (1 - discountRate)), discountRate * 100);
             this.textAmount.text = string.Format("{0} Left", count);

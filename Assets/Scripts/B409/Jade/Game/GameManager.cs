@@ -28,6 +28,9 @@ namespace B409.Jade.Game {
         private string dialogueScene;
         [SerializeField]
         private string endingScene;
+
+        [SerializeField]
+        private ParameterData parameterData;
         #endregion
 
         #region Members 
@@ -77,7 +80,7 @@ namespace B409.Jade.Game {
         public StageSequenceData CurrentStageSequence { get; private set; }
 
         public void TurnStart() {
-            Progress.TurnStart();
+            Progress.SetAp(MaxAp);
         }
 
         public void TurnEnd() {
@@ -129,11 +132,9 @@ namespace B409.Jade.Game {
 
         #region Farming
         public void Farming(FarmingLevelData data) {
-            int count = GameConsts.GetFarmingCount(Progress.Parameters[Parameter.Luck]);
-
             var items = new Dictionary<int, int>();
 
-            for(int i = 0; i < count; i++) {
+            for(int i = 0; i < FarmingCount; i++) {
                 Debug.Log("get");
 
                 var sum = data.Datas.Sum(e => e.Rate);
@@ -165,12 +166,10 @@ namespace B409.Jade.Game {
             if(!Progress.CheckItemsEnough(data.Materials))
                 return;
 
-            bool bonus = UnityEngine.Random.Range(0f, 100f) < GameConsts.GetCraftingBonusRate(Progress.Parameters[Parameter.Deft]) * 100f;
-
             // Use Item
             Progress.UseItems(data.Materials);
             // Get Item
-            Progress.AddItem(data.Result.Item.Id, data.Result.Count + (bonus ? 1 : 0));
+            Progress.AddItem(data.Result.Item.Id, data.Result.Count + (CraftingBonus ? 1 : 0));
 
             CheckAction(levelData);
         }
@@ -184,8 +183,123 @@ namespace B409.Jade.Game {
         }
 
         private void CheckAction(ActionLevelData data) {
-            Progress.ConsumeAP(data.AP);
+            Progress.ConsumeAP(data.AP * (1 - ApDiscountRate));
             Progress.GetParameters(data.RewardParameters);
+        }
+
+        public bool CheckApEnough(float ap) {
+            ap *= (1 - ApDiscountRate);
+
+            return this.Progress.AP >= ap;
+        }
+
+        public void BuyOnTrade<T>(T data) where T : IDataID, ISale {
+            if(!Progress.Trades.ContainsKey(data.Id)) {
+                throw new Exception(string.Format("there is no item in trade list, id: {0}", data.Id));
+            }
+
+            int price = data.BuyPrice;
+
+            price = Mathf.FloorToInt(price * (1 - TradeDiscountRate));
+
+            Progress.UseItem(GameConsts.GOLD_ID, price);
+
+            if(data is ItemData)
+                Progress.AddItem(data.Id, 1);
+            else if(data is MonsterData)
+                Progress.AddMonster(data.Id, 1);
+            else
+                throw new Exception("Data is not ItemData nor MonsterData");
+
+            Progress.Trades[data.Id]--;
+        }
+
+        public void BuyOnTrade(ScriptableObject data) {
+            if(data is ItemData)
+                BuyOnTrade(data as ItemData);
+            else if(data is MonsterData)
+                BuyOnTrade(data as MonsterData);
+            else
+                throw new Exception("Data is not ItemData nor MonsterData");
+        }
+
+        public void SellOnTrade<T>(T data) where T : IDataID, ISale {
+            if(data is ItemData)
+                Progress.UseItem(data.Id, 1);
+            else if(data is MonsterData)
+                Progress.UseMonster(data.Id, 1);
+            else
+                throw new Exception("Data is not ItemData nor MonsterData");
+
+            Progress.AddItem(GameConsts.GOLD_ID, data.SellPrice);
+        }
+
+        public void SellOnTrade(ScriptableObject data) {
+            if(data is ItemData)
+                SellOnTrade(data as ItemData);
+            else if(data is MonsterData)
+                SellOnTrade(data as MonsterData);
+            else
+                throw new Exception("Data is not ItemData nor MonsterData");
+        }
+
+        public bool CheckCanBuyOnTrade<T>(T data) where T : IDataID, ISale{
+            var price = Mathf.FloorToInt(data.BuyPrice * (1 - TradeDiscountRate));
+
+            return Progress.Gold >= price && Progress.Trades.ContainsKey(data.Id) && Progress.Trades[data.Id] > 0;
+        }
+
+        public bool CheckCanBuyOnTrade(ScriptableObject data) {
+            if(data is ItemData)
+                return CheckCanBuyOnTrade(data as ItemData);
+            else if(data is MonsterData)
+                return CheckCanBuyOnTrade(data as MonsterData);
+            else
+                throw new Exception("Data is not ItemData nor MonsterData");
+        }
+        #endregion
+
+            #region Parameter Data
+        public float ParameterMaxValue {
+            get {
+                return parameterData.ParameterMaxValue;
+            }
+        }
+
+        public float MaxAp {
+            get {
+                return parameterData.GetMaxAp(Progress);
+            }
+        }
+
+        public float ApDiscountRate {
+            get {
+                return parameterData.GetApDiscountRate(Progress);
+            }
+        }
+
+        public float TradeDiscountRate {
+            get {
+                return parameterData.GetTradeDiscountRate(Progress);
+            }
+        }
+
+        public int FarmingCount {
+            get {
+                return parameterData.GetFarmingCount(Progress);
+            }
+        }
+
+        public float CraftingBonusRate {
+            get {
+                return parameterData.GetCraftingBonusRate(Progress);
+            }
+        }
+
+        public bool CraftingBonus {
+            get {
+                return UnityEngine.Random.Range(0f, 100f) < CraftingBonusRate * 100f;
+            }
         }
         #endregion
 

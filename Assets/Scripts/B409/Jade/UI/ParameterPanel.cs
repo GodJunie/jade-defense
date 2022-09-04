@@ -25,9 +25,10 @@ namespace B409.Jade.UI {
         public void Open() {
             this.gameObject.SetActive(true);
 
-            radarChart.SetMaxValue(GameConsts.ParameterMaxValue);
+            radarChart.SetMaxValue(GameManager.Instance.ParameterMaxValue);
 
-            var progress = GameManager.Instance.Progress;
+            var mgr = GameManager.Instance;
+            var progress = mgr.Progress;
 
             float strength = progress.Parameters[Parameter.Strength];
             float deft = progress.Parameters[Parameter.Deft];
@@ -35,7 +36,7 @@ namespace B409.Jade.UI {
             float intelligence = progress.Parameters[Parameter.Intelligence];
             float luck = progress.Parameters[Parameter.Luck];
 
-            this.textDescription.text = string.Format(descriptionFormat, strength, GameConsts.GetApDiscountRate(strength) * 100, deft, GameConsts.GetCraftingBonusRate(deft) * 100, endurance, GameConsts.GetMaxAp(endurance), intelligence, GameConsts.GetTradeDiscountRate(intelligence) * 100, luck, GameConsts.GetFarmingCount(luck));
+            this.textDescription.text = string.Format(descriptionFormat, strength, mgr.ApDiscountRate * 100, deft, mgr.CraftingBonusRate * 100, endurance, mgr.MaxAp, intelligence, mgr.TradeDiscountRate * 100, luck, mgr.FarmingCount);
 
             DrawChart(duration);
         }

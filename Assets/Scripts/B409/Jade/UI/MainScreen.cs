@@ -124,7 +124,8 @@ namespace B409.Jade.UI {
 
         #region UI
         public void Init() {
-            var progress = GameManager.Instance.Progress;
+            var gm = GameManager.Instance;
+            var progress = gm.Progress;
            
             this.textDDay.text = string.Format("D - {0}", progress.DDay);
 
@@ -137,7 +138,7 @@ namespace B409.Jade.UI {
             this.textParameters.text = string.Format("{0:0}\n{1:0}\n{2:0}\n{3:0}\n{4:0}", strength, deft, endurance, intelligence, luck);
 
             this.textCurrentAP.text = progress.AP.ToString("0");
-            this.textMaxAP.text = progress.MaxAP.ToString("0");
+            this.textMaxAP.text = gm.MaxAp.ToString("0");
 
             var log = progress.GetLogs();
             if(string.IsNullOrEmpty(log)) {

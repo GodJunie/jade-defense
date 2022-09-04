@@ -89,7 +89,7 @@ namespace B409.Jade.UI {
         }
 
         public void OnEnterFarm() {
-            if(GameManager.Instance.Progress.CheckAPEnough(data.AP)) {
+            if(GameManager.Instance.CheckApEnough(data.AP)) {
                 GameManager.Instance.Farming(data);
                 mainScreen.Init();
             } else {

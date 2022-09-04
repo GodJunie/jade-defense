@@ -419,18 +419,18 @@ namespace B409.Jade.UI {
             if(buy) {
                 buttonConfirm.image.color = GameConsts.ButtonGreen;
 
-                float discountRate = GameConsts.GetTradeDiscountRate(GameManager.Instance.Progress.Parameters[Parameter.Intelligence]);
+                float discountRate = GameManager.Instance.TradeDiscountRate;
 
                 var price = Mathf.FloorToInt(sale.BuyPrice * (1 - discountRate));
 
                 textPrice.text = price.ToString("N0");
 
-                if(price > GameManager.Instance.Progress.Gold) {
-                    buttonConfirm.interactable = false;
-                    textPrice.color = Color.red;
-                } else {
+                if(GameManager.Instance.CheckCanBuyOnTrade(data)) {
                     buttonConfirm.interactable = true;
                     textPrice.color = Color.white;
+                } else {
+                    buttonConfirm.interactable = false;
+                    textPrice.color = Color.red;
                 }
             } else {
                 buttonConfirm.image.color = GameConsts.ButtonRed;
@@ -468,23 +468,16 @@ namespace B409.Jade.UI {
         }
 
         public void Confirm() {
-            var progress = GameManager.Instance.Progress;
+            var gm = GameManager.Instance;
+            var progress = gm.Progress;
 
             if(this.buy) {
-                if(data is ItemData) {
-                    progress.BuyItem(data as ItemData);
-                } else if(data is MonsterData) {
-                    progress.BuyMonster(data as MonsterData);
-                }
+                gm.BuyOnTrade(data);
 
                 OpenBuyPanel();
             } else {
-                if(data is ItemData) {
-                    progress.SellItem(data as ItemData);
-                } else if(data is MonsterData) {
-                    progress.SellMonster(data as MonsterData);
-                }
-
+                gm.SellOnTrade(data);
+               
                 if(sellViewIsGridMode)
                     OpenGridSellPanel();
                 else

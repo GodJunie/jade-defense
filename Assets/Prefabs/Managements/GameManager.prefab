@@ -48,3 +48,4 @@ MonoBehaviour:
   battleScene: Scenes/Battle
   dialogueScene: Scenes/Dialogue
   endingScene: Scenes/Ending
+  parameterData: {fileID: 11400000, guid: fcb35126fe434af4f920b1d697037da0, type: 2}

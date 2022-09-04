@@ -30,11 +30,11 @@ namespace B409.Jade.Game {
             }
         }
 
-        public float MaxAP {
-            get {
-                return GameConsts.GetMaxAp(Parameters[Parameter.Endurance]);
-            }
-        }
+        //public float MaxAP {
+        //    get {
+        //        return GameConsts.GetMaxAp(Parameters[Parameter.Endurance]);
+        //    }
+        //}
 
         [JsonProperty]
         private Dictionary<int, int> itemLogs;
@@ -119,10 +119,6 @@ namespace B409.Jade.Game {
             }
         }
 
-        public void TurnStart() {
-            this.AP = MaxAP;
-        }
-
         public void TurnEnd() {
             this.DDay--;
         }
@@ -136,14 +132,11 @@ namespace B409.Jade.Game {
             this.StageSequence++;
         }
 
-        public bool CheckAPEnough(float ap) {
-            ap *= (1 - GameConsts.GetApDiscountRate(Parameters[Parameter.Strength]));
-
-            return this.AP >= ap;
+        public void SetAp(float ap) {
+            this.AP = ap;
         }
 
         public void ConsumeAP(float ap) {
-            ap *= (1 - GameConsts.GetApDiscountRate(Parameters[Parameter.Strength]));
             this.AP -= ap;
         }
 
@@ -217,39 +210,10 @@ namespace B409.Jade.Game {
             }
         }
 
-        public void BuyItem(ItemData data) {
-            if(!this.Trades.ContainsKey(data.Id)) {
-                throw new Exception(string.Format("there is no item in trade list, id: {0}", data.Id));
-            }
-
-            int price = data.BuyPrice;
-            float discountRate = GameConsts.GetTradeDiscountRate(Parameters[Parameter.Intelligence]);
-
-            price = Mathf.FloorToInt(price * (1 - discountRate));
-
-            UseItem(GameConsts.GOLD_ID, price);
-            AddItem(data.Id, 1);
-
-            Trades[data.Id]--;
-        }
-
-        public void SellItem(ItemData data) {
-            UseItem(data.Id, 1);
-            AddItem(GameConsts.GOLD_ID, data.SellPrice);
-        }
-
         public bool CheckItemEnough(int id, int count) {
             return GetItemCount(id) >= count;
         }
-
-        public bool CheckCanBuyItem(int price) {
-            float discountRate = GameConsts.GetTradeDiscountRate(Parameters[Parameter.Intelligence]);
-
-            price = Mathf.FloorToInt(price * (1 - discountRate));
-
-            return Gold >= price;
-        }
-
+      
         public bool CheckItemsEnough(Dictionary<int, int> items) {
             foreach(var pair in items) {
                 if(!CheckItemEnough(pair.Key, pair.Value))
@@ -301,28 +265,6 @@ namespace B409.Jade.Game {
                 this.monsterLogs.Add(id, -count);
             }
         }
-
-        public void BuyMonster(MonsterData data) {
-            if(!this.Trades.ContainsKey(data.Id)) {
-                throw new Exception(string.Format("there is no item in trade list, id: {0}", data.Id));
-            }
-
-            int price = data.BuyPrice;
-            float discountRate = GameConsts.GetTradeDiscountRate(Parameters[Parameter.Intelligence]);
-
-            price = Mathf.FloorToInt(price * (1 - discountRate));
-
-            UseItem(GameConsts.GOLD_ID, price);
-            AddMonster(data.Id, 1);
-
-            Trades[data.Id]--;
-        }
-
-        public void SellMonster(MonsterData data) {
-            UseMonster(data.Id, 1);
-            AddItem(GameConsts.GOLD_ID, data.SellPrice);
-        }
-
 
         public bool CheckParameterValidation(List<ParameterValue> parameters) {
             foreach(var p in parameters) {

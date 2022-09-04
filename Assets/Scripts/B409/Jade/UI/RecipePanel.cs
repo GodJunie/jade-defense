@@ -110,7 +110,7 @@ namespace B409.Jade.UI {
         }
 
         public void OnConfirm() {
-            if(GameManager.Instance.Progress.CheckAPEnough(levelData.AP)) {
+            if(GameManager.Instance.CheckApEnough(levelData.AP)) {
                 GameManager.Instance.Making(this.levelData, this.data);
                 mainScreen.Init();
             } else {

@@ -107,7 +107,6 @@ namespace B409.Jade.Battle {
             };
 
             anim.AnimationState.Event += (entry, e) => {
-                Debug.Log(string.Format("Id: {2}, Animation Name: {0}, Event Name: {1}", entry.Animation.Name, e.Data.Name, Data.Id));
                 if(e.Data.Name == "attackPoint" && entry.Animation.Name == attackAnimation) {
                     // АјАн!
                     foreach(var target in attackTargets) {
