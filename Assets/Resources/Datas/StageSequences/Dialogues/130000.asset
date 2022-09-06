@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 130000
   datas:
-  - sequenceSort: 0
+  - sequenceSort: 3
     leftCharacter:
       mode: 0
       target: {fileID: 0}
@@ -29,6 +29,1427 @@ MonoBehaviour:
       mode: 0
       target: {fileID: 0}
       animation: 
+    eventObject: {fileID: 6567086550246920755, guid: 5e63794bc411a5241aa5abc48ee86c1c, type: 3}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: Jade
+      script: I had a dream.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
     eventObject: {fileID: 0}
     eventId: 
     rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: The dream was so absurd, I quickly recognized it as a dream.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: But that dream wasn't something I wanted to wake up from.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: There was a huge crowd lined up in front of me on the left and right
+        side.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: It was as if the king who won the war was holding a triumph.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 3
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: Dream
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 1
+      target: {fileID: 6118293056195659511, guid: 5a5e49bbaef00974897a66d5dfd36f2e, type: 3}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: Teratomas
+      script: Jade! Jade! Jade! Jade!
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 1
+      target: {fileID: 3328306218506788300, guid: 35d34e101090e0841987577c42cdb56e, type: 3}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 2
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: Foxes
+      script: Jade! Jade! Jade!
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 1
+      target: {fileID: 2903410488047823891, guid: 7f1f5b54e9f84664891f2a98f26403f0, type: 3}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 2
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: Soldiers
+      script: All hail Jade the great!
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 1
+      target: {fileID: 3092187786161246119, guid: 866002d16a418ab4f827e2b01d0ded80, type: 3}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: Jade
+      script: All the shining treasures in the world are mine!
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: All
+      script: "Long live the king!\r"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 2
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: Jade
+      script: "\u2026\u2026So childish."
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: I am a thief.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: As a thief, if you want to stay alive, you have to be a realist.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: And yet, deep inside my mind, do I really want something like this?
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: This is a dream.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: A vain delusion that will never come true.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: But maybe, if everything goes well...
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 3
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: Fight
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: Jade
+      script: "Mmm, treasure, gold coins. \u2026 \u2026 huh? Why is it so noisy?"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: Teratomas
+      script: Help! help. help! help.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 1
+      target: {fileID: 3328306218506788300, guid: 35d34e101090e0841987577c42cdb56e, type: 3}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: 
+      script: "Hurt! pain. pain? help.\r"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 2
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: Foxes
+      script: Where did these guys come from?!
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 1
+      target: {fileID: 2903410488047823891, guid: 7f1f5b54e9f84664891f2a98f26403f0, type: 3}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: 
+      script: We're not ready to fight. Come on, let's run away!
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 2
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: Soldiers
+      script: Time to die!
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 1
+      target: {fileID: 3132468314077857413, guid: b19092d75836135488f04aab9b553d39, type: 3}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: Jade
+      script: "Oooh! What\u2019s going on!"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: Fall back, fall back!
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 2
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: What the hell! Is it a surprise attack?
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: Oh dear, just let me get some rest!
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 3
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: Escape
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: Jade
+      script: "I barely escaped\u2026"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: As soon as I woke up, the Midgard army attacked...
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: "What an unlucky day.\r"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: I got a little closer to Yggdrasil, and serious problems are already
+        popping up everywhere.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: This is Alfheim. It's closer to Yggdrasil than Svartalfheim, the place
+        I went before.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: The environment is suitable for living things, and above all, there
+        is a lot of water.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: It is the best resting place for teratomas who have been withered.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: Of course, I didn't come all the way here just to improve the welfare
+        of the teratomas.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: I am trying to find the Bark of Yggdrasil, a monster that mainly inhabits
+        here.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 3
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: Past
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: Fox Shaman
+      script: The monsters you have are really good.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 1
+      target: {fileID: 3963087053602702538, guid: 7c07d7c738be82e42aad7b3701756e29, type: 3}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: 
+      script: They are strong enough to fight against anyone, and listen to your
+        orders well.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: 
+      script: However, the magical elements that they can use are too limited.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: 
+      script: We, desert fox tribe can only use abilities borrowed from the power
+        of the earth.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 1
+      name: 
+      script: "If you plan to increase the size of your army, it would be a good
+        idea to recruit monsters that can use magic other than the earth element.\r"
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 2
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 3
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 0
+      name: 
+      script: 
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: Current
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: Jade
+      script: The monster that desert fox shaman recommended was the Bark of the
+        Yggdrasil.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: Bark of the Yggdrasil can have all the magical elements depending on
+        the growth environment.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: If I recruit the Bark of Yggdrasil with various magical elements, the
+        number of tactics I can use will be much higher.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: The Midgard army is getting serious now.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: The troops that I just fought were not a normal patrol force.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: It must be an elite expedition force sent only to deal with the monster
+        army.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: I must recruit Bark of Yggdrasils as soon as possible.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
+  - sequenceSort: 0
+    leftCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    scriptInfo:
+      scriptFocus: 2
+      name: 
+      script: A tough fight awaits before me.
+      speed: 20
+      skippable: 1
+    rightCharacter:
+      mode: 0
+      target: {fileID: 0}
+      animation: 
+    eventObject: {fileID: 0}
+    eventId: 
+    rewards: []
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
