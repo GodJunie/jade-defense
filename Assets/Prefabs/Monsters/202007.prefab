@@ -439,13 +439,21 @@ MonoBehaviour:
   defaultDirection: 0
   idleAnimation: Idle
   moveAnimation: Idle
-  attackAnimation: Attack
+  attackAnimation: Skill_01
   dieAnimation: Die
   hitbox: {fileID: 5915282062995246663}
   detector: {fileID: 2187962210653570324}
   anim: {fileID: 6801070396706224448}
   hpBar: {fileID: 2064276254253688757}
-  effects: []
+  effects:
+  - pivot: 0
+    effect: {fileID: 2771303090492336749, guid: 84241fabbacf6d643995b3f269fc5ef5, type: 3}
+    align: 2
+    duration: 1
+  - pivot: 1
+    effect: {fileID: 9138224734035494389, guid: 4beea6543e5283b4cb9af7a172a068cf, type: 3}
+    align: 1
+    duration: 1
 --- !u!1 &6032454508799272229
 GameObject:
   m_ObjectHideFlags: 0

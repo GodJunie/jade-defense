@@ -25,7 +25,7 @@ MonoBehaviour:
     range: 3
     targetFilterMode: 3
     descending: 0
-    targetCount: 1
+    targetCount: 0
     targetEnemy: 1
     attackSpeed: 3
     attackMode: 0
