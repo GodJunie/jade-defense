@@ -19,8 +19,8 @@ MonoBehaviour:
   description: "1\uC2A4\uD14C\uC774\uC9C0"
   datas:
   - Dialogues/110000
-  - DailyRoutines/11000
   - Dialogues/110001
+  - DailyRoutines/11000
   - DailyRoutines/11001
   - DailyRoutines/11002
   - DailyRoutines/11004
