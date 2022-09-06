@@ -15,9 +15,9 @@ MonoBehaviour:
   id: 100003
   materials:
   - item: {fileID: 11400000, guid: 10a5f22fa84bc76439071b22027e598b, type: 2}
-    count: 1
+    count: 2
   - item: {fileID: 11400000, guid: 413dffb8e9b38b34a92a89061d803313, type: 2}
-    count: 1
+    count: 4
   result:
     item: {fileID: 11400000, guid: cfebe6db4d440ec4f95200221f7c1041, type: 2}
     count: 1

@@ -19,7 +19,7 @@ MonoBehaviour:
     giant iron mace looks scary.
   prefab: {fileID: 5629041472217577995, guid: 43fff782feea88540a562685f63de2ff, type: 3}
   status:
-    cooltime: 8
+    cooltime: 10
     hp: 700
     moveSpeed: 0
     range: 2

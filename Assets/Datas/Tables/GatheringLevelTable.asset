@@ -18,20 +18,18 @@ MonoBehaviour:
     - parameter: 1
       value: 0
     - parameter: 3
-      value: 15
+      value: 6
     - parameter: 4
-      value: 15
-    - parameter: 2
-      value: 75
+      value: 0
     rewardParameters:
     - parameter: 1
-      value: 5
+      value: 4
     - parameter: 3
-      value: 25
+      value: 7
     - parameter: 4
-      value: 5
+      value: 1
     - parameter: 2
-      value: 5
+      value: 2
     ap: 30
     name: A tea leaf forest
     description: A forest full of fragrant tea leaves.
@@ -46,22 +44,20 @@ MonoBehaviour:
       rate: 10
   - inquiredParameters:
     - parameter: 1
-      value: 125
+      value: 100
     - parameter: 3
-      value: 125
+      value: 100
     - parameter: 4
-      value: 125
-    - parameter: 2
-      value: 125
+      value: 100
     rewardParameters:
     - parameter: 1
-      value: 5
+      value: 4
     - parameter: 3
-      value: 25
+      value: 7
     - parameter: 4
-      value: 5
+      value: 2
     - parameter: 2
-      value: 5
+      value: 2
     ap: 30
     name: Herb forest
     description: It's a forest full of herbs.
@@ -76,22 +72,20 @@ MonoBehaviour:
       rate: 10
   - inquiredParameters:
     - parameter: 1
-      value: 250
+      value: 200
     - parameter: 3
-      value: 250
+      value: 200
     - parameter: 4
-      value: 250
-    - parameter: 2
-      value: 250
+      value: 200
     rewardParameters:
     - parameter: 1
-      value: 5
+      value: 4
     - parameter: 3
-      value: 25
+      value: 7
     - parameter: 4
-      value: 5
+      value: 2
     - parameter: 2
-      value: 5
+      value: 2
     ap: 30
     name: A sunny forest
     description: Many oilseeds are known to be available in sunny forests.
@@ -106,22 +100,20 @@ MonoBehaviour:
       rate: 10
   - inquiredParameters:
     - parameter: 1
-      value: 375
+      value: 300
     - parameter: 3
-      value: 375
+      value: 300
     - parameter: 4
-      value: 375
-    - parameter: 2
-      value: 375
+      value: 300
     rewardParameters:
     - parameter: 1
-      value: 5
+      value: 4
     - parameter: 3
-      value: 25
+      value: 7
     - parameter: 4
-      value: 5
+      value: 2
     - parameter: 2
-      value: 5
+      value: 2
     ap: 30
     name: An abandoned rice field
     description: Rice continues to grow in the rice fields abandoned by the farmer.
@@ -132,22 +124,20 @@ MonoBehaviour:
       rate: 30
   - inquiredParameters:
     - parameter: 1
-      value: 500
+      value: 400
     - parameter: 3
-      value: 500
+      value: 400
     - parameter: 4
-      value: 500
-    - parameter: 2
-      value: 500
+      value: 400
     rewardParameters:
     - parameter: 1
-      value: 5
+      value: 4
     - parameter: 3
-      value: 25
+      value: 7
     - parameter: 4
-      value: 5
+      value: 2
     - parameter: 2
-      value: 5
+      value: 2
     ap: 30
     name: A rock salt forest
     description: It's a forest full of rock salt.

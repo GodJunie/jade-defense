@@ -18,20 +18,18 @@ MonoBehaviour:
     - parameter: 1
       value: 0
     - parameter: 0
-      value: 15
-    - parameter: 3
-      value: 15
+      value: 2
     - parameter: 2
-      value: 75
+      value: 21
     rewardParameters:
     - parameter: 1
-      value: 25
+      value: 7
     - parameter: 0
-      value: 5
+      value: 2
     - parameter: 3
-      value: 5
+      value: 4
     - parameter: 2
-      value: 5
+      value: 1
     ap: 30
     datas:
     - {fileID: 11400000, guid: 1444acd205dc7c34d80d141bb04981d9, type: 2}
@@ -41,22 +39,20 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 3708bf0f9f6f55b4fbf8db66a2bbbce7, type: 2}
   - inquiredParameters:
     - parameter: 1
-      value: 200
+      value: 150
     - parameter: 0
-      value: 200
-    - parameter: 3
-      value: 200
+      value: 150
     - parameter: 2
-      value: 200
+      value: 150
     rewardParameters:
     - parameter: 1
-      value: 25
+      value: 7
     - parameter: 0
-      value: 5
+      value: 2
     - parameter: 3
-      value: 5
+      value: 4
     - parameter: 2
-      value: 5
+      value: 2
     ap: 30
     datas:
     - {fileID: 11400000, guid: 9b50af89340758742a8162963fae02f6, type: 2}
@@ -66,22 +62,20 @@ MonoBehaviour:
     - {fileID: 11400000, guid: c2f499da0a580f041a702063fea7f6e5, type: 2}
   - inquiredParameters:
     - parameter: 1
-      value: 400
+      value: 300
     - parameter: 0
-      value: 400
-    - parameter: 3
-      value: 400
+      value: 300
     - parameter: 2
-      value: 400
+      value: 300
     rewardParameters:
     - parameter: 1
-      value: 25
+      value: 7
     - parameter: 0
-      value: 5
+      value: 2
     - parameter: 3
-      value: 5
+      value: 4
     - parameter: 2
-      value: 5
+      value: 2
     ap: 30
     datas:
     - {fileID: 11400000, guid: 3b1f87153432b0c4a8cc1439b2a09e05, type: 2}

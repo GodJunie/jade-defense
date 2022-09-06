@@ -18,24 +18,24 @@ MonoBehaviour:
     - parameter: 1
       value: 0
     - parameter: 0
-      value: 15
+      value: 6
     - parameter: 3
-      value: 15
+      value: 6
     - parameter: 4
-      value: 15
+      value: 0
     - parameter: 2
-      value: 75
+      value: 21
     rewardParameters:
     - parameter: 1
-      value: 8
+      value: 3
     - parameter: 0
-      value: 8
+      value: 4
     - parameter: 3
-      value: 8
+      value: 2
     - parameter: 4
-      value: 8
+      value: 4
     - parameter: 2
-      value: 8
+      value: 2
     ap: 30
     datas:
     - {fileID: 11400000, guid: 032638d6818c28f44a135b2021194ca9, type: 2}
@@ -44,26 +44,26 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 588fcc87bddff7344897dec040e1bbe6, type: 2}
   - inquiredParameters:
     - parameter: 1
-      value: 200
+      value: 150
     - parameter: 0
-      value: 200
+      value: 150
     - parameter: 3
-      value: 200
+      value: 150
     - parameter: 4
-      value: 200
+      value: 150
     - parameter: 2
-      value: 200
+      value: 150
     rewardParameters:
     - parameter: 1
-      value: 8
+      value: 3
     - parameter: 0
-      value: 8
+      value: 4
     - parameter: 3
-      value: 8
+      value: 2
     - parameter: 4
-      value: 8
+      value: 4
     - parameter: 2
-      value: 8
+      value: 2
     ap: 30
     datas:
     - {fileID: 11400000, guid: b2755939eacab7a4c93cdb60f177a926, type: 2}
@@ -72,24 +72,24 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 97ef98aa9acba6243a3ca8cd63684514, type: 2}
   - inquiredParameters:
     - parameter: 1
-      value: 400
+      value: 250
     - parameter: 2
-      value: 400
+      value: 250
     - parameter: 3
-      value: 400
+      value: 250
     - parameter: 4
-      value: 400
+      value: 250
     rewardParameters:
     - parameter: 1
-      value: 8
+      value: 3
     - parameter: 0
-      value: 8
+      value: 4
     - parameter: 3
-      value: 8
+      value: 2
     - parameter: 4
-      value: 8
+      value: 4
     - parameter: 2
-      value: 8
+      value: 2
     ap: 30
     datas:
     - {fileID: 11400000, guid: 1958e265ee7afc8409a603896768b0a1, type: 2}
