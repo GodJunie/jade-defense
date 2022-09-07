@@ -19,7 +19,7 @@ MonoBehaviour:
     no one who can stand up to him in this desert.
   prefab: {fileID: 3057974119078451742, guid: 836e7369c706be64a8d9e058bfffb49c, type: 3}
   status:
-    cooltime: 10
+    cooltime: 15
     hp: 850
     moveSpeed: 0
     range: 3
