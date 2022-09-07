@@ -37,11 +37,12 @@ MonoBehaviour:
     distance: 0
     slowRate: 0
   cost:
-  - item: {fileID: 11400000, guid: daf234e15aa11ee49a1aaaeeccea9a6a, type: 2}
-    count: 4
+  - item: {fileID: 11400000, guid: cc3dd6c5bbb67c34dab31070659567ab, type: 2}
+    count: 1
   - item: {fileID: 11400000, guid: 0cab179eb99b45b4d85e859b4b88fbf8, type: 2}
     count: 1
   - item: {fileID: 11400000, guid: 5f683135bcc412a4c8dc7248337a9082, type: 2}
-    count: 1
+    count: 2
   buyPrice: 100
   sellPrice: 10
+  isUnique: 0

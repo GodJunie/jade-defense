@@ -30,7 +30,7 @@ MonoBehaviour:
     attackMode: 0
     atk: 15
     heal: 0
-    interval: 0
+    dotCount: 0
     duration: 0
     distance: 0
     slowRate: 0

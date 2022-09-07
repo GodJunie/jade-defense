@@ -39,11 +39,11 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 3708bf0f9f6f55b4fbf8db66a2bbbce7, type: 2}
   - inquiredParameters:
     - parameter: 1
-      value: 150
+      value: 125
     - parameter: 0
-      value: 150
+      value: 125
     - parameter: 2
-      value: 150
+      value: 125
     rewardParameters:
     - parameter: 1
       value: 7

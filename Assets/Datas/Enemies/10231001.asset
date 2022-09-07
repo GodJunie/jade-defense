@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Hermes Mobile Squadron(Red)
   prefab: {fileID: 3597083397362850326, guid: da1d221af64cffc4da05fd4fc43125d1, type: 3}
   status:
-    cooltime: 5
+    cooltime: 2
     hp: 125
     moveSpeed: 1
     range: 0.5
@@ -30,7 +30,7 @@ MonoBehaviour:
     attackMode: 0
     atk: 22
     heal: 0
-    interval: 0
+    dotCount: 0
     duration: 0
     distance: 0
     slowRate: 0
