@@ -86,20 +86,10 @@ namespace B409.Jade.Battle {
         private void Awake() {
             detector.OnEnter = () => {
                 this.targets = detector.Targets.Where(e => e != null && this.Data.Status.TargetEnemy == (e.IsPlayer ^ this.IsPlayer) && e.State != State.Die && e != this).ToList();
-
-                if(targetCount > 0) {
-                    if(this.canAttack)
-                        ChangeState(State.Attack);
-                }
             };
 
             detector.OnExit = () => {
                 this.targets = detector.Targets.Where(e => e != null && this.Data.Status.TargetEnemy == (e.IsPlayer ^ this.IsPlayer) && e.State != State.Die && e != this).ToList();
-
-                if(targetCount > 0) {
-                    if(this.canAttack)
-                        ChangeState(State.Attack);
-                }
             };
 
             anim.AnimationState.Start += (entry) => {
@@ -429,7 +419,9 @@ namespace B409.Jade.Battle {
         }
 
         private void Idle() {
-
+            if(targetCount > 0) {
+                ChangeState(State.Attack);
+            }
         }
 
         private void IdleExit() {
@@ -450,6 +442,11 @@ namespace B409.Jade.Battle {
             }
 
             if(this.detector.gameObject.activeInHierarchy) {
+                if(targetCount > 0) {
+                    ChangeState(State.Attack);
+                    return;
+                }
+
                 if(!this.inMap) {
                     ChangeState(State.Idle);
                 }
