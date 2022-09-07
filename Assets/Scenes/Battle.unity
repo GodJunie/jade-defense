@@ -8670,17 +8670,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTest: 0
-  data: {fileID: 11400000, guid: 878f706bb7302e844a0a3766af40770f, type: 2}
+  data: {fileID: 11400000, guid: cebeadb1439eee0438ba86f270d51d80, type: 2}
   monsterDatas:
   - {fileID: 11400000, guid: e65f897cbe0214748bf9a3ac95eeb848, type: 2}
   - {fileID: 11400000, guid: c6ad07dc9a5a6574a8d47fe68f8bed33, type: 2}
-  - {fileID: 11400000, guid: b048a21286f5c104898b2a372606e69c, type: 2}
-  - {fileID: 11400000, guid: b048a21286f5c104898b2a372606e69c, type: 2}
-  - {fileID: 11400000, guid: b048a21286f5c104898b2a372606e69c, type: 2}
-  - {fileID: 11400000, guid: fa409de59b8a09a439ad8aa28ad8a600, type: 2}
   - {fileID: 11400000, guid: c0fba5c38f7c47f47950c0c22694dd42, type: 2}
-  - {fileID: 11400000, guid: e3a1de9e950c96842ae357f51f791e2c, type: 2}
   - {fileID: 11400000, guid: ee250303d84dae84daa2c986ec49767b, type: 2}
+  - {fileID: 11400000, guid: ee250303d84dae84daa2c986ec49767b, type: 2}
+  - {fileID: 11400000, guid: ee250303d84dae84daa2c986ec49767b, type: 2}
+  - {fileID: 11400000, guid: ee250303d84dae84daa2c986ec49767b, type: 2}
+  - {fileID: 11400000, guid: 95f5707e4eaa1dd46925e8ea3fffc5ef, type: 2}
+  - {fileID: 11400000, guid: 55f463958283f76429b5b9ebbc433ee0, type: 2}
+  - {fileID: 11400000, guid: 55f463958283f76429b5b9ebbc433ee0, type: 2}
+  - {fileID: 11400000, guid: 55f463958283f76429b5b9ebbc433ee0, type: 2}
+  - {fileID: 11400000, guid: 55f463958283f76429b5b9ebbc433ee0, type: 2}
   imageFade: {fileID: 287893054}
   panelSetParty: {fileID: 1108261599}
   mapSize: 8

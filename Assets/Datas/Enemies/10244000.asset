@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Cat Knights(Green)
   prefab: {fileID: 7646930702048793516, guid: c204edd900ccc634ab166f233b6f7570, type: 3}
   status:
-    cooltime: 3
+    cooltime: 4
     hp: 145
     moveSpeed: 1
     range: 3
@@ -28,7 +28,7 @@ MonoBehaviour:
     targetEnemy: 1
     attackSpeed: 2
     attackMode: 1
-    atk: 12
+    atk: 18
     heal: 0
     dotCount: 3
     duration: 2

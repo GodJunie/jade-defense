@@ -103,7 +103,7 @@ MonoBehaviour:
   - enemy: {fileID: 11400000, guid: a9930aae7a9aeeb479241856a5043f52, type: 2}
     count: 2
   - enemy: {fileID: 11400000, guid: d345fee5b37ce1e4abf676701b15f7e1, type: 2}
-    count: 3
+    count: 4
   - enemy: {fileID: 11400000, guid: deb5ad50cc707c34ea9eb0016dd7add4, type: 2}
     count: 1
   battle: {fileID: 11400000, guid: ea178950250077b42a33caae98cae9ad, type: 2}

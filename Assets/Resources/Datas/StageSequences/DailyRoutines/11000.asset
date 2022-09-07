@@ -101,7 +101,7 @@ MonoBehaviour:
   enemies:
   - enemy: {fileID: 11400000, guid: d41e035a571d27e4f8da6b51b1c3c54c, type: 2}
     count: 1
-  - enemy: {fileID: 11400000, guid: d104538bfcd007d48be7deb434e75b3a, type: 2}
+  - enemy: {fileID: 11400000, guid: c32da3a657706c745891d177e2c39373, type: 2}
     count: 1
   - enemy: {fileID: 11400000, guid: 350d7d0f69843694fa96097267a25a2d, type: 2}
     count: 1

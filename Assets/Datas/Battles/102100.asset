@@ -18,14 +18,21 @@ MonoBehaviour:
   enemies:
   - {fileID: 11400000, guid: fdf456d321d45cb49827beadd76ec9e1, type: 2}
   - {fileID: 11400000, guid: 10b128b396c62dd48b75a311dd39e92c, type: 2}
-  - {fileID: 11400000, guid: 10b128b396c62dd48b75a311dd39e92c, type: 2}
   - {fileID: 11400000, guid: a9930aae7a9aeeb479241856a5043f52, type: 2}
   - {fileID: 11400000, guid: 24fb8245d6ee47b48801267b59935ced, type: 2}
   - {fileID: 11400000, guid: 24fb8245d6ee47b48801267b59935ced, type: 2}
+  - {fileID: 11400000, guid: 10b128b396c62dd48b75a311dd39e92c, type: 2}
+  - {fileID: 11400000, guid: 10b128b396c62dd48b75a311dd39e92c, type: 2}
   rewards:
   - item: {fileID: 11400000, guid: d589c2021da9fa54fa47f26611edba9c, type: 2}
     count: 100
   - item: {fileID: 11400000, guid: dee6bd5528c069346b3ad70bbb3c2434, type: 2}
-    count: 1
+    count: 2
   - item: {fileID: 11400000, guid: 0cab179eb99b45b4d85e859b4b88fbf8, type: 2}
-    count: 1
+    count: 2
+  - item: {fileID: 11400000, guid: 25f6b5f76baab5549b43a849f1859318, type: 2}
+    count: 3
+  - item: {fileID: 11400000, guid: 43309e0d33e8a9545be2372cedf01a03, type: 2}
+    count: 3
+  - item: {fileID: 11400000, guid: 3b7f714761727d54cb44def06d47cbe1, type: 2}
+    count: 3

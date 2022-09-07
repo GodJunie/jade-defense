@@ -22,7 +22,7 @@ MonoBehaviour:
     cooltime: 6
     hp: 350
     moveSpeed: 0.4
-    range: 3
+    range: 2.5
     targetFilterMode: 3
     descending: 0
     targetCount: 3
@@ -44,3 +44,4 @@ MonoBehaviour:
     count: 4
   buyPrice: 150
   sellPrice: 15
+  isUnique: 0

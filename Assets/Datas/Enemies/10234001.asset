@@ -28,7 +28,7 @@ MonoBehaviour:
     targetEnemy: 1
     attackSpeed: 2
     attackMode: 0
-    atk: 29
+    atk: 45
     heal: 0
     dotCount: 0
     duration: 0

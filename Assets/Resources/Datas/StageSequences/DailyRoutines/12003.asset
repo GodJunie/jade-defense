@@ -120,10 +120,10 @@ MonoBehaviour:
     count: 1
   - enemy: {fileID: 11400000, guid: 02afd536a9d2d4b4d8cd6d95fea59d7c, type: 2}
     count: 1
-  - enemy: {fileID: 11400000, guid: 10b128b396c62dd48b75a311dd39e92c, type: 2}
-    count: 1
-  - enemy: {fileID: 11400000, guid: 24fb8245d6ee47b48801267b59935ced, type: 2}
-    count: 1
   - enemy: {fileID: 11400000, guid: 8b3d7e429e42e8546ab18f2f9907b2cb, type: 2}
+    count: 2
+  - enemy: {fileID: 11400000, guid: 10b128b396c62dd48b75a311dd39e92c, type: 2}
+    count: 2
+  - enemy: {fileID: 11400000, guid: 24fb8245d6ee47b48801267b59935ced, type: 2}
     count: 2
   battle: {fileID: 11400000, guid: d7d1525e4d1be8b409e37fd67283e510, type: 2}
