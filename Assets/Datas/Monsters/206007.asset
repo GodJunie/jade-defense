@@ -37,3 +37,4 @@ MonoBehaviour:
   cost: []
   buyPrice: 0
   sellPrice: 0
+  isUnique: 1

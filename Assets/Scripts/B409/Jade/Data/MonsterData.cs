@@ -28,8 +28,14 @@ namespace B409.Jade.Data {
         [SerializeField]
         private int sellPrice;
 
+        [BoxGroup("group2/Settings/IsUnique")]
+        [HideLabel]
+        [SerializeField]
+        private bool isUnique = false;
+
         public int BuyPrice => buyPrice;
         public int SellPrice => sellPrice;
         public List<MaterialData> Cost => cost;
+        public bool IsUnique => isUnique;
     }
 }

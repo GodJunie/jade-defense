@@ -92,6 +92,9 @@ namespace B409.Jade.UI {
                 Destroy(this.buySlotContainer.GetChild(i).gameObject);
             }
             foreach(var monster in monsterOnSale) {
+                if(monster.IsUnique && progress.Monsters.ContainsKey(monster.Id))
+                    continue;
+
                 var slot = Instantiate(buySlotPrefab, buySlotContainer);
                 slot.Init(monster, buyScrollRect, () => {
                     this.ShowInfo(monster, true);

@@ -46,3 +46,4 @@ MonoBehaviour:
     count: 2
   buyPrice: 280
   sellPrice: 28
+  isUnique: 1
