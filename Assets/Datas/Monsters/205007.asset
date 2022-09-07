@@ -30,7 +30,7 @@ MonoBehaviour:
     attackMode: 0
     atk: 100
     heal: 0
-    interval: 0
+    dotCount: 0
     duration: 0
     distance: 0
     slowRate: 0
@@ -39,3 +39,4 @@ MonoBehaviour:
     count: 10
   buyPrice: 0
   sellPrice: 0
+  isUnique: 1
