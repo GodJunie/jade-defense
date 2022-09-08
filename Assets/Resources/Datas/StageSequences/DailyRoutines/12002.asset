@@ -115,11 +115,11 @@ MonoBehaviour:
     rate: 1
   enemies:
   - enemy: {fileID: 11400000, guid: d3ab904af043fdf4ba98cfba28462138, type: 2}
-    count: 1
+    count: 2
   - enemy: {fileID: 11400000, guid: b36a9b18a41a71d4b9a717199b384727, type: 2}
     count: 1
+  - enemy: {fileID: 11400000, guid: 24fb8245d6ee47b48801267b59935ced, type: 2}
+    count: 2
   - enemy: {fileID: 11400000, guid: 10b128b396c62dd48b75a311dd39e92c, type: 2}
     count: 2
-  - enemy: {fileID: 11400000, guid: 24fb8245d6ee47b48801267b59935ced, type: 2}
-    count: 1
   battle: {fileID: 11400000, guid: c4d8e11e40cfce9429300d95ae1d44e0, type: 2}

@@ -21,7 +21,7 @@ MonoBehaviour:
   status:
     cooltime: 5
     hp: 200
-    moveSpeed: 1
+    moveSpeed: 0.5
     range: 4
     targetFilterMode: 3
     descending: 0
@@ -36,11 +36,12 @@ MonoBehaviour:
     distance: 0
     slowRate: 0.881
   cost:
-  - item: {fileID: 11400000, guid: 3b7f714761727d54cb44def06d47cbe1, type: 2}
-    count: 4
+  - item: {fileID: 11400000, guid: 9ac75ae4d997daf49b2c7361ebc78cb3, type: 2}
+    count: 1
   - item: {fileID: 11400000, guid: 0cab179eb99b45b4d85e859b4b88fbf8, type: 2}
     count: 1
-  - item: {fileID: 11400000, guid: 9ac75ae4d997daf49b2c7361ebc78cb3, type: 2}
+  - item: {fileID: 11400000, guid: a6d0e8549b775ed4282034afc3543642, type: 2}
     count: 1
   buyPrice: 150
   sellPrice: 15
+  isUnique: 0

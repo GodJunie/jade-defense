@@ -18,7 +18,7 @@ MonoBehaviour:
   description: Cat Knights(Yellow)
   prefab: {fileID: 2770915650610082341, guid: b5bd49ee48bfa4f499156f72b9def792, type: 3}
   status:
-    cooltime: 3
+    cooltime: 4
     hp: 575
     moveSpeed: 0.7
     range: 0.3
