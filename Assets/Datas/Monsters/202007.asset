@@ -25,11 +25,11 @@ MonoBehaviour:
     range: 3
     targetFilterMode: 3
     descending: 0
-    targetCount: 0
+    targetCount: 4
     targetEnemy: 1
     attackSpeed: 4
     attackMode: 0
-    atk: 125
+    atk: 100
     heal: 0
     dotCount: 0
     duration: 3

@@ -34,6 +34,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 5
     leftCharacter:
       mode: 0
@@ -54,6 +57,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 8300000, guid: 0fc1fcf5ad8c24572aef8cefc61716d2, type: 3}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 0
     leftCharacter:
       mode: 1
@@ -74,6 +80,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -94,6 +103,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -115,6 +127,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 5
     leftCharacter:
       mode: 0
@@ -135,6 +150,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 8300000, guid: f911bdf734aae1d4f8493c3105e1eb49, type: 3}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -155,6 +173,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 5
     leftCharacter:
       mode: 0
@@ -175,6 +196,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 8300000, guid: 04fb8ff709be9ef4fa36337637b7c84f, type: 3}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -195,6 +219,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -215,6 +242,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -235,6 +265,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 5
     leftCharacter:
       mode: 0
@@ -255,6 +288,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 8300000, guid: 4b1cc088bf6a1df439fdf0c336ee0ab9, type: 3}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -275,6 +311,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -295,6 +334,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -316,6 +358,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -336,6 +381,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -356,6 +404,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -376,6 +427,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -397,6 +451,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -417,6 +474,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -437,6 +497,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -457,6 +520,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -478,6 +544,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -498,6 +567,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -518,6 +590,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -539,6 +614,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -559,6 +637,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -579,6 +660,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 5
     leftCharacter:
       mode: 0
@@ -599,6 +683,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 8300000, guid: 92b9299ff9a744c3c9bfc9775d635564, type: 3}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -619,6 +706,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -639,6 +729,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -659,6 +752,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -679,6 +775,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -700,6 +799,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -720,6 +822,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -740,6 +845,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -760,6 +868,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 0
     leftCharacter:
       mode: 0
@@ -780,6 +891,9 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0
   - sequenceSort: 3
     leftCharacter:
       mode: 0
@@ -800,3 +914,6 @@ MonoBehaviour:
     rewards: []
     bgm: {fileID: 0}
     sfx: {fileID: 0}
+    bgmOff: 0
+    lockMonster: 0
+    unlockMonster: 0

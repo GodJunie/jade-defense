@@ -16,20 +16,14 @@ MonoBehaviour:
   background: {fileID: 1696707214452814555, guid: 43b8683c04e4b6a4c901ac498522b4fa, type: 3}
   bgm: {fileID: 8300000, guid: 55387991297aa417682cf0281812da58, type: 3}
   enemies:
-  - {fileID: 11400000, guid: ae74c05ee11fdba4b90c3e9e7d7173e6, type: 2}
-  - {fileID: 11400000, guid: aab2029419556ae4583092199cc82df5, type: 2}
   - {fileID: 11400000, guid: 8b3d7e429e42e8546ab18f2f9907b2cb, type: 2}
-  - {fileID: 11400000, guid: 3cfe5d87e73cd5740af4d7b0105286a5, type: 2}
-  - {fileID: 11400000, guid: 85ea1fa72332a68409e4e57d68188198, type: 2}
-  - {fileID: 11400000, guid: ae74c05ee11fdba4b90c3e9e7d7173e6, type: 2}
   - {fileID: 11400000, guid: aab2029419556ae4583092199cc82df5, type: 2}
   - {fileID: 11400000, guid: 3cfe5d87e73cd5740af4d7b0105286a5, type: 2}
-  - {fileID: 11400000, guid: ae74c05ee11fdba4b90c3e9e7d7173e6, type: 2}
-  - {fileID: 11400000, guid: 3cfe5d87e73cd5740af4d7b0105286a5, type: 2}
-  - {fileID: 11400000, guid: ae74c05ee11fdba4b90c3e9e7d7173e6, type: 2}
   - {fileID: 11400000, guid: 85ea1fa72332a68409e4e57d68188198, type: 2}
   - {fileID: 11400000, guid: aab2029419556ae4583092199cc82df5, type: 2}
+  - {fileID: 11400000, guid: 3cfe5d87e73cd5740af4d7b0105286a5, type: 2}
   - {fileID: 11400000, guid: 85ea1fa72332a68409e4e57d68188198, type: 2}
+  - {fileID: 11400000, guid: ae74c05ee11fdba4b90c3e9e7d7173e6, type: 2}
   - {fileID: 11400000, guid: aab2029419556ae4583092199cc82df5, type: 2}
   - {fileID: 11400000, guid: 85ea1fa72332a68409e4e57d68188198, type: 2}
   - {fileID: 11400000, guid: 85ea1fa72332a68409e4e57d68188198, type: 2}

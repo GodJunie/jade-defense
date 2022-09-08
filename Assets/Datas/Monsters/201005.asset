@@ -18,7 +18,7 @@ MonoBehaviour:
   description: It is said that fruits and stems have healing power.
   prefab: {fileID: 1863606715737535681, guid: b797e24eac32ab24ebc4d6cc31b3facf, type: 3}
   status:
-    cooltime: 5
+    cooltime: 4
     hp: 150
     moveSpeed: 0.4
     range: 3.5
@@ -41,3 +41,4 @@ MonoBehaviour:
     count: 2
   buyPrice: 150
   sellPrice: 15
+  isUnique: 0
