@@ -34,7 +34,7 @@ namespace B409.Jade.UI {
             graphics = GetComponentsInChildren<Graphic>().ToList();
         }
 
-        public void Appear(bool isLeft) {
+        public void Init(bool isLeft) {
             this.gameObject.SetActive(true);
 
             if(this.isLeft != isLeft) {
@@ -49,6 +49,9 @@ namespace B409.Jade.UI {
             }
 
             this.focus = false;
+            foreach(var graphic in graphics) {
+                graphic.color = disabledColor;
+            }
         }
 
         public async UniTask SetFocus(bool focus, float duration = 0.5f) {
@@ -76,31 +79,6 @@ namespace B409.Jade.UI {
             }
             graphic.color = color;
             return;
-        }
-
-        public async UniTask FadeOut(float duration = 0.5f) {
-            Color color = Color.black;
-            color.a = 0f;
-
-            var tasks = new List<UniTask>();
-
-            foreach(var graphic in graphics) {
-                tasks.Add(FadeColor(graphic, graphic.color, color, duration));
-            }
-
-            await UniTask.WhenAll(tasks);
-        }
-
-        public async UniTask FadeIn(float duration = 0.5f) {
-            Color color = this.focus ? highlightedColor : disabledColor;
-
-            var tasks = new List<UniTask>();
-
-            foreach(var graphic in graphics) {
-                tasks.Add(FadeColor(graphic, graphic.color, color, duration));
-            }
-
-            await UniTask.WhenAll(tasks);
         }
 
         public void PlayAnimation(string animation) {

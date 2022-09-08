@@ -23,9 +23,9 @@ namespace B409.Jade.UI {
         [SerializeField]
         private TMP_Text textScript;
         [SerializeField]
-        private Transform leftCharacterHolder;
+        private RectTransform leftCharacterHolder;
         [SerializeField]
-        private Transform rightCharacterHolder;
+        private RectTransform rightCharacterHolder;
         [SerializeField]
         private Image imageFade;
         [SerializeField]
@@ -110,12 +110,8 @@ namespace B409.Jade.UI {
                 tasks.Add(graphic.DOFade(alpha, duration).ToUniTask());
             }
 
-            if(leftCharacter != null) {
-                tasks.Add(leftCharacter.FadeIn(duration));
-            }
-            if(rightCharacter != null) {
-                tasks.Add(rightCharacter.FadeIn(duration));
-            }
+            tasks.Add(MoveCharacter(true, true, duration));
+            tasks.Add(MoveCharacter(false, true, duration));
 
             await UniTask.WhenAll(tasks);
         }
@@ -128,15 +124,23 @@ namespace B409.Jade.UI {
             foreach(var graphic in chatGraphics) {
                 tasks.Add(graphic.DOFade(0f, duration).ToUniTask());
             }
-
-            if(leftCharacter != null) {
-                tasks.Add(leftCharacter.FadeOut(duration));
-            }
-            if(rightCharacter != null) {
-                tasks.Add(rightCharacter.FadeOut(duration));
-            }
+                
+            tasks.Add(MoveCharacter(true, false, duration));
+            tasks.Add(MoveCharacter(false, false, duration));
 
             await UniTask.WhenAll(tasks);
+        }
+
+        private async UniTask MoveCharacter(bool isLeft, bool appear, float duration = .5f) {
+            RectTransform t;
+            if(isLeft) t = leftCharacterHolder;
+            else t = rightCharacterHolder;
+
+            float startValue = appear ? (isLeft ? -1000f : 1000f) : 0f;
+            float endValue = appear ? 0f : (isLeft ? -1000f : 1000f);
+
+            t.anchoredPosition = new Vector2(startValue, 0f);
+            await t.DOLocalMoveX(endValue, duration);
         }
 
         public async void Open() {
@@ -175,14 +179,14 @@ namespace B409.Jade.UI {
 
                     this.leftCharacter = Instantiate(left.Target, leftCharacterHolder.position, leftCharacterHolder.rotation, leftCharacterHolder);
 
-                    leftCharacter.Appear(true);
-                    tasks.Add(leftCharacter.SetFocus(true));
+                    leftCharacter.Init(true);
+                    tasks.Add(MoveCharacter(true, true));
                 } else if(left.Mode == DialogueData.CharacterMode.Disappear) {
                     if(leftCharacter == null) {
                         throw new Exception("No left character exists to disappear");
                     }
 
-                    tasks.Add(leftCharacter.SetFocus(false).ContinueWith(() => {
+                    tasks.Add(MoveCharacter(true, false).ContinueWith(() => {
                         Destroy(leftCharacter.gameObject);
                         leftCharacter = null;
                     }));
@@ -201,14 +205,14 @@ namespace B409.Jade.UI {
 
                     this.rightCharacter = Instantiate(right.Target, rightCharacterHolder.position, rightCharacterHolder.rotation, rightCharacterHolder);
 
-                    rightCharacter.Appear(false);
-                    tasks.Add(rightCharacter.SetFocus(true));
+                    rightCharacter.Init(false);
+                    tasks.Add(MoveCharacter(false, true));
                 } else if(right.Mode == DialogueData.CharacterMode.Disappear) {
                     if(rightCharacter == null) {
                         throw new Exception("No right character exists to disappear");
                     }
 
-                    tasks.Add(rightCharacter.SetFocus(false).ContinueWith(() => {
+                    tasks.Add(MoveCharacter(false, false).ContinueWith(() => {
                         Destroy(rightCharacter.gameObject);
                         rightCharacter = null;
                     }));
