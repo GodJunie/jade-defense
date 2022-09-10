@@ -131,7 +131,7 @@ namespace B409.Jade.Game {
         #endregion
 
         #region Farming
-        public void Farming(FarmingLevelData data) {
+        public Dictionary<int, int> Farming(FarmingLevelData data) {
             var items = new Dictionary<int, int>();
 
             for(int i = 0; i < FarmingCount; i++) {
@@ -160,6 +160,8 @@ namespace B409.Jade.Game {
 
             Progress.AddItems(items);
             CheckAction(data);
+
+            return items;
         }
 
         public void Making(ActionLevelData levelData, RecipeData data) {

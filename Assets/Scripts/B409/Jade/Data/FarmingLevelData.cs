@@ -26,6 +26,10 @@ namespace B409.Jade.Data {
         [SerializeField]
         private string description;
 
+        [BoxGroup("@Summary/Farming Info")]
+        [SerializeField]
+        private List<string> progressTexts;
+
         [FoldoutGroup("@Summary")]
         [BoxGroup("@Summary/Items")]
         [ListDrawerSettings(Expanded = true, AddCopiesLastElement = true)]
@@ -35,6 +39,7 @@ namespace B409.Jade.Data {
         public string Name => name;
         public string Description => description;
         public List<ItemRateData> Datas => datas;
+        public List<string> ProgressLogs => progressTexts;
 
         [Serializable]
         public class ItemRateData {

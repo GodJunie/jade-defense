@@ -48,7 +48,7 @@ namespace B409.Jade.UI {
         [SerializeField]
         private SettingsPanel panelSettings;
 
-        public DailyRoutineData data;
+        private DailyRoutineData data;
         #endregion
 
         #region Mono

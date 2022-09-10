@@ -13,6 +13,9 @@ namespace B409.Jade.UI {
         [BoxGroup("Connect")]
         [SerializeField]
         private MainScreen mainScreen;
+        [BoxGroup("Connect")]
+        [SerializeField]
+        private FarmingProgressPanel panelProgress;
 
         [BoxGroup("General")]
         [SerializeField]
@@ -90,8 +93,7 @@ namespace B409.Jade.UI {
 
         public void OnEnterFarm() {
             if(GameManager.Instance.CheckApEnough(data.AP)) {
-                GameManager.Instance.Farming(data);
-                mainScreen.Init();
+                panelProgress.Open(data);
             } else {
                 mainScreen.Log("You don't have enough AP.");
             }

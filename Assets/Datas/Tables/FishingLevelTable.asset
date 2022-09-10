@@ -35,6 +35,8 @@ MonoBehaviour:
     description: 't''s an ordinary fishing spot.
 
       It''s full of shrimp.'
+    progressTexts:
+    - Fishing
     datas:
     - item: {fileID: 11400000, guid: 25f6b5f76baab5549b43a849f1859318, type: 2}
       rate: 60
@@ -63,6 +65,7 @@ MonoBehaviour:
     description: 't''s an ordinary fishing spot.
 
       It''s full of tuna'
+    progressTexts: []
     datas:
     - item: {fileID: 11400000, guid: 43309e0d33e8a9545be2372cedf01a03, type: 2}
       rate: 60
@@ -90,6 +93,7 @@ MonoBehaviour:
     name: A shrimp fishing ground
     description: '"Be careful, no matter how many shrimps there are, you might not
       catch a single one!" said a fisherman.'
+    progressTexts: []
     datas:
     - item: {fileID: 11400000, guid: 25f6b5f76baab5549b43a849f1859318, type: 2}
       rate: 70
@@ -115,6 +119,7 @@ MonoBehaviour:
     name: A tuna fishing ground
     description: "The fisherman smiles, saying, \"These tuna are the biggest sellers
       in Asgard!\"\r"
+    progressTexts: []
     datas:
     - item: {fileID: 11400000, guid: 43309e0d33e8a9545be2372cedf01a03, type: 2}
       rate: 70
@@ -140,6 +145,7 @@ MonoBehaviour:
     name: A pearl shell farm
     description: '"Until you open your clam''s mouth, no one knows what''s in it."
       said the old man. "I''ve seen a clam with a big meat in it."'
+    progressTexts: []
     datas:
     - item: {fileID: 11400000, guid: bfd0f655e0497c643b224e27d90ced7d, type: 2}
       rate: 1
